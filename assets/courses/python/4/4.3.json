@@ -1,0 +1,531 @@
+{
+    "blocks": [
+        {
+            "id": "intro_modifying_lists",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Modifying Lists",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "One of the most powerful features of lists is that you can change them after creating them. You can update existing items or add new items to the list."
+                },
+                {
+                    "type": "text",
+                    "content": "This makes lists very flexible for storing data that changes over time."
+                }
+            ]
+        },
+        {
+            "id": "changing_items",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Changing Items",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "You can change any item in a list by accessing its index and assigning a new value using `=`."
+                },
+                {
+                    "type": "code",
+                    "content": "fruits = [\"apple\", \"banana\", \"orange\"]\nprint(fruits)\n\nfruits[1] = \"mango\"\nprint(fruits)",
+                    "properties": {
+                        "language": "python",
+                        "output": "['apple', 'banana', 'orange']\n['apple', 'mango', 'orange']"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "We changed the item at index `1` from `\"banana\"` to `\"mango\"`."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_changing",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Change the second item in the list to `50`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "numbers = [10, 20, 30]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "numbers[{1}] = {2}",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(numbers)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "0",
+                            "50",
+                            "1"
+                        ],
+                        "solutions": {
+                            "1": "1",
+                            "2": "50"
+                        },
+                        "hint": "The second item is at index 1.",
+                        "correctFeedback": "Perfect! You changed the second item (index 1) to 50.",
+                        "incorrectFeedback": "The second item is at index 1. Use numbers[1] = 50.",
+                        "explanation": "Index 1 is the second item in the list, so numbers[1] = 50 changes it.",
+                        "output": "[10, 50, 30]"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_change_last",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Change the last item in the list to `\"dog\"`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "animals = [\"cat\", \"bird\", \"fish\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "animals[{1}] = {2}",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(animals)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "\"dog\"",
+                            "-1"
+                        ],
+                        "solutions": {
+                            "1": "-1",
+                            "2": "\"dog\""
+                        },
+                        "hint": "Use -1 to access the last item.",
+                        "correctFeedback": "Great! You used -1 to change the last item to \"dog\".",
+                        "incorrectFeedback": "Use -1 to access the last item, then assign \"dog\" to it.",
+                        "explanation": "Index -1 accesses the last item, and we assign \"dog\" to it.",
+                        "output": "['cat', 'bird', 'dog']"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "adding_with_append",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Adding Items with append()",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `append()` method adds a new item to the **end** of the list."
+                },
+                {
+                    "type": "code",
+                    "content": "fruits = [\"apple\", \"banana\"]\nprint(fruits)\n\nfruits.append(\"orange\")\nprint(fruits)",
+                    "properties": {
+                        "language": "python",
+                        "output": "['apple', 'banana']\n['apple', 'banana', 'orange']"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`append()` added `\"orange\"` to the end of the list."
+                }
+            ]
+        },
+        {
+            "id": "append_multiple",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can call `append()` multiple times to add multiple items."
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = [1, 2, 3]\nnumbers.append(4)\nnumbers.append(5)\nprint(numbers)",
+                    "properties": {
+                        "language": "python",
+                        "output": "[1, 2, 3, 4, 5]"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Each `append()` adds one item to the end of the list."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_append",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Add `\"blue\"` to the end of the list.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "colors = [\"red\", \"green\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "colors.{1}({2})",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(colors)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "add",
+                            "\"blue\"",
+                            "append"
+                        ],
+                        "solutions": {
+                            "1": "append",
+                            "2": "\"blue\""
+                        },
+                        "hint": "Use append() to add items to the end of a list.",
+                        "correctFeedback": "Perfect! append() added \"blue\" to the end of the list.",
+                        "incorrectFeedback": "Use append() to add items to the end of a list.",
+                        "explanation": "The append() method adds the item to the end of the list.",
+                        "output": "['red', 'green', 'blue']"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_what_will_print_append",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "scores = [85, 90]\nscores.append(95)\nprint(scores)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "[95, 85, 90]",
+                            "[85, 90, 95]"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! append() adds 95 to the end of the list.",
+                        "incorrectFeedback": "append() adds items to the end of the list, so 95 comes last.",
+                        "explanation": "append() always adds items to the end, so 95 is added after 85 and 90."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "adding_with_insert",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Adding Items with insert()",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `insert()` method adds a new item at a **specific position** in the list. You need to provide the index and the item."
+                },
+                {
+                    "type": "code",
+                    "content": "fruits = [\"apple\", \"orange\"]\nfruits.insert(1, \"banana\")\nprint(fruits)",
+                    "properties": {
+                        "language": "python",
+                        "output": "['apple', 'banana', 'orange']"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`insert(1, \"banana\")` added `\"banana\"` at index `1`, pushing `\"orange\"` to index `2`."
+                }
+            ]
+        },
+        {
+            "id": "insert_at_beginning",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can insert at the beginning of the list using index `0`."
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = [2, 3, 4]\nnumbers.insert(0, 1)\nprint(numbers)",
+                    "properties": {
+                        "language": "python",
+                        "output": "[1, 2, 3, 4]"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`insert(0, 1)` added `1` at the beginning, shifting all other items to the right."
+                }
+            ]
+        },
+        {
+            "id": "insert_vs_append",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**When to use which?**"
+                },
+                {
+                    "type": "text",
+                    "content": "Use `append()` when you want to add to the end. Use `insert()` when you need to add at a specific position."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_insert",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Insert `\"yellow\"` at index `1`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "colors = [\"red\", \"green\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "colors.{1}({2}, {3})",
+                                "indent": 0,
+                                "blank": "1,2,3"
+                            },
+                            {
+                                "code": "print(colors)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "insert",
+                            "1",
+                            "\"yellow\""
+                        ],
+                        "solutions": {
+                            "1": "insert",
+                            "2": "1",
+                            "3": "\"yellow\""
+                        },
+                        "hint": "Use insert(index, item) to add at a specific position.",
+                        "correctFeedback": "Perfect! insert(1, \"yellow\") adds \"yellow\" at index 1.",
+                        "incorrectFeedback": "Use insert(1, \"yellow\") to add at index 1.",
+                        "explanation": "insert() takes the index first, then the item to insert.",
+                        "output": "['red', 'yellow', 'green']"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_insert_beginning",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Insert `0` at the beginning of the list.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "numbers = [1, 2, 3]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "numbers.insert({1}, {2})",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(numbers)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "0",
+                            "1",
+                            "0"
+                        ],
+                        "solutions": {
+                            "1": "0",
+                            "2": "0"
+                        },
+                        "hint": "Use index 0 to insert at the beginning.",
+                        "correctFeedback": "Great! insert(0, 0) adds 0 at the beginning.",
+                        "incorrectFeedback": "Use insert(0, 0) to add at the beginning.",
+                        "explanation": "Index 0 is the beginning of the list, so insert(0, 0) adds the number 0 at the start.",
+                        "output": "[0, 1, 2, 3]"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_append_vs_insert",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Which method should you use to add an item to the **end** of a list?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "insert()",
+                            "append()",
+                            "add()"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! append() is the easiest way to add to the end.",
+                        "incorrectFeedback": "append() is used to add items to the end of a list.",
+                        "explanation": "append() is simpler than insert() when you just want to add to the end."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_what_will_print_insert",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "letters = [\"a\", \"c\"]\nletters.insert(1, \"b\")\nprint(letters)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "['a', 'b', 'c']",
+                            "['b', 'a', 'c']",
+                            "['a', 'c', 'b']"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! insert(1, \"b\") puts \"b\" at index 1, between \"a\" and \"c\".",
+                        "incorrectFeedback": "insert(1, \"b\") puts \"b\" at index 1, which is between \"a\" and \"c\".",
+                        "explanation": "insert(1, \"b\") places \"b\" at index 1, shifting \"c\" to index 2."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_building_list",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Start with an empty list and build a `shopping` list by adding `\"milk\"` and `\"bread\"`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "shopping = []",
+                                "indent": 0
+                            },
+                            {
+                                "code": "shopping.{1}({2})",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "shopping.{3}({4})",
+                                "indent": 0,
+                                "blank": "3,4"
+                            },
+                            {
+                                "code": "print(shopping)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "append",
+                            "\"milk\"",
+                            "append",
+                            "\"bread\""
+                        ],
+                        "solutions": {
+                            "1": "append",
+                            "2": "\"milk\"",
+                            "3": "append",
+                            "4": "\"bread\""
+                        },
+                        "hint": "Use append() twice to add both items to the end.",
+                        "correctFeedback": "Excellent! You built the list by appending items one by one.",
+                        "incorrectFeedback": "Use append() to add each item to the end of the list.",
+                        "explanation": "Starting with an empty list, we use append() twice to add milk and bread.",
+                        "output": "['milk', 'bread']"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "Use `list[index] = value` to **change** an existing item",
+                            "Use `append()` to **add** items to the **end** of a list",
+                            "Use `insert(index, item)` to **add** items at a **specific position**",
+                            "`append()` is simpler when you just want to add to the end",
+                            "You can start with an empty list `[]` and build it up with `append()`"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

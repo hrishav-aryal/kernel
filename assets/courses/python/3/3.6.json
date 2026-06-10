@@ -1,0 +1,484 @@
+{
+    "blocks": [
+        {
+            "id": "ex_1",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Practice",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What does a `while` loop do?",
+                        "options": [
+                            "Repeats code while a condition is True",
+                            "Runs code once"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! A while loop repeats code while the condition is True.",
+                        "incorrectFeedback": "A while loop repeats code while the condition is True.",
+                        "explanation": "A while loop checks a condition. If True, it runs the code block, then checks again. It repeats until the condition becomes False."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_2",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a `while` loop that prints numbers from `1` to `3`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "count = 1",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1} count <= 3:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(count)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    count += 1",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "if",
+                            "while",
+                            "for"
+                        ],
+                        "solutions": {
+                            "1": "while"
+                        },
+                        "hint": "Use while to start a while loop.",
+                        "correctFeedback": "Perfect! while creates a loop that repeats while the condition is True.",
+                        "incorrectFeedback": "Use while to start a while loop.",
+                        "explanation": "while count <= 3: creates a loop that repeats while count is 3 or less. It prints 1, 2, 3.",
+                        "output": "1\n2\n3"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_3",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "x = 5\n\nwhile x > 3:\n    print(x)\n    x -= 1",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "5\n4",
+                            "5\n4\n3"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! The loop runs while x > 3, so it prints 5 and 4, then stops.",
+                        "incorrectFeedback": "Check when x > 3 becomes False.",
+                        "explanation": "x starts at 5. The loop prints 5 (5 > 3 is True), then x becomes 4. It prints 4 (4 > 3 is True), then x becomes 3. Now 3 > 3 is False, so the loop stops."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_4",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the while loop condition to count from `0` to `2`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "i = 0",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "while {1}:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(i)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    i += 1",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "i < 3",
+                            "i > 0"
+                        ],
+                        "solutions": {
+                            "1": "i < 3"
+                        },
+                        "hint": "We want to print 0, 1, 2. When should the loop stop?",
+                        "correctFeedback": "Great! i < 3 keeps the loop running while i is 0, 1, or 2.",
+                        "incorrectFeedback": "We want to print 0, 1, 2. When should the loop stop?",
+                        "explanation": "i < 3 is True when i is 0, 1, or 2. When i becomes 3, the condition is False and the loop stops.",
+                        "output": "0\n1\n2"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_5",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What happens if the while loop condition never becomes False?",
+                        "options": [
+                            "Infinite loop (runs forever)",
+                            "Python throws an error"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! If the condition never becomes False, the loop runs forever.",
+                        "incorrectFeedback": "If the condition never becomes False, the loop runs forever.",
+                        "explanation": "An infinite loop happens when the condition never becomes False. Always make sure your loop has a way to stop."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_6",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Update the counter `n` inside the loop so it eventually stops.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "n = 3",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "while n > 0:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(n)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    n {1} 1",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "+=",
+                            "-=",
+                            "*="
+                        ],
+                        "solutions": {
+                            "1": "-="
+                        },
+                        "hint": "We need to decrease n so it eventually reaches 0.",
+                        "correctFeedback": "Perfect! -= decreases n by 1 each time, so the loop eventually stops.",
+                        "incorrectFeedback": "We need to decrease n so it eventually reaches 0.",
+                        "explanation": "n -= 1 decreases n each time. The loop counts down from 10 to 1, then stops when n becomes 0.",
+                        "output": "3\n2\n1"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_7",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "num = 0\n\nwhile num < 5:\n    num += 2\n    print(num)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "2\n4\n6",
+                            "0\n2\n4"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! num increases by 2 each time, printing 2, 4, then 6 (which stops the loop).",
+                        "incorrectFeedback": "Check when num is updated and when it's printed.",
+                        "explanation": "The loop starts with num = 0. It adds 2 (num becomes 2) then prints 2. It adds 2 again (num becomes 4) then prints 4. It adds 2 again (num becomes 6) then prints 6. Now 6 < 5 is False, so the loop stops."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_8",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "How does a while loop decide whether to continue running?",
+                        "options": [
+                            "It checks the condition before each iteration",
+                            "It checks once at the start"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! The condition is checked before each iteration of the loop.",
+                        "incorrectFeedback": "The condition is checked before each iteration of the loop.",
+                        "explanation": "Before each iteration, Python checks if the condition is True. If True, it runs the loop. If False, it stops."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_9",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the while loop to print `Hello` three times.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "times = 0",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "while times {1} 3:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(\"Hello\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    times += 1",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "<",
+                            ">",
+                            "=="
+                        ],
+                        "solutions": {
+                            "1": "<"
+                        },
+                        "hint": "We want the loop to run 3 times (when times is 0, 1, 2).",
+                        "correctFeedback": "Great! times < 3 keeps the loop running while times is 0, 1, or 2.",
+                        "incorrectFeedback": "We want the loop to run 3 times (when times is 0, 1, 2).",
+                        "explanation": "times < 3 is True when times is 0, 1, or 2. The loop prints Hello three times.",
+                        "output": "Hello\nHello\nHello"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_10",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a while loop that counts down from `5` to `1`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "countdown = 5",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1} {2}:",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "    print(countdown)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    countdown -= 1",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "countdown >= 1",
+                            "while",
+                            "if"
+                        ],
+                        "solutions": {
+                            "1": "while",
+                            "2": "countdown >= 1"
+                        },
+                        "hint": "Use while to start the loop and check if countdown is at least 1.",
+                        "correctFeedback": "Perfect! The loop counts down from 5 to 1.",
+                        "incorrectFeedback": "Use while to start the loop and check if countdown is at least 1.",
+                        "explanation": "while countdown >= 1: keeps the loop running while countdown is 1 or more. It prints 5, 4, 3, 2, 1.",
+                        "output": "5\n4\n3\n2\n1"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_12",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "Why do we need to update the loop variable inside a while loop?",
+                        "options": [
+                            "So the condition eventually becomes False",
+                            "To make the code look nice"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! We update the variable so the condition eventually becomes False and the loop stops.",
+                        "incorrectFeedback": "We update the variable so the condition eventually becomes False.",
+                        "explanation": "If we don't update the loop variable, the condition might stay True forever, creating an infinite loop."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_13",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "total = 0\n\nwhile total <= 10:\n    total += 5\n\nprint(total)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "15",
+                            "10"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! total becomes 5, then 10, then 15 (which stops the loop).",
+                        "incorrectFeedback": "Check what value total has when the loop stops.",
+                        "explanation": "total starts at 0. First loop: total becomes 5 (5 <= 10 is True). Second loop: total becomes 10 (10 <= 10 is True). Third loop: total becomes 15 (15 <= 10 is False, loop stops). It prints 15."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_14",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the while loop to add numbers from `1` to `3` to the `sum`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "sum = 0",
+                                "indent": 0
+                            },
+                            {
+                                "code": "num = 1",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "while num <= 3:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    sum {1} num",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    num += 1",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(sum)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "+=",
+                            "-=",
+                            "*="
+                        ],
+                        "solutions": {
+                            "1": "+="
+                        },
+                        "hint": "Use += to add num to sum.",
+                        "correctFeedback": "Great! += adds each num to sum (1 + 2 + 3 = 6).",
+                        "incorrectFeedback": "Use += to add num to sum.",
+                        "explanation": "The loop adds 1, then 2, then 3 to sum. sum becomes 1, then 3, then 6. It prints 6.",
+                        "output": "6"
+                    }
+                }
+            ]
+        }
+    ]
+}

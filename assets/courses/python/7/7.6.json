@@ -1,0 +1,429 @@
+{
+    "blocks": [
+        {
+            "id": "intro_conditionals",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Functions with Conditionals",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Functions become more powerful when you add conditionals. They can make decisions and return different results based on the input."
+                },
+                {
+                    "type": "text",
+                    "content": "This lets you write flexible functions that handle different situations."
+                }
+            ]
+        },
+        {
+            "id": "basic_conditional",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Adding If Statements",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "You can use `if`, `elif`, and `else` inside functions just like anywhere else in Python."
+                },
+                {
+                    "type": "code",
+                    "content": "def check_age(age):\n    if age >= 18:\n        print(\"Adult\")\n    else:\n        print(\"Minor\")\n\ncheck_age(20)\ncheck_age(15)",
+                    "properties": {
+                        "language": "python",
+                        "output": "Adult\nMinor"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The function behaves differently based on the age value."
+                }
+            ]
+        },
+        {
+            "id": "returning_based_on_condition",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Instead of printing, you can **return** different values based on conditions. This is more useful because you can use the result in your code."
+                },
+                {
+                    "type": "code",
+                    "content": "def get_grade(score):\n    if score >= 90:\n        return \"A\"\n    elif score >= 80:\n        return \"B\"\n    elif score >= 70:\n        return \"C\"\n    else:\n        return \"F\"\n\nresult = get_grade(85)\nprint(f\"Grade: {result}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Grade: B"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The function returns different grades based on the score."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_conditional",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the function to return `\"Even\"` or `\"Odd\"`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "def check_number(num):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    {1} num % 2 == 0:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "        return \"Even\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    {2}:",
+                                "indent": 0,
+                                "blank": "2"
+                            },
+                            {
+                                "code": "        return \"Odd\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(check_number(4))",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "else",
+                            "if"
+                        ],
+                        "solutions": {
+                            "1": "if",
+                            "2": "else:"
+                        },
+                        "hint": "Use if to check if the number is even and else to check if the number is odd.",
+                        "correctFeedback": "Perfect! The function returns based on the condition.",
+                        "incorrectFeedback": "Use if to check if the number is even and else to check if the number is odd.",
+                        "explanation": "Conditionals let functions return different values based on input.",
+                        "output": "Even"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "early_return",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Remember that `return` exits the function immediately. You can use this for **early returns** to simplify logic."
+                },
+                {
+                    "type": "code",
+                    "content": "def validate_age(age):\n    if age < 0:\n        return \"Invalid age\"\n    if age < 13:\n        return \"Child\"\n    if age < 18:\n        return \"Teen\"\n    return \"Adult\"\n\nprint(validate_age(15))",
+                    "properties": {
+                        "language": "python",
+                        "output": "Teen"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Once a condition matches, the function returns immediately and stops checking."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_early_return",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What happens when a function hits a return statement?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "It continues to the next line",
+                            "It exits the function immediately",
+                            "It waits for more code"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! return exits the function right away.",
+                        "incorrectFeedback": "return exits the function immediately, no more code runs.",
+                        "explanation": "Once return executes, the function ends and returns the value."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "boolean_returns",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Returning Boolean Values",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Functions often return `True` or `False` to check conditions. These are called **predicate functions**."
+                },
+                {
+                    "type": "code",
+                    "content": "def is_positive(num):\n    if num > 0:\n        return True\n    else:\n        return False\n\nif is_positive(5):\n    print(\"Positive number!\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Positive number!"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The function returns `True` or `False`, which can be used in conditions."
+                }
+            ]
+        },
+        {
+            "id": "simplified_boolean",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can simplify boolean returns by returning the condition directly."
+                },
+                {
+                    "type": "code",
+                    "content": "# Long way\ndef is_even(num):\n    if num % 2 == 0:\n        return True\n    else:\n        return False\n\n# Shorter way\ndef is_even(num):\n    return num % 2 == 0\n\nprint(is_even(4))",
+                    "properties": {
+                        "language": "python",
+                        "output": "True"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Both do the same thing, but the second is simpler and clearer."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_boolean",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Simplify this function to return the condition directly.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "def is_adult(age):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    {1} age >= 18",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(is_adult(20))",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "if",
+                            "return",
+                            "print"
+                        ],
+                        "solutions": {
+                            "1": "return"
+                        },
+                        "hint": "Return the comparison directly.",
+                        "correctFeedback": "Perfect! You simplified the boolean return.",
+                        "incorrectFeedback": "Return the condition age >= 18 directly.",
+                        "explanation": "You can return boolean expressions directly without if/else.",
+                        "output": "True"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "multiple_parameters_conditionals",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can combine multiple parameters with conditionals for complex logic."
+                },
+                {
+                    "type": "code",
+                    "content": "def can_vote(age, is_citizen):\n    if age >= 18 and is_citizen:\n        return True\n    else:\n        return False\n\nprint(can_vote(20, True))\nprint(can_vote(20, False))",
+                    "properties": {
+                        "language": "python",
+                        "output": "True\nFalse"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The function checks multiple conditions before returning."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_multiple_params",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this function return?"
+                },
+                {
+                    "type": "code",
+                    "content": "def check_discount(age, is_student):\n    if age < 18 or is_student:\n        return \"10% off\"\n    return \"No discount\"\n\nresult = check_discount(25, True)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "No discount",
+                            "10% off",
+                            "Error"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! is_student is True, so the condition is met.",
+                        "incorrectFeedback": "Check the or condition: age < 18 or is_student.",
+                        "explanation": "Since is_student is True, the or condition is satisfied."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practical_example",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Let's create a practical function with conditionals."
+                },
+                {
+                    "type": "code",
+                    "content": "def calculate_shipping(price, is_member):\n    if price >= 50:\n        return 0\n    elif is_member:\n        return 5\n    else:\n        return 10\n\nprint(f\"Shipping: ${calculate_shipping(30, True)}\")\nprint(f\"Shipping: ${calculate_shipping(60, False)}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Shipping: $5\nShipping: $0"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The function returns different shipping costs based on conditions."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_practical",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the function to check password strength based on the length.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "def check_password(password):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    length = len(password)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    if length >= 8:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        return {1}",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    else:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        return \"Weak\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(check_password(\"secure123\"))",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "\"Strong\"",
+                            "True"
+                        ],
+                        "solutions": {
+                            "1": "\"Strong\""
+                        },
+                        "hint": "Return \"Strong\" for passwords 8+ characters.",
+                        "correctFeedback": "Perfect! The function checks password strength.",
+                        "incorrectFeedback": "Return \"Strong\" when length is 8 or more.",
+                        "explanation": "Conditionals in functions let you implement validation logic.",
+                        "output": "Strong"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "Use `if`, `elif`, `else` inside functions for decisions",
+                            "**Return different values** based on conditions",
+                            "`return` **exits immediately** - use for early returns",
+                            "Return boolean expressions **directly** without if/else",
+                            "Combine **multiple parameters** with conditionals",
+                            "Conditionals make functions **flexible and powerful**"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

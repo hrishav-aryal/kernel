@@ -1,0 +1,484 @@
+{
+    "blocks": [
+        {
+            "id": "intro_loops",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Functions with Loops",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Functions can use loops to process multiple items, perform repeated calculations, or build results step by step."
+                },
+                {
+                    "type": "text",
+                    "content": "Combining functions and loops makes your code more organized and reusable."
+                }
+            ]
+        },
+        {
+            "id": "basic_loop_function",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Functions with For Loops",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Remember `for` loops? You can use them inside functions to process each item in a list, one by one."
+                },
+                {
+                    "type": "code",
+                    "content": "def print_items(items):\n    for item in items:\n        print(item)\n\nfruits = [\"apple\", \"banana\", \"cherry\"]\nprint_items(fruits)",
+                    "properties": {
+                        "language": "python",
+                        "output": "apple\nbanana\ncherry"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The parameter `items` receives the list. The `for` loop goes through each item and prints it. This makes the function work with any list!"
+                }
+            ]
+        },
+        {
+            "id": "accumulating_results",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "A common pattern is to **accumulate** (build up) a result in a loop and then return the final value."
+                },
+                {
+                    "type": "text",
+                    "content": "Start with an initial value  → Loop through items → Update the value each time → Return the final result."
+                },
+                {
+                    "type": "code",
+                    "content": "def sum_numbers(numbers):\n    total = 0\n    for num in numbers:\n        total = total + num\n    return total\n\nresult = sum_numbers([5, 10, 15, 20])\nprint(result)",
+                    "properties": {
+                        "language": "python",
+                        "output": "50"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`total` starts at `0`. The loop goes through each number and adds it to `total`. After the loop finishes, the function returns the accumulated `total`."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_accumulate",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the function to count how many items are in the list.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "def count_items(items):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    count = 0",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    for item in items:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        count = count {1} 1",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    return count",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(count_items([\"a\", \"b\", \"c\"]))",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "+",
+                            "-",
+                            "*"
+                        ],
+                        "solutions": {
+                            "1": "+"
+                        },
+                        "hint": "Add 1 to count for each item.",
+                        "correctFeedback": "Perfect! The function counts items using accumulation.",
+                        "incorrectFeedback": "Use + to increment count by 1.",
+                        "explanation": "Accumulating in a loop is a common pattern in functions.",
+                        "output": "3"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "building_lists",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Functions can build new lists by starting with an empty list and adding items one by one."
+                },
+                {
+                    "type": "text",
+                    "content": "Create empty list `[]` → Loop through items → Process each item → Append to the new list → Return the new list."
+                },
+                {
+                    "type": "code",
+                    "content": "def double_numbers(numbers):\n    result = []\n    for num in numbers:\n        result.append(num * 2)\n    return result\n\ndoubled = double_numbers([1, 2, 3, 4])\nprint(doubled)",
+                    "properties": {
+                        "language": "python",
+                        "output": "[2, 4, 6, 8]"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Start with empty `result` list. For each number, multiply it by 2 and `append` to `result`. After processing all numbers, return the new list."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_build_list",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the function to collect positive numbers.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "def get_positive(numbers):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    result = []",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    for num in numbers:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        if num > 0:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "            result.{1}(num)",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    return result",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(get_positive([5, -2, 10, -7, 3]))",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "add",
+                            "append",
+                            "insert"
+                        ],
+                        "solutions": {
+                            "1": "append"
+                        },
+                        "hint": "Use append to add items to the result list.",
+                        "correctFeedback": "Perfect! The function builds a filtered list.",
+                        "incorrectFeedback": "Use append to add items to the list.",
+                        "explanation": "Functions can filter and build new lists using loops.",
+                        "output": "[5, 10, 3]"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "searching_in_loops",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Searching with Loops",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Functions can search through lists using loops. When you find what you're looking for, `return` immediately - no need to keep checking!"
+                },
+                {
+                    "type": "code",
+                    "content": "def find_name(names, target):\n    for name in names:\n        if name == target:\n            return True\n    return False\n\npeople = [\"Alice\", \"Bob\", \"Charlie\"]\nprint(find_name(people, \"Bob\"))\nprint(find_name(people, \"Dan\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "True\nFalse"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The loop checks each name. If it matches `target`, return `True` immediately and exit. If the loop finishes without finding it, return `False`."
+                },
+                {
+                    "type": "text",
+                    "content": "`return` inside a loop exits the entire function right away. This saves time - no need to check remaining items once you found what you need."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_search",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What happens when the function finds what it's searching for?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "It continues checking all items",
+                            "It returns immediately and exits",
+                            "It stores the result and continues"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! return exits the loop and function immediately.",
+                        "incorrectFeedback": "return exits the function right away when the item is found.",
+                        "explanation": "Using return in a loop lets you exit early when you find what you need."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "while_loops",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Functions can use `while` loops when you want to repeat something until a condition changes."
+                },
+                {
+                    "type": "code",
+                    "content": "def count_down(start):\n    while start > 0:\n        print(start)\n        start = start - 1\n    print(\"Done!\")\n\ncount_down(3)",
+                    "properties": {
+                        "language": "python",
+                        "output": "3\n2\n1\nDone!"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Print the current value of `start`, then decrease it by 1. Keep repeating while `start > 0`. When `start` reaches 0, the loop stops and `\"Done!\"` prints."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_while",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Fill in the missing operator to add up numbers from 1 to n using a while loop.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "def sum_up_to(n):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    total = 0",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    while n > 0:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        total = total {1} n",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "        n = n - 1",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    return total",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(sum_up_to(4))",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "+",
+                            "-",
+                            "*"
+                        ],
+                        "solutions": {
+                            "1": "+"
+                        },
+                        "hint": "Add n to total each time to get the sum.",
+                        "correctFeedback": "Great job! This sums numbers from 1 to n.",
+                        "incorrectFeedback": "Use + to add up the numbers.",
+                        "explanation": "A while loop can be used to add numbers repeatedly until n reaches 0.",
+                        "output": "10"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "range_in_functions",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Remember `range()`? It creates a sequence of numbers. You can use it in functions to repeat something a specific number of times."
+                },
+                {
+                    "type": "code",
+                    "content": "def repeat_message(message, times):\n    for i in range(times):\n        print(message)\n\nrepeat_message(\"Hello\", 3)",
+                    "properties": {
+                        "language": "python",
+                        "output": "Hello\nHello\nHello"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`range(times)` creates numbers from `0` to `times-1`. The loop runs that many times, printing the message each time."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_range",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the function to print numbers from 0 up to n.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "def print_numbers(n):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    for i in {1}(n):",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "        print(i)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print_numbers(5)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "range",
+                            "list",
+                            "int"
+                        ],
+                        "solutions": {
+                            "1": "range"
+                        },
+                        "hint": "Use range to get numbers from 0 up to (but not including) n.",
+                        "correctFeedback": "Great job! range(n) gives numbers 0 up to n-1.",
+                        "incorrectFeedback": "Remember, range(n) creates a sequence from 0 to n-1.",
+                        "explanation": "Passing n lets your function print numbers up to any value you choose.",
+                        "output": "0\n1\n2\n3\n4"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_combine",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What does this function return?"
+                },
+                {
+                    "type": "code",
+                    "content": "def count_long_words(words):\n    count = 0\n    for word in words:\n        if len(word) > 4:\n            count = count + 1\n    return count\n\nwords = [\"hi\", \"hello\", \"bye\", \"world\"]\nresult = count_long_words(words)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "4",
+                            "2",
+                            "3"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! \"hello\" and \"world\" have more than 4 characters.",
+                        "incorrectFeedback": "Count words with length > 4: \"hello\" (5) and \"world\" (5).",
+                        "explanation": "Combining loops and conditionals lets you process data with specific criteria."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "Use loops in functions to **process multiple items**",
+                            "**Accumulate** results in a variable and return at the end",
+                            "Build new lists by **appending** items in loops",
+                            "Use `return` in loops to **exit early** when searching",
+                            "Combine loops with **conditionals** for filtering",
+                            "Use `range()` for repeating operations a specific number of times"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,508 @@
+{
+    "blocks": [
+        {
+            "id": "ex_1",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Practice",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What is the main difference between tuples and lists?",
+                        "options": [
+                            "Tuples are immutable (cannot be changed)",
+                            "Tuples are faster"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Tuples cannot be changed after creation.",
+                        "incorrectFeedback": "Tuples cannot be changed after creation.",
+                        "explanation": "Tuples are immutable, meaning once created, you cannot add, remove, or change items. Lists are mutable."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_2",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a tuple called `colors` with three items.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "colors = {1}",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(colors)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "(\"red\", \"green\", \"blue\")",
+                            "[\"red\", \"green\", \"blue\"]",
+                            "{\"red\", \"green\", \"blue\"}"
+                        ],
+                        "solutions": {
+                            "1": "(\"red\", \"green\", \"blue\")"
+                        },
+                        "hint": "Use parentheses () to create a tuple.",
+                        "correctFeedback": "Perfect! Tuples are created with parentheses ().",
+                        "incorrectFeedback": "Use parentheses () to create a tuple.",
+                        "explanation": "Tuples are created using parentheses (). Items are separated by commas.",
+                        "output": "('red', 'green', 'blue')"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_3",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "point = (10, 20)\nprint(point[0])",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "10",
+                            "20"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Index 0 gives the first item.",
+                        "incorrectFeedback": "Index 0 gives the first item.",
+                        "explanation": "Tuples use the same indexing as lists. point[0] accesses the first item, which is 10."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_4",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Access the last item using negative indexing.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "numbers = (5, 10, 15, 20)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "last = numbers[{1}]",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(last)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "-1",
+                            "3",
+                            "-2"
+                        ],
+                        "solutions": {
+                            "1": "-1"
+                        },
+                        "hint": "-1 accesses the last item.",
+                        "correctFeedback": "Great! -1 gives the last item in a tuple.",
+                        "incorrectFeedback": "-1 accesses the last item.",
+                        "explanation": "Tuples support negative indexing like lists. numbers[-1] is 20.",
+                        "output": "20"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_5",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "Can you change an item in a tuple after creating it?",
+                        "options": [
+                            "No, tuples are immutable",
+                            "Yes, using the index"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! You cannot change tuple items.",
+                        "incorrectFeedback": "You cannot change tuple items.",
+                        "explanation": "Tuples are immutable. Once created, you cannot modify their items. This is the key difference from lists."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_6",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Unpack the tuple into separate variables.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "person = (\"Alice\", 25)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1}, {2} = person",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(name)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(age)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "name",
+                            "age",
+                            "person"
+                        ],
+                        "solutions": {
+                            "1": "name",
+                            "2": "age"
+                        },
+                        "hint": "Assign each tuple item to a variable.",
+                        "correctFeedback": "Perfect! Tuple unpacking assigns each item to a variable.",
+                        "incorrectFeedback": "Assign each tuple item to a variable.",
+                        "explanation": "Tuple unpacking assigns each item to variables. name gets \"Alice\" and age gets 25.",
+                        "output": "Alice\n25"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_7",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "coords = (10, 20, 30)\nx, y, z = coords\nprint(y)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "20",
+                            "10"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! y gets the second item (20).",
+                        "incorrectFeedback": "Check which item y gets.",
+                        "explanation": "Unpacking assigns 10 to x, 20 to y, and 30 to z. So y is 20."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_8",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Loop through the tuple and print each item.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "fruits = (\"apple\", \"banana\", \"cherry\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1} fruit {2} fruits:",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "    print(fruit)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "for",
+                            "in",
+                            "while"
+                        ],
+                        "solutions": {
+                            "1": "for",
+                            "2": "in"
+                        },
+                        "hint": "Use for...in to loop through a tuple.",
+                        "correctFeedback": "Great! Tuples can be looped through like lists.",
+                        "incorrectFeedback": "Use for...in to loop through a tuple.",
+                        "explanation": "You can loop through tuples just like lists using for...in.",
+                        "output": "apple\nbanana\ncherry"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_9",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What does the `count()` method do with tuples?",
+                        "options": [
+                            "Returns how many times an item appears",
+                            "Returns the total number of items"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! count() counts occurrences of an item.",
+                        "incorrectFeedback": "count() counts occurrences of an item.",
+                        "explanation": "The count() method works the same for tuples as for lists - it counts how many times an item appears."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_10",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Count how many times `2` appears in the tuple.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "numbers = (1, 2, 3, 2, 4, 2)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "result = numbers.{1}({2})",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(result)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "count",
+                            "2",
+                            "len"
+                        ],
+                        "solutions": {
+                            "1": "count",
+                            "2": "2"
+                        },
+                        "hint": "Use count() to count occurrences.",
+                        "correctFeedback": "Perfect! count() found 3 occurrences of 2.",
+                        "incorrectFeedback": "Use count() to count occurrences.",
+                        "explanation": "numbers.count(2) returns 3 because 2 appears 3 times in the tuple.",
+                        "output": "3"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_11",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "letters = (\"a\", \"b\", \"c\", \"b\")\nprint(letters.index(\"b\"))",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "1",
+                            "3"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! index() returns the first occurrence at position 1.",
+                        "incorrectFeedback": "index() returns the first occurrence.",
+                        "explanation": "index() returns the position of the first occurrence of \"b\", which is at index 1."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_12",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Combine two tuples using the `+` operator.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "tuple1 = (1, 2)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "tuple2 = (3, 4)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "result = {1} {2} {3}",
+                                "indent": 0,
+                                "blank": "1,2,3"
+                            },
+                            {
+                                "code": "print(result)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "tuple1",
+                            "+",
+                            "tuple2"
+                        ],
+                        "solutions": {
+                            "1": "tuple1",
+                            "2": "+",
+                            "3": "tuple2"
+                        },
+                        "hint": "Use + to combine tuples.",
+                        "correctFeedback": "Great! The + operator combines tuples.",
+                        "incorrectFeedback": "Use + to combine tuples.",
+                        "explanation": "tuple1 + tuple2 creates a new tuple (1, 2, 3, 4).",
+                        "output": "(1, 2, 3, 4)"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_13",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "t = (\"hello\",) * 3\nprint(t)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "('hello', 'hello', 'hello')",
+                            "('hello')"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! The * operator repeats the tuple.",
+                        "incorrectFeedback": "The * operator repeats tuples.",
+                        "explanation": "The * operator repeats the tuple 3 times: ('hello', 'hello', 'hello')."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_14",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Check if `\"apple\"` is in the tuple.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "fruits = (\"apple\", \"banana\", \"cherry\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "result = \"apple\" {1} fruits",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(result)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "in",
+                            "not",
+                            "=="
+                        ],
+                        "solutions": {
+                            "1": "in"
+                        },
+                        "hint": "Use in to check membership.",
+                        "correctFeedback": "Perfect! The in operator works with tuples too.",
+                        "incorrectFeedback": "Use in to check membership.",
+                        "explanation": "\"apple\" in fruits checks if apple exists in the tuple. It returns True.",
+                        "output": "True"
+                    }
+                }
+            ]
+        }
+    ]
+}

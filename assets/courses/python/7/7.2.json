@@ -1,0 +1,367 @@
+{
+    "blocks": [
+        {
+            "id": "intro_parameters",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Parameters",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Parameters let you pass information **into** a function. This makes functions more flexible because they can work with different values."
+                },
+                {
+                    "type": "text",
+                    "content": "Think of parameters as placeholders that get filled with actual values when you call the function."
+                }
+            ]
+        },
+        {
+            "id": "adding_parameters",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Adding Parameters",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "To add a parameter, put a variable name inside the parentheses when defining the function."
+                },
+                {
+                    "type": "code",
+                    "content": "def greet(name):\n    print(f\"Hello, {name}!\")\n\ngreet(\"Alice\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Hello, Alice!"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`name` is a parameter. When we call `greet(\"Alice\")`, the value `\"Alice\"` is passed to `name`."
+                }
+            ]
+        },
+        {
+            "id": "using_parameters",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Inside the function, you can use the parameter like any other variable."
+                },
+                {
+                    "type": "code",
+                    "content": "def welcome(username):\n    print(f\"Welcome, {username}!\")\n    print(\"Glad to have you here.\")\n\nwelcome(\"Bob\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Welcome, Bob!\nGlad to have you here."
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The parameter `username` is used inside the function with the value `\"Bob\"`."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_parameter",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Add a parameter `city` to the function.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "def show_location({1}):",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(f\"Location: {city}\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "show_location(\"Boston\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "\"city\"",
+                            "city",
+                            "parameter"
+                        ],
+                        "solutions": {
+                            "1": "city"
+                        },
+                        "hint": "Put the parameter name inside the parentheses.",
+                        "correctFeedback": "Perfect! You added a parameter to the function.",
+                        "incorrectFeedback": "Put the variable name city inside the parentheses.",
+                        "explanation": "Parameters go inside the parentheses in the function definition.",
+                        "output": "Location: Boston"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "different_values",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can call the same function with different values. This is what makes functions powerful!"
+                },
+                {
+                    "type": "code",
+                    "content": "def greet(name):\n    print(f\"Hello, {name}!\")\n\ngreet(\"Alice\")\ngreet(\"Bob\")\ngreet(\"Charlie\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Hello, Alice!\nHello, Bob!\nHello, Charlie!"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Same function, different results based on the input!"
+                }
+            ]
+        },
+        {
+            "id": "quick_check_different_values",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What makes parameters useful?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "They make functions longer",
+                            "They let functions work with different values",
+                            "They are required for all functions"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! Parameters make functions flexible by accepting different inputs.",
+                        "incorrectFeedback": "Parameters allow functions to work with different values.",
+                        "explanation": "Parameters let you pass different data to functions, making them reusable."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "multiple_parameters",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Multiple Parameters",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Functions can have multiple parameters. Separate them with commas."
+                },
+                {
+                    "type": "code",
+                    "content": "def introduce(name, age):\n    print(f\"My name is {name}\")\n    print(f\"I am {age} years old\")\n\nintroduce(\"Alice\", 25)",
+                    "properties": {
+                        "language": "python",
+                        "output": "My name is Alice\nI am 25 years old"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The function takes two parameters: `name` and `age`."
+                }
+            ]
+        },
+        {
+            "id": "parameter_order",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Order matters!** Parameters are matched by position when you call the function."
+                },
+                {
+                    "type": "code",
+                    "content": "def show_info(first, second):\n    print(f\"First: {first}\")\n    print(f\"Second: {second}\")\n\nshow_info(\"A\", \"B\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "First: A\nSecond: B"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The first value `\"A\"` goes to `first`, the second value `\"B\"` goes to `second`."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_multiple",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Add two parameters `item` and `price` to the function.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "def show_product({1}, {2}):",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "    print(f\"{item}: ${price}\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "show_product(\"Laptop\", 999)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "item",
+                            "price",
+                            "product"
+                        ],
+                        "solutions": {
+                            "1": "item",
+                            "2": "price"
+                        },
+                        "hint": "Separate parameters with a comma.",
+                        "correctFeedback": "Perfect! You added two parameters.",
+                        "incorrectFeedback": "Add item and price separated by a comma.",
+                        "explanation": "Multiple parameters are separated by commas in the function definition.",
+                        "output": "Laptop: $999"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_order",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "def display(a, b):\n    print(f\"{a} and {b}\")\n\ndisplay(\"cat\", \"dog\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "dog and cat",
+                            "cat and dog",
+                            "a and b"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! Parameters are matched by position: a=cat, b=dog.",
+                        "incorrectFeedback": "Parameters match by position in the order they're passed.",
+                        "explanation": "The first argument \"cat\" goes to a, and the second \"dog\" goes to b."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practical_example",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Fill in the function name to create a function that calculates the area of a rectangle.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "def {1}(width, height):",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    area = width * height",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(f\"Area: {area}\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "calculate_area(5, 10)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "calculate_area(3, 7)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "calculate_area",
+                            "area"
+                        ],
+                        "solutions": {
+                            "1": "calculate_area"
+                        },
+                        "hint": "Use calculate_area as the function name.",
+                        "correctFeedback": "Great job! You created a function that calculates the area of a rectangle.",
+                        "incorrectFeedback": "Be sure to use calculate_area as the function name.",
+                        "explanation": "Functions with parameters can be called with different values to get different results.",
+                        "output": "Area: 50\nArea: 21"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "Parameters go inside parentheses in the function definition",
+                            "Parameters let functions work with **different values**",
+                            "Use parameters inside the function like regular variables",
+                            "Functions can have **multiple parameters** separated by commas",
+                            "**Order matters** - parameters match by position",
+                            "The values you pass are called **arguments**"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

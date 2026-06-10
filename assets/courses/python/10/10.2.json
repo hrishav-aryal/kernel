@@ -1,0 +1,537 @@
+{
+    "blocks": [
+        {
+            "id": "intro_methods",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Methods",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "You've learned to store data in objects using attributes. Now let's add **methods** - functions that belong to a class and work with its data."
+                },
+                {
+                    "type": "text",
+                    "content": "Methods let objects perform actions using their own data."
+                }
+            ]
+        },
+        {
+            "id": "what_are_methods",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Methods** are functions defined inside a class. They can access and use the object's attributes."
+                },
+                {
+                    "type": "text",
+                    "content": "You've been using methods already: `list.append()`, `str.upper()`, `dict.keys()` are all methods!"
+                },
+                {
+                    "type": "text",
+                    "content": "**The key difference:** Regular functions are independent, but methods belong to an object and can work with that object's data."
+                }
+            ]
+        },
+        {
+            "id": "creating_methods",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Creating Methods",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Define methods inside a class using `def`. The first parameter must be `self`, which refers to the object itself."
+                },
+                {
+                    "type": "code",
+                    "content": "class Dog:\n    def bark(self):\n        print(\"Woof!\")\n\ndog = Dog()\ndog.bark()",
+                    "properties": {
+                        "language": "python",
+                        "output": "Woof!"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "We defined a `bark` method inside the `Dog` class. When we call `dog.bark()`, it prints \"Woof!\"."
+                },
+                {
+                    "type": "text",
+                    "content": "`self` is required when defining the method, but you don't pass it when calling the method. Python handles `self` automatically!"
+                }
+            ]
+        },
+        {
+            "id": "why_self",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Why do we need self?**"
+                },
+                {
+                    "type": "text",
+                    "content": "Methods need `self` to know which object they're working with. Without `self`, a method wouldn't know whose data to access."
+                },
+                {
+                    "type": "text",
+                    "content": "Think of it like this: if you have 3 dogs, when one barks, the method needs to know which dog is barking!"
+                }
+            ]
+        },
+        {
+            "id": "quick_check_create",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Add a method called `meow` to the Cat class.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "class Cat:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    {1} meow({2}):",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "        print(\"Meow!\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "cat = Cat()",
+                                "indent": 0
+                            },
+                            {
+                                "code": "cat.meow()",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "def",
+                            "self"
+                        ],
+                        "solutions": {
+                            "1": "def",
+                            "2": "self"
+                        },
+                        "hint": "Methods use def and must have self as first parameter.",
+                        "correctFeedback": "Perfect! You created a method.",
+                        "incorrectFeedback": "Use def method_name(self): to create methods.",
+                        "explanation": "Methods are defined like functions but always take self as the first parameter.",
+                        "output": "Meow!"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "understanding_self",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Understanding Self",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`self` represents the specific object that's calling the method."
+                },
+                {
+                    "type": "text",
+                    "content": "Let's see how `self` lets methods work with object data:"
+                },
+                {
+                    "type": "code",
+                    "content": "class Dog:\n    def set_name(self, name):\n        self.name = name\n\ndog = Dog()\ndog.set_name(\"Buddy\")\nprint(dog.name)",
+                    "properties": {
+                        "language": "python",
+                        "output": "Buddy"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "When we call `dog.set_name(\"Buddy\")`, Python automatically passes `dog` as `self` to the method. Inside the method, `self.name = name` means \"store this `name` in the `dog` object that called me\"."
+                }
+            ]
+        },
+        {
+            "id": "self_with_multiple_objects",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Self keeps objects separate**"
+                },
+                {
+                    "type": "text",
+                    "content": "Each object uses `self` to access its own data, not other objects' data:"
+                },
+                {
+                    "type": "code",
+                    "content": "class Dog:\n    def set_name(self, name):\n        self.name = name\n    \n    def greet(self):\n        print(f\"Hi, I'm {self.name}!\")\n\ndog1 = Dog()\ndog1.set_name(\"Buddy\")\n\ndog2 = Dog()\ndog2.set_name(\"Max\")\n\ndog1.greet()\ndog2.greet()",
+                    "properties": {
+                        "language": "python",
+                        "output": "Hi, I'm Buddy!\nHi, I'm Max!"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "When `dog1.greet()` runs, `self` refers to `dog1`. When `dog2.greet()` runs, `self` refers to `dog2`. Each object accesses its own name through `self`."
+                },
+                {
+                    "type": "text",
+                    "content": "Notice how we can access the `name` attribute using `self.name` in the `greet` method."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_self",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What does `self` represent in a method?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "The class itself",
+                            "The specific object calling the method",
+                            "All objects of that class"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! self refers to the specific object.",
+                        "incorrectFeedback": "self represents the individual object that called the method.",
+                        "explanation": "self lets methods access and modify the calling object's attributes."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "methods_modifying_attributes",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Methods Can Change Attributes",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Methods can read and modify the object's attributes using `self`:"
+                },
+                {
+                    "type": "code",
+                    "content": "class Counter:\n    def start(self):\n        self.count = 0\n    \n    def increment(self):\n        self.count = self.count + 1\n    \n    def show(self):\n        print(f\"Count: {self.count}\")\n\nc = Counter()\nc.start()\nc.increment()\nc.increment()\nc.show()",
+                    "properties": {
+                        "language": "python",
+                        "output": "Count: 2"
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": true,
+                        "items": [
+                            "`c.start()` creates a `count` attribute and sets it to `0`",
+                            "First `c.increment()` adds 1 to `count`",
+                            "Second `c.increment()` adds 1 to `count` again",
+                            "`c.show()` reads and prints the current `count` value"
+                        ]
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "All methods work with the same `count` attribute through `self`. The object remembers its data between method calls!"
+                }
+            ]
+        },
+        {
+            "id": "quick_check_attributes",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the method to access the object's balance attribute.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "class Account:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    def set_balance(self, amount):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        {1}.balance = amount",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    ",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    def show(self):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        print(self.balance)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "acc = Account()",
+                                "indent": 0
+                            },
+                            {
+                                "code": "acc.set_balance(100)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "acc.show()",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "this",
+                            "object",
+                            "self"
+                        ],
+                        "solutions": {
+                            "1": "self"
+                        },
+                        "hint": "Use self to access the object's attributes.",
+                        "correctFeedback": "Perfect! self accesses the object's attributes.",
+                        "incorrectFeedback": "Use self to refer to the object in methods.",
+                        "explanation": "self.attribute accesses the attribute of the calling object.",
+                        "output": "100"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "methods_with_parameters",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Methods with Parameters",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "You might have already noticed that methods can take additional parameters besides `self`, just like regular functions."
+                },
+                {
+                    "type": "text",
+                    "content": "Remember, `self` always comes first, then your other parameters. When calling the method, you only pass the other parameters - Python handles `self` automatically."
+                },
+                {
+                    "type": "code",
+                    "content": "class Player:\n    def set_score(self, points):\n        self.score = points\n    \n    def add_points(self, points):\n        self.score = self.score + points\n\nplayer = Player()\nplayer.set_score(50)\nplayer.add_points(30)\nprint(player.score)",
+                    "properties": {
+                        "language": "python",
+                        "output": "80"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`player.set_score(50)` sets the `score` attribute to `50` and `player.add_points(30)` adds `30` to the same `score` attribute resulting in a total of `80`."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_parameters",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "When defining a method with parameters, where does `self` go?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "After all other parameters",
+                            "self is optional",
+                            "Always first, before other parameters"
+                        ],
+                        "correctAnswerIndex": 2,
+                        "correctFeedback": "Correct! self is always the first parameter.",
+                        "incorrectFeedback": "self must always be the first parameter in methods.",
+                        "explanation": "Format: def method(self, param1, param2): ..."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "methods_calling_methods",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Methods Calling Methods",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Methods can call other methods of the same object using `self`:"
+                },
+                {
+                    "type": "code",
+                    "content": "class Calculator:\n    def set_value(self, num):\n        self.value = num\n    \n    def double(self):\n        return self.value * 2\n    \n    def show_double(self):\n        result = self.double()\n        print(f\"Double is: {result}\")\n\ncalc = Calculator()\ncalc.set_value(10)\ncalc.show_double()",
+                    "properties": {
+                        "language": "python",
+                        "output": "Double is: 20"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `show_double` method calls `self.double()` to get the doubled value. Using `self.` tells Python to call the `double` method of the same object."
+                },
+                {
+                    "type": "text",
+                    "content": "This lets you break complex actions into smaller, reusable methods!"
+                }
+            ]
+        },
+        {
+            "id": "quick_check_calling",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Call the `double` method from within the `show_double` method.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "class Number:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    def set_value(self, val):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        self.value = val",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    ",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    def double(self):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        return self.value * 2",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    ",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    def show_double(self):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        result = {1}",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "        print(result)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "num = Number()",
+                                "indent": 0
+                            },
+                            {
+                                "code": "num.set_value(5)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "num.show_double()",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "double()",
+                            "self.double()"
+                        ],
+                        "solutions": {
+                            "1": "self.double()"
+                        },
+                        "hint": "Use self.method_name() to call other methods of the same object.",
+                        "correctFeedback": "Perfect! Methods call other methods using self.method_name()",
+                        "incorrectFeedback": "Use self.method_name() to call the method of the same object.",
+                        "explanation": "self.method_name() calls the method of the same object.",
+                        "output": "10"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "**Methods** are functions inside a class",
+                            "Methods always have `self` as the **first parameter**",
+                            "`self` represents the **specific object** calling the method",
+                            "Use `self.attribute` to access object attributes",
+                            "Methods can take **additional parameters** after self",
+                            "Methods can **call other methods** using self",
+                            "Call methods with `object.method()`"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

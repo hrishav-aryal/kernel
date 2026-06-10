@@ -1,0 +1,567 @@
+{
+    "blocks": [
+        {
+            "id": "intro_math_operations",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Basic Math Operations",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Python can perform basic mathematical calculations just like a calculator. We can add, subtract, multiply, and divide numbers."
+                }
+            ]
+        },
+        {
+            "id": "basic_arithmetic",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Basic Arithmetic",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Python uses the same symbols we use in math: `+` for addition, `-` for subtraction, `*` for multiplication, and `/` for division."
+                },
+                {
+                    "type": "code",
+                    "content": "print(5 + 3)\nprint(10 - 4)\nprint(6 * 2)\nprint(15 / 3)",
+                    "properties": {
+                        "language": "python",
+                        "output": "8\n6\n12\n5.0"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "modulus_operation",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "We can also find the remainder after division using modulus `%`. The **modulus operator** returns the remainder of the division of two numbers."
+                },
+                {
+                    "type": "code",
+                    "content": "result = 11 % 5\nprint(result)",
+                    "properties": {
+                        "language": "python",
+                        "output": "1"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "exponentiation_operation",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "And there's also the exponentiation operator `**`. It raises a number to the power of another number."
+                },
+                {
+                    "type": "code",
+                    "content": "result = 2 ** 3\nprint(result)",
+                    "properties": {
+                        "language": "python",
+                        "output": "8"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_addition",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Add 8 and 5 together.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "result = 8 {1} 5",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(result)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "+"
+                        ],
+                        "solutions": {
+                            "1": "+"
+                        },
+                        "hint": "Use + for addition",
+                        "correctFeedback": "Perfect! You used + for addition.",
+                        "incorrectFeedback": "Use + for addition",
+                        "explanation": "Use + to add two numbers together.",
+                        "output": "13"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_whats_wrong_math_early",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What's wrong with this math operation?"
+                },
+                {
+                    "type": "code",
+                    "content": "result = 10 / 0",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Missing quotes around 0",
+                            "Can't divide by zero"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! Division by zero causes an error.",
+                        "incorrectFeedback": "Division by zero causes an error in Python.",
+                        "explanation": "You cannot divide any number by zero - it's mathematically undefined."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_what_will_print_math",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "result = 5 + 3\nresult = result * 2\nprint(result)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "16",
+                            "11"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! 5 + 3 = 8, then 8 * 2 = 16.",
+                        "incorrectFeedback": "5 + 3 = 8, then 8 * 2 = 16.",
+                        "explanation": "5 + 3 = 8, then 8 * 2 = 16."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_multiplication",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "How would you calculate total cost of items?",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "price = 10",
+                                "indent": 0
+                            },
+                            {
+                                "code": "quantity = 3",
+                                "indent": 0
+                            },
+                            {
+                                "code": "total_cost = price {1} {2}",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(total_cost)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "quantity",
+                            "*",
+                            "+"
+                        ],
+                        "solutions": {
+                            "1": "*",
+                            "2": "quantity"
+                        },
+                        "hint": "Use * for multiplication",
+                        "correctFeedback": "Excellent! You used * for multiplication.",
+                        "incorrectFeedback": "Use * for multiplication",
+                        "explanation": "Use * to multiply two numbers together.",
+                        "output": "30"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_complex_math",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Calculate the left over items after dividing all the cookies between 3 friends.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "cookies = 10",
+                                "indent": 0
+                            },
+                            {
+                                "code": "friends = 3",
+                                "indent": 0
+                            },
+                            {
+                                "code": "leftover = cookies {1} friends",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(leftover)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "-",
+                            "%",
+                            "/"
+                        ],
+                        "solutions": {
+                            "1": "%"
+                        },
+                        "hint": "Use % for calculating the remainder",
+                        "correctFeedback": "Perfect! You used the correct operators.",
+                        "incorrectFeedback": "Use % for calculating the remainder",
+                        "explanation": "Use % to find the remainder after division.",
+                        "output": "1"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_modulus",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "How would you calculate the total shopping bill with given price, quantity and discount?",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "price = 10",
+                                "indent": 0
+                            },
+                            {
+                                "code": "quantity = 3",
+                                "indent": 0
+                            },
+                            {
+                                "code": "discount = 10",
+                                "indent": 0
+                            },
+                            {
+                                "code": "total_cost = (price {1} quantity) {2} discount",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(total_cost)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "-",
+                            "*",
+                            "+"
+                        ],
+                        "solutions": {
+                            "1": "*",
+                            "2": "-"
+                        },
+                        "hint": "Use * for multiplication and - for subtraction",
+                        "correctFeedback": "Perfect! You used * for multiplication and - for subtraction.",
+                        "incorrectFeedback": "Use * for multiplication and - for subtraction",
+                        "explanation": "Use * to multiply the price and quantity, then subtract the discount.",
+                        "output": "20"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_exponentiation",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Calculate 3 to the power of 4.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "result = 3 {1} 4",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(result)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "**",
+                            "***"
+                        ],
+                        "solutions": {
+                            "1": "**"
+                        },
+                        "hint": "Use ** for exponentiation",
+                        "correctFeedback": "Excellent! You used ** for exponentiation.",
+                        "incorrectFeedback": "Use ** for exponentiation",
+                        "explanation": "Use ** to raise a number to a power.",
+                        "output": "81"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_what_will_print_exponentiation",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "result = 2 ** 3 + 1\nprint(result)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "9",
+                            "7"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! 2 ** 3 = 8, then 8 + 1 = 9.",
+                        "incorrectFeedback": "2 ** 3 = 8, then 8 + 1 = 9.",
+                        "explanation": "Exponentiation happens first: 2 ** 3 = 8, then addition: 8 + 1 = 9."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "assignment_operators",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Assignment Operators",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Assignment operators are shortcuts for doing math and assigning the result back to the same variable. So instead of writing `x = x + 5`, you can write `x += 5`."
+                },
+                {
+                    "type": "code",
+                    "content": "x = x + 5\n\nx += 5",
+                    "properties": {
+                        "language": "python"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "assignment_operators_examples",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Here are the common assignment operators:"
+                },
+                {
+                    "type": "code",
+                    "content": "x = 10\nx += 3  # x = x + 3\nx -= 2  # x = x - 2\nx *= 4  # x = x * 4\nx /= 2  # x = x / 2\nprint(x)",
+                    "properties": {
+                        "language": "python",
+                        "output": "22.0"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_assignment_operator",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Use the += operator to add 7 to the variable `count`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "count = 10",
+                                "indent": 0
+                            },
+                            {
+                                "code": "count {1} 7",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(count)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "+="
+                        ],
+                        "solutions": {
+                            "1": "+="
+                        },
+                        "hint": "Use += to add and assign",
+                        "correctFeedback": "Great! You used += to add and assign.",
+                        "incorrectFeedback": "Use += to add and assign",
+                        "explanation": "Use += to add a value and assign the result back to the variable.",
+                        "output": "17"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "order_of_operations",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Python follows the same order of operations as math: multiplication and division happen before addition and subtraction."
+                },
+                {
+                    "type": "code",
+                    "content": "result = 2 + 3 * 4\nprint(result)",
+                    "properties": {
+                        "language": "python",
+                        "output": "14"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_order_of_operations",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "result = 10 - 2 * 3\nprint(result)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "24",
+                            "4"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! Multiplication happens first: 2 * 3 = 6, then 10 - 6 = 4.",
+                        "incorrectFeedback": "Multiplication happens first: 2 * 3 = 6, then 10 - 6 = 4.",
+                        "explanation": "Python follows order of operations: multiplication before subtraction."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_whats_wrong_math",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What's wrong with this math operation?"
+                },
+                {
+                    "type": "code",
+                    "content": "result = 5 + \"3\"",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Missing quotes around 5",
+                            "Can't add number and string"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! You can't add a number and a string together.",
+                        "incorrectFeedback": "You can't add a number and a string together.",
+                        "explanation": "Convert the string to a number first using int() or use numbers for both."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "`+` for addition",
+                            "`-` for subtraction",
+                            "`*` for multiplication",
+                            "`/` for division",
+                            "`%` for modulus (remainder)",
+                            "`**` for exponentiation (power)",
+                            "`+=` for addition and assignment",
+                            "`-=` for subtraction and assignment",
+                            "`*=` for multiplication and assignment",
+                            "`/=` for division and assignment",
+                            "**Order of operations** applies (multiply/divide before add/subtract)"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

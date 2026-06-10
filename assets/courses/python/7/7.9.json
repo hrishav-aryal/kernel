@@ -1,0 +1,576 @@
+{
+    "blocks": [
+        {
+            "id": "ex_1",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Practice",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What does the `return` statement do in a function?",
+                        "options": [
+                            "Sends a value back from the function",
+                            "Prints a value"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! return sends a value back to use in your code.",
+                        "incorrectFeedback": "return sends a value back from the function.",
+                        "explanation": "The return statement sends a value back so you can use it outside the function."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_2",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Make the function return the result instead of printing it.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "def double(num):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    {1} num * 2",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "result = double(5)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(result)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "return",
+                            "print",
+                            "send"
+                        ],
+                        "solutions": {
+                            "1": "return"
+                        },
+                        "hint": "Use return to send the value back.",
+                        "correctFeedback": "Perfect! The function now returns the result.",
+                        "incorrectFeedback": "Use return to send the value back.",
+                        "explanation": "return sends the value back so it can be used outside the function.",
+                        "output": "10"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_3",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "def add(a, b):\n    return a + b\n\nresult = add(3, 7)\nprint(result)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "10",
+                            "Nothing"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! The function returns 10, which is stored in result.",
+                        "incorrectFeedback": "The function returns the sum.",
+                        "explanation": "add(3, 7) returns 10, which is stored in result and then printed."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_4",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What's the difference between `return` and `print` in functions?",
+                        "options": [
+                            "return sends a value back, print displays output",
+                            "They do the same thing"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! return gives a value back to use, print just displays.",
+                        "incorrectFeedback": "return sends a value back, while print just displays output.",
+                        "explanation": "Use return when you need the value for calculations or storage. Use print just to display."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_5",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "def multiply(x, y):\n    print(x * y)\n\nresult = multiply(4, 5)\nprint(f\"Result: {result}\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "20\nResult: None",
+                            "Result: 20"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! The function prints 20 but returns None.",
+                        "incorrectFeedback": "Functions without return automatically return None.",
+                        "explanation": "The function prints 20 but doesn't return a value, so result gets None."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_6",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the function to return the sum of three numbers.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "def calculate_sum(a, b, c):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    {1} {2}",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "total = calculate_sum(10, 20, 30)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(total)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "return",
+                            "a + b + c"
+                        ],
+                        "solutions": {
+                            "1": "return",
+                            "2": "a + b + c"
+                        },
+                        "hint": "Return the sum of all three parameters.",
+                        "correctFeedback": "Great! The function returns the sum.",
+                        "incorrectFeedback": "Return a + b + c to get the sum.",
+                        "explanation": "You can return expressions directly without storing them in a variable first.",
+                        "output": "60"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_7",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What happens when a function hits a `return` statement?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "return exits the function immediately.",
+                            "continues to the next line"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! return exits the function immediately.",
+                        "incorrectFeedback": "continues to the next line",
+                        "explanation": "Once return executes, the function ends. Code after return doesn't run."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_8",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Return whether the number is positive.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "def is_positive(num):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    return num {1} 0",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(is_positive(5))",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(is_positive(-3))",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            ">",
+                            "<",
+                            "=="
+                        ],
+                        "solutions": {
+                            "1": ">"
+                        },
+                        "hint": "Use > to check if num is greater than 0.",
+                        "correctFeedback": "Perfect! You returned a boolean expression.",
+                        "incorrectFeedback": "Use > to check if the number is greater than 0.",
+                        "explanation": "You can return boolean expressions directly. The comparison returns True or False.",
+                        "output": "True\nFalse"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_9",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "def is_even(num):\n    return num % 2 == 0\n\nprint(is_even(4))",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "True",
+                            "False"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! 4 % 2 == 0 is True.",
+                        "incorrectFeedback": "Check if 4 is divisible by 2.",
+                        "explanation": "4 % 2 gives 0, and 0 == 0 is True. So the function returns True."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_10",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What are default parameters used for?",
+                        "options": [
+                            "To provide a value when no argument is given",
+                            "To make functions faster"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Defaults are used when arguments aren't provided.",
+                        "incorrectFeedback": "Defaults provide fallback values when arguments are omitted.",
+                        "explanation": "Default parameters let you call functions with fewer arguments by providing fallback values."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_11",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Set a default value of `\"friend\"` for the `name` parameter.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "def greet(name {1} {2}):",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "    print(f\"Hello, {name}!\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "greet()",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "=",
+                            "\"friend\"",
+                            "=="
+                        ],
+                        "solutions": {
+                            "1": "=",
+                            "2": "\"friend\""
+                        },
+                        "hint": "Use = to set a default value.",
+                        "correctFeedback": "Perfect! You set a default value for the parameter.",
+                        "incorrectFeedback": "Use = \"friend\" to set the default value.",
+                        "explanation": "Default values are set with = in the function definition.",
+                        "output": "Hello, friend!"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_12",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "def show_price(item, currency=\"USD\"):\n    print(f\"{item}: {currency}\")\n\nshow_price(\"Laptop\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Laptop: USD",
+                            "Laptop:"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! No currency was provided, so it uses the default.",
+                        "incorrectFeedback": "When no argument is provided, the default value is used.",
+                        "explanation": "Since we didn't pass a currency, it uses the default value \"USD\"."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_13",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Set a default value of `0` for the `discount` parameter.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "def calculate_price(price, discount{1}):",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    final = price - discount",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    return final",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(calculate_price(100))",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "=0",
+                            "==0",
+                            "0"
+                        ],
+                        "solutions": {
+                            "1": "=0"
+                        },
+                        "hint": "Use =0 to set a default value.",
+                        "correctFeedback": "Great! The function uses 0 as the default discount.",
+                        "incorrectFeedback": "Use =0 to set the default value.",
+                        "explanation": "When called with just price, discount defaults to 0.",
+                        "output": "100"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_14",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "def welcome(name=\"Guest\"):\n    return f\"Welcome, {name}\"\n\nprint(welcome())\nprint(welcome(\"Alice\"))",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Welcome, Guest\nWelcome, Alice",
+                            "Welcome, Alice\nWelcome, Alice"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! First call uses default, second uses \"Alice\".",
+                        "incorrectFeedback": "Check which call uses the default value.",
+                        "explanation": "When no argument is provided, the default \"Guest\" is used. Otherwise, the provided value is used."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_15",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What's the rule for parameter order with defaults?",
+                        "options": [
+                            "Required parameters first, then optional ones",
+                            "Optional parameters first, then required ones"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Required parameters must come before optional ones.",
+                        "incorrectFeedback": "Required parameters must come before optional ones.",
+                        "explanation": "Parameters without defaults (required) must be listed before parameters with defaults (optional)."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_16",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Add required parameter `name` and optional `age` with default `18`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "def show_person({1}, {2}):",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "    return f\"{name}: {age}\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(show_person(\"Alice\"))",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "name",
+                            "age=18",
+                            "age"
+                        ],
+                        "solutions": {
+                            "1": "name",
+                            "2": "age=18"
+                        },
+                        "hint": "Required parameter first, then optional with default.",
+                        "correctFeedback": "Perfect! Required parameter comes first.",
+                        "incorrectFeedback": "Put name first, then age=18.",
+                        "explanation": "Required parameters without defaults must come before optional ones with defaults.",
+                        "output": "Alice: 18"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_17",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Which parameter order is correct?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "def func(a, b=2, c=3)",
+                            "def func(a=1, b, c=3)"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Required parameter first, then optional ones.",
+                        "incorrectFeedback": "Required parameters must come before optional ones.",
+                        "explanation": "a is required, b and c are optional. Required parameters must be first."
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,575 @@
+{
+    "blocks": [
+        {
+            "id": "intro_removing_items",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Removing from Lists",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Just like you can add items to a list, you can also remove them. Python gives you several ways to remove items depending on what you know about the item."
+                },
+                {
+                    "type": "text",
+                    "content": "You can remove by value, by position, or clear the entire list."
+                }
+            ]
+        },
+        {
+            "id": "remove_by_value",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Remove by Value",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `remove()` method removes the **first occurrence** of a specific value from the list."
+                },
+                {
+                    "type": "code",
+                    "content": "fruits = [\"apple\", \"banana\", \"orange\"]\nprint(fruits)\n\nfruits.remove(\"banana\")\nprint(fruits)",
+                    "properties": {
+                        "language": "python",
+                        "output": "['apple', 'banana', 'orange']\n['apple', 'orange']"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`remove(\"banana\")` found `\"banana\"` in the list and removed it."
+                }
+            ]
+        },
+        {
+            "id": "remove_first_occurrence",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "If the same value appears multiple times, `remove()` only removes the **first one**."
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = [1, 2, 3, 2, 4]\nnumbers.remove(2)\nprint(numbers)",
+                    "properties": {
+                        "language": "python",
+                        "output": "[1, 3, 2, 4]"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The first `2` was removed, but the second `2` is still in the list."
+                }
+            ]
+        },
+        {
+            "id": "remove_error",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Be careful!** If the value doesn't exist in the list, you'll get an error."
+                },
+                {
+                    "type": "code",
+                    "content": "colors = [\"red\", \"green\"]\ncolors.remove(\"blue\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Error: 'blue' is not in list"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Since `\"blue\"` is not in the list, trying to remove it causes an error."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_remove",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Remove `\"green\"` from the list.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "colors = [\"red\", \"green\", \"blue\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "colors.{1}({2})",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(colors)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "delete",
+                            "\"green\"",
+                            "remove"
+                        ],
+                        "solutions": {
+                            "1": "remove",
+                            "2": "\"green\""
+                        },
+                        "hint": "Use remove() with the value you want to remove.",
+                        "correctFeedback": "Perfect! remove(\"green\") removed \"green\" from the list.",
+                        "incorrectFeedback": "Use remove(\"green\") to remove the value \"green\".",
+                        "explanation": "remove() takes the value you want to remove from the list.",
+                        "output": "['red', 'blue']"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_remove_first",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "letters = [\"a\", \"b\", \"c\", \"b\"]\nletters.remove(\"b\")\nprint(letters)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "['a', 'c', 'b']",
+                            "['a', 'c']"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! remove() only removes the first \"b\", leaving the second one.",
+                        "incorrectFeedback": "remove() only removes the first occurrence of the value.",
+                        "explanation": "remove() removes the first \"b\" at index 1, but the second \"b\" at index 3 remains."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "pop_method",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Remove by Index with pop()",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `pop()` method removes an item at a specific index and **returns** that item."
+                },
+                {
+                    "type": "code",
+                    "content": "fruits = [\"apple\", \"banana\", \"orange\"]\nremoved = fruits.pop(1)\nprint(f\"Removed: {removed}\")\nprint(fruits)",
+                    "properties": {
+                        "language": "python",
+                        "output": "Removed: banana\n['apple', 'orange']"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`pop(1)` removed the item at index `1` (`\"banana\"`) and returned it."
+                }
+            ]
+        },
+        {
+            "id": "pop_without_index",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "If you don't provide an index, `pop()` removes and returns the **last item**."
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = [10, 20, 30]\nlast = numbers.pop()\nprint(f\"Last: {last}\")\nprint(numbers)",
+                    "properties": {
+                        "language": "python",
+                        "output": "Last: 30\n[10, 20]"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`pop()` with no index removes the last item from the list."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_pop",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Remove the first item in the list `colors` using pop().",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "colors = [\"red\", \"green\", \"blue\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "colors.{1}({2})",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(colors)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "pop",
+                            "0",
+                            "1"
+                        ],
+                        "solutions": {
+                            "1": "pop",
+                            "2": "0"
+                        },
+                        "hint": "Use pop(0) to remove the item at index 0.",
+                        "correctFeedback": "Perfect! pop(0) removed the first item.",
+                        "incorrectFeedback": "Use pop(0) to remove the item at index 0.",
+                        "explanation": "pop(0) removes the item at index 0, which is the first item.",
+                        "output": "['green', 'blue']"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_pop_last",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Remove the last item from the list `numbers`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "numbers = [5, 10, 15]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "numbers.{1}",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(numbers)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "pop()",
+                            "remove()"
+                        ],
+                        "solutions": {
+                            "1": "pop()"
+                        },
+                        "hint": "Use pop() without an index to remove the last item.",
+                        "correctFeedback": "Great! pop() without an index removes the last item.",
+                        "incorrectFeedback": "Use pop() without an index to remove the last item.",
+                        "explanation": "When called without an index, pop() removes the last item.",
+                        "output": "[5, 10]"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_pop_return",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "scores = [85, 90, 95]\nremoved = scores.pop(1)\nprint(removed)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "85",
+                            "90",
+                            "95"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! pop(1) removes and returns the item at index 1, which is 90.",
+                        "incorrectFeedback": "pop(1) returns the item at index 1, which is 90.",
+                        "explanation": "pop(1) removes the item at index 1 and returns it, so removed becomes 90."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "del_statement",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Remove by Index with del",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `del` statement removes an item at a specific index, but unlike `pop()`, it doesn't return the item."
+                },
+                {
+                    "type": "code",
+                    "content": "fruits = [\"apple\", \"banana\", \"orange\"]\ndel fruits[1]\nprint(fruits)",
+                    "properties": {
+                        "language": "python",
+                        "output": "['apple', 'orange']"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`del fruits[1]` removed the item at index `1` without returning it."
+                }
+            ]
+        },
+        {
+            "id": "del_vs_pop",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**When to use del vs pop()?**"
+                },
+                {
+                    "type": "text",
+                    "content": "Use `pop()` when you need the removed value. Use `del` when you just want to delete without using the value."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_del",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Delete the item at index `2` using del.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "colors = [\"red\", \"green\", \"blue\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1} colors[{2}]",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(colors)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "del",
+                            "2",
+                            "remove"
+                        ],
+                        "solutions": {
+                            "1": "del",
+                            "2": "2"
+                        },
+                        "hint": "Use del list[index] to remove by index.",
+                        "correctFeedback": "Perfect! del colors[2] removed the item at index 2.",
+                        "incorrectFeedback": "Use del colors[2] to remove the item at index 2.",
+                        "explanation": "del followed by the list[index] removes the item at that index.",
+                        "output": "['red', 'green']"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_methods_comparison",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Which method should you use if you want to remove an item **and use its value**?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "remove()",
+                            "pop()",
+                            "del"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! pop() removes the item and returns it so you can use it.",
+                        "incorrectFeedback": "pop() is the only method that returns the removed value.",
+                        "explanation": "pop() removes and returns the value, while remove() and del just remove without returning."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "clear_method",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Clear All Items",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `clear()` method removes **all** items from the list, leaving it empty."
+                },
+                {
+                    "type": "code",
+                    "content": "fruits = [\"apple\", \"banana\", \"orange\"]\nfruits.clear()\nprint(fruits)",
+                    "properties": {
+                        "language": "python",
+                        "output": "[]"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`clear()` removed all items, leaving an empty list."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_clear",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Remove all items from the list.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "numbers = [1, 2, 3, 4, 5]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "numbers.{1}()",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(numbers)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "remove",
+                            "empty",
+                            "clear"
+                        ],
+                        "solutions": {
+                            "1": "clear"
+                        },
+                        "hint": "Use clear() to remove all items from the list.",
+                        "correctFeedback": "Perfect! clear() removed all items from the list.",
+                        "incorrectFeedback": "Use clear() to remove all items at once.",
+                        "explanation": "clear() removes every item from the list, leaving it empty.",
+                        "output": "[]"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_comprehensive",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Remove `\"banana\"` by value, then remove the last item.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "fruits = [\"apple\", \"banana\", \"orange\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "fruits.{1}({2})",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "fruits.{3}()",
+                                "indent": 0,
+                                "blank": "3"
+                            },
+                            {
+                                "code": "print(fruits)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "pop",
+                            "\"banana\"",
+                            "remove"
+                        ],
+                        "solutions": {
+                            "1": "remove",
+                            "2": "\"banana\"",
+                            "3": "pop"
+                        },
+                        "hint": "Use remove() for the value, then pop() for the last item.",
+                        "correctFeedback": "Excellent! You used remove() to remove by value, then pop() to remove the last item.",
+                        "incorrectFeedback": "Use remove(\"banana\") first, then pop() to remove the last item.",
+                        "explanation": "remove(\"banana\") removes banana, leaving [apple]. Then pop() removes apple.",
+                        "output": "['apple']"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "Use `remove(value)` to remove by **value** (removes first occurrence)",
+                            "Use `pop(index)` to remove by **index** and **get the value back**",
+                            "Use `pop()` without an index to remove the **last item**",
+                            "Use `del list[index]` to remove by **index** without returning the value",
+                            "Use `clear()` to **remove all items** from the list"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

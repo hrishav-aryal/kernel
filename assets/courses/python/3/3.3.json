@@ -1,0 +1,419 @@
+{
+    "blocks": [
+        {
+            "id": "intro_for_loops",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "For Loops",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "A `for` loop repeats code for each item in a sequence. It's like saying \"for each item in this list, do something.\""
+                },
+                {
+                    "type": "text",
+                    "content": "Unlike `while` loops that repeat while a condition is `True`, `for` loops repeat a specific number of times based on the items in the sequence."
+                }
+            ]
+        },
+        {
+            "id": "basic_for_loop",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Basic For Loop",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "A `for` loop starts with `for`, followed by a variable name, then `in`, then a sequence, and finally a colon `:`. The code that repeats is indented."
+                },
+                {
+                    "type": "text",
+                    "content": "The variable takes the value of each item in the sequence, one at a time, and the code inside the loop runs for each value."
+                },
+                {
+                    "type": "text",
+                    "content": "The sequence can be a `list`, a `tuple`, a `string`, or a `range`. Lets look at a simple example with a `range`."
+                },
+                {
+                    "type": "code",
+                    "content": "for i in range(3):\n    print(f\"Number: {i}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Number: 0\nNumber: 1\nNumber: 2"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Here the variable `i` takes the value of each number in the range `0, 1, 2` one at a time, and the code inside the loop runs for each value."
+                }
+            ]
+        },
+        {
+            "id": "for_loop_with_range_start_stop",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can use `range(start, stop)` with `for` loops to control where the counting starts and stops."
+                },
+                {
+                    "type": "code",
+                    "content": "for i in range(1, 4):\n    print(f\"Number: {i}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Number: 1\nNumber: 2\nNumber: 3"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "This `for` loop starts at 1 and stops before 4, so it prints `1, 2, 3`."
+                }
+            ]
+        },
+        {
+            "id": "for_loop_with_range_step",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can also use `range(start, stop, step)` with `for` loops to control the step size."
+                },
+                {
+                    "type": "text",
+                    "content": "**Counting by 2s**"
+                },
+                {
+                    "type": "code",
+                    "content": "for i in range(0, 10, 2):\n    print(f\"Even number: {i}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Even number: 0\nEven number: 2\nEven number: 4\nEven number: 6\nEven number: 8"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "**Counting backwards**"
+                },
+                {
+                    "type": "code",
+                    "content": "for i in range(5, 0, -1):\n    print(f\"Countdown: {i}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Countdown: 5\nCountdown: 4\nCountdown: 3\nCountdown: 2\nCountdown: 1"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_basic_for",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the for loop to print numbers from 0 to 4.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "{1} i in range(5):",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(f\"Number: {i}\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "for",
+                            "run"
+                        ],
+                        "solutions": {
+                            "1": "for"
+                        },
+                        "hint": "Use range(5) to get numbers from 0 to 4.",
+                        "correctFeedback": "Perfect! range(5) creates numbers from 0 to 4.",
+                        "incorrectFeedback": "Use range(5) to get numbers from 0 to 4.",
+                        "explanation": "range(5) creates 5 numbers: 0, 1, 2, 3, 4.",
+                        "output": "Number: 0\nNumber: 1\nNumber: 2\nNumber: 3\nNumber: 4"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_range_start_stop",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a for loop that prints numbers `5, 6, 7, 8`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "for {1} in {2}:",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "    print(f\"Number: {i}\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "i",
+                            "range(5, 8)",
+                            "range(5, 9)"
+                        ],
+                        "solutions": {
+                            "1": "i",
+                            "2": "range(5, 9)"
+                        },
+                        "hint": "Use range(5, 9) to get numbers from 5 to 8.",
+                        "correctFeedback": "Perfect! range(5, 9) creates numbers from 5 to 8.",
+                        "incorrectFeedback": "Use range(5, 9) to get numbers from 5 to 8.",
+                        "explanation": "range(5, 9) starts at 5 and stops before 9, giving us 5, 6, 7, 8.",
+                        "output": "Number: 5\nNumber: 6\nNumber: 7\nNumber: 8"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_range_step",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a for loop that counts by 3s from 0 to 12.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "for i in {1}:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(f\"Number: {i}\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "range(0, 15, 3)",
+                            "range(0, 12, 3)"
+                        ],
+                        "solutions": {
+                            "1": "range(0, 15, 3)"
+                        },
+                        "hint": "Use range(0, 15, 3) to count by 3s from 0 to 12.",
+                        "correctFeedback": "Perfect! range(0, 15, 3) creates numbers 0, 3, 6, 9, 12.",
+                        "incorrectFeedback": "Use range(0, 15, 3) to count by 3s from 0 to 12.",
+                        "explanation": "range(0, 15, 3) starts at 0, stops before 15, and steps by 3.",
+                        "output": "Number: 0\nNumber: 3\nNumber: 6\nNumber: 9\nNumber: 12"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "for_loop_with_strings",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can loop through strings too. Each character in the string becomes an item in the sequence."
+                },
+                {
+                    "type": "code",
+                    "content": "word = \"hello\"\nfor letter in word:\n    print(f\"Letter: {letter}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Letter: h\nLetter: e\nLetter: l\nLetter: l\nLetter: o"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "This `for` loop goes through each character in the string \"hello\" one by one."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_string_loop",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the for loop to print each character in the word \"cat\".",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "word = \"cat\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "for {1} in {2}:",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "    print(f\"Character: {letter}\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "letter",
+                            "word"
+                        ],
+                        "solutions": {
+                            "1": "letter",
+                            "2": "word"
+                        },
+                        "hint": "Use letter as the variable name and word as the sequence.",
+                        "correctFeedback": "Great! for letter in word loops through each character in the word.",
+                        "incorrectFeedback": "Use letter as the variable name and word as the sequence.",
+                        "explanation": "The loop goes through each character in the word string.",
+                        "output": "Character: c\nCharacter: a\nCharacter: t"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "for_vs_while",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**For loops vs While loops**"
+                },
+                {
+                    "type": "text",
+                    "content": "Use `for` loops when you know how many times you want to repeat the code. Use `while` loops when you want to repeat until a condition becomes `False`."
+                }
+            ]
+        },
+        {
+            "id": "for_vs_while",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Lets look at a simple example of a `for` loop and a `while` loop to count from 0 to 3."
+                },
+                {
+                    "type": "text",
+                    "content": "**Using For loop**"
+                },
+                {
+                    "type": "code",
+                    "content": "for i in range(4):\n    print(f\"Count: {i}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Count: 0\nCount: 1\nCount: 2\nCount: 3"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "**Using While loop**"
+                },
+                {
+                    "type": "code",
+                    "content": "count = 0\nwhile count < 4:\n    print(f\"Count: {count}\")\n    count = count + 1",
+                    "properties": {
+                        "language": "python",
+                        "output": "Count: 0\nCount: 1\nCount: 2\nCount: 3"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Both loops do the same thing, but the `for` loop is simpler and less error-prone."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_what_will_print_for",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "for i in range(2, 6, 2):\n    print(f\"Number: {i}\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Number: 2\nNumber: 4",
+                            "Number: 2\nNumber: 4\nNumber: 6"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! range(2, 6, 2) starts at 2, stops before 6, and steps by 2, giving 2 and 4.",
+                        "incorrectFeedback": "range(2, 6, 2) starts at 2, stops before 6, and steps by 2, giving 2 and 4.",
+                        "explanation": "The range starts at 2, steps by 2, and stops before 6, so it includes 2 and 4."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_what_will_print_for",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What's wrong with this code?"
+                },
+                {
+                    "type": "code",
+                    "content": "for i in range(3)\n    print(f\"Number: {i}\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Wrong indentation",
+                            "Missing colon after range(3)"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! The for statement is missing a colon (:) after range(3).",
+                        "incorrectFeedback": "The for statement needs a colon (:) after range(3).",
+                        "explanation": "All for loops must end with a colon (:) before the indented code block."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "`for` loops repeat code for each item in a sequence",
+                            "Use `for` loops when you know how many times to repeat",
+                            "Use `range()` with `for` loops to repeat a specific number of times",
+                            "The `for` loop **variable** takes the value of each item in the sequence"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

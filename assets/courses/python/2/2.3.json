@@ -1,0 +1,509 @@
+{
+    "blocks": [
+        {
+            "id": "intro_if_statements",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "If Statements",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "If statements let your program make decisions. They check if a condition is `True` and run code only when the condition is met."
+                }
+            ]
+        },
+        {
+            "id": "basic_if",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Basic If Statement",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "An if statement starts with `if`, followed by a condition, then a colon `:`. The code that runs when the condition is `True` is indented."
+                },
+                {
+                    "type": "code",
+                    "content": "age = 20\nif age >= 18:\n    print(\"You are an adult\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "You are an adult"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "if_with_false_condition",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "When the condition is `False`, the indented code is skipped."
+                },
+                {
+                    "type": "code",
+                    "content": "age = 16\nif age >= 18:\n    print(\"You are an adult\")\n\nprint(\"Program continues\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Program continues"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "indentation_importance",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Indentation is Important",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Python uses indentation (spaces or tabs) to show which code belongs inside the if statement. All code at the same indentation level runs together."
+                },
+                {
+                    "type": "code",
+                    "content": "temperature = 25\nif temperature > 20:\n    print(\"It's warm\")\n    print(\"Wear light clothes\")\n\nprint(\"Always check the weather\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "It's warm\nWear light clothes\nAlways check the weather"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_basic_if",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the if statement to check if the score is greater than 80.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "score = 85",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1} score > 80:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(\"Great job!\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "if",
+                            "when"
+                        ],
+                        "solutions": {
+                            "1": "if"
+                        },
+                        "hint": "Use if to check if the score is greater than 80.",
+                        "correctFeedback": "Perfect! if score > 80 checks if the score is greater than 80.",
+                        "incorrectFeedback": "Use if to check if the score is greater than 80.",
+                        "explanation": "if score > 80 checks if the score is greater than 80.",
+                        "output": "Great job!"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "if_with_variables",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can use variables in if conditions. The condition can be any expression that evaluates to `True` or `False`."
+                },
+                {
+                    "type": "code",
+                    "content": "is_raining = True\nif is_raining:\n    print(\"Take an umbrella\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Take an umbrella"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_basic_if",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the if statement to check if its raining.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "is_raining = True",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1} {2}:",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "    print(\"Take an umbrella\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "when",
+                            "if",
+                            "is_raining"
+                        ],
+                        "solutions": {
+                            "1": "if",
+                            "2": "is_raining"
+                        },
+                        "hint": "Use if to check if it is raining.",
+                        "correctFeedback": "Perfect! if is_raining checks if it is raining.",
+                        "incorrectFeedback": "Use if to check if it is raining.",
+                        "explanation": "if is_raining checks if it is raining.",
+                        "output": "Take an umbrella"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_variable_condition",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "In order to drive a car, you need to be at least 16 years old."
+                },
+                {
+                    "type": "code_fill",
+                    "content": "Check if the user's age allows them to drive.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "age = 17",
+                                "indent": 0
+                            },
+                            {
+                                "code": "if age {1} 16:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(\"You can drive\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            ">=",
+                            "==",
+                            "!="
+                        ],
+                        "solutions": {
+                            "1": ">="
+                        },
+                        "hint": "Use >= to check if age is greater than or equal to 16.",
+                        "correctFeedback": "Great! age >= 16 checks if the person is old enough to drive.",
+                        "incorrectFeedback": "Use >= to check if age is greater than or equal to 16.",
+                        "explanation": "We use >= because you can drive if you are 16 or older.",
+                        "output": "You can drive"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "if_with_logical_operators",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can combine conditions using logical operators (`and`, `or`, `not`) in if statements."
+                },
+                {
+                    "type": "code",
+                    "content": "is_citizen = True\nage = 20\n\nif is_citizen and age >= 18:\n    print(\"You can vote!\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "You can vote!\nYou cannot vote"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_or_condition",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Check if you can fight the dragon. You need to have either a sword or a magic power.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "has_sword = False",
+                                "indent": 0
+                            },
+                            {
+                                "code": "has_magic = True",
+                                "indent": 0
+                            },
+                            {
+                                "code": "if has_sword {1} has_magic:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(\"You can fight!\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "and",
+                            "or",
+                            "not"
+                        ],
+                        "solutions": {
+                            "1": "or"
+                        },
+                        "hint": "Use or to check if at least one condition is True.",
+                        "correctFeedback": "Great! At least one condition is True, so you can fight.",
+                        "incorrectFeedback": "Use or to check if at least one condition is True.",
+                        "explanation": "has_sword is False but has_magic is True, so the condition is True.",
+                        "output": "You can fight!"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_logical_condition",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Lets say you need to be at least 18 years old and a citizen to vote."
+                },
+                {
+                    "type": "code_fill",
+                    "content": "How can we check if someone can vote?",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "is_citizen = True",
+                                "indent": 0
+                            },
+                            {
+                                "code": "age = 18",
+                                "indent": 0
+                            },
+                            {
+                                "code": "if is_citizen {1} age {2} 18:",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "    print(\"You can vote!\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "and",
+                            ">=",
+                            "or"
+                        ],
+                        "solutions": {
+                            "1": "and",
+                            "2": ">="
+                        },
+                        "hint": "Use and to combine conditions and >= for age comparison.",
+                        "correctFeedback": "Perfect! Both conditions must be True to vote.",
+                        "incorrectFeedback": "Use and to combine conditions and >= for age comparison.",
+                        "explanation": "is_citizen and age >= 18 ensures both conditions are True.",
+                        "output": "You can vote!"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_what_will_print",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "x = 15\ny = 10\nif x > y:\n    print(\"x is greater\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "x is greater",
+                            "Nothing"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! x > y is True, so the if block runs.",
+                        "incorrectFeedback": "x > y is True, so the if block runs.",
+                        "explanation": "Since x > y is True, the indented code runs."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_false_condition",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "score = 70\nif score >= 80:\n    print(\"Great job!\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Great job!",
+                            "Nothing"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! score >= 80 is False, so the if block is skipped and nothing is printed.",
+                        "incorrectFeedback": "score >= 80 is False, so the if block is skipped and nothing is printed.",
+                        "explanation": "Since score >= 80 is False, the indented code is skipped and nothing is printed."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_not_condition",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Check if someone is not a student.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "is_student = False",
+                                "indent": 0
+                            },
+                            {
+                                "code": "if {1} is_student:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(\"You are not a student\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "not",
+                            "and",
+                            "or"
+                        ],
+                        "solutions": {
+                            "1": "not"
+                        },
+                        "hint": "Use not to flip the Boolean value.",
+                        "correctFeedback": "Correct! not is_student checks if the person is not a student.",
+                        "incorrectFeedback": "Use not to flip the Boolean value.",
+                        "explanation": "not is_student flips False to True, so the condition is True.",
+                        "output": "You are not a student"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_practical_voting",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Check if someone can get a discount. They get a discount if they are a student or 65 or older.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "age = 30",
+                                "indent": 0
+                            },
+                            {
+                                "code": "is_student = True",
+                                "indent": 0
+                            },
+                            {
+                                "code": "if (age {1} 65) {2} is_student:",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "    print(\"You get a discount!\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            ">=",
+                            "or",
+                            "and"
+                        ],
+                        "solutions": {
+                            "1": ">=",
+                            "2": "or"
+                        },
+                        "hint": "Use >= for age and or to check if either condition is True.",
+                        "correctFeedback": "Excellent! Either age >= 65 or is_student being True gives a discount.",
+                        "incorrectFeedback": "Use >= for age and or to check if either condition is True.",
+                        "explanation": "age >= 65 is False, but is_student is True, so the condition is True.",
+                        "output": "You get a discount!"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "**If statements** check conditions and run code when `True`",
+                            "Use `if condition:` with a colon at the end",
+                            "**Indent** code inside `if` statements",
+                            "Code outside `if` statements runs regardless",
+                            "Combine conditions with `and`, `or`, `not`"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

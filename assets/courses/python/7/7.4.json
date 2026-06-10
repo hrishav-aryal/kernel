@@ -1,0 +1,381 @@
+{
+    "blocks": [
+        {
+            "id": "intro_defaults",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Default Parameters",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Sometimes you want a parameter to have a default value - a value it uses if nothing is passed. This makes functions more flexible."
+                },
+                {
+                    "type": "text",
+                    "content": "Default parameters let you call functions with fewer arguments when you're okay with the default values."
+                }
+            ]
+        },
+        {
+            "id": "setting_defaults",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Setting Default Values",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "To set a default value, use `=` after the parameter name in the function definition."
+                },
+                {
+                    "type": "code",
+                    "content": "def greet(name=\"friend\"):\n    print(f\"Hello, {name}!\")\n\ngreet(\"Alice\")\ngreet()",
+                    "properties": {
+                        "language": "python",
+                        "output": "Hello, Alice!\nHello, friend!"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "When called with an argument, it uses that value. When called without, it uses the default `\"friend\"`."
+                }
+            ]
+        },
+        {
+            "id": "when_defaults_used",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Default values are only used when you don't provide a value for that parameter."
+                },
+                {
+                    "type": "code",
+                    "content": "def show_price(item, currency=\"USD\"):\n    print(f\"{item}: {currency}\")\n\nshow_price(\"Laptop\")\nshow_price(\"Phone\", \"EUR\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Laptop: USD\nPhone: EUR"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "First call uses default `\"USD\"`, second call uses provided `\"EUR\"`."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_default",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Set a default value of `0` for the `discount` parameter.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "def calculate_price(price, discount{1}{2}):",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "    final = price - discount",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(f\"Final: ${final}\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "calculate_price(100)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "==",
+                            "0",
+                            "="
+                        ],
+                        "solutions": {
+                            "1": "=",
+                            "2": "0"
+                        },
+                        "hint": "Use = 0 to set a default value.",
+                        "correctFeedback": "Perfect! You set a default value for the parameter.",
+                        "incorrectFeedback": "Use = to set a default value.",
+                        "explanation": "Default values are set with = in the function definition.",
+                        "output": "Final: $100"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_when_used",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "def welcome(name=\"Guest\"):\n    print(f\"Welcome, {name}\")\n\nwelcome()",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Welcome, Guest",
+                            "Welcome,",
+                            "Error"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! No argument was provided, so it uses the default \"Guest\".",
+                        "incorrectFeedback": "When no argument is provided, the default value is used.",
+                        "explanation": "Default parameters are used when the argument is omitted."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "mixing_required_optional",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Mixing Required and Optional",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "You can have both required and optional parameters. **Required parameters must come first**, then optional ones with defaults."
+                },
+                {
+                    "type": "code",
+                    "content": "def create_user(username, role=\"user\"):\n    print(f\"{username}: {role}\")\n\ncreate_user(\"Alice\")\ncreate_user(\"Bob\", \"admin\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Alice: user\nBob: admin"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`username` is required, `role` is optional with default `\"user\"`."
+                }
+            ]
+        },
+        {
+            "id": "parameter_order_rule",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Important rule:** Required parameters (without defaults) must come before optional parameters (with defaults)."
+                },
+                {
+                    "type": "code",
+                    "content": "# Correct\ndef correct(required, optional=10):\n\n# Wrong\ndef wrong(optional=10, required):",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Required parameters must always be listed before optional ones."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_mixing",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Add a required parameter `name` and optional parameter `age` with default `18`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "def show_person({1}, {2}=18):",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "    print(f\"{name}: {age}\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "show_person(\"Alice\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "age",
+                            "name",
+                            "person"
+                        ],
+                        "solutions": {
+                            "1": "name",
+                            "2": "age"
+                        },
+                        "hint": "Required parameter first, then optional with default.",
+                        "correctFeedback": "Perfect! Required parameter comes first, then optional.",
+                        "incorrectFeedback": "Put required parameter first, then optional with default.",
+                        "explanation": "Required parameters must come before optional ones.",
+                        "output": "Alice: 18"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "multiple_defaults",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can have multiple parameters with defaults."
+                },
+                {
+                    "type": "code",
+                    "content": "def display_product(\n    name,\n    price=0,\n    available=True\n):\n    print(f\"{name}: ${price}\")\n    print(f\"Available: {available}\")\n\ndisplay_product(\"Laptop\")\ndisplay_product(\"Phone\", 699, False)",
+                    "properties": {
+                        "language": "python",
+                        "output": "Laptop: $0\nAvailable: True\nPhone: $699\nAvailable: False"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Multiple optional parameters give you flexibility in how you call the function."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_multiple",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Which parameter order is correct?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "def func(a=1, b, c=3)",
+                            "def func(a, b=2, c=3)",
+                            "def func(a=1, b=2, c)"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! Required parameter first, then optional ones.",
+                        "incorrectFeedback": "Required parameters must come before optional ones.",
+                        "explanation": "Required parameters without defaults must be listed first."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "when_to_use_defaults",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**When to use default parameters:**"
+                },
+                {
+                    "type": "text",
+                    "content": "Use defaults when a parameter usually has the same value, but you want the flexibility to change it sometimes. Like currency typically being USD, or a counter starting at 0."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_practical",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a function with required `message` and optional `times` (default `1`).",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "def repeat_message({1}, {2}):",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "    for i in range(times):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        print(message)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "repeat_message(\"Hello\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "times = 1",
+                            "message"
+                        ],
+                        "solutions": {
+                            "1": "message",
+                            "2": "times = 1"
+                        },
+                        "hint": "Set default value with times = 1.",
+                        "correctFeedback": "Perfect! The function repeats the message once by default.",
+                        "incorrectFeedback": "Use times = 1 to set the default value.",
+                        "explanation": "Default parameters make functions more convenient to use.",
+                        "output": "Hello"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "Set default values with `=` in the function definition",
+                            "Defaults are used when **no argument is provided**",
+                            "**Required parameters** must come **before** optional ones",
+                            "You can have **multiple** parameters with defaults",
+                            "Use defaults for parameters that usually have the same value",
+                            "Defaults make functions more **flexible and convenient**"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

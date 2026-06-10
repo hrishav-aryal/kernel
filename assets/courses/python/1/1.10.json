@@ -1,0 +1,499 @@
+{
+    "blocks": [
+        {
+            "id": "practice_1",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Practice",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "code_fill",
+                    "content": "Create a variable called `name`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "{1} = \"Alice\"",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "\"name\"",
+                            "name"
+                        ],
+                        "solutions": {
+                            "1": "name"
+                        },
+                        "hint": "Variable names should be lowercase and without quotes.",
+                        "correctFeedback": "Perfect! You created a variable correctly.",
+                        "incorrectFeedback": "Use lowercase for variable names and without quotes.",
+                        "explanation": "Variables store data and should use lowercase names and without quotes."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_2",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Which variable name is valid in Python?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "my-age",
+                            "2ndplace",
+                            "user_name"
+                        ],
+                        "correctAnswerIndex": 2,
+                        "correctFeedback": "Correct! Use underscores to connect words.",
+                        "incorrectFeedback": "Variable names can't use hyphens or start with numbers.",
+                        "explanation": "Use letters, numbers (not at start), and underscores only."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_4",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Can you use spaces in variable names?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Yes, spaces are allowed",
+                            "No, use underscores instead"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! Use underscores like `first_name` instead of spaces.",
+                        "incorrectFeedback": "Spaces aren't allowed - use underscores to separate words.",
+                        "explanation": "Variable names can't have spaces. Use underscores: `user_age`."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_3",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a variable to store a city name.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "{1} {2} {3}",
+                                "indent": 0,
+                                "blank": "1,2,3"
+                            }
+                        ],
+                        "options": [
+                            "=",
+                            "\"Boston\"",
+                            "city"
+                        ],
+                        "solutions": {
+                            "1": "city",
+                            "2": "=",
+                            "3": "\"Boston\""
+                        },
+                        "hint": "Use the equals sign to assign the value to the variable",
+                        "correctFeedback": "Perfect! The **=** sign assigns values to variables.",
+                        "incorrectFeedback": "Use **=** to assign the value to the variable",
+                        "explanation": "The equals sign (=) assigns values to variables."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_5",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Let's print the `city` variable.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "city = \"Boston\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print({1})",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "\"city\"",
+                            "city"
+                        ],
+                        "solutions": {
+                            "1": "city"
+                        },
+                        "hint": "Use the variable name without quotes.",
+                        "correctFeedback": "Perfect! Variables are used without quotes.",
+                        "incorrectFeedback": "Don't put quotes around variable names.",
+                        "explanation": "Variable names without quotes access the stored value.",
+                        "output": "Boston"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_6",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Use the variable in a calculation. Add `bonus` to the `score` variable.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "bonus = 10",
+                                "indent": 0
+                            },
+                            {
+                                "code": "score = 50 + {1}",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(score)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "bonus",
+                            "\"bonus\""
+                        ],
+                        "solutions": {
+                            "1": "bonus"
+                        },
+                        "hint": "Use the variable name without quotes.",
+                        "correctFeedback": "Perfect! You added the bonus to the score.",
+                        "incorrectFeedback": "Use the variable name without quotes.",
+                        "explanation": "Variables are used without quotes to access their values.",
+                        "output": "60"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_7",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "We have reassigned the variable `x`. What will the code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "x = 5\nx = 10\nprint(x)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "10",
+                            "5",
+                            "Nothing"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! The new value replaces the old one.",
+                        "incorrectFeedback": "Variables hold the most recent value assigned.",
+                        "explanation": "Reassigning a variable updates its value to the new one."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_8",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Reassign the `temperature` variable to 25.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "temperature = 20",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1} = 25",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(temperature)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "new_temperature",
+                            "temperature"
+                        ],
+                        "solutions": {
+                            "1": "temperature"
+                        },
+                        "hint": "Use the same variable name to update it.",
+                        "correctFeedback": "Perfect! You reassigned the variable.",
+                        "incorrectFeedback": "Use the same variable name to change its value.",
+                        "explanation": "Reassign by using the same variable name with a new value.",
+                        "output": "25"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_9",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Which is a good variable name for storing a person's first name?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "fn",
+                            "first_name"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! Python convention uses lowercase with underscores.",
+                        "incorrectFeedback": "Use lowercase letters with underscores: first_name.",
+                        "explanation": "Python style: lowercase words separated by underscores (snake_case)."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_10",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create two variables `name` and `age` on separate lines.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "{1} = \"Bob\"",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "{2} = 30",
+                                "indent": 0,
+                                "blank": "2"
+                            },
+                            {
+                                "code": "print(name)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(age)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "age",
+                            "name"
+                        ],
+                        "solutions": {
+                            "1": "name",
+                            "2": "age"
+                        },
+                        "hint": "Each variable needs its own line with lowercase name.",
+                        "correctFeedback": "Great! You created multiple variables.",
+                        "incorrectFeedback": "Use lowercase for variable names.",
+                        "explanation": "Each variable is created on its own line with assignment.",
+                        "output": "Bob\n30"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_11",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a variable `discounted` to store the discounted price of the item. Assume the discount is `10`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "price = 100",
+                                "indent": 0
+                            },
+                            {
+                                "code": "discounted = price - {1}",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(discounted)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "10",
+                            "\"10\""
+                        ],
+                        "solutions": {
+                            "1": "10"
+                        },
+                        "hint": "Use a number without quotes for math.",
+                        "correctFeedback": "Perfect! You used a variable in an expression.",
+                        "incorrectFeedback": "Numbers for math don't need quotes.",
+                        "explanation": "You can use variables in expressions to create new variables.",
+                        "output": "90"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_12",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What's wrong with this variable name: `print`?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "It's a Python keyword",
+                            "It needs to be uppercase",
+                            "Nothing, it's fine"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! `class` is reserved by Python, use `class_name` instead.",
+                        "incorrectFeedback": "Some words like `class`, `for`, `if` are reserved by Python.",
+                        "explanation": "Keywords are reserved - you can't use them as variable names."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_13",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Print the `favorite_color` variable.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "favorite_color = \"blue\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print({1})",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "\"favorite_color\"",
+                            "favorite_color"
+                        ],
+                        "solutions": {
+                            "1": "favorite_color"
+                        },
+                        "hint": "Use the variable name without quotes.",
+                        "correctFeedback": "Excellent! Variables are used without quotes.",
+                        "incorrectFeedback": "Don't put quotes around variable names when using them.",
+                        "explanation": "Variable names without quotes access the stored value.",
+                        "output": "blue"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_14",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Update the `count` variable using its current value.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "count = 5",
+                                "indent": 0
+                            },
+                            {
+                                "code": "count = {1} + 1",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(count)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "5",
+                            "count"
+                        ],
+                        "solutions": {
+                            "1": "count"
+                        },
+                        "hint": "Use the variable name to access its current value.",
+                        "correctFeedback": "Perfect! You used the variable to update itself.",
+                        "incorrectFeedback": "Use the variable name on the right side to get its value.",
+                        "explanation": "Variables can use their own current value in reassignment.",
+                        "output": "6"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_15",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Can variable names start with a number?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Yes, any number is fine",
+                            "No, they must start with a letter or underscore"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! Variable names must start with a letter or underscore.",
+                        "incorrectFeedback": "Variable names can't start with numbers - use letters or underscores.",
+                        "explanation": "Valid starts: letter (a-z, A-Z) or underscore (_). Numbers can come after."
+                    }
+                }
+            ]
+        }
+    ]
+}

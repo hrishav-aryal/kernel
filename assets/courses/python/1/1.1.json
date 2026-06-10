@@ -1,0 +1,325 @@
+{
+    "blocks": [
+        {
+            "id": "intro_first_program",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Your First Python Program",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Welcome to programming! Let's start with the traditional **Hello World** program. This simple program will teach you the basics of writing and running Python code."
+                }
+            ]
+        },
+        {
+            "id": "hello_world_basic",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Hello World Program",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The **Hello World** program is the simplest program you can write. It displays a message on the screen."
+                },
+                {
+                    "type": "code",
+                    "content": "print(\"Hello World\")",
+                    "properties": {
+                        "language": "python",
+                        "caption": "Your first Python program",
+                        "output": "Hello World"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `print()` function displays text on the screen. Everything inside the quotes will be shown exactly as written."
+                }
+            ]
+        },
+        {
+            "id": "hello_world_variations",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can create different variations of Hello World by changing the message:"
+                },
+                {
+                    "type": "code",
+                    "content": "print(\"Hello, World!\")\nprint(\"Welcome to programming!\")\nprint(\"I'm learning Python!\")",
+                    "properties": {
+                        "language": "python",
+                        "caption": "Personalized greetings",
+                        "output": "Hello, World!\nWelcome to programming!\nI'm learning Python!"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_print",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the print statement to display **Hello, Universe!**",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "{1}(\"Hello, Universe!\")",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "display",
+                            "print",
+                            "show"
+                        ],
+                        "solutions": {
+                            "1": "print"
+                        },
+                        "hint": "print will display the text inside the quotes",
+                        "correctFeedback": "Great! You created a personalized greeting.",
+                        "incorrectFeedback": "print will display the text inside the quotes",
+                        "explanation": "You can put any text inside the quotes to create your own message.",
+                        "output": "Hello, Universe!"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "adding_comments",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Adding Comments",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "**Comments** are notes in your code that explain what it does. They start with **#** and are ignored by Python."
+                },
+                {
+                    "type": "code",
+                    "content": "# This is my first Python program\nprint(\"Hello World\")\n\n# Comments help explain your code\nprint(\"Welcome to Python!\")",
+                    "properties": {
+                        "language": "python",
+                        "caption": "Code with comments",
+                        "output": "Hello World\nWelcome to Python!"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "why_comments_matter",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Comments help you and others understand your code. They're especially useful when you come back to your code later."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_comments",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What symbol starts a comment in Python?",
+                        "options": [
+                            "//",
+                            "#",
+                            "/*"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! **#** starts a comment in Python.",
+                        "incorrectFeedback": "Use **#** to start a comment in Python.",
+                        "explanation": "**#** is the comment symbol in Python. Everything after it on that line is ignored."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "program_structure",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Program Structure",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Python programs are made up of **statements**. Each statement does one thing and usually ends with a new line."
+                }
+            ]
+        },
+        {
+            "id": "simple_program_example",
+            "elements": [
+                {
+                    "type": "code",
+                    "content": "# three print statements\nprint(\"Hello World\")\nprint(\"I'm learning Python\")\nprint(\"This is fun!\")",
+                    "properties": {
+                        "language": "python",
+                        "caption": "Simple program structure",
+                        "output": "Hello World\nI'm learning Python\nThis is fun!"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Python executes statements **one by one**, from top to bottom. Each `print()` statement displays its message immediately."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_program_structure",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Add a comment to explain this program:",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "{1}",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(\"Hello World\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "# This program greets the user",
+                            "/* This program greets the user"
+                        ],
+                        "solutions": {
+                            "1": "# This program greets the user"
+                        },
+                        "hint": "Use the symbol that starts a comment in Python.",
+                        "correctFeedback": "Perfect! **#** creates a comment in Python.",
+                        "incorrectFeedback": "Use **#** to start a comment in Python.",
+                        "explanation": "**#** is the comment symbol in Python. It helps explain what your code does.",
+                        "output": "Hello World"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "common_mistakes",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Common Mistakes",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "When starting out, it's easy to make these common mistakes:"
+                }
+            ]
+        },
+        {
+            "id": "forgetting_quotes",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Forgetting quotes** around the text"
+                },
+                {
+                    "type": "code",
+                    "content": "# Wrong - missing quotes\nprint(Hello World)\n\n# Correct - use quotes\nprint(\"Hello World\")",
+                    "properties": {
+                        "language": "python",
+                        "caption": "Remember to use quotes",
+                        "output": "Hello World"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "case_sensitivity",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Case sensitivity** in Python"
+                },
+                {
+                    "type": "code",
+                    "content": "# Wrong\nPrint(\"Hello World\")\n\n# Correct - use lowercase\nprint(\"Hello World\")",
+                    "properties": {
+                        "language": "python",
+                        "caption": "Use lowercase for print",
+                        "output": "Hello World"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Python is case-sensitive, so **Print** is different from **print**"
+                }
+            ]
+        },
+        {
+            "id": "quick_check_mistakes",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "Which of these will cause an error?",
+                        "options": [
+                            "print(\"Hello World\")",
+                            "print(Hello World)"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! **print(Hello World)** is missing quotes around the text.",
+                        "incorrectFeedback": "**print(Hello World)** is missing quotes. Text must be in quotes.",
+                        "explanation": "Text in print statements must be enclosed in quotes (single or double)."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "`print()` displays text on the screen",
+                            "**Text must be in quotes** (single or double)",
+                            "**Comments** start with **#** and explain your code",
+                            "**Python is case-sensitive** (print ≠ Print)",
+                            "**Programs execute** from top to bottom, one statement at a time"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

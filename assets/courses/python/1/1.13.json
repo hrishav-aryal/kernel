@@ -1,0 +1,557 @@
+{
+    "blocks": [
+        {
+            "id": "practice_1",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Practice",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "code_fill",
+                    "content": "Calculate the total: add `apples` and `oranges`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "apples = 12",
+                                "indent": 0
+                            },
+                            {
+                                "code": "oranges = 8",
+                                "indent": 0
+                            },
+                            {
+                                "code": "total = apples {1} oranges",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "+",
+                            "*"
+                        ],
+                        "solutions": {
+                            "1": "+"
+                        },
+                        "hint": "Use + to add values together.",
+                        "correctFeedback": "Perfect! + adds values together.",
+                        "incorrectFeedback": "Use + for addition.",
+                        "explanation": "The + operator adds two numbers.",
+                        "output": "20"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_2",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Split `cookies` equally among `friends`. How many does each get?",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "cookies = 24",
+                                "indent": 0
+                            },
+                            {
+                                "code": "friends = 6",
+                                "indent": 0
+                            },
+                            {
+                                "code": "each = cookies {1} friends",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "-",
+                            "/"
+                        ],
+                        "solutions": {
+                            "1": "/"
+                        },
+                        "hint": "Use / to divide.",
+                        "correctFeedback": "Great! Division splits things equally.",
+                        "incorrectFeedback": "Use / to divide.",
+                        "explanation": "Division tells us how many each person gets.",
+                        "output": "4.0"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_3",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Calculate the remaining money after `expense`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "money = 50",
+                                "indent": 0
+                            },
+                            {
+                                "code": "expense = 18",
+                                "indent": 0
+                            },
+                            {
+                                "code": "left = money {1} expense",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "+",
+                            "-"
+                        ],
+                        "solutions": {
+                            "1": "-"
+                        },
+                        "hint": "Subtract what you spent.",
+                        "correctFeedback": "Perfect! Subtraction shows what remains.",
+                        "incorrectFeedback": "Use - to subtract.",
+                        "explanation": "Subtraction finds the difference.",
+                        "output": "32"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_4",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What does this code calculate?"
+                },
+                {
+                    "type": "code",
+                    "content": "x = 5\ny = 3\nresult = x * y",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "8",
+                            "15"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! 5 × 3 = 15.",
+                        "incorrectFeedback": "Multiply: 5 × 3 = 15.",
+                        "explanation": "The * operator multiplies numbers."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_5",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Calculate the remainder when dividing 17 by 5.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "remainder = 17 {1} 5",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "/",
+                            "%"
+                        ],
+                        "solutions": {
+                            "1": "%"
+                        },
+                        "hint": "Use % to get the remainder.",
+                        "correctFeedback": "Perfect! % gives you the remainder.",
+                        "incorrectFeedback": "Use % for modulus (remainder).",
+                        "explanation": "The % operator returns the remainder after division."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_7",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What is `11 % 3`?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "2",
+                            "3"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! 11 divided by 3 leaves remainder 2.",
+                        "incorrectFeedback": "11 ÷ 3 = 3 remainder 2, so the answer is 2.",
+                        "explanation": "% gives the remainder: 11 = 3×3 + 2."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_8",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Calculate 2 raised to the power of 5.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "result = 2 {1} 5",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "*",
+                            "**"
+                        ],
+                        "solutions": {
+                            "1": "**"
+                        },
+                        "hint": "Use ** for exponentiation.",
+                        "correctFeedback": "Great! ** raises a number to a power.",
+                        "incorrectFeedback": "Use ** for exponentiation (power).",
+                        "explanation": "The ** operator raises the first number to the power of the second.",
+                        "output": "32"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_9",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What is `3 ** 3`?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "9",
+                            "27"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! 3 × 3 × 3 = 27.",
+                        "incorrectFeedback": "3 to the power of 3 is 3 × 3 × 3 = 27.",
+                        "explanation": "3 ** 3 means 3 × 3 × 3 = 27."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_10",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Calculate the total cost: `price` times `quantity`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "price = 15",
+                                "indent": 0
+                            },
+                            {
+                                "code": "quantity = 3",
+                                "indent": 0
+                            },
+                            {
+                                "code": "total = price {1} quantity",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "+",
+                            "*"
+                        ],
+                        "solutions": {
+                            "1": "*"
+                        },
+                        "hint": "Use * to multiply price and quantity.",
+                        "correctFeedback": "Perfect! Multiplication calculates the total.",
+                        "incorrectFeedback": "Use * to multiply.",
+                        "explanation": "Total cost = price × quantity.",
+                        "output": "45"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_11",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What does this code calculate?"
+                },
+                {
+                    "type": "code",
+                    "content": "x = 10\ny = 3\nresult = x - y",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "13",
+                            "7"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! 10 - 3 = 7.",
+                        "incorrectFeedback": "Subtract: 10 - 3 = 7.",
+                        "explanation": "The - operator subtracts y from x."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_12",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Which operator will add 10 to the variable `score`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "score = 50",
+                                "indent": 0
+                            },
+                            {
+                                "code": "score {1} 10",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "+==",
+                            "+="
+                        ],
+                        "solutions": {
+                            "1": "+="
+                        },
+                        "hint": "Use += to add and assign.",
+                        "correctFeedback": "Great! += adds and updates the variable.",
+                        "incorrectFeedback": "Use += to add and assign in one step.",
+                        "explanation": "score += 10 is shorthand for score = score + 10.",
+                        "output": "60"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_13",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Subtract 5 from `count`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "count = 20",
+                                "indent": 0
+                            },
+                            {
+                                "code": "count {1} 5",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "-=",
+                            "-=="
+                        ],
+                        "solutions": {
+                            "1": "-="
+                        },
+                        "hint": "Use -= to subtract and assign.",
+                        "correctFeedback": "Perfect! -= subtracts and updates the variable.",
+                        "incorrectFeedback": "Use -= to subtract and assign.",
+                        "explanation": "count -= 5 is shorthand for count = count - 5.",
+                        "output": "15"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_14",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What does `2 + 3 * 4` equal?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "20",
+                            "14"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! Multiplication happens first: 3 × 4 = 12, then 2 + 12 = 14.",
+                        "incorrectFeedback": "Multiplication happens first: 3 × 4 = 12, then 2 + 12 = 14.",
+                        "explanation": "Order of operations: multiply before adding."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_15",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What does `10 - 2 * 3` equal?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "4",
+                            "24"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! 2 × 3 = 6 first, then 10 - 6 = 4.",
+                        "incorrectFeedback": "Multiply first: 2 × 3 = 6, then 10 - 6 = 4.",
+                        "explanation": "Multiplication happens before subtraction."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_16",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What's wrong with this code?"
+                },
+                {
+                    "type": "code",
+                    "content": "result = 10 / 0",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Can't divide by zero",
+                            "Wrong operator"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Division by zero causes an error.",
+                        "incorrectFeedback": "You can't divide any number by zero.",
+                        "explanation": "Division by zero is mathematically undefined."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_17",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What's wrong with this code?"
+                },
+                {
+                    "type": "code",
+                    "content": "result = 5 + \"3\"",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Can't add number and string",
+                            "Missing parentheses"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Can't mix numbers and strings in math.",
+                        "incorrectFeedback": "You can't do math with strings and numbers.",
+                        "explanation": "Convert the string to int first: int(\"3\")."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_18",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Calculate total after discount.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "price = 100",
+                                "indent": 0
+                            },
+                            {
+                                "code": "discount = 20",
+                                "indent": 0
+                            },
+                            {
+                                "code": "total = price {1} discount",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "+",
+                            "-"
+                        ],
+                        "solutions": {
+                            "1": "-"
+                        },
+                        "hint": "Subtract the discount from the price.",
+                        "correctFeedback": "Perfect! Subtract discount from price.",
+                        "incorrectFeedback": "Use - to subtract the discount.",
+                        "explanation": "Total = price - discount.",
+                        "output": "80"
+                    }
+                }
+            ]
+        }
+    ]
+}

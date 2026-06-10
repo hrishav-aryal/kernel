@@ -1,0 +1,415 @@
+{
+    "blocks": [
+        {
+            "id": "intro_loops",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "While Loops",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Sometimes you need to do the same thing multiple times. Instead of writing the same code over and over, you can use **loops** to repeat code automatically."
+                },
+                {
+                    "type": "text",
+                    "content": "A `while` loop repeats code as long as a condition is `True`. It's like saying \"keep doing this while this condition is true.\""
+                }
+            ]
+        },
+        {
+            "id": "basic_while_loop",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Basic While Loop",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "A `while` loop starts with `while`, followed by a condition, then a colon `:`. The code that repeats is indented."
+                },
+                {
+                    "type": "text",
+                    "content": "The loop checks the condition before each repetition. If the condition is `True`, it runs the code inside the loop. If the condition is `False`, it stops and continues with the rest of your program."
+                },
+                {
+                    "type": "text",
+                    "content": "In the code below, the `while` loop will run until the condition `count <= 3` is `False`, printing the numbers 1, 2, and 3."
+                },
+                {
+                    "type": "code",
+                    "content": "count = 1\nwhile count <= 3:\n    print(f\"Count: {count}\")\n    count = count + 1",
+                    "properties": {
+                        "language": "python",
+                        "output": "Count: 1\nCount: 2\nCount: 3"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "infinite_loop_warning",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Be careful!** If the condition never becomes `False`, the loop will run forever. This is called an **infinite loop** and can crash your program."
+                }
+            ]
+        },
+        {
+            "id": "basic_while_loop",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "If you take a closer look inside the while loop, you'll see that the `count` variable is being updated by adding 1 to it. This eventually will make the condition `count <= 3` become `False`, and the loop will stop. This is very important to avoid infinite loops."
+                },
+                {
+                    "type": "code",
+                    "content": "count = 1\nwhile count <= 3:\n    print(f\"Count: {count}\")\n    count = count + 1",
+                    "properties": {
+                        "language": "python",
+                        "output": "Count: 1\nCount: 2\nCount: 3"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "infinite_loop_example",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**The Infinite Loop**"
+                },
+                {
+                    "type": "code",
+                    "content": "count = 1\nwhile count <= 3:\n    print(f\"Count: {count}\")\n    # Missing: count = count + 1",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "In this broken code, since we are not updating the `count` variable inside the loop, it stays 1 forever, so `count <= 3` is always `True`, and the loop never stops!"
+                }
+            ]
+        },
+        {
+            "id": "quick_check_basic_while",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the while loop to count from 1 to 5.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "num = 1",
+                                "indent": 0
+                            },
+                            {
+                                "code": "while num {1} 5:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(f\"Number: {num}\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    num = num + 1",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "<=",
+                            ">=",
+                            "=="
+                        ],
+                        "solutions": {
+                            "1": "<="
+                        },
+                        "hint": "Use <= to check if num is less than or equal to 5.",
+                        "correctFeedback": "Perfect! num <= 5 keeps the loop running while num is 5 or less.",
+                        "incorrectFeedback": "Use <= to check if num is less than or equal to 5.",
+                        "explanation": "The loop continues while num is less than or equal to 5.",
+                        "output": "Number: 1\nNumber: 2\nNumber: 3\nNumber: 4\nNumber: 5"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_infinite_loop",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What's wrong with this code?"
+                },
+                {
+                    "type": "code",
+                    "content": "x = 5\nwhile x > 0:\n    print(f\"x is {x}\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "x never changes causing an infinite loop",
+                            "Nothing wrong with the code"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! x never changes, so x > 0 is always True, creating an infinite loop.",
+                        "incorrectFeedback": "x never changes, so x > 0 is always True, creating an infinite loop.",
+                        "explanation": "The variable x never changes inside the loop, so the condition x > 0 is always True."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_counter_loop",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a loop that prints numbers from 0 to 4 using the counter `i`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "i = 0",
+                                "indent": 0
+                            },
+                            {
+                                "code": "while i {1} 5:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(f\"Number: {i}\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    i = i {2} 1",
+                                "indent": 0,
+                                "blank": "2"
+                            }
+                        ],
+                        "options": [
+                            "<=",
+                            "+",
+                            "<"
+                        ],
+                        "solutions": {
+                            "1": "<",
+                            "2": "+"
+                        },
+                        "hint": "Use < to check if i is less than 5, and + to increment i.",
+                        "correctFeedback": "Perfect! i < 5 keeps the loop running while i is less than 5, and i = i + 1 increments the counter.",
+                        "incorrectFeedback": "Use < to check if i is less than 5, and + to increment i.",
+                        "explanation": "The loop continues while i is less than 5, and i = i + 1 increases the counter by 1 each time.",
+                        "output": "Number: 0\nNumber: 1\nNumber: 2\nNumber: 3\nNumber: 4"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_condition_loop",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a loop that counts down from 3 to 0.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "countdown = 3",
+                                "indent": 0
+                            },
+                            {
+                                "code": "while countdown {1} 0:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(f\"{countdown}\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    countdown = countdown {2} 1",
+                                "indent": 0,
+                                "blank": "2"
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(\"Blast off!\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "+",
+                            ">=",
+                            "-"
+                        ],
+                        "solutions": {
+                            "1": ">=",
+                            "2": "-"
+                        },
+                        "hint": "Use >= to check if countdown is greater than or equal to 0, and - to decrement countdown.",
+                        "correctFeedback": "Excellent! countdown >= 0 keeps the loop running while countdown is 0 or greater, and countdown = countdown - 1 decreases the countdown by 1.",
+                        "incorrectFeedback": "Use >= to check if countdown is greater than or equal to 0, and - to decrement countdown.",
+                        "explanation": "The loop continues while countdown is greater than or equal to 0, and countdown = countdown - 1 decreases the countdown by 1 each time.",
+                        "output": "3\n2\n1\n0\nBlast off!"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_what_will_print_while",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "x = 2\nwhile x > 0:\n    print(f\"x = {x}\")\n    x = x - 1",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "x = 2\nx = 1\nx = 0",
+                            "x = 2\nx = 1"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! The loop runs while x > 0, so it prints x = 2, x = 1, then exits",
+                        "incorrectFeedback": "The loop runs while x > 0, so it prints x = 2, x = 1, then exits",
+                        "explanation": "When x becomes 0, the condition x > 0 is False, so the loop stops."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_counter_loop",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Imagine your program is tracking a player's health in a game. We want the while loop to keep running as long as the player's `health` is not zero, simulating the player being **alive**."
+                },
+                {
+                    "type": "code_fill",
+                    "content": "Add the condition to the while loop to run it until the `health` variable becomes 0.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "health = 5",
+                                "indent": 0
+                            },
+                            {
+                                "code": "while {1}:",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "health",
+                            "health >= 0",
+                            "health > 0"
+                        ],
+                        "solutions": {
+                            "1": "health > 0"
+                        },
+                        "hint": "Use > to check if health is greater than 0.",
+                        "correctFeedback": "Perfect! health > 0 keeps the loop running while health is greater than 0.",
+                        "incorrectFeedback": "Use > to check if health is greater than 0.",
+                        "explanation": "The loop continues while health is greater than 0."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_counter_loop",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Now update the `health` variable inside the loop for it to work. ",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "health = 5",
+                                "indent": 0
+                            },
+                            {
+                                "code": "while health > 0:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(f\"Health: {health}\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    health = {1}",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "health + 1",
+                            "health - 1"
+                        ],
+                        "solutions": {
+                            "1": "health - 1"
+                        },
+                        "hint": "Use - to decrease health by 1.",
+                        "correctFeedback": "Perfect! health - 1 decreases health by 1.",
+                        "incorrectFeedback": "Use - to decrease health by 1.",
+                        "explanation": "The loop continues while health is greater than 0.",
+                        "output": "Health: 5\nHealth: 4\nHealth: 3\nHealth: 2\nHealth: 1\nHealth: 0"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "`while` loops repeat code while a condition is `True`",
+                            "The loop stops when the condition becomes `False`",
+                            "Always **update the condition** inside the loop to avoid infinite loops",
+                            "Use **counters** to control how many times the loop runs"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

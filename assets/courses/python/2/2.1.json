@@ -1,0 +1,469 @@
+{
+    "blocks": [
+        {
+            "id": "intro_comparisons",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Comparison Operators",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "We use comparison operators to compare values. A comparison produces a Boolean result: `True` or `False`."
+                }
+            ]
+        },
+        {
+            "id": "equals_not_equals",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Equals and Not Equals",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "We can use double equals `==` to check if two values are equal, and use not equals `!=` to check if two values are not equal."
+                },
+                {
+                    "type": "code",
+                    "content": "print(5 == 5)\nprint(7 != 3)",
+                    "properties": {
+                        "language": "python",
+                        "output": "True\nTrue"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "greater_less_than",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Greater Than and Less Than",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `>` operator checks if the left value is greater than the right. The `<` operator checks if it's less than."
+                },
+                {
+                    "type": "code",
+                    "content": "print(10 > 4)\nprint(2 < 1)",
+                    "properties": {
+                        "language": "python",
+                        "output": "True\nFalse"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "greater_equal_less_equal",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Greater/Less Than or Equal",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `>=` operator checks if the left value is greater than or equal to the right. The `<=` operator checks if it's less than or equal."
+                },
+                {
+                    "type": "code",
+                    "content": "print(6 >= 6)\nprint(3 <= 2)",
+                    "properties": {
+                        "language": "python",
+                        "output": "True\nFalse"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_equals_vs_assign",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "Which operator checks equality?",
+                        "options": [
+                            "=",
+                            "=="
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! `==` checks if two values are equal.",
+                        "incorrectFeedback": "Use `==` for comparison. `=` is assignment.",
+                        "explanation": "`=` assigns a value to a variable. `==` compares two values."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "compare_numbers_fill",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Compare two numbers to produce True.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "result = 9 {1} 3",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(result)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            ">",
+                            "<",
+                            "=="
+                        ],
+                        "solutions": {
+                            "1": ">"
+                        },
+                        "hint": "Pick the operator that makes 9 compared to 3 evaluate to True.",
+                        "correctFeedback": "Nice! 9 > 3 is True.",
+                        "incorrectFeedback": "Try an operator that makes the statement True.",
+                        "explanation": "9 is greater than 3, so `9 > 3` is True.",
+                        "output": "True"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_greater_than",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Lets try to make this comparison False.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "result = 15 {1} 10",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(result)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            ">",
+                            "<",
+                            "=="
+                        ],
+                        "solutions": {
+                            "1": "<"
+                        },
+                        "hint": "Use < to check if 15 is less than 10.",
+                        "correctFeedback": "Perfect! 15 < 10 is True.",
+                        "incorrectFeedback": "Use < to check if 15 is less than 10.",
+                        "explanation": "15 is less than 10, so 15 < 10 is True.",
+                        "output": "False"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_whats_wrong_eq",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What's will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "result = 5 >= 5\nprint(result)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "True",
+                            "False"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! 5 >= 5 is True.",
+                        "incorrectFeedback": "5 >= 5 is True.",
+                        "explanation": "5 is equal to 5, so 5 >= 5 is True."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "compare_strings_case",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "We can also use double equals `==` to compare strings. String comparisons are case-sensitive. Uppercase and lowercase are different."
+                },
+                {
+                    "type": "code",
+                    "content": "print(\"python\" == \"python\")\nprint(\"python\" == \"PYTHON\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "True\nFalse"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_string_equals",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Compare two strings to check if they are equal.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "result = \"Hello\" {1} \"Hello\"",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(result)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "==",
+                            "!=",
+                            ">"
+                        ],
+                        "solutions": {
+                            "1": "=="
+                        },
+                        "hint": "Use == to check if the strings are equal.",
+                        "correctFeedback": "Correct! \"Hello\" == \"Hello\" is True.",
+                        "incorrectFeedback": "Use == to check if the strings are equal.",
+                        "explanation": "Two identical strings are equal.",
+                        "output": "True"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_string_compare",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Make this comparison evaluate to False.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "result = \"Hey\" {1} \"Hey\"",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(result)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "==",
+                            "!="
+                        ],
+                        "solutions": {
+                            "1": "!="
+                        },
+                        "hint": "Use the inequality operator.",
+                        "correctFeedback": "Correct! \"Hey\" != \"Hey\" is False.",
+                        "incorrectFeedback": "Use != to check if the strings are not equal.",
+                        "explanation": "Two identical strings are equal.",
+                        "output": "False"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "types_and_comparisons",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Always compare values of the same type for clearer results. Comparing numbers to strings is not meaningful because it will always return `False`."
+                },
+                {
+                    "type": "text",
+                    "content": "In order to compare a number to a string, we need to convert the string to a number first."
+                },
+                {
+                    "type": "code",
+                    "content": "print(5 == \"5\")\n\nprint(5 == int(\"5\"))",
+                    "properties": {
+                        "language": "python",
+                        "output": "False\nTrue"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_convert_and_compare",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Convert the string to a number and then compare it to 10.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "text_number = \"10\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "number = {1}(text_number)",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "result = number {2} 10",
+                                "indent": 0,
+                                "blank": "2"
+                            },
+                            {
+                                "code": "print(result)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "int",
+                            "==",
+                            "str"
+                        ],
+                        "solutions": {
+                            "1": "int",
+                            "2": "=="
+                        },
+                        "hint": "Use int() to convert the string to a number, then use == to compare.",
+                        "correctFeedback": "Perfect! Convert string to int, then compare.",
+                        "incorrectFeedback": "Use int() to convert the string, then == to compare.",
+                        "explanation": "Convert the string to an integer first, then compare with ==.",
+                        "output": "True"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_whats_wrong_eq",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What's wrong with this comparison?"
+                },
+                {
+                    "type": "code",
+                    "content": "print(score = 100)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Use == instead of =",
+                            "Numbers must be in quotes"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Use `==` to compare in a condition.",
+                        "incorrectFeedback": "`=` assigns a value. Use `==` to compare.",
+                        "explanation": "Equality check uses `==`. The single `=` assigns."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "string_len_compare_optional",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Find the length of the string `name` and check if it is equal to `5`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "name = \"Alice\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "length = {1}(name)",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(length {2} 5)",
+                                "indent": 0,
+                                "blank": "2"
+                            }
+                        ],
+                        "options": [
+                            "size",
+                            "len",
+                            "=="
+                        ],
+                        "solutions": {
+                            "1": "len",
+                            "2": "=="
+                        },
+                        "hint": "Use len() to find the length of the string and == to check if it is equal to 5.",
+                        "correctFeedback": "Correct! You used len() to find the length of the string and == to check if it is equal to 5.",
+                        "incorrectFeedback": "Use len() to find the length of the string and == to check if it is equal to 5.",
+                        "explanation": "The length of the string is 5, so `len(name) == 5` is True.",
+                        "output": "True"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "Comparisons return `True` or `False`",
+                            "Use `==`, `!=`, `>`, `<`, `>=`, `<=`",
+                            "`==` compares, `=` assigns",
+                            "String comparisons are case-sensitive",
+                            "Compare similar data types and convert when needed"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

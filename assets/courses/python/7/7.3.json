@@ -1,0 +1,392 @@
+{
+    "blocks": [
+        {
+            "id": "intro_return",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Return Values",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "So far, our functions have printed results. But often you want a function to **calculate** something and give the result back so you can use it later."
+                },
+                {
+                    "type": "text",
+                    "content": "The `return` statement sends a value back from a function."
+                }
+            ]
+        },
+        {
+            "id": "using_return",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Using return",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Use the `return` keyword followed by the value you want to send back."
+                },
+                {
+                    "type": "code",
+                    "content": "def add_numbers(a, b):\n    result = a + b\n    return result\n\ntotal = add_numbers(5, 3)\nprint(total)",
+                    "properties": {
+                        "language": "python",
+                        "output": "8"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The function `add_numbers` adds numbers `5` and `3` and returns the result `8`, which is stored in the variable `total`."
+                }
+            ]
+        },
+        {
+            "id": "capturing_return",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can capture the returned value in a variable or use it directly."
+                },
+                {
+                    "type": "code",
+                    "content": "def multiply(x, y):\n    return x * y\n\n# Capture in variable\nanswer = multiply(4, 5)\nprint(answer)\n\n# Use directly\nprint(multiply(3, 7))",
+                    "properties": {
+                        "language": "python",
+                        "output": "20\n21"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Both ways work - you can store the result or use it immediately."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_return",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Make the function return the result instead of printing it.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "def square(num):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    result = num * num",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    {1} result",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "value = square(5)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(value)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "print",
+                            "return",
+                            "send"
+                        ],
+                        "solutions": {
+                            "1": "return"
+                        },
+                        "hint": "Use return to send a value back from the function.",
+                        "correctFeedback": "Perfect! The function now returns the result.",
+                        "incorrectFeedback": "Use return to send the value back.",
+                        "explanation": "return sends the value back so it can be used outside the function.",
+                        "output": "25"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "return_vs_print",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Return vs Print",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`return` and `print` are different. `print` shows output, but `return` gives a value back to use in your code."
+                },
+                {
+                    "type": "code",
+                    "content": "def add_with_print(a, b):\n    print(a + b)\n\ndef add_with_return(a, b):\n    return a + b\n\nresult1 = add_with_print(5, 3)\nprint(f\"Result1: {result1}\")\n\nresult2 = add_with_return(5, 3)\nprint(f\"Result2: {result2}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "8\nResult1: None\nResult2: 8"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`print` just displays. `return` gives back a value you can use."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_vs_print",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What's the difference between return and print?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "They do the same thing",
+                            "return sends a value back, print displays output",
+                            "print is faster"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! return gives a value back to use, print just displays.",
+                        "incorrectFeedback": "return sends a value back, while print just displays output.",
+                        "explanation": "Use return when you need the value for calculations or storage."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "return_ends_function",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Important:** `return` immediately exits the function. Any code after `return` won't run."
+                },
+                {
+                    "type": "code",
+                    "content": "def check_age(age):\n    return age >= 18\n    print(\"This won't print\")\n\nresult = check_age(20)\nprint(result)",
+                    "properties": {
+                        "language": "python",
+                        "output": "True"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The function returns immediately, so the print statement never runs."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_exit",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "def test():\n    print(\"First\")\n    return 10\n    print(\"Second\")\n\ntest()",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "First\n10\nSecond",
+                            "First",
+                            "First\nSecond"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! return exits the function, so \"Second\" never prints.",
+                        "incorrectFeedback": "return exits the function immediately.",
+                        "explanation": "After return, the function exits and the rest of the code doesn't run."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "return_expressions",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can return expressions directly without storing them in a variable first."
+                },
+                {
+                    "type": "code",
+                    "content": "def double(num):\n    return num * 2\n\ndef is_adult(age):\n    return age >= 18\n\nprint(double(7))\nprint(is_adult(20))",
+                    "properties": {
+                        "language": "python",
+                        "output": "14\nTrue"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "You can return calculations, comparisons, or any expression."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_expression",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Return whether the number is positive.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "def is_positive(num):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    return num {1} 0",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(is_positive(5))",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            ">",
+                            "<",
+                            "=="
+                        ],
+                        "solutions": {
+                            "1": ">"
+                        },
+                        "hint": "Use > to check if num is greater than 0.",
+                        "correctFeedback": "Perfect! The function returns True if num is positive.",
+                        "incorrectFeedback": "Use > to check if the number is greater than 0.",
+                        "explanation": "The comparison num > 0 returns True or False.",
+                        "output": "True"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "functions_without_return",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Functions without a `return` statement automatically return `None`."
+                },
+                {
+                    "type": "code",
+                    "content": "def say_hello():\n    print(\"Hello!\")\n\nresult = say_hello()\nprint(f\"Result: {result}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Hello!\nResult: None"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Since there's no return, the function returns `None` by default."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_none",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the function to return the sum.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "def calculate_sum(a, b, c):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    {1} a + b + c",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "total = calculate_sum(10, 20, 30)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(total)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "print",
+                            "send",
+                            "return"
+                        ],
+                        "solutions": {
+                            "1": "return"
+                        },
+                        "hint": "Use return to send the sum back.",
+                        "correctFeedback": "Perfect! The function returns the calculated sum.",
+                        "incorrectFeedback": "Use return to send the value back.",
+                        "explanation": "return sends the sum back so it can be stored in total.",
+                        "output": "60"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "Use `return` to send a value back from a function",
+                            "`return` lets you **use the result** in your code",
+                            "`return` is different from `print` - it gives back a value",
+                            "`return` **immediately exits** the function",
+                            "You can return expressions directly",
+                            "Functions without return automatically return `None`"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

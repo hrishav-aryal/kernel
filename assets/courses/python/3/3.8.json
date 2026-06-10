@@ -1,0 +1,525 @@
+{
+    "blocks": [
+        {
+            "id": "ex_1",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Practice",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What is a nested loop?",
+                        "options": [
+                            "A loop inside another loop",
+                            "Two loops running at the same time"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! A nested loop is a loop inside another loop.",
+                        "incorrectFeedback": "A nested loop is a loop inside another loop.",
+                        "explanation": "A nested loop runs completely inside each iteration of the outer loop."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_2",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "for i in range(2):\n    for j in range(3):\n        print(j)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "0\n1\n2\n0\n1\n2",
+                            "0\n1\n2"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! The inner loop runs completely for each iteration of the outer loop.",
+                        "incorrectFeedback": "The inner loop runs completely for each iteration of the outer loop.",
+                        "explanation": "The outer loop runs twice. Each time, the inner loop prints 0, 1, 2. So it prints 0, 1, 2 twice."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_3",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a nested loop to print each combination of `i` and `j`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "for i in range(2):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    {1} j in range(2):",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "        print(i, j)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "for",
+                            "while",
+                            "if"
+                        ],
+                        "solutions": {
+                            "1": "for"
+                        },
+                        "hint": "Use for to create the inner loop.",
+                        "correctFeedback": "Perfect! The inner for loop runs for each iteration of the outer loop.",
+                        "incorrectFeedback": "Use for to create the inner loop.",
+                        "explanation": "The nested loop prints all combinations: (0, 0), (0, 1), (1, 0), (1, 1).",
+                        "output": "0 0\n0 1\n1 0\n1 1"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_4",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "How many times will the inner loop run in total?",
+                        "options": [
+                            "6 times (outer runs 2 times × inner runs 3 times)",
+                            "5 times (2 + 3)"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! The inner loop runs 3 times for each of the 2 outer iterations.",
+                        "incorrectFeedback": "The inner loop runs completely for each outer iteration.",
+                        "explanation": "If the outer loop runs 2 times and the inner loop runs 3 times each, the total is 2 × 3 = 6 times."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_5",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "for i in range(1, 4):\n    for j in range(1, 3):\n        print(i * j)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "1\n2\n2\n4\n3\n6",
+                            "1\n2\n3"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! For each i (1, 2, 3), it multiplies by each j (1, 2).",
+                        "incorrectFeedback": "Check what i * j equals for each combination.",
+                        "explanation": "When i=1: prints 1×1=1, 1×2=2. When i=2: prints 2×1=2, 2×2=4. When i=3: prints 3×1=3, 3×2=6."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_6",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Print each fruit with each color.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "fruits = [\"apple\", \"banana\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "colors = [\"red\", \"yellow\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "for fruit in fruits:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    for {1} in colors:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "        print(fruit, color)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "color",
+                            "colors",
+                            "fruit"
+                        ],
+                        "solutions": {
+                            "1": "color"
+                        },
+                        "hint": "The inner loop variable should match what we use inside.",
+                        "correctFeedback": "Great! The nested loop prints each fruit with each color.",
+                        "incorrectFeedback": "The inner loop variable should match what we use inside.",
+                        "explanation": "For each fruit, the inner loop goes through all colors. It prints all combinations.",
+                        "output": "apple red\napple yellow\nbanana red\nbanana yellow"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_7",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "for i in range(3):\n    for j in range(i):\n        print(j, end=\" \")\n    print()",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "\n0 \n0 1 ",
+                            "0 \n0 1 \n0 1 2 "
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! The inner loop runs i times for each i.",
+                        "incorrectFeedback": "The inner loop runs range(i) times.",
+                        "explanation": "When i=0, inner loop doesn't run (empty line). When i=1, prints 0. When i=2, prints 0 1."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_8",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a nested loop to print a `3x3` grid of stars.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "for i in range(3):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    for j in range(3):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        print({1}, end=\" \")",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print()",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "\"*\"",
+                            "i",
+                            "j"
+                        ],
+                        "solutions": {
+                            "1": "\"*\""
+                        },
+                        "hint": "Print a star (*) for each position.",
+                        "correctFeedback": "Perfect! This creates a 3x3 grid of stars.",
+                        "incorrectFeedback": "Print a star (*) for each position.",
+                        "explanation": "The outer loop runs 3 times (rows). For each row, the inner loop prints 3 stars. print() moves to the next line.",
+                        "output": "* * * \n* * * \n* * * "
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_9",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "for i in range(2):\n    for j in range(2):\n        if i == j:\n            print(\"X\", end=\" \")\n        else:\n            print(\"O\", end=\" \")\n    print()",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "X O \nO X ",
+                            "X X \nX X "
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! X prints when i equals j, O otherwise.",
+                        "incorrectFeedback": "Check when i equals j.",
+                        "explanation": "When i=0, j=0: X (0==0), j=1: O (0!=1). When i=1, j=0: O (1!=0), j=1: X (1==1)."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_10",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Use nested loops to print a multiplication table for `1` and `2`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "for i in range(1, 3):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    for j in range(1, 4):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        print(i {1} j)",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "*",
+                            "+",
+                            "-"
+                        ],
+                        "solutions": {
+                            "1": "*"
+                        },
+                        "hint": "Multiply i and j for the multiplication table.",
+                        "correctFeedback": "Great! This prints the multiplication table.",
+                        "incorrectFeedback": "Multiply i and j for the multiplication table.",
+                        "explanation": "For i=1: prints 1×1=1, 1×2=2, 1×3=3. For i=2: prints 2×1=2, 2×2=4, 2×3=6.",
+                        "output": "1\n2\n3\n2\n4\n6"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_11",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What happens when `break` is used in a nested loop?",
+                        "options": [
+                            "It only exits the inner loop, not the outer loop",
+                            "It exits both loops"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! break only exits the loop it's directly in.",
+                        "incorrectFeedback": "break only exits the loop it's directly in.",
+                        "explanation": "break only exits the innermost loop it's in. The outer loop continues running."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_12",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "for i in range(3):\n    for j in range(3):\n        if j == 2:\n            break\n        print(i, j)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "0 0\n0 1\n1 0\n1 1\n2 0\n2 1",
+                            "0 0\n0 1\n0 2"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! break stops the inner loop when j=2, but the outer loop continues.",
+                        "incorrectFeedback": "break only exits the inner loop.",
+                        "explanation": "For each i (0, 1, 2), the inner loop prints j=0 and j=1, then breaks when j=2. The outer loop continues."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_13",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Stop the inner loop when `j` equals `2`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "for i in range(2):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    for j in range(4):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        if j == 2:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "            {1}",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "        print(i, j)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "break",
+                            "continue",
+                            "pass"
+                        ],
+                        "solutions": {
+                            "1": "break"
+                        },
+                        "hint": "Use break to exit the inner loop.",
+                        "correctFeedback": "Perfect! break stops the inner loop when j equals 2.",
+                        "incorrectFeedback": "Use break to exit the inner loop.",
+                        "explanation": "For each i, the inner loop prints j=0 and j=1, then breaks when j=2. The outer loop continues to the next i.",
+                        "output": "0 0\n0 1\n1 0\n1 1"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_14",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "for i in range(3):\n    for j in range(3):\n        if i == j:\n            continue\n        print(i, j)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "0 1\n0 2\n1 0\n1 2\n2 0\n2 1",
+                            "0 0\n1 1\n2 2"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! continue skips printing when i equals j.",
+                        "incorrectFeedback": "Check when continue is used.",
+                        "explanation": "The loop skips printing when i equals j (0,0), (1,1), (2,2). It prints all other combinations."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_15",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a nested loop to find and print all pairs where `a` is less than `b`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "for a in range(3):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    for b in range(3):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        if a {1} b:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "            print(a, b)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "<",
+                            ">",
+                            "=="
+                        ],
+                        "solutions": {
+                            "1": "<"
+                        },
+                        "hint": "We want pairs where a is less than b.",
+                        "correctFeedback": "Great! This prints all pairs where a < b.",
+                        "incorrectFeedback": "We want pairs where a is less than b.",
+                        "explanation": "The nested loop checks all combinations and prints only when a < b: (0,1), (0,2), (1,2).",
+                        "output": "0 1\n0 2\n1 2"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,95 @@
+Kernel Python Course Roadmap
+
+Unit 1: Python Basics
+
+01 Hello World and Comments
+02 Creating Variables
+03 Using Variables
+04 Naming rules & assignments
+05 Data Types
+06 Type Conversion
+07 String Concatenation and Formatting
+08 String Operations
+09 Basic Math Operations 
+
+Unit 2: Making Decisions
+
+01 Comparison Operators
+02 Logical Operators
+03 If Statements
+04 Elif & Else
+05 Nested Conditionals
+06 Match
+
+Unit 3: Repeating Tasks
+
+01 While Loops
+02 Range Function
+03 For Loops
+04 Loop Control (Break and Continue)
+05 Nested Loops
+
+Unit 4: Lists
+
+01 Creating List
+02 Accessing List
+03 Updating List
+04 Removing from List
+05 Looping & Checking Lists
+06 Slicing & Combining Lists
+
+
+Unit 5: Working with List Data
+
+01 Sorting Lists
+02 Reversing & Counting
+03 Finding in Lists
+04 Min, Max and Sum
+05 Copying Lists
+
+
+Unit 6: Data Structures
+
+01 Tuples Basics
+02 Working with Tuples
+03 Dictionary Basics
+04 Working with Dictionaries
+05 Looping Through Dictionaries
+06 Set Basics
+07 Set Operations
+
+
+Unit 7: Reusable Code
+
+01 Function Basics
+02 Parameters
+03 Return Values
+04 Default Parameters
+05 Variable Scope
+06 Functions with Conditionals
+07 Functions with Loops
+
+Unit 8: Handling Errors
+
+01 Try & Except
+02 Finally Blocks
+03 Raising Exceptions
+
+Unit 9: Python's Power
+
+01 Modules & Importing
+02 Random Module
+03 Math Module
+04 DateTime Module
+
+Unit 10: Classes & Objects
+
+01 Creating Classes
+02 Methods
+03 __init__ Constructor
+
+Unit 11: OOP Concepts
+
+01 Encapsulation
+02 Inheritance
+03 Polymorphism

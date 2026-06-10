@@ -1,0 +1,403 @@
+{
+    "blocks": [
+        {
+            "id": "intro_errors",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Understanding Errors",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Errors happen when Python can't understand or execute your code. Instead of fearing errors, learn to read and fix them - they're actually helpful!"
+                },
+                {
+                    "type": "text",
+                    "content": "Every error message tells you what went wrong and where. Let's learn to understand them."
+                }
+            ]
+        },
+        {
+            "id": "what_are_errors",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "What Are Errors?",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "When Python encounters a problem it can't solve, it stops and shows an error message. This is called **raising an exception** or **throwing an error**."
+                },
+                {
+                    "type": "code",
+                    "content": "print(message)",
+                    "properties": {
+                        "language": "python",
+                        "output": "NameError: name 'message' is not defined"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "This error tells us we're trying to use a variable `message` that doesn't exist."
+                }
+            ]
+        },
+        {
+            "id": "reading_errors",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Error messages have three important parts:"
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": true,
+                        "items": [
+                            "**Where** the error happened (line number)",
+                            "**What type** of error it is (NameError, TypeError, etc.)",
+                            "**Why** it happened (the description)"
+                        ]
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Reading error messages carefully helps you fix problems quickly."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_reading",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What does an error message tell you?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Only that something is wrong",
+                            "What type of error and where it occurred",
+                            "How to write better code"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! Error messages tell you the type and location of the problem.",
+                        "incorrectFeedback": "Error messages provide specific information about the type and location.",
+                        "explanation": "Error messages give you the error type, location, and description to help you fix it."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "name_error",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Common Error Types",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "**NameError:** Using a variable or function that doesn't exist."
+                },
+                {
+                    "type": "code",
+                    "content": "print(age)",
+                    "properties": {
+                        "language": "python",
+                        "output": "NameError: name 'age' is not defined"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Make sure you've created the variable before using it, or check for typos."
+                }
+            ]
+        },
+        {
+            "id": "type_error",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**TypeError:** Using the wrong type of data for an operation."
+                },
+                {
+                    "type": "code",
+                    "content": "result = \"5\" + 3",
+                    "properties": {
+                        "language": "python",
+                        "output": "TypeError: can only concatenate str (not \"int\") to str"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Make sure data types match. Convert `\"5\"` to `int(\"5\")` or `3` to `str(3)`."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_type_error",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Fix the TypeError by converting the string to an integer.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "num = \"10\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "result = {1}(num) + 5",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(result)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "int",
+                            "str"
+                        ],
+                        "solutions": {
+                            "1": "int"
+                        },
+                        "hint": "Convert the string to an integer using int().",
+                        "correctFeedback": "Perfect! Converting to int fixes the type mismatch.",
+                        "incorrectFeedback": "Use int() to convert the string to an integer.",
+                        "explanation": "int() converts strings to integers so you can do math operations.",
+                        "output": "15"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "index_error",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**IndexError:** Trying to access an index that doesn't exist in a list."
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = [10, 20, 30]\nprint(numbers[5])",
+                    "properties": {
+                        "language": "python",
+                        "output": "IndexError: list index out of range"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Check that your index is within the list's range. Remember, indices start at 0."
+                }
+            ]
+        },
+        {
+            "id": "value_error",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**ValueError:** Passing the wrong value to a function, even if the type is correct."
+                },
+                {
+                    "type": "code",
+                    "content": "number = int(\"hello\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "ValueError: invalid literal for int() with base 10: 'hello'"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Make sure the value can be converted. `\"hello\"` can't become an integer."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_errors",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What error occurs when you try to access `colors[10]` in a list with 3 items?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "NameError",
+                            "ValueError",
+                            "IndexError"
+                        ],
+                        "correctAnswerIndex": 2,
+                        "correctFeedback": "Correct! IndexError happens when the index doesn't exist.",
+                        "incorrectFeedback": "This is an IndexError - the index is out of range.",
+                        "explanation": "IndexError occurs when you try to access an index that doesn't exist in the list."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "zero_division_error",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**ZeroDivisionError:** Trying to divide by zero."
+                },
+                {
+                    "type": "code",
+                    "content": "result = 10 / 0",
+                    "properties": {
+                        "language": "python",
+                        "output": "ZeroDivisionError: division by zero"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Check that the divisor isn't zero before dividing."
+                }
+            ]
+        },
+        {
+            "id": "key_error",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**KeyError:** Trying to access a dictionary key that doesn't exist."
+                },
+                {
+                    "type": "code",
+                    "content": "person = {\"name\": \"Alice\", \"age\": 25}\nprint(person[\"city\"])",
+                    "properties": {
+                        "language": "python",
+                        "output": "KeyError: 'city'"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Use `get()` method or check if the key exists with `in` before accessing."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_zero_division",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What type of error would this code cause?"
+                },
+                {
+                    "type": "code",
+                    "content": "total = 100\ncount = 0\naverage = total / count",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "ZeroDivisionError",
+                            "ValueError",
+                            "TypeError"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Dividing by zero causes a ZeroDivisionError.",
+                        "incorrectFeedback": "Dividing by zero causes a ZeroDivisionError.",
+                        "explanation": "You can't divide by zero in math or in Python."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "errors_stop_execution",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "When an error occurs, Python **stops running** your program immediately."
+                },
+                {
+                    "type": "code",
+                    "content": "print(\"Start\")\nprint(unknown_variable)\nprint(\"End\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Start\nNameError: name 'unknown_variable' is not defined"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`\"End\"` never prints because the error stopped execution. In the next bytes, you'll learn how to handle errors so your program can continue."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_execution",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What happens after an error occurs?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Python stops the program immediately",
+                            "Python continues running the rest of the code",
+                            "Python skips the error and continues"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Errors stop program execution immediately.",
+                        "incorrectFeedback": "Errors stop the program - no more code runs after the error.",
+                        "explanation": "By default, errors stop your program. You'll learn to handle them in the next bytes."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "**Errors are helpful** - they tell you what's wrong",
+                            "**Read error messages** carefully - they show type and location",
+                            "**Common errors:** NameError, TypeError, IndexError, ValueError, ZeroDivisionError, KeyError",
+                            "**Errors stop execution** unless handled",
+                            "Understanding errors is the first step to handling them"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

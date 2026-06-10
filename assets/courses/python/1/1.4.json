@@ -1,0 +1,570 @@
+{
+    "blocks": [
+        {
+            "id": "intro_naming_rules",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Naming Rules & Assignments",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Now that you know how to create and use variables, let's learn the rules for naming them properly. Good variable names make your code easier to read and understand."
+                }
+            ]
+        },
+        {
+            "id": "variable_naming_rules",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Variable Naming Rules",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Python has specific rules for variable names. Following these rules helps you avoid errors."
+                }
+            ]
+        },
+        {
+            "id": "start_with_letter",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Variable names must **start with a letter** or underscore (_)."
+                },
+                {
+                    "type": "code",
+                    "content": "name = \"Alice\"\n\n_age = 25",
+                    "properties": {
+                        "language": "python"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "no_spaces",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Variable names **cannot contain spaces** or special characters."
+                },
+                {
+                    "type": "code",
+                    "content": "# Wrong - has space\nmy name = \"Bob\"",
+                    "properties": {
+                        "language": "python"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "case_sensitive",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Python is **case-sensitive**. `name`, `Name`, and `NAME` are different variables."
+                },
+                {
+                    "type": "code",
+                    "content": "name = \"Alice\"\nName = \"Bob\"\nNAME = \"Charlie\"\n\nprint(name)\nprint(Name)\nprint(NAME)",
+                    "properties": {
+                        "language": "python",
+                        "output": "Alice\nBob\nCharlie"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "valid_variable_names",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Here are some examples of **valid** variable names."
+                },
+                {
+                    "type": "code",
+                    "content": "name = \"Alice\"\n_age = 25\nstudent1 = \"Bob\"",
+                    "properties": {
+                        "language": "python"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "invalid_variable_names",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Here are some examples of **invalid** variable names."
+                },
+                {
+                    "type": "code",
+                    "content": "#can't start with a numbers\n2name = \"Alice\"\n\n#no spaces allowed\nmy name = \"Bob\"\n\n#can't use special characters\nuser@email = \"test\"",
+                    "properties": {
+                        "language": "python"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_whats_wrong_invalid",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What's wrong with the variable name?"
+                },
+                {
+                    "type": "code",
+                    "content": "my name = \"Alice\"",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Missing quotes around Alice",
+                            "Variable name has a space"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! Variable names cannot contain spaces.",
+                        "incorrectFeedback": "The variable name 'my name' contains a space, which is not allowed.",
+                        "explanation": "Use underscores instead of spaces: my_name."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_no_spaces",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "Which variable name seems to be invalid?",
+                        "options": [
+                            "my_name",
+                            "my name"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! **my name** contains a space.",
+                        "incorrectFeedback": "**my name** contains a space. Use underscores instead: my_name.",
+                        "explanation": "Variable names cannot contain spaces. Use underscores to separate words."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_start_with_letter",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "Which variable name is valid?",
+                        "options": [
+                            "2name",
+                            "name"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! **name** starts with a letter.",
+                        "incorrectFeedback": "**name** is valid. Variable names must start with a letter or underscore.",
+                        "explanation": "Variable names cannot start with numbers."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_fill_valid_name",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Tap on a valid variable name for storing a person's age.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "{1} = 25",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "age",
+                            "1age"
+                        ],
+                        "solutions": {
+                            "1": "age"
+                        },
+                        "hint": "Use a simple, descriptive name",
+                        "correctFeedback": "Perfect! 'age' is a valid and descriptive variable name.",
+                        "incorrectFeedback": "Use 'age' as the variable name",
+                        "explanation": "Use simple, descriptive names that start with a letter."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_fill_underscore_name",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Tap on a valid variable name for student's name.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "{1} = \"Alice\"",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "_name",
+                            "my name"
+                        ],
+                        "solutions": {
+                            "1": "_name"
+                        },
+                        "hint": "Use underscores to separate words",
+                        "correctFeedback": "Great! '_name' uses underscores correctly.",
+                        "incorrectFeedback": "Use '_name' with an underscore",
+                        "explanation": "Use underscores to separate words in variable names."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_fill_underscore_start",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Tap on a valid variable name for storing game score.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "{1} = 100",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "game-score",
+                            "_score"
+                        ],
+                        "solutions": {
+                            "1": "_score"
+                        },
+                        "hint": "Start with an underscore",
+                        "correctFeedback": "Excellent! '_score' starts with an underscore.",
+                        "incorrectFeedback": "Use '_score' starting with an underscore",
+                        "explanation": "Variable names can start with an underscore.",
+                        "output": "100"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "good_vs_bad_names",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Another important habit is to use **descriptive** variable names that help you understand what the variable stores."
+                },
+                {
+                    "type": "code",
+                    "content": "student_name = \"Alice\"\nstudent_age = 20",
+                    "properties": {
+                        "language": "python"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_descriptive_names",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "Which variable name is more descriptive for storing a user's name?",
+                        "options": [
+                            "x",
+                            "user_name"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! **user_name** clearly describes what the variable stores.",
+                        "incorrectFeedback": "**user_name** is more descriptive than single letters.",
+                        "explanation": "Descriptive names help you and others understand what the variable contains."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_whats_wrong_descriptive",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What's wrong with this variable name?"
+                },
+                {
+                    "type": "code",
+                    "content": "x = \"user@example.com\"",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "It's in lowercase",
+                            "It's not descriptive"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! 'x' doesn't tell us what the variable stores.",
+                        "incorrectFeedback": "The variable name 'x' is not descriptive. Use 'email' instead.",
+                        "explanation": "Use descriptive names like 'email' instead of single letters."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_fill_descriptive_name",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a descriptive variable name for storing a person's email address.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "{1} = \"user@example.com\"",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "e",
+                            "email_address"
+                        ],
+                        "solutions": {
+                            "1": "email_address"
+                        },
+                        "hint": "Use a simple, descriptive name",
+                        "correctFeedback": "Perfect! 'email_address' clearly describes what the variable stores.",
+                        "incorrectFeedback": "Use 'email_address' as the variable name",
+                        "explanation": "Use descriptive names that clearly indicate what data is stored."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_fill_underscore_descriptive",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a descriptive variable name with underscore for storing a phone number.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "{1} = \"123-456-7890\"",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "phone_number",
+                            "pnr"
+                        ],
+                        "solutions": {
+                            "1": "phone_number"
+                        },
+                        "hint": "Use underscores to separate words",
+                        "correctFeedback": "Great! 'phone_number' is descriptive and uses underscores correctly.",
+                        "incorrectFeedback": "Use 'phone_number' with an underscore",
+                        "explanation": "Use underscores to separate words in descriptive variable names."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "assignment_operator",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "The Assignment Operator",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "You might have already noticed that the `=` sign is used to assign a value to a variable."
+                },
+                {
+                    "type": "code",
+                    "content": "name = \"Alice\"\nage = 25\ncity = \"New York\"",
+                    "properties": {
+                        "language": "python"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "multiple_assignments",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can also assign the same value to **multiple variables** at once."
+                },
+                {
+                    "type": "code",
+                    "content": "x = y = z = 0",
+                    "properties": {
+                        "language": "python"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_assignment",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Use the assignment operator to create a variable called `color`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "color {1} \"blue\"",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(color)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "="
+                        ],
+                        "solutions": {
+                            "1": "="
+                        },
+                        "hint": "Use the assignment operator to assign the value",
+                        "correctFeedback": "Perfect! You used the assignment operator correctly.",
+                        "incorrectFeedback": "Use = to assign the value to the variable",
+                        "explanation": "The = sign assigns values to variables.",
+                        "output": "blue"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_multiple_assignments",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Assign the value **10** to both `a` and `b` variables.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "a {1} b {2} 10",
+                                "indent": 0,
+                                "blank": "1,2"
+                            }
+                        ],
+                        "options": [
+                            "=",
+                            "="
+                        ],
+                        "solutions": {
+                            "1": "=",
+                            "2": "="
+                        },
+                        "hint": "Use both variable names with the assignment operator",
+                        "correctFeedback": "Excellent! You assigned the same value to both variables.",
+                        "incorrectFeedback": "Use '=' to assign the same value to both",
+                        "explanation": "You can assign the same value to multiple variables in one line."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "what_will_print_assignment",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "x = 5\ny = x\nprint(y)",
+                    "properties": {
+                        "language": "python",
+                        "caption": "What will this code print?",
+                        "output": "5"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "x",
+                            "5",
+                            "y"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! The variable `y` gets the value of `x`, which is 5.",
+                        "incorrectFeedback": "The variable `y` gets the value of `x`, which is 5.",
+                        "explanation": "When you assign one variable to another, the second variable gets the value of the first."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "**Variable names** must start with a letter or underscore",
+                            "**Cannot start** with a number or contain spaces",
+                            "**Use descriptive names** that explain what the variable stores",
+                            "Use `=` to **assign** values to variables",
+                            "**Case matters** - `name` ≠ `Name` ≠ `NAME`"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

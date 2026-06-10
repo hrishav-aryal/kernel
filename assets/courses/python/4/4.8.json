@@ -1,0 +1,487 @@
+{
+    "blocks": [
+        {
+            "id": "ex_1",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Practice",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "Can you change items in a list after creating it?",
+                        "options": [
+                            "Yes, lists are mutable",
+                            "No, lists are immutable"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Lists are mutable, meaning you can change them.",
+                        "incorrectFeedback": "Lists are mutable, meaning you can change them.",
+                        "explanation": "Lists are mutable in Python. You can add, remove, or modify items after creating the list."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_2",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Change the first item in the list to `\"orange\"`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "fruits = [\"apple\", \"banana\", \"cherry\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "fruits[{1}] = {2}",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(fruits)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "0",
+                            "\"orange\"",
+                            "1"
+                        ],
+                        "solutions": {
+                            "1": "0",
+                            "2": "\"orange\""
+                        },
+                        "hint": "Use index 0 to access the first item.",
+                        "correctFeedback": "Perfect! You changed the first item.",
+                        "incorrectFeedback": "Use index 0 to access the first item.",
+                        "explanation": "fruits[0] = \"orange\" changes the first item from apple to orange.",
+                        "output": "['orange', 'banana', 'cherry']"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_3",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = [10, 20, 30]\nnumbers[1] = 25\nprint(numbers)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "[10, 25, 30]",
+                            "[10, 20, 30]"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! The item at index 1 changed from 20 to 25.",
+                        "incorrectFeedback": "Check what happens at index 1.",
+                        "explanation": "numbers[1] = 25 changes the second item (index 1) from 20 to 25."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_4",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Change the last item to `\"blue\"` using negative indexing.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "colors = [\"red\", \"green\", \"yellow\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "colors[{1}] = \"blue\"",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(colors)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "-1",
+                            "2",
+                            "-2"
+                        ],
+                        "solutions": {
+                            "1": "-1"
+                        },
+                        "hint": "-1 accesses the last item.",
+                        "correctFeedback": "Great! -1 changes the last item.",
+                        "incorrectFeedback": "-1 accesses the last item.",
+                        "explanation": "colors[-1] = \"blue\" changes the last item from yellow to blue.",
+                        "output": "['red', 'green', 'blue']"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_5",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What does the `append()` method do?",
+                        "options": [
+                            "Adds an item to the end of the list",
+                            "Removes the last item from the list"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! append() adds an item to the end.",
+                        "incorrectFeedback": "append() adds an item to the end.",
+                        "explanation": "The append() method adds a new item to the end of the list."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_6",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Add `\"dog\"` to the end of the list using `append()`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "animals = [\"cat\", \"bird\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "animals.{1}({2})",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(animals)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "append",
+                            "\"dog\"",
+                            "add"
+                        ],
+                        "solutions": {
+                            "1": "append",
+                            "2": "\"dog\""
+                        },
+                        "hint": "Use append() to add to the end.",
+                        "correctFeedback": "Perfect! append() added dog to the end.",
+                        "incorrectFeedback": "Use append() to add to the end.",
+                        "explanation": "animals.append(\"dog\") adds dog to the end of the list.",
+                        "output": "['cat', 'bird', 'dog']"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_7",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "nums = [1, 2]\nnums.append(3)\nnums.append(4)\nprint(nums)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "[1, 2, 3, 4]",
+                            "[1, 2, 3]"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Both 3 and 4 were added to the end.",
+                        "incorrectFeedback": "Both append() calls add items to the end.",
+                        "explanation": "The first append adds 3, then the second append adds 4. The list becomes [1, 2, 3, 4]."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_8",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Insert `\"banana\"` at index `1`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "fruits = [\"apple\", \"cherry\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "fruits.insert({1}, {2})",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(fruits)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "1",
+                            "\"banana\"",
+                            "0"
+                        ],
+                        "solutions": {
+                            "1": "1",
+                            "2": "\"banana\""
+                        },
+                        "hint": "insert(index, item) adds the item at the specified index.",
+                        "correctFeedback": "Great! insert() added banana at index 1.",
+                        "incorrectFeedback": "insert(index, item) adds the item at the specified index.",
+                        "explanation": "fruits.insert(1, \"banana\") adds banana at index 1, pushing cherry to index 2.",
+                        "output": "['apple', 'banana', 'cherry']"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_9",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What does the `remove()` method do?",
+                        "options": [
+                            "Removes the first occurrence of the specified item",
+                            "Removes all occurrences of the specified item"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! remove() removes only the first occurrence.",
+                        "incorrectFeedback": "remove() removes only the first occurrence.",
+                        "explanation": "The remove() method removes the first item that matches the value you specify."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_10",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Remove `\"banana\"` from the list.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "fruits = [\"apple\", \"banana\", \"cherry\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "fruits.{1}({2})",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(fruits)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "remove",
+                            "\"banana\"",
+                            "delete"
+                        ],
+                        "solutions": {
+                            "1": "remove",
+                            "2": "\"banana\""
+                        },
+                        "hint": "Use remove() to remove by value.",
+                        "correctFeedback": "Perfect! remove() removed banana.",
+                        "incorrectFeedback": "Use remove() to remove by value.",
+                        "explanation": "fruits.remove(\"banana\") removes banana from the list.",
+                        "output": "['apple', 'cherry']"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_11",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "colors = [\"red\", \"blue\", \"red\", \"green\"]\ncolors.remove(\"red\")\nprint(colors)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "['blue', 'red', 'green']",
+                            "['blue', 'green']"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Only the first red is removed.",
+                        "incorrectFeedback": "remove() only removes the first occurrence.",
+                        "explanation": "remove() removes only the first occurrence of red. The second red stays in the list."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_12",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What does the `pop()` method do?",
+                        "options": [
+                            "Removes and returns the last item",
+                            "Adds an item to the end"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! pop() removes and returns the last item.",
+                        "incorrectFeedback": "pop() removes and returns the last item.",
+                        "explanation": "The pop() method removes the last item from the list and returns it, so you can use it."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_13",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Remove the last item from the list.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "numbers = [10, 20, 30, 40]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "last = numbers.{1}()",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(numbers)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(last)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "pop",
+                            "remove",
+                            "delete"
+                        ],
+                        "solutions": {
+                            "1": "pop"
+                        },
+                        "hint": "Use pop() to remove the last item.",
+                        "correctFeedback": "Great! pop() removed and returned 40.",
+                        "incorrectFeedback": "Use pop() to remove the last item.",
+                        "explanation": "numbers.pop() removes 40 (the last item) and returns it. The list becomes [10, 20, 30].",
+                        "output": "[10, 20, 30]\n40"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_14",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "letters = [\"a\", \"b\", \"c\"]\nremoved = letters.pop(0)\nprint(removed)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "a",
+                            "c"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! pop(0) removes the first item.",
+                        "incorrectFeedback": "pop(0) removes the item at index 0.",
+                        "explanation": "pop(0) removes the item at index 0 (a) and returns it. The list becomes ['b', 'c']."
+                    }
+                }
+            ]
+        }
+    ]
+}

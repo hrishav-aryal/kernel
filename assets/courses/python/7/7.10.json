@@ -1,0 +1,666 @@
+{
+    "blocks": [
+        {
+            "id": "ex_1",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Practice",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "Where can local variables be used?",
+                        "options": [
+                            "Only inside their function",
+                            "Anywhere in the code"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Local variables only exist inside their function.",
+                        "incorrectFeedback": "Local variables only exist inside their function.",
+                        "explanation": "Variables created inside a function are local to that function and cannot be accessed outside."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_2",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "def my_function():\n    message = \"Hello\"\n    print(message)\n\nmy_function()",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Hello",
+                            "Error"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! message is local to the function and can be used inside.",
+                        "incorrectFeedback": "Local variables work inside their function.",
+                        "explanation": "The variable message is created and used inside the function, which is fine."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_3",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What happens if you try to use a local variable outside its function?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Error occurs",
+                            "It works fine"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Local variables can't be accessed outside their function.",
+                        "incorrectFeedback": "Local variables only exist inside their function.",
+                        "explanation": "Trying to use a local variable outside its function causes an error."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_4",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "name = \"Python\"\n\ndef show_name():\n    print(name)\n\nshow_name()",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Python",
+                            "Error"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Global variables can be read from inside functions.",
+                        "incorrectFeedback": "Global variables can be accessed from inside functions.",
+                        "explanation": "name is a global variable, so it can be read from anywhere, including inside functions."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_5",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "x = 10\n\ndef my_function():\n    x = 5\n    print(x)\n\nmy_function()",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "5",
+                            "10",
+                            "Error"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! The local x (5) is separate from the global x (10).",
+                        "incorrectFeedback": "Local and global variables with the same name are separate.",
+                        "explanation": "Inside the function, x refers to the local variable (5). Outside, x refers to the global variable (10)."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_6",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "Are parameters local or global variables?",
+                        "options": [
+                            "Local - they only exist inside the function",
+                            "Global - they can be used anywhere"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Parameters are local to their function.",
+                        "incorrectFeedback": "Parameters are local variables.",
+                        "explanation": "Parameters only exist inside the function where they're defined."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_7",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the function to return different grades based on the score.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "def get_grade(score):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    {1} score >= 90:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "        return \"A\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    {2}:",
+                                "indent": 0,
+                                "blank": "2"
+                            },
+                            {
+                                "code": "        return \"B\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(get_grade(95))",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "if",
+                            "else",
+                            "elif"
+                        ],
+                        "solutions": {
+                            "1": "if",
+                            "2": "else"
+                        },
+                        "hint": "Use if and else to check conditions.",
+                        "correctFeedback": "Perfect! The function returns different grades based on score.",
+                        "incorrectFeedback": "Use if to check the condition and else for the alternative.",
+                        "explanation": "Functions can use conditionals to return different values based on input.",
+                        "output": "A"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_8",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code return?"
+                },
+                {
+                    "type": "code",
+                    "content": "def check_number(num):\n    if num % 2 == 0:\n        return \"Even\"\n    else:\n        return \"Odd\"\n\nresult = check_number(7)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Odd",
+                            "Even"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! 7 % 2 is not 0, so it returns \"Odd\".",
+                        "incorrectFeedback": "Check if 7 is divisible by 2.",
+                        "explanation": "7 % 2 gives 1 (not 0), so the else branch runs and returns \"Odd\"."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_9",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Return the boolean comparison directly without if/else.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "def is_adult(age):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    {1} age >= 18",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(is_adult(20))",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "return",
+                            "if",
+                            "print"
+                        ],
+                        "solutions": {
+                            "1": "return"
+                        },
+                        "hint": "Return the comparison directly.",
+                        "correctFeedback": "Perfect! You simplified the boolean return.",
+                        "incorrectFeedback": "Return the condition age >= 18 directly.",
+                        "explanation": "You can return boolean expressions directly without if/else.",
+                        "output": "True"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_10",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this function return?"
+                },
+                {
+                    "type": "code",
+                    "content": "def can_vote(age, is_citizen):\n    if age >= 18 and is_citizen:\n        return True\n    else:\n        return False\n\nresult = can_vote(20, True)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "True",
+                            "False"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Both conditions are met.",
+                        "incorrectFeedback": "Check if both age >= 18 and is_citizen are True.",
+                        "explanation": "age is 20 (>= 18) and is_citizen is True, so both conditions are met and it returns True."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_11",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the function to return different shipping costs. Free shipping for orders $50 or more.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "def calculate_shipping(price):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    if price >= 50:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        return {1}",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    else:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        return 10",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(calculate_shipping(60))",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "0",
+                            "5",
+                            "10"
+                        ],
+                        "solutions": {
+                            "1": "0"
+                        },
+                        "hint": "Free shipping for orders $50 or more.",
+                        "correctFeedback": "Great! Free shipping for orders $50+.",
+                        "incorrectFeedback": "Orders $50+ should have free shipping (0).",
+                        "explanation": "When price >= 50, the function returns 0 (free shipping).",
+                        "output": "0"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_12",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What can functions with loops do?",
+                        "options": [
+                            "Process multiple items one by one",
+                            "Only work with single values"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Functions can use loops to process collections.",
+                        "incorrectFeedback": "Functions with loops can process multiple items.",
+                        "explanation": "Loops in functions let you process lists, accumulate results, or perform repeated operations."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_13",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this function return?"
+                },
+                {
+                    "type": "code",
+                    "content": "def sum_numbers(numbers):\n    total = 0\n    for num in numbers:\n        total = total + num\n    return total\n\nresult = sum_numbers([5, 10, 15])",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "30",
+                            "15"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! The function adds all numbers: 5 + 10 + 15 = 30.",
+                        "incorrectFeedback": "The function adds all numbers in the list.",
+                        "explanation": "The loop accumulates the sum: 0 + 5 = 5, 5 + 10 = 15, 15 + 15 = 30."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_14",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the function to count items in the list.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "def count_items(items):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    count = 0",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    for item in items:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        count = count {1} 1",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    return count",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(count_items([\"a\", \"b\", \"c\"]))",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "+",
+                            "-",
+                            "*"
+                        ],
+                        "solutions": {
+                            "1": "+"
+                        },
+                        "hint": "Add 1 to count for each item.",
+                        "correctFeedback": "Perfect! The function counts items using accumulation.",
+                        "incorrectFeedback": "Use + to increment count by 1.",
+                        "explanation": "Accumulating in a loop is a common pattern. Start with 0, add 1 for each item.",
+                        "output": "3"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_15",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this function return?"
+                },
+                {
+                    "type": "code",
+                    "content": "def double_numbers(numbers):\n    result = []\n    for num in numbers:\n        result.append(num * 2)\n    return result\n\ndoubled = double_numbers([1, 2, 3])",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "[2, 4, 6]",
+                            "[1, 2, 3]"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Each number is doubled: 1→2, 2→4, 3→6.",
+                        "incorrectFeedback": "The function doubles each number.",
+                        "explanation": "The function builds a new list by doubling each number and appending it."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_16",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the function to collect only positive numbers.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "def get_positive(numbers):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    result = []",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    for num in numbers:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        if num > 0:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "            result.{1}(num)",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    return result",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(get_positive([5, -2, 10, -7]))",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "append",
+                            "add",
+                            "insert"
+                        ],
+                        "solutions": {
+                            "1": "append"
+                        },
+                        "hint": "Use append to add items to the list.",
+                        "correctFeedback": "Perfect! The function filters and builds a new list.",
+                        "incorrectFeedback": "Use append to add items to the result list.",
+                        "explanation": "Combining loops and conditionals lets you filter items into a new list.",
+                        "output": "[5, 10]"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_17",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this function return?"
+                },
+                {
+                    "type": "code",
+                    "content": "def find_name(names, target):\n    for name in names:\n        if name == target:\n            return True\n    return False\n\nresult = find_name([\"Alice\", \"Bob\"], \"Bob\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "True",
+                            "False"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! \"Bob\" is found in the list.",
+                        "incorrectFeedback": "Check if \"Bob\" is in the list.",
+                        "explanation": "The loop finds \"Bob\" and returns True immediately. The function exits early when found."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_18",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the function to print numbers using range().",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "def print_numbers(n):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    for i in {1}(n):",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "        print(i)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print_numbers(4)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "range",
+                            "list",
+                            "int"
+                        ],
+                        "solutions": {
+                            "1": "range"
+                        },
+                        "hint": "Use range to generate numbers from 0 to n-1.",
+                        "correctFeedback": "Great! range(n) gives numbers 0 to n-1.",
+                        "incorrectFeedback": "Use range to create a sequence of numbers.",
+                        "explanation": "range(4) creates numbers 0, 1, 2, 3. The loop prints each one.",
+                        "output": "0\n1\n2\n3"
+                    }
+                }
+            ]
+        }
+    ]
+}

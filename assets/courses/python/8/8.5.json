@@ -1,0 +1,641 @@
+{
+    "blocks": [
+        {
+            "id": "ex_1",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Practice",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What does `try` and `except` do?",
+                        "options": [
+                            "Prevents errors from crashing your program",
+                            "Makes code run faster"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! try/except catches errors so your program can continue.",
+                        "incorrectFeedback": "try/except catches errors to prevent crashes.",
+                        "explanation": "try/except lets you handle errors gracefully instead of letting them crash your program."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_2",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the basic error handling structure.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "{1}:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    number = int(\"abc\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{2}:",
+                                "indent": 0,
+                                "blank": "2"
+                            },
+                            {
+                                "code": "    print(\"Invalid number\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "try",
+                            "except",
+                            "if"
+                        ],
+                        "solutions": {
+                            "1": "try",
+                            "2": "except"
+                        },
+                        "hint": "Use try for risky code, except to catch errors.",
+                        "correctFeedback": "Perfect! You set up error handling.",
+                        "incorrectFeedback": "Use try for code that might error, except for what to do if it errors.",
+                        "explanation": "try contains code that might cause an error. except runs if an error occurs.",
+                        "output": "Invalid number"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_3",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "try:\n    result = 10 / 0\n    print(\"Success\")\nexcept:\n    print(\"Error occurred\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Error occurred",
+                            "Success"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Division by zero causes an error, so except runs.",
+                        "incorrectFeedback": "Check what happens when you divide by zero.",
+                        "explanation": "10 / 0 raises a ZeroDivisionError, so the except block runs instead of printing \"Success\"."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_4",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What error type occurs here?"
+                },
+                {
+                    "type": "code",
+                    "content": "print(age)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "NameError",
+                            "TypeError"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Using an undefined variable causes NameError.",
+                        "incorrectFeedback": "Check what happens when you use a variable that doesn't exist.",
+                        "explanation": "NameError occurs when you try to use a variable or function that hasn't been defined."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_5",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Catch a specific `ValueError` instead of all errors.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "try:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    number = int(\"hello\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "except {1}:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(\"Not a valid number\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "ValueError",
+                            "Error",
+                            "Exception"
+                        ],
+                        "solutions": {
+                            "1": "ValueError"
+                        },
+                        "hint": "Specify the error type after except.",
+                        "correctFeedback": "Great! You caught a specific error type.",
+                        "incorrectFeedback": "Use except ValueError: to catch that specific error.",
+                        "explanation": "Catching specific errors lets you handle different problems differently.",
+                        "output": "Not a valid number"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_6",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What error type occurs here?"
+                },
+                {
+                    "type": "code",
+                    "content": "result = \"5\" + 3",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "TypeError",
+                            "ValueError"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Mixing incompatible types causes TypeError.",
+                        "incorrectFeedback": "Check what happens when you mix string and int.",
+                        "explanation": "TypeError occurs when you use the wrong type of data for an operation."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_7",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "try:\n    numbers = [1, 2, 3]\n    print(numbers[5])\nexcept IndexError:\n    print(\"Index not found\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Index not found",
+                            "5"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Index 5 doesn't exist, so IndexError is caught.",
+                        "incorrectFeedback": "Check if index 5 exists in the list.",
+                        "explanation": "The list only has indices 0, 1, 2. Accessing index 5 raises IndexError, which is caught."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_8",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Which specific error would you catch when dividing by zero?",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "try:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    result = 100 / 0",
+                                "indent": 0
+                            },
+                            {
+                                "code": "except {1}:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(\"Cannot divide by zero\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "ZeroDivisionError",
+                            "ValueError",
+                            "DivisionError"
+                        ],
+                        "solutions": {
+                            "1": "ZeroDivisionError"
+                        },
+                        "hint": "Use the specific error name for division by zero.",
+                        "correctFeedback": "Perfect! You caught the division by zero error.",
+                        "incorrectFeedback": "Use except ZeroDivisionError: to catch this error.",
+                        "explanation": "ZeroDivisionError occurs when you try to divide by zero.",
+                        "output": "Cannot divide by zero"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_9",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "When does the `else` block run in `try/except/else` structure?",
+                        "options": [
+                            "When no error occurs",
+                            "When an error occurs"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! else runs only if the try block succeeds.",
+                        "incorrectFeedback": "else runs when no error occurs.",
+                        "explanation": "The else block runs only if the try block completes without any errors."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_10",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "try:\n    result = 10 / 2\nexcept:\n    print(\"Error\")\nelse:\n    print(\"Success\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Success",
+                            "Error"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! No error occurred, so else runs.",
+                        "incorrectFeedback": "Check if 10 / 2 causes an error.",
+                        "explanation": "10 / 2 works fine, so the try block succeeds and the else block runs."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_11",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the code below to run the block when there's no error.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "try:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    number = int(\"5\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "except ValueError:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(\"Invalid\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1}:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(\"Valid number\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "else",
+                            "then",
+                            "if"
+                        ],
+                        "solutions": {
+                            "1": "else"
+                        },
+                        "hint": "Use else to run code when no error occurs.",
+                        "correctFeedback": "Perfect! else runs when the try block succeeds.",
+                        "incorrectFeedback": "Use else to handle the success case.",
+                        "explanation": "The else block runs only if no exception occurs in the try block.",
+                        "output": "Valid number"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_12",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "When does the `finally` block run?",
+                        "options": [
+                            "Always, whether error occurs or not",
+                            "Only when an error occurs"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! finally always runs, no matter what.",
+                        "incorrectFeedback": "finally always executes, regardless of errors.",
+                        "explanation": "The finally block always runs - whether an error occurs or not. It's useful for cleanup."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_13",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "try:\n    result = 10 / 0\nexcept:\n    print(\"Error\")\nfinally:\n    print(\"Done\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Error\nDone",
+                            "Done"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Both except and finally run.",
+                        "incorrectFeedback": "finally always runs, even after except.",
+                        "explanation": "The error is caught by except, which prints \"Error\". Then finally runs and prints \"Done\"."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_14",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the code below to run the block that always runs.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "try:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    number = int(\"10\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(number)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "except ValueError:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(\"Error\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1}:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(\"Cleanup\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "finally",
+                            "always",
+                            "end"
+                        ],
+                        "solutions": {
+                            "1": "finally"
+                        },
+                        "hint": "Use finally for code that always runs.",
+                        "correctFeedback": "Great! finally always runs for cleanup.",
+                        "incorrectFeedback": "Use finally to ensure code runs no matter what.",
+                        "explanation": "finally is useful for cleanup code that must run whether or not an error occurs.",
+                        "output": "10\nCleanup"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_15",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "try:\n    result = 10 / 2\nexcept:\n    print(\"Error\")\nelse:\n    print(\"Success\")\nfinally:\n    print(\"End\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Success\nEnd",
+                            "Error\nEnd"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! No error, so else runs, then finally always runs.",
+                        "incorrectFeedback": "Check if there's an error and what blocks run.",
+                        "explanation": "No error occurs, so except is skipped. else runs (\"Success\"), then finally always runs (\"End\")."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_16",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the full error handling structure with all blocks.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "{1}:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    data = {\"name\": \"Alice\"}",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(data[\"age\"])",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{2} KeyError:",
+                                "indent": 0,
+                                "blank": "2"
+                            },
+                            {
+                                "code": "    print(\"Key not found\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{3}:",
+                                "indent": 0,
+                                "blank": "3"
+                            },
+                            {
+                                "code": "    print(\"Cleanup\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "try",
+                            "except",
+                            "finally"
+                        ],
+                        "solutions": {
+                            "1": "try",
+                            "2": "except",
+                            "3": "finally"
+                        },
+                        "hint": "Use try, except, and finally.",
+                        "correctFeedback": "Perfect! You created a complete error handling structure.",
+                        "incorrectFeedback": "Use try for risky code, except to catch errors, finally for cleanup.",
+                        "explanation": "This structure tries to access a missing key, catches the error, and ensures cleanup runs.",
+                        "output": "Key not found\nCleanup"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_17",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "Can you create your own errors in Python?",
+                        "options": [
+                            "Yes, using the raise keyword",
+                            "No, only Python can create errors"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! You can create custom errors with raise.",
+                        "incorrectFeedback": "You can create your own errors using raise.",
+                        "explanation": "The raise keyword lets you create errors when you detect problems in your code."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_18",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code do?"
+                },
+                {
+                    "type": "code",
+                    "content": "age = -5\n\nif age < 0:\n    raise ValueError(\"Age can't be negative\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Creates a ValueError with a custom message",
+                            "Prints an error message"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! raise creates an error when you detect a problem.",
+                        "incorrectFeedback": "raise creates an actual error, not just a message.",
+                        "explanation": "raise lets you create errors with custom messages when you find invalid data."
+                    }
+                }
+            ]
+        }
+    ]
+}

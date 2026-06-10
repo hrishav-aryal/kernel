@@ -1,0 +1,444 @@
+{
+    "blocks": [
+        {
+            "id": "intro_string_concatenation",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "String Concatenation and Formatting",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Sometimes we need to combine strings with variables to create dynamic messages. There are two main ways to do this: **string concatenation** and **string formatting**."
+                }
+            ]
+        },
+        {
+            "id": "what_is_string_concatenation",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "String Concatenation",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "String concatenation means joining strings together using the `+` operator."
+                }
+            ]
+        },
+        {
+            "id": "basic_concatenation",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "We can join strings together using the `+` operator."
+                },
+                {
+                    "type": "code",
+                    "content": "first_name = \"Alice\"\nlast_name = \"Smith\"\nfull_name = first_name + \" \" + last_name\nprint(full_name)",
+                    "properties": {
+                        "language": "python",
+                        "output": "Alice Smith"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "concatenation_with_variables",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "We can also concatenate strings with **integer** variables, but we need to convert them to strings first."
+                },
+                {
+                    "type": "code",
+                    "content": "score = 100\nmessage = \"Your score is \" + str(score)\nprint(message)",
+                    "properties": {
+                        "language": "python",
+                        "output": "Your score is 100"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_basic_concatenation",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Join the first and last name with `+`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "first = \"John\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "last = \"Doe\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "full_name = first {1} \" \" {2} last",
+                                "indent": 0,
+                                "blank": "1,2"
+                            }
+                        ],
+                        "options": [
+                            "+",
+                            "+"
+                        ],
+                        "solutions": {
+                            "1": "+",
+                            "2": "+"
+                        },
+                        "hint": "Use `+` to concatenate the names",
+                        "correctFeedback": "Perfect! You joined the names with a `+`.",
+                        "incorrectFeedback": "Use `+` to concatenate the names",
+                        "explanation": "Use `+` to concatenate the names."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_concatenation_with_number",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Convert score to a string for the concatenation to work.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "score = 100",
+                                "indent": 0
+                            },
+                            {
+                                "code": "message = \"Your score is \" + {1}(score)",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "str"
+                        ],
+                        "solutions": {
+                            "1": "str"
+                        },
+                        "hint": "Use str() to convert the number to a string",
+                        "correctFeedback": "Great! You converted the age to a string for concatenation.",
+                        "incorrectFeedback": "Use str() to convert the number to a string",
+                        "explanation": "Convert numbers to strings before concatenating with text."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_whats_wrong_concatenation",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What's wrong with this concatenation?"
+                },
+                {
+                    "type": "code",
+                    "content": "score = 100\nmessage = \"Your score is \" + score",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Missing quotes around score",
+                            "Can't concatenate string with integer"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! You can't concatenate strings with integers directly.",
+                        "incorrectFeedback": "You can't concatenate strings with integers directly.",
+                        "explanation": "Convert integers to strings first using str()."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "string_formatting_intro",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "String Formatting with F-strings",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "F-strings (formatted string literals) provide a cleaner way to combine strings and variables."
+                }
+            ]
+        },
+        {
+            "id": "f_string_syntax",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "F-strings start with `f` before the quotes and use `{variable_name}` to insert variables."
+                },
+                {
+                    "type": "code",
+                    "content": "score = 100\nmessage = f\"Your score is {score}\"\nprint(message)",
+                    "properties": {
+                        "language": "python",
+                        "output": "Your score is 100"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_f_string_basic",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create an f-string for the variable `message`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "score = 100",
+                                "indent": 0
+                            },
+                            {
+                                "code": "message = {1}\"Your score is {score}\"",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "f-string",
+                            "f"
+                        ],
+                        "solutions": {
+                            "1": "f"
+                        },
+                        "hint": "Start with f before the quotes",
+                        "correctFeedback": "Perfect! You created an f-string with the f prefix.",
+                        "incorrectFeedback": "Start with f before the quotes",
+                        "explanation": "F-strings start with f before the opening quote."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_f_string_variables",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Let's create another variable called `level` and set it to `3`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "score = 100",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1} {2} {3}",
+                                "indent": 0,
+                                "blank": "1,2,3"
+                            }
+                        ],
+                        "options": [
+                            "level",
+                            "3",
+                            "="
+                        ],
+                        "solutions": {
+                            "1": "level",
+                            "2": "=",
+                            "3": "3"
+                        },
+                        "hint": "Use the variable name, an equals sign, and the value 3",
+                        "correctFeedback": "Well done! You created the level variable and set it to 3.",
+                        "incorrectFeedback": "Remember to use the variable name, an equals sign, and the value 3.",
+                        "explanation": "To create a variable, use the variable name (level), an equals sign (=), and the value (3)."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_f_string_variables",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Now lets add the level variable in the f-string.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "score = 100",
+                                "indent": 0
+                            },
+                            {
+                                "code": "level = 3",
+                                "indent": 0
+                            },
+                            {
+                                "code": "message = {1}",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "f\"Score: score - Level: level\"",
+                            "f\"Score: {score} - Level: {level}\""
+                        ],
+                        "solutions": {
+                            "1": "f\"Score: {score} - Level: {level}\""
+                        },
+                        "hint": "Use the variable name inside the curly braces",
+                        "correctFeedback": "Great! You used the score and level variables in the f-string.",
+                        "incorrectFeedback": "Use the variable name inside the curly braces",
+                        "explanation": "Put variable names inside curly braces {} in f-strings."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_f_string_variables",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Time to print `message` and see if it works.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "score = 100",
+                                "indent": 0
+                            },
+                            {
+                                "code": "level = 3",
+                                "indent": 0
+                            },
+                            {
+                                "code": "message = f\"Score: {score} - Level: {level}\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print({1})",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "message"
+                        ],
+                        "solutions": {
+                            "1": "message"
+                        },
+                        "hint": "Use the message variable in print()",
+                        "correctFeedback": "Awesome! You printed the message using the variable.",
+                        "incorrectFeedback": "Remember to print the message variable, not rewrite the f-string.",
+                        "explanation": "You should use the message variable, which was defined as an f-string above, when printing.",
+                        "output": "Score: 100 - Level: 3"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_whats_wrong_f_string",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What's wrong with this f-string?"
+                },
+                {
+                    "type": "code",
+                    "content": "score = 100\nlevel = 3\nmessage = \"Score: {score} - Level: {level}\"",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Missing quotes around the variables",
+                            "Missing f before the quotes"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! F-strings need the f prefix before the quotes.",
+                        "incorrectFeedback": "F-strings need the f prefix before the quotes.",
+                        "explanation": "Without the f prefix, it's just a regular string with literal curly braces."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_what_will_print_f_string",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this f-string print?"
+                },
+                {
+                    "type": "code",
+                    "content": "x = 5\ny = 3\nresult = f\"{x} * {y} = {x * y}\"\nprint(result)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "5 * 3 = 15",
+                            "x * y = x * y"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! The f-string calculates and displays the result.",
+                        "incorrectFeedback": "The f-string calculates and displays the result.",
+                        "explanation": "F-strings evaluate expressions inside curly braces."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "**String concatenation** uses `+` to join strings",
+                            "**Convert numbers** to strings with `str()` before concatenating",
+                            "**F-strings** start with `f` before the quotes",
+                            "**Variables** go inside curly braces `{variable_name}` in f-strings"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

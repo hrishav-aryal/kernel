@@ -1,0 +1,416 @@
+{
+    "blocks": [
+        {
+            "id": "intro_modules",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Modules & Importing",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "A **module** is a file containing Python code - functions, variables, and classes that you can use in your programs."
+                },
+                {
+                    "type": "text",
+                    "content": "Python comes with many built-in modules that give you extra powers without writing everything from scratch!"
+                }
+            ]
+        },
+        {
+            "id": "why_modules",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Why use modules?**"
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "Get ready-made functions for common tasks",
+                            "Save time - no need to reinvent the wheel",
+                            "Organize code into separate files",
+                            "Share code between different programs"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "importing_modules",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Importing Modules",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "To use a module, you need to **import** it first. Let's see it in action with the `random` module."
+                },
+                {
+                    "type": "code",
+                    "content": "import random\n\nnumber = random.randint(1, 10)\nprint(number)",
+                    "properties": {
+                        "language": "python",
+                        "output": "7"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`import random` loads the random module. Then you can use its functions like `random.randint()` to get a random number."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_import",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Import the math module to use its functions.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "{1} math",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "result = math.sqrt(16)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(result)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "use",
+                            "import",
+                            "include"
+                        ],
+                        "solutions": {
+                            "1": "import"
+                        },
+                        "hint": "Use import to load a module.",
+                        "correctFeedback": "Perfect! You imported the math module.",
+                        "incorrectFeedback": "Use import to load modules in Python.",
+                        "explanation": "import makes all the functions from a module available to use.",
+                        "output": "4.0"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "module_dot_function",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "After importing, use the pattern: `module_name.function_name()` to access functions."
+                },
+                {
+                    "type": "code",
+                    "content": "import random\n\ncolor = random.choice([\"red\", \"blue\"])\nprint(color)",
+                    "properties": {
+                        "language": "python",
+                        "output": "blue"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The dot `.` connects the module name to the function name. This tells Python where to find the function."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_dot",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "After importing a module, how do you use its functions?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "module_name.function_name()",
+                            "function_name()",
+                            "use function_name()"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Use the module name followed by a dot and function name.",
+                        "incorrectFeedback": "Use module_name.function_name() to access module functions.",
+                        "explanation": "The dot notation tells Python which module the function belongs to."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "from_import",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Importing Specific Items",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "You can import specific functions from a module using `from...import`. Then you can use them directly without the module name."
+                },
+                {
+                    "type": "code",
+                    "content": "from random import randint\n\nnumber = randint(1, 100)\nprint(number)",
+                    "properties": {
+                        "language": "python",
+                        "output": "42"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Now you can use `randint()` directly instead of `random.randint()`. This is convenient when you only need a few specific functions."
+                }
+            ]
+        },
+        {
+            "id": "multiple_imports",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can import multiple items by separating them with commas."
+                },
+                {
+                    "type": "code",
+                    "content": "from random import choice, randint\n\ncolor = choice([\"red\", \"blue\"])\nnumber = randint(1, 10)\nprint(f\"{color} - {number}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "red - 5"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Both `choice` and `randint` are imported and can be used directly."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_from_import",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Import the sqrt function from the math module.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "{1} math {2} sqrt",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "result = sqrt(25)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(result)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "from",
+                            "import",
+                            "use"
+                        ],
+                        "solutions": {
+                            "1": "from",
+                            "2": "import"
+                        },
+                        "hint": "Use from module_name import function_name.",
+                        "correctFeedback": "Perfect! You imported sqrt directly.",
+                        "incorrectFeedback": "Use from math import sqrt to import specific functions.",
+                        "explanation": "from...import lets you use functions without the module prefix.",
+                        "output": "5.0"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "import_as",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Import with Alias",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "You can give a module a shorter nickname using `as`. This is helpful for long module names."
+                },
+                {
+                    "type": "code",
+                    "content": "import random as r\n\nnumber = r.randint(1, 5)\nprint(number)",
+                    "properties": {
+                        "language": "python",
+                        "output": "3"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Now you can use `r` instead of typing `random` every time. It's just a shortcut!"
+                }
+            ]
+        },
+        {
+            "id": "quick_check_alias",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What does the `as` keyword do when importing?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Imports all functions",
+                            "Creates a shorter nickname for the module",
+                            "Imports only specific functions"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! as creates a shorter alias for the module.",
+                        "incorrectFeedback": "as gives the module a shorter nickname to use.",
+                        "explanation": "import module as nickname lets you use a shorter name."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "choosing_import_style",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Which import style to use?**"
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "`import module` - Use when you need many functions from a module",
+                            "`from module import func` - Use for specific functions you'll use often",
+                            "`import module as m` - Use for long module names"
+                        ]
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "All styles work - choose what makes your code clearest!"
+                }
+            ]
+        },
+        {
+            "id": "quick_check_practical",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the imports to use `random` module and `sqrt` function from `math` module.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "import {1}",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "from math import {2}",
+                                "indent": 0,
+                                "blank": "2"
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "num = random.randint(4, 9)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "result = sqrt(num)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(result)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "sqrt",
+                            "random"
+                        ],
+                        "solutions": {
+                            "1": "random",
+                            "2": "sqrt"
+                        },
+                        "hint": "Import the random module and sqrt function.",
+                        "correctFeedback": "Perfect! You imported both modules correctly.",
+                        "incorrectFeedback": "Import random as a module and sqrt from math.",
+                        "explanation": "You can mix different import styles in the same program.",
+                        "output": "2.0"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "**Modules** are files with reusable Python code",
+                            "Use `import module` to load a module",
+                            "Access functions with `module.function()`",
+                            "Use `from module import func` for specific functions",
+                            "Use `import module as m` for shorter names",
+                            "Import at the **top of your file**"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

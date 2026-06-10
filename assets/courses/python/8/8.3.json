@@ -1,0 +1,379 @@
+{
+    "blocks": [
+        {
+            "id": "intro_else_finally",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Else and Finally",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Beyond `try` and `except`, Python has two more useful blocks: `else` and `finally`. They give you even more control over error handling."
+                },
+                {
+                    "type": "text",
+                    "content": "These blocks help you organize code that runs in different situations."
+                }
+            ]
+        },
+        {
+            "id": "else_block",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "The Else Block",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `else` block runs **only if no error occurred** in the try block. It's perfect for code that should only run on success."
+                },
+                {
+                    "type": "code",
+                    "content": "try:\n    number = int(\"25\")\nexcept ValueError:\n    print(\"Invalid input\")\nelse:\n    print(f\"Converted: {number}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Converted: 25"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `else` block runs because no error occurred. If there had been an error, only the `except` block would run."
+                }
+            ]
+        },
+        {
+            "id": "else_vs_try",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Why use else instead of putting code in try?** It makes it clear which code might cause errors and which is the success case."
+                },
+                {
+                    "type": "code",
+                    "content": "try:\n    result = 10 / 2\nexcept ZeroDivisionError:\n    print(\"Cannot divide by zero\")\nelse:\n    print(f\"Result: {result}\")\n    print(\"Division successful!\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Result: 5.0\nDivision successful!"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `else` block contains code that should run after successful division."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_else",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Add an else block to print the result when no error occurs.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "try:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    value = int(\"100\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "except ValueError:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(\"Error converting\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1}:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(f\"Value: {value}\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "finally",
+                            "else",
+                            "then"
+                        ],
+                        "solutions": {
+                            "1": "else"
+                        },
+                        "hint": "Use else to run code when no error occurs.",
+                        "correctFeedback": "Perfect! The else block runs when there's no error.",
+                        "incorrectFeedback": "Use else for code that runs when no error occurs.",
+                        "explanation": "else runs only if the try block succeeds without errors.",
+                        "output": "Value: 100"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_when_else",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "When does the else block run?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "When no error occurs",
+                            "When an error occurs",
+                            "Always"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! else runs only when the try block succeeds.",
+                        "incorrectFeedback": "else runs only when there are no errors in the try block.",
+                        "explanation": "The else block is for success scenarios - when everything works."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "finally_block",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "The Finally Block",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `finally` block **always runs** - whether an error occurred or not. It's perfect for cleanup code."
+                },
+                {
+                    "type": "code",
+                    "content": "try:\n    result = 10 / 0\nexcept ZeroDivisionError:\n    print(\"Error: Division by zero\")\nfinally:\n    print(\"Cleanup complete\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Error: Division by zero\nCleanup complete"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Even though an error occurred, the `finally` block still runs."
+                }
+            ]
+        },
+        {
+            "id": "finally_always_runs",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "`finally` runs **no matter what** - success, error, or even if you return early."
+                },
+                {
+                    "type": "code",
+                    "content": "try:\n    number = int(\"50\")\n    print(f\"Number: {number}\")\nexcept ValueError:\n    print(\"Invalid input\")\nfinally:\n    print(\"This always runs\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Number: 50\nThis always runs"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "No error occurred, but `finally` still runs. It runs in **all cases**."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_finally",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "When does the finally block run?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Only when an error occurs",
+                            "Only when no error occurs",
+                            "Always, regardless of errors"
+                        ],
+                        "correctAnswerIndex": 2,
+                        "correctFeedback": "Correct! finally always runs, no matter what.",
+                        "incorrectFeedback": "finally runs in all situations - with or without errors.",
+                        "explanation": "finally is guaranteed to run, making it perfect for cleanup tasks."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practical_uses",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Common uses for finally:**"
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "Closing files",
+                            "Closing database connections",
+                            "Releasing resources",
+                            "Logging that an operation finished"
+                        ]
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Anything that must happen regardless of success or failure belongs in `finally`."
+                }
+            ]
+        },
+        {
+            "id": "complete_structure",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Here's the complete error handling structure with all four blocks `try`, `except`, `else`, and `finally`:"
+                },
+                {
+                    "type": "code",
+                    "content": "try:\n    value = int(\"42\")\n    result = 100 / value\nexcept ValueError:\n    print(\"Invalid number\")\nexcept ZeroDivisionError:\n    print(\"Cannot divide by zero\")\nelse:\n    print(f\"Success! Result: {result}\")\nfinally:\n    print(\"Operation completed\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Success! Result: 2.38\nOperation completed"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "**Order matters:** `try` → `except` → `else` → `finally`. You don't need all of them - use what you need."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_order",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the error handling structure in the correct order.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "{1}:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    number = int(\"10\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{2} ValueError:",
+                                "indent": 0,
+                                "blank": "2"
+                            },
+                            {
+                                "code": "    print(\"Invalid input\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{3}:",
+                                "indent": 0,
+                                "blank": "3"
+                            },
+                            {
+                                "code": "    print(\"Completed\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "except",
+                            "try",
+                            "finally"
+                        ],
+                        "solutions": {
+                            "1": "try",
+                            "2": "except",
+                            "3": "finally"
+                        },
+                        "hint": "Order: try, except, finally.",
+                        "correctFeedback": "Perfect! You structured the error handling correctly.",
+                        "incorrectFeedback": "Use try first, then except, then finally.",
+                        "explanation": "The order is: try → except → else (optional) → finally (optional).",
+                        "output": "Completed"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_practical",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What's the best use for a finally block?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Handling errors",
+                            "Cleanup code that must always run",
+                            "Code that runs only on success"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! finally is for cleanup code that must run no matter what.",
+                        "incorrectFeedback": "finally is for cleanup code that runs in all situations.",
+                        "explanation": "finally ensures cleanup happens whether there's an error or not."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "`else` runs **only if no error** occurred in try",
+                            "`finally` **always runs** regardless of errors",
+                            "Use `else` for success-only code",
+                            "Use `finally` for cleanup that must happen",
+                            "**Order:** `try` → `except` → `else` → `finally`",
+                            "All blocks are optional except try and except"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

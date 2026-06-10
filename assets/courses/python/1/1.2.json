@@ -1,0 +1,499 @@
+{
+    "blocks": [
+        {
+            "id": "intro_variables",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Creating Variables",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Variables are like containers that store information. They let you save data and use it later in your program. Think of them as labeled boxes where you can put things."
+                }
+            ]
+        },
+        {
+            "id": "what_are_variables",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "What are Variables?",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "A **variable** is a name that refers to a value. You can store different types of data in variables: text, numbers, and more."
+                },
+                {
+                    "type": "code",
+                    "content": "# Creating a variable\nname = \"Alice\"\nprint(name)",
+                    "properties": {
+                        "language": "python",
+                        "caption": "Your first variable",
+                        "output": "Alice"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Here, `name` is the variable, and `\"Alice\"` is the value stored in it. The `=` sign assigns the value to the variable."
+                }
+            ]
+        },
+        {
+            "id": "variable_basics",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can create variables to store different types of information:"
+                },
+                {
+                    "type": "code",
+                    "content": "# Store text (strings)\nmessage = \"Hello World\"\n\n# Store numbers\nage = 25\n\n# Store decimal numbers\nheight = 5.6\n\nprint(message)\nprint(age)\nprint(height)",
+                    "properties": {
+                        "language": "python",
+                        "caption": "Different types of variables",
+                        "output": "Hello World\n25\n5.6"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_basic_variables",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Fill in the **equals sign** to create the variable `city`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "city {1} \"New York\"",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(city)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "="
+                        ],
+                        "solutions": {
+                            "1": "="
+                        },
+                        "hint": "Use the equals sign to assign the value to the variable",
+                        "correctFeedback": "Perfect! The **=** sign assigns values to variables.",
+                        "incorrectFeedback": "Use **=** to assign the value to the variable",
+                        "explanation": "The equals sign (=) assigns values to variables.",
+                        "output": "New York"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_using_variables",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Now lets try creating another variable `animal`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "{1} = \"cat\"",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(animal)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "animal"
+                        ],
+                        "solutions": {
+                            "1": "animal"
+                        },
+                        "hint": "Use the variable name that matches the print statement",
+                        "correctFeedback": "Great! You used the correct variable name.",
+                        "incorrectFeedback": "Use 'animal' to match the print statement",
+                        "explanation": "The variable name must match what you use in the print statement.",
+                        "output": "cat"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_variable_creation",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Fill in the **value** for the variable `greeting`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "greeting = {1}",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(greeting)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "\"Good morning!\""
+                        ],
+                        "solutions": {
+                            "1": "\"Good morning!\""
+                        },
+                        "hint": "Use quotes around the text value",
+                        "correctFeedback": "Perfect! You assigned the correct value with quotes.",
+                        "incorrectFeedback": "Use quotes around the text: \"Good morning!\"",
+                        "explanation": "Text values must be enclosed in quotes.",
+                        "output": "Good morning!"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "using_variables",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Using Variables",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Once you create a variable, you can use it anywhere in your program. This makes your code more flexible and easier to change."
+                },
+                {
+                    "type": "code",
+                    "content": "# Create a variable\nuser_name = \"Bob\"\n\n# Use it multiple times\nprint(\"Hello, \" + user_name)\nprint(\"Welcome, \" + user_name)\nprint(user_name + \" is learning Python!\")",
+                    "properties": {
+                        "language": "python",
+                        "caption": "Reusing variables",
+                        "output": "Hello, Bob\nWelcome, Bob\nBob is learning Python!"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_using_variables_practice",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Use the `name` variable to create a greeting message.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "name = \"Sarah\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(\"Hello, \" + {1})",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "name"
+                        ],
+                        "solutions": {
+                            "1": "name"
+                        },
+                        "hint": "Use the variable name inside the print statement",
+                        "correctFeedback": "Perfect! You used the variable in your message.",
+                        "incorrectFeedback": "Use the variable name 'name' in the print statement",
+                        "explanation": "You can use variables inside print statements to create dynamic messages.",
+                        "output": "Hello, Sarah"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "changing_variables",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Changing Variables",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "You can change the value of a variable anytime by assigning a new value to it."
+                },
+                {
+                    "type": "code",
+                    "content": "# Create a variable\nscore = 10\nprint(\"Initial score:\", score)\n\n# Change the variable\nscore = 15\nprint(\"Updated score:\", score)\n\n# Change it again\nscore = 20\nprint(\"Final score:\", score)",
+                    "properties": {
+                        "language": "python",
+                        "caption": "Changing variable values",
+                        "output": "Initial score: 10\nUpdated score: 15\nFinal score: 20"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_simple_change",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "color = \"red\"\ncolor = \"blue\"\nprint(color)",
+                    "properties": {
+                        "language": "python",
+                        "caption": "What will this code print?",
+                        "output": "blue"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "red",
+                            "blue",
+                            "red blue"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! The variable **color** gets updated to **\"blue\"**.",
+                        "incorrectFeedback": "The variable gets updated to the new value **\"blue\"**.",
+                        "explanation": "When you assign a new value to a variable, it replaces the old value."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_changing_variables",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Fill in the **new value** to change count from 5 to 10:",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "count = 5",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(\"Before:\", count)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "count = {1}",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(\"After:\", count)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "10",
+                            "5"
+                        ],
+                        "solutions": {
+                            "1": "10"
+                        },
+                        "hint": "Use the number 10 to change the variable value",
+                        "correctFeedback": "Perfect! You changed the variable to 10.",
+                        "incorrectFeedback": "Use 10 to change the variable value",
+                        "explanation": "You can change a variable's value by assigning a new value to it.",
+                        "output": "Before: 5\nAfter: 10"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_final_practice",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Fill in the **equals sign** and **new value** to change `fruit` value",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "fruit = \"apple\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(fruit)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "fruit {1} {2}",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(fruit)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "=",
+                            "\"banana\""
+                        ],
+                        "solutions": {
+                            "1": "=",
+                            "2": "\"banana\""
+                        },
+                        "hint": "Use = to assign and \"banana\" as the new value",
+                        "correctFeedback": "Excellent! You used the equals sign and new value correctly.",
+                        "incorrectFeedback": "Use = to assign and \"banana\" as the new value",
+                        "explanation": "Use = to assign a new value to the variable.",
+                        "output": "apple\nbanana"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "common_mistakes_variables",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Common Mistakes",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "When working with variables, watch out for these common mistakes:"
+                }
+            ]
+        },
+        {
+            "id": "forgetting_equals",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Forgetting the equals sign** when creating variables"
+                },
+                {
+                    "type": "code",
+                    "content": "name \"Alice\"",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "This code is **missing the equals sign**. Python needs **=** to assign values to variables."
+                },
+                {
+                    "type": "code",
+                    "content": "# Correct - use equals sign\nname = \"Alice\"",
+                    "properties": {
+                        "language": "python"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "using_undefined_variable",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Using a variable before creating it**"
+                },
+                {
+                    "type": "code",
+                    "content": "print(name)\nname = \"Alice\"",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "This code tries to use `name` before creating it. Python doesn't know what `name` is yet."
+                },
+                {
+                    "type": "code",
+                    "content": "# Correct - create variable first\nname = \"Alice\"\nprint(name)",
+                    "properties": {
+                        "language": "python"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_mistakes",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What's wrong with this code?"
+                },
+                {
+                    "type": "code",
+                    "content": "name \"Alice\"",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Missing quotes around Alice",
+                            "Missing equals sign"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! The code is missing the **=** sign to assign the value.",
+                        "incorrectFeedback": "The code is missing the **=** sign. Use **name = \"Alice\"** to assign the value.",
+                        "explanation": "You need the equals sign (=) to assign a value to a variable."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "**Variables** store values you can use later",
+                            "**Use = to assign** values to variables",
+                            "**Create variables** before using them"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

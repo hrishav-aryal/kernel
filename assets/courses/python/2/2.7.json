@@ -1,0 +1,563 @@
+{
+    "blocks": [
+        {
+            "id": "ex_1",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Practice",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "code_fill",
+                    "content": "Create a comparison that returns `True`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "result = 10 {1} 5",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(result)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "<",
+                            ">",
+                            "=="
+                        ],
+                        "solutions": {
+                            "1": ">"
+                        },
+                        "hint": "10 is greater than 5.",
+                        "correctFeedback": "Correct! 10 > 5 is True.",
+                        "incorrectFeedback": "Pick the operator that makes 10 compared to 5 evaluate to True.",
+                        "explanation": "10 is greater than 5, so 10 > 5 is True.",
+                        "output": "True"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_2",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "result = 5 == 5\nprint(result)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "True",
+                            "False"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! 5 equals 5, so it returns True.",
+                        "incorrectFeedback": "== checks equality and returns True or False.",
+                        "explanation": "The == operator checks if two values are equal. Since 5 equals 5, it returns True."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_3",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Check if `age` is not equal to `18`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "age = 20",
+                                "indent": 0
+                            },
+                            {
+                                "code": "result = age {1} 18",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(result)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "==",
+                            "!=",
+                            "="
+                        ],
+                        "solutions": {
+                            "1": "!="
+                        },
+                        "hint": "Use != to check if two values are not equal.",
+                        "correctFeedback": "Perfect! != checks if values are not equal.",
+                        "incorrectFeedback": "Use != to check if two values are not equal.",
+                        "explanation": "!= checks if two values are not equal. Since 20 is not equal to 18, it returns True.",
+                        "output": "True"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_4",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Check if `price` is less than or equal to `100`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "price = 85",
+                                "indent": 0
+                            },
+                            {
+                                "code": "affordable = price {1} 100",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(affordable)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            ">=",
+                            "<=",
+                            "<"
+                        ],
+                        "solutions": {
+                            "1": "<="
+                        },
+                        "hint": "Use <= to check if a value is less than or equal to another.",
+                        "correctFeedback": "Nice! <= checks if the value is less than or equal to 100.",
+                        "incorrectFeedback": "Use <= to check if a value is less than or equal to another.",
+                        "explanation": "<= checks if the value is less than or equal to another. 85 is less than 100, so it returns True.",
+                        "output": "True"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_5",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "result = 7 >= 7\nprint(result)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "True",
+                            "False"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! 7 is equal to 7, so >= returns True.",
+                        "incorrectFeedback": ">= checks if the value is greater than or equal to.",
+                        "explanation": ">= returns True if the left value is greater than or equal to the right. 7 equals 7, so it returns True."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_6",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Compare `temperature` to see if it's greater than `30`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "temperature = 35",
+                                "indent": 0
+                            },
+                            {
+                                "code": "is_hot = temperature {1} 30",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(is_hot)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            ">",
+                            "<",
+                            "=="
+                        ],
+                        "solutions": {
+                            "1": ">"
+                        },
+                        "hint": "Use > to check if a value is greater than another.",
+                        "correctFeedback": "Great! > checks if the value is greater than 30.",
+                        "incorrectFeedback": "Use > to check if a value is greater than another.",
+                        "explanation": "> checks if the value is greater than another. 35 is greater than 30, so it returns True.",
+                        "output": "True"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_7",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Check if both conditions `has_ticket` and `has_id` are `True` to enter the event.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "has_ticket = True",
+                                "indent": 0
+                            },
+                            {
+                                "code": "has_id = True",
+                                "indent": 0
+                            },
+                            {
+                                "code": "can_enter = has_ticket {1} has_id",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(can_enter)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "or",
+                            "and",
+                            "not"
+                        ],
+                        "solutions": {
+                            "1": "and"
+                        },
+                        "hint": "Use and when both conditions must be True.",
+                        "correctFeedback": "Perfect! and returns True when both conditions are True.",
+                        "incorrectFeedback": "Use and when both conditions must be True.",
+                        "explanation": "and returns True only when both conditions are True. Both are True here, so it returns True.",
+                        "output": "True"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_8",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "result = True and False\nprint(result)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "False",
+                            "True"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! and returns False if any condition is False.",
+                        "incorrectFeedback": "and returns True only when both conditions are True.",
+                        "explanation": "and returns True only when both conditions are True. Since one is False, it returns False."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_9",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Check if at least one condition `is_weekend` or `is_holiday` is `True`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "is_weekend = False",
+                                "indent": 0
+                            },
+                            {
+                                "code": "is_holiday = True",
+                                "indent": 0
+                            },
+                            {
+                                "code": "can_rest = is_weekend {1} is_holiday",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(can_rest)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "and",
+                            "or",
+                            "not"
+                        ],
+                        "solutions": {
+                            "1": "or"
+                        },
+                        "hint": "Use or when at least one condition must be True.",
+                        "correctFeedback": "Nice! or returns True when at least one condition is True.",
+                        "incorrectFeedback": "Use or when at least one condition must be True.",
+                        "explanation": "or returns True when at least one condition is True. is_holiday is True, so it returns True.",
+                        "output": "True"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_10",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Flip the Boolean value of `is_raining`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "is_raining = False",
+                                "indent": 0
+                            },
+                            {
+                                "code": "is_sunny = {1} is_raining",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(is_sunny)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "not",
+                            "and",
+                            "or"
+                        ],
+                        "solutions": {
+                            "1": "not"
+                        },
+                        "hint": "Use not to flip True to False or False to True.",
+                        "correctFeedback": "Perfect! not flips the Boolean value.",
+                        "incorrectFeedback": "Use not to flip True to False or False to True.",
+                        "explanation": "not flips the Boolean value. is_raining is False, so not is_raining is True.",
+                        "output": "True"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_11",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "result = False or False\nprint(result)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "False",
+                            "True"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! or returns False when both conditions are False.",
+                        "incorrectFeedback": "or returns True only when at least one condition is True.",
+                        "explanation": "or returns False only when both conditions are False. Both are False here, so it returns False."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_13",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Check if `score` is less than `50`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "score = 45",
+                                "indent": 0
+                            },
+                            {
+                                "code": "needs_help = {1} {2} {3}",
+                                "indent": 0,
+                                "blank": "1,2,3"
+                            },
+                            {
+                                "code": "print(needs_help)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "<",
+                            "score",
+                            "50"
+                        ],
+                        "solutions": {
+                            "1": "score",
+                            "2": "<",
+                            "3": "50"
+                        },
+                        "hint": "Use < to check if score is less than 50.",
+                        "correctFeedback": "Great! score is less than 50, so this is True.",
+                        "incorrectFeedback": "Use < to check if score is less than 50.",
+                        "explanation": "score is less than 50, so this is True.",
+                        "output": "True"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_14",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "result = not True\nprint(result)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "False",
+                            "True"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! not flips True to False.",
+                        "incorrectFeedback": "not flips the Boolean value.",
+                        "explanation": "not flips True to False and False to True."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_15",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Check if `temperature` is not equal to `25`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "temperature = 30",
+                                "indent": 0
+                            },
+                            {
+                                "code": "result = temperature {1} 25",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(result)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "!=",
+                            "==",
+                            "="
+                        ],
+                        "solutions": {
+                            "1": "!="
+                        },
+                        "hint": "Use != to check if two values are not equal.",
+                        "correctFeedback": "Perfect! 30 is not equal to 25.",
+                        "incorrectFeedback": "Use != to check if two values are not equal.",
+                        "explanation": "!= checks if two values are not equal. 30 is not equal to 25, so it returns True.",
+                        "output": "True"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_12",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "age = 20\nhas_license = True\n\ncan_drive = (age >= 18) and has_license\nprint(can_drive)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "True",
+                            "False"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Both conditions must be True to drive.",
+                        "incorrectFeedback": "Use >= to check if age is at least 18, and use and to check both conditions.",
+                        "explanation": ">= checks if age is at least 18, and and ensures both conditions are True."
+                    }
+                }
+            ]
+        }
+    ]
+}

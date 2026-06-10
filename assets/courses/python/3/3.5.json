@@ -1,0 +1,141 @@
+{
+    "blocks": [
+        {
+            "id": "intro_nested_loops",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Nested Loops",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "A nested loop is a loop inside another loop. The inner loop runs completely for each iteration of the outer loop."
+                },
+                {
+                    "type": "text",
+                    "content": "This is useful when you need to work with two-dimensional data, like rows and columns, or when you need to repeat something multiple times."
+                }
+            ]
+        },
+        {
+            "id": "basic_nested_loops",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "How Nested Loops Work",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Here's a simple example of nested loops. The outer loop runs 3 times, and for each time, the inner loop runs 2 times."
+                },
+                {
+                    "type": "code",
+                    "content": "for i in range(3):\n    print(f\"Outer: {i}\")\n    for j in range(2):\n        print(f\"  Inner: {j}\")\n\nprint(\"Done!\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Outer: 0\n  Inner: 0\n  Inner: 1\nOuter: 1\n  Inner: 0\n  Inner: 1\nOuter: 2\n  Inner: 0\n  Inner: 1\nDone!"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Notice how the inner loop completes all its iterations (0, 1) before the outer loop moves to the next iteration."
+                }
+            ]
+        },
+        {
+            "id": "grid_example",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Nested loops are great for creating grid patterns. Here's an example that creates a 2x4 grid:"
+                },
+                {
+                    "type": "code",
+                    "content": "for i in range(2):\n    for j in range(4):\n        print(f\"({i}, {j})\", end=\" \")\n    print()  # New line after each row",
+                    "properties": {
+                        "language": "python",
+                        "output": "(0, 0) (0, 1) (0, 2) (0, 3) \n(1, 0) (1, 1) (1, 2) (1, 3) "
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "This creates a 2x4 grid. The `end=\" \"` keeps everything on the same line, and `print()` adds a new line after each row."
+                }
+            ]
+        },
+        {
+            "id": "string_example",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can use nested loops with strings to create patterns or work with text:"
+                },
+                {
+                    "type": "code",
+                    "content": "word = \"Hi\"\nfor i in range(3):\n    for letter in word:\n        print(letter, end=\" \")\n    print()",
+                    "properties": {
+                        "language": "python",
+                        "output": "H i \nH i \nH i "
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The outer loop runs 3 times, and for each time, the inner loop goes through each letter in \"Hi\"."
+                }
+            ]
+        },
+        {
+            "id": "break_in_nested",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can use `break` in nested loops. `break` only exits the innermost loop it's in:"
+                },
+                {
+                    "type": "code",
+                    "content": "for i in range(3):\n    print(f\"Outer: {i}\")\n    for j in range(3):\n        if j == 1:\n            break\n        print(f\"  Inner: {j}\")\n\nprint(\"Done!\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Outer: 0\n  Inner: 0\nOuter: 1\n  Inner: 0\nOuter: 2\n  Inner: 0\nDone!"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `break` only exits the inner loop when `j == 1`, but the outer loop continues running."
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "**Nested loops** are loops inside other loops",
+                            "The inner loop runs completely for each iteration of the outer loop",
+                            "Use different variable names for outer and inner loops (like `i` and `j`)",
+                            "`break` and `continue` only affect the innermost loop they're in",
+                            "Nested loops are useful for working with grids, patterns, and two-dimensional data"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

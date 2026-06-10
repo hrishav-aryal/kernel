@@ -1,0 +1,423 @@
+{
+    "blocks": [
+        {
+            "id": "intro_data_types",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Data Types",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Variables can store different types of data. Understanding data types helps you work with information correctly in your programs."
+                }
+            ]
+        },
+        {
+            "id": "what_are_data_types",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "What are Data Types?",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "A **data type** tells Python what kind of information a variable stores. Different types of data are handled differently."
+                }
+            ]
+        },
+        {
+            "id": "all_data_types",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Python has four main data types:"
+                },
+                {
+                    "type": "code",
+                    "content": "# String (text)\nname = \"Alice\"\n\n# Integer (whole number)\nage = 25\n\n# Float (decimal number)\nheight = 5.6\n\n# Boolean (True/False)\nis_student = True",
+                    "properties": {
+                        "language": "python"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "string_data_type",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Strings** store text. They are enclosed in quotes."
+                },
+                {
+                    "type": "code",
+                    "content": "name = \"Alice\"\nmessage = 'Hello World'",
+                    "properties": {
+                        "language": "python"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "integer_data_type",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Integers** store whole numbers (positive, negative, or zero)."
+                },
+                {
+                    "type": "code",
+                    "content": "age = 25\ncount = -5\nzero = 0",
+                    "properties": {
+                        "language": "python"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "float_data_type",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Floats** store decimal numbers."
+                },
+                {
+                    "type": "code",
+                    "content": "price = 19.99\nheight = 5.6\ntemperature = -3.5",
+                    "properties": {
+                        "language": "python"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "boolean_data_type",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Booleans** store `True` or `False` values."
+                },
+                {
+                    "type": "code",
+                    "content": "is_student = True\nis_working = False",
+                    "properties": {
+                        "language": "python"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_identify_string",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What data type is stored in this variable?"
+                },
+                {
+                    "type": "code",
+                    "content": "city = \"Paris\"",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "String",
+                            "Integer"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! **city = \"Paris\"** stores a string (text).",
+                        "incorrectFeedback": "**city = \"Paris\"** stores a string because it has quotes around the text.",
+                        "explanation": "Text enclosed in quotes is a string."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_identify_integer",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What data type is stored in this variable?"
+                },
+                {
+                    "type": "code",
+                    "content": "score = 95",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "String",
+                            "Integer"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! **score = 95** stores an integer (whole number).",
+                        "incorrectFeedback": "**score = 95** stores an integer because it's a whole number without quotes.",
+                        "explanation": "Numbers without quotes and decimal points are integers."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_create_string",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a **string** variable `message`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "message = {1}",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "Hello World",
+                            "\"Hello World\""
+                        ],
+                        "solutions": {
+                            "1": "\"Hello World\""
+                        },
+                        "hint": "Use quotes around text to create a string",
+                        "correctFeedback": "Perfect! You created a string variable with quotes.",
+                        "incorrectFeedback": "Use quotes around the text to make it a string",
+                        "explanation": "Strings need quotes around the text."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_whats_wrong_integer",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "We need to create an integer variable `count`. What's wrong with the variable value?"
+                },
+                {
+                    "type": "code",
+                    "content": "count = \"10\"",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "The value is a float",
+                            "The value is a string"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! Variable value is a string.",
+                        "incorrectFeedback": "Remember, integer value should not have quotes.",
+                        "explanation": "Integer value should not have quotes."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_create_float",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a float variable called `price`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "{1} = {2}",
+                                "indent": 0,
+                                "blank": "1,2"
+                            }
+                        ],
+                        "options": [
+                            "price",
+                            "9",
+                            "19.99"
+                        ],
+                        "solutions": {
+                            "1": "price",
+                            "2": "19.99"
+                        },
+                        "hint": "Use a decimal number without quotes",
+                        "correctFeedback": "Excellent! You created a float variable.",
+                        "incorrectFeedback": "Use a decimal number without quotes for floats",
+                        "explanation": "Floats are decimal numbers without quotes."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_create_boolean",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a boolean variable called `is_active`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "{1} = {2}",
+                                "indent": 0,
+                                "blank": "1,2"
+                            }
+                        ],
+                        "options": [
+                            "is_active",
+                            "\"True\"",
+                            "True"
+                        ],
+                        "solutions": {
+                            "1": "is_active",
+                            "2": "True"
+                        },
+                        "hint": "Use True without quotes",
+                        "correctFeedback": "Perfect! You created a boolean variable.",
+                        "incorrectFeedback": "Use True (capital letters) without quotes",
+                        "explanation": "Booleans are True or False without quotes."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "type_function",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Checking Data Types",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "You can check the data type of a variable using the `type()` function."
+                },
+                {
+                    "type": "code",
+                    "content": "name = \"Alice\"\nage = 25\n\nprint(type(name))\nprint(type(age))",
+                    "properties": {
+                        "language": "python",
+                        "output": "<class 'str'>\n<class 'int'>"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_type_function",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Use the `type()` function to check the data type of the `price` variable.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "price = 19.99",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print({1}(price))",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "type"
+                        ],
+                        "solutions": {
+                            "1": "type"
+                        },
+                        "hint": "Use the type function to check data type",
+                        "correctFeedback": "Perfect! You used type() to check the data type.",
+                        "incorrectFeedback": "Use 'type' to check the data type",
+                        "explanation": "Use type() to find out what data type a variable stores.",
+                        "output": "<class 'float'>"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_type_boolean",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Check the data type of the `is_ready` variable.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "is_ready = True",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print({1}({2}))",
+                                "indent": 0,
+                                "blank": "1,2"
+                            }
+                        ],
+                        "options": [
+                            "type",
+                            "is_ready"
+                        ],
+                        "solutions": {
+                            "1": "type",
+                            "2": "is_ready"
+                        },
+                        "hint": "Use type() with the variable name",
+                        "correctFeedback": "Excellent! You checked the data type of the boolean variable.",
+                        "incorrectFeedback": "Use type() with the variable name",
+                        "explanation": "Use type(variable_name) to check the data type.",
+                        "output": "<class 'bool'>"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "**Strings** store text (enclosed in quotes)",
+                            "**Integers** store whole numbers",
+                            "**Floats** store decimal numbers",
+                            "**Booleans** store True or False",
+                            "Use `type()` to check a variable's data type"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

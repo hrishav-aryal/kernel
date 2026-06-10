@@ -1,0 +1,483 @@
+{
+    "blocks": [
+        {
+            "id": "intro_elif_else",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Elif & Else",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Sometimes you need to check multiple conditions or handle what happens when none of your conditions are met. `elif` and `else` help you create more complex decision-making in your programs."
+                }
+            ]
+        },
+        {
+            "id": "else_statement",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "The `else` Statement",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `else` statement runs code when the `if` condition is `False`. It's like saying \"if this doesn't happen, then do that instead.\""
+                },
+                {
+                    "type": "code",
+                    "content": "age = 16\nif age >= 18:\n    print(\"You are an adult\")\nelse:\n    print(\"You are a minor\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "You are a minor"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "elif_statement",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "The `elif` Statement",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `elif` statement (short for \"else if\") lets you check another condition if the first one is `False`."
+                },
+                {
+                    "type": "code",
+                    "content": "score = 75\nif score >= 90:\n    print(\"Excellent!\")\nelif score >= 70:\n    print(\"Not bad\")\nelse:\n    print(\"Keep trying\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Not bad"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "elif_statement",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can have multiple `elif` statements to check many conditions. Only the first `True` condition will run. If the first condition is `True`, the other `elif` statements will not be checked."
+                },
+                {
+                    "type": "code",
+                    "content": "score = 75\nif score >= 90:\n    print(\"Excellent!\")\nelif score >= 80:\n    print(\"Good job!\")\nelif score >= 70:\n    print(\"Not bad\")\nelse:\n    print(\"Keep trying\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Not bad"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "elif_else_order",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Python checks conditions in order: first `if`, then each `elif` from top to bottom, and finally `else` if none of the conditions are `True`. Only the first `True` condition runs."
+                },
+                {
+                    "type": "code",
+                    "content": "age = 25\nif age < 18:\n    print(\"Minor\")\nelif age < 65:\n    print(\"Adult\")\nelif age < 100:\n    print(\"Senior\")\nelse:\n    print(\"Centenarian\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Adult"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_else_statement",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the **if-else** statement to check if it's raining.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "is_raining = False",
+                                "indent": 0
+                            },
+                            {
+                                "code": "if is_raining:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(\"Take an umbrella\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1}:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(\"Enjoy the weather\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "if",
+                            "else"
+                        ],
+                        "solutions": {
+                            "1": "else"
+                        },
+                        "hint": "Use else to handle when the if condition is False.",
+                        "correctFeedback": "Perfect! else handles when is_raining is False.",
+                        "incorrectFeedback": "Use else to handle when the if condition is False.",
+                        "explanation": "else runs when the if condition is False.",
+                        "output": "Enjoy the weather"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_elif_statement",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the **if-elif-else** statement to check the temperature.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "temperature = 25",
+                                "indent": 0
+                            },
+                            {
+                                "code": "if temperature > 30:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(\"It's hot\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1} temperature > 20:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(\"It's warm\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "else:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(\"It's cold\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "else",
+                            "elif",
+                            "if"
+                        ],
+                        "solutions": {
+                            "1": "elif"
+                        },
+                        "hint": "Use elif to check another condition.",
+                        "correctFeedback": "Great! elif checks the second condition.",
+                        "incorrectFeedback": "Use elif to check another condition.",
+                        "explanation": "elif checks another condition when the first if is False.",
+                        "output": "It's warm"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_order_matters",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "score = 85\nif score >= 90:\n    print(\"Excellent\")\nelif score >= 80:\n    print(\"Good\")\nelse:\n    print(\"Try again\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Good",
+                            "Excellent"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! The first True condition (score >= 80) runs, so 'Good' is printed.",
+                        "incorrectFeedback": "The first True condition (score >= 80) runs, so 'Good' is printed.",
+                        "explanation": "Python stops at the first True condition and doesn't check the rest."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_grade_system",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the grade system. A score of 90 or higher should get an A and a score of 80 or higher should get a B.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "score = 85",
+                                "indent": 0
+                            },
+                            {
+                                "code": "if {1}:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(\"Grade: A\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "elif {2}:",
+                                "indent": 0,
+                                "blank": "2"
+                            },
+                            {
+                                "code": "    print(\"Grade: B\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "else:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(\"Grade: C or below\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "score >= 80",
+                            "score >= 90"
+                        ],
+                        "solutions": {
+                            "1": "score >= 90",
+                            "2": "score >= 80"
+                        },
+                        "hint": "Use >= to check if score is 90 or higher and 80 or higher for a B grade.",
+                        "correctFeedback": "Perfect! score >= 90 checks if the score is 90 or higher and score >= 80 checks if the score is 80 or higher for a B grade.",
+                        "incorrectFeedback": "Use >= to check if score is 90 or higher and 80 or higher for a B grade.",
+                        "explanation": "score >= 90 checks if the score is 90 or higher for an A grade and score >= 80 checks if the score is 80 or higher for a B grade.",
+                        "output": "Grade: B"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_what_will_print_elif",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "x = 15\nif x > 20:\n    print(\"High\")\nelif x > 10:\n    print(\"Medium\")\nelse:\n    print(\"Low\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "High",
+                            "Medium",
+                            "Low"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! x > 20 is False, but x > 10 is True, so 'Medium' is printed.",
+                        "incorrectFeedback": "x > 20 is False, but x > 10 is True, so 'Medium' is printed.",
+                        "explanation": "The first condition is False, so Python checks the elif condition which is True."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_else_only",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "score = 50\nif score >= 80:\n    print(\"Pass\")\nelse:\n    print(\"Fail\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Pass",
+                            "Fail"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! score >= 80 is False, so the else block runs.",
+                        "incorrectFeedback": "score >= 80 is False, so the else block runs.",
+                        "explanation": "Since the if condition is False, the else block executes."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_temperature_ranges",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a temperature checker. Below 0°C is freezing, 0-20°C is cold, 20-30°C is warm, above 30°C is hot.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "temp = 25",
+                                "indent": 0
+                            },
+                            {
+                                "code": "if {1}:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(\"Freezing\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "elif {2}:",
+                                "indent": 0,
+                                "blank": "2"
+                            },
+                            {
+                                "code": "    print(\"Cold\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "elif {3}:",
+                                "indent": 0,
+                                "blank": "3"
+                            },
+                            {
+                                "code": "    print(\"Warm\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "else:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(\"Hot\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "temp <= 20",
+                            "temp <= 0",
+                            "temp <= 30"
+                        ],
+                        "solutions": {
+                            "1": "temp <= 0",
+                            "2": "temp <= 20",
+                            "3": "temp <= 30"
+                        },
+                        "hint": "Use temp <= 0 to check if the temperature is below 0°C and so on.",
+                        "correctFeedback": "Perfect! temp <= 0 checks if the temperature is below 0°C, temp <= 20 checks if it's 20 or below (cold) and temp <= 30 checks if it's 30 or below (warm).",
+                        "incorrectFeedback": "Use temp <= 0 to check if the temperature is below 0°C and so on.",
+                        "explanation": "temp <= 0 checks if the temperature is below 0°C, temp <= 20 checks if it's 20 or below (cold) and temp <= 30 checks if it's 30 or below (warm).",
+                        "output": "Warm"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_what_will_print_complex",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "x = 15\ny = 20\nz = 10\n\nif x > y:\n    print(\"x is largest\")\nelif y > z:\n    print(\"y is largest\")\nelif z > x:\n    print(\"z is largest\")\nelse:\n    print(\"All equal\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "x is largest",
+                            "y is largest",
+                            "z is largest",
+                            "All equal"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! x > y is False, but y > z is True, so 'y is largest' is printed.",
+                        "incorrectFeedback": "x > y is False, but y > z is True, so 'y is largest' is printed.",
+                        "explanation": "The first condition is False, so Python checks the second condition which is True."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "`else` runs when the `if` condition is `False`",
+                            "`elif` checks another condition if the first is `False`",
+                            "Python checks conditions **in order** from top to bottom",
+                            "Only the first `True` condition runs",
+                            "Use `if-elif-else` for multiple conditions"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

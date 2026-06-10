@@ -1,0 +1,371 @@
+{
+    "blocks": [
+        {
+            "id": "intro_math",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Math Module",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `math` module provides mathematical functions and constants. It's your calculator within Python!"
+                },
+                {
+                    "type": "text",
+                    "content": "Let's explore the most useful functions for everyday calculations."
+                }
+            ]
+        },
+        {
+            "id": "sqrt_function",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Square Root",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`sqrt()` calculates the square root of a number."
+                },
+                {
+                    "type": "code",
+                    "content": "import math\n\nresult = math.sqrt(16)\nprint(result)\n\nresult2 = math.sqrt(25)\nprint(result2)",
+                    "properties": {
+                        "language": "python",
+                        "output": "4.0\n5.0"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Square root of `16` is `4`, and square root of `25` is `5`. The result is always a decimal (float)."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_sqrt",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Calculate the square root of `49`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "import math",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "result = math.{1}(49)",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(result)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "root",
+                            "square",
+                            "sqrt"
+                        ],
+                        "solutions": {
+                            "1": "sqrt"
+                        },
+                        "hint": "Use sqrt to calculate square root.",
+                        "correctFeedback": "Perfect! sqrt calculates the square root.",
+                        "incorrectFeedback": "Use sqrt(number) to find the square root.",
+                        "explanation": "sqrt stands for square root.",
+                        "output": "7.0"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ceil_floor",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Rounding Numbers",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`ceil()` rounds **up** to the nearest integer. `floor()` rounds **down** to the nearest integer."
+                },
+                {
+                    "type": "code",
+                    "content": "import math\n\nup = math.ceil(4.2)\ndown = math.floor(4.8)\n\nprint(f\"Ceil: {up}\")\nprint(f\"Floor: {down}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Ceil: 5\nFloor: 4"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`ceil(4.2)` goes up to `5`. `floor(4.8)` goes down to `4`. Think of ceiling (top) and floor (bottom)."
+                }
+            ]
+        },
+        {
+            "id": "ceil_floor_examples",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "These are useful when you need whole numbers in specific situations."
+                },
+                {
+                    "type": "code",
+                    "content": "import math\n\nprice = 19.99\ntax = 2.05\n\ntotal_up = math.ceil(price + tax)\ntotal_down = math.floor(price + tax)\n\nprint(f\"Round up: ${total_up}\")\nprint(f\"Round down: ${total_down}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Round up: $23\nRound down: $22"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Useful for pricing, counting items, or any situation where you need integers."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_ceil_floor",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What's the difference between ceil and floor?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "ceil rounds down, floor rounds up",
+                            "They both round the same way",
+                            "ceil rounds up, floor rounds down"
+                        ],
+                        "correctAnswerIndex": 2,
+                        "correctFeedback": "Correct! ceil always rounds up, floor always rounds down.",
+                        "incorrectFeedback": "ceil rounds up (to ceiling), floor rounds down (to floor).",
+                        "explanation": "Think of ceiling (top) and floor (bottom) to remember."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "power_function",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "`pow(x, y)` calculates `x` raised to the power of `y`."
+                },
+                {
+                    "type": "code",
+                    "content": "import math\n\nresult = math.pow(2, 3)\nprint(result)\n\nresult2 = math.pow(5, 2)\nprint(result2)",
+                    "properties": {
+                        "language": "python",
+                        "output": "8.0\n25.0"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`pow(2, 3)` means 2³ = 2×2×2 = 8. `pow(5, 2)` means 5² = 5×5 = 25."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_pow",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Calculate `3` to the power of `4`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "import math",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "result = math.pow({1}, {2})",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(result)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "3",
+                            "4"
+                        ],
+                        "solutions": {
+                            "1": "3",
+                            "2": "4"
+                        },
+                        "hint": "pow(base, exponent) - 3 to the power of 4.",
+                        "correctFeedback": "Perfect! 3⁴ = 81.",
+                        "incorrectFeedback": "Use pow(3, 4) to calculate 3 to the power of 4.",
+                        "explanation": "pow(x, y) calculates x raised to the power of y.",
+                        "output": "81.0"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "pi_constant",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Math Constants",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The math module provides useful constants like `pi` (π ≈ 3.14159...)."
+                },
+                {
+                    "type": "code",
+                    "content": "import math\n\nradius = 5\narea = math.pi * math.pow(radius, 2)\n\nprint(f\"Area: {area}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Area: 78.53981633974483"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "We used `math.pi` to calculate the area of a circle. Note: `pi` is a value, not a function, so no parentheses!"
+                }
+            ]
+        },
+        {
+            "id": "other_constants",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "The math module also provides other useful constants like `e` (Euler's number), `tau` (2π), and `inf` (infinity)."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_pi",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "How do you use the pi constant?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "math.pi()",
+                            "math.pi",
+                            "pi"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! pi is a constant, so no parentheses needed.",
+                        "incorrectFeedback": "Use math.pi without parentheses - it's a value, not a function.",
+                        "explanation": "Constants are accessed without parentheses, unlike functions."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_practical",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Calculate the circumference of a circle using formula `2 * pi * radius`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "import math",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "radius = 3",
+                                "indent": 0
+                            },
+                            {
+                                "code": "circumference = 2 * math.{1} * radius",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(f\"Circumference: {circumference:.2f}\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "sqrt",
+                            "pi"
+                        ],
+                        "solutions": {
+                            "1": "pi"
+                        },
+                        "hint": "Use pi for circle calculations.",
+                        "correctFeedback": "Perfect! You calculated the circumference using pi.",
+                        "incorrectFeedback": "Use math.pi for the pi constant.",
+                        "explanation": "Circumference = 2πr. We used math.pi to get the value of π.",
+                        "output": "Circumference: 18.85"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "`import math` to use the math module",
+                            "`sqrt(x)` - Square root of x",
+                            "`ceil(x)` - Round up, `floor(x)` - Round down",
+                            "`pow(x, y)` - x to the power of y",
+                            "`pi` - The constant π (no parentheses)",
+                            "Math functions return **floats** (decimals)"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

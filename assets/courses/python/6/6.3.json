@@ -1,0 +1,534 @@
+{
+    "blocks": [
+        {
+            "id": "intro_dictionaries",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Dictionary Basics",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "A dictionary stores data in **key-value pairs**. Instead of using positions like lists, you use meaningful **keys** to access values."
+                },
+                {
+                    "type": "text",
+                    "content": "Think of it like a real dictionary - you look up a word (key) to find its definition (value)."
+                }
+            ]
+        },
+        {
+            "id": "creating_dictionaries",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Creating Dictionaries",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "You create a dictionary using **curly braces** `{}`. Each key-value pair is separated by a comma `,` and the key and value are separated by a colon `:`."
+                },
+                {
+                    "type": "code",
+                    "content": "student = {\n    \"name\": \"Alice\",\n    \"age\": 20,\n    \"grade\": \"A\"\n}\nprint(student)",
+                    "properties": {
+                        "language": "python",
+                        "output": "{'name': 'Alice', 'age': 20, 'grade': 'A'}"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "This dictionary has three keys: `\"name\"`, `\"age\"`, and `\"grade\"`, each with its own value."
+                }
+            ]
+        },
+        {
+            "id": "key_value_concept",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "The **key** is what you use to look up data. The **value** is the actual data stored."
+                },
+                {
+                    "type": "code",
+                    "content": "phone_book = {\n    \"Alice\": \"555-1234\",\n    \"Bob\": \"555-5678\",\n    \"Charlie\": \"555-9012\"\n}\nprint(phone_book)",
+                    "properties": {
+                        "language": "python",
+                        "output": "{'Alice': '555-1234', 'Bob': '555-5678', 'Charlie': '555-9012'}"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Names are the keys, phone numbers are the values."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_create",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a dictionary called `car` with key `\"brand\"` and value `\"Toyota\"`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "car = {1}",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(car)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "[\"brand\": \"Toyota\"]",
+                            "{\"brand\": \"Toyota\"}",
+                            "(\"brand\": \"Toyota\")"
+                        ],
+                        "solutions": {
+                            "1": "{\"brand\": \"Toyota\"}"
+                        },
+                        "hint": "Use curly braces {} with key: value format.",
+                        "correctFeedback": "Perfect! You created a dictionary with curly braces.",
+                        "incorrectFeedback": "Use curly braces {} and separate key and value with a colon.",
+                        "explanation": "Dictionaries use curly braces {} and colons : to separate keys and values.",
+                        "output": "{'brand': 'Toyota'}"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "accessing_values",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Accessing Values",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "To get a value from a dictionary, use the **key** inside square brackets."
+                },
+                {
+                    "type": "code",
+                    "content": "student = {\"name\": \"Alice\", \"age\": 20}\nprint(student[\"name\"])\nprint(student[\"age\"])",
+                    "properties": {
+                        "language": "python",
+                        "output": "Alice\n20"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Using the key `\"name\"` gives us `\"Alice\"`, and `\"age\"` gives us `20`."
+                }
+            ]
+        },
+        {
+            "id": "keys_not_indices",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Important:** Dictionaries don't use numeric indices like lists. You use the actual key name."
+                },
+                {
+                    "type": "code",
+                    "content": "colors = {\n    \"primary\": \"red\",\n    \"secondary\": \"blue\"\n}\nprint(colors[\"primary\"])",
+                    "properties": {
+                        "language": "python",
+                        "output": "red"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "You can't use `colors[0]` - you must use the key `\"primary\"`."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_access",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Get the value for key `\"city\"` from the dictionary.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "person = {\"name\": \"John\", \"city\": \"NYC\"}",
+                                "indent": 0
+                            },
+                            {
+                                "code": "location = person[{1}]",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(location)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "city",
+                            "\"city\"",
+                            "1"
+                        ],
+                        "solutions": {
+                            "1": "\"city\""
+                        },
+                        "hint": "Use the key name in quotes to access the value.",
+                        "correctFeedback": "Perfect! You accessed the value using the key \"city\".",
+                        "incorrectFeedback": "Use the key in quotes: person[\"city\"]",
+                        "explanation": "Dictionary keys must be in quotes when accessing values.",
+                        "output": "NYC"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_access_output",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "prices = {\"apple\": 1.50, \"banana\": 0.75}\nprint(prices[\"banana\"])",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "1.50",
+                            "banana",
+                            "0.75"
+                        ],
+                        "correctAnswerIndex": 2,
+                        "correctFeedback": "Correct! The key \"banana\" has the value 0.75.",
+                        "incorrectFeedback": "Look up the key \"banana\" to find its value.",
+                        "explanation": "prices[\"banana\"] returns the value associated with the key \"banana\", which is 0.75."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "key_errors",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Be careful!** If you try to access a key that doesn't exist, you'll get an error."
+                },
+                {
+                    "type": "code",
+                    "content": "student = {\"name\": \"Alice\", \"age\": 20}\nprint(student[\"grade\"])",
+                    "properties": {
+                        "language": "python",
+                        "output": "Error: KeyError: 'grade'"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The key `\"grade\"` doesn't exist in the dictionary, causing an error."
+                }
+            ]
+        },
+        {
+            "id": "get_method",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "To avoid errors, use the `get(key)` method. It returns `None` if the key doesn't exist."
+                },
+                {
+                    "type": "code",
+                    "content": "student = {\"name\": \"Alice\", \"age\": 20}\ngrade = student.get(\"grade\")\nprint(grade)",
+                    "properties": {
+                        "language": "python",
+                        "output": "None"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`get()` returns `None` instead of causing an error."
+                }
+            ]
+        },
+        {
+            "id": "get_with_default",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can also provide a default value as the second argument to `get(key, default_value)`. The first argument is the key you want to look up, and the second argument is the value that will be returned if the key does not exist in the dictionary."
+                },
+                {
+                    "type": "code",
+                    "content": "student = {\"name\": \"Alice\", \"age\": 20}\ngrade = student.get(\"grade\", \"No grade\")\nprint(grade)",
+                    "properties": {
+                        "language": "python",
+                        "output": "No grade"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Since `\"grade\"` doesn't exist, `get()` returns the default value `\"No grade\"`."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_get",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Use `get()` to safely access the `\"email\"` key with default `\"No email\"`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "user = {\"name\": \"Bob\", \"age\": 30}",
+                                "indent": 0
+                            },
+                            {
+                                "code": "email = user.{1}({2}, {3})",
+                                "indent": 0,
+                                "blank": "1,2,3"
+                            },
+                            {
+                                "code": "print(email)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "\"email\"",
+                            "get",
+                            "\"No email\""
+                        ],
+                        "solutions": {
+                            "1": "get",
+                            "2": "\"email\"",
+                            "3": "\"No email\""
+                        },
+                        "hint": "Use get(key, default_value) to access safely.",
+                        "correctFeedback": "Perfect! get() returns the default when the key doesn't exist.",
+                        "incorrectFeedback": "Use get(\"email\", \"No email\") to provide a default value.",
+                        "explanation": "get() is safer than brackets because it won't cause an error if the key is missing.",
+                        "output": "No email"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "checking_keys",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can check if a key exists using the `in` operator."
+                },
+                {
+                    "type": "code",
+                    "content": "student = {\"name\": \"Alice\", \"age\": 20}\nprint(\"name\" in student)\nprint(\"grade\" in student)",
+                    "properties": {
+                        "language": "python",
+                        "output": "True\nFalse"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`\"name\"` exists in the dictionary (returns `True`), but `\"grade\"` doesn't (returns `False`)."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_in",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Check if `\"price\"` exists in the dictionary before accessing it.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "product = {\"name\": \"Laptop\", \"price\": 999}",
+                                "indent": 0
+                            },
+                            {
+                                "code": "if {1} {2} product:",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "    print(product[\"price\"])",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "\"price\"",
+                            "exists",
+                            "in"
+                        ],
+                        "solutions": {
+                            "1": "\"price\"",
+                            "2": "in"
+                        },
+                        "hint": "Use \"price\" in product to check if the key exists.",
+                        "correctFeedback": "Perfect! The in operator checks if a key exists in a dictionary.",
+                        "incorrectFeedback": "Use \"price\" in product to check for the key.",
+                        "explanation": "Checking with in prevents errors when accessing dictionary keys.",
+                        "output": "999"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "dictionary_length",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Use `len()` to find how many key-value pairs are in a dictionary."
+                },
+                {
+                    "type": "code",
+                    "content": "student = {\"name\": \"Alice\", \"age\": 20, \"grade\": \"A\"}\nprint(len(student))",
+                    "properties": {
+                        "language": "python",
+                        "output": "3"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The dictionary has 3 key-value pairs."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_len",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "scores = {\"math\": 90, \"english\": 85}\nprint(len(scores))",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "4",
+                            "2",
+                            "1"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! There are 2 key-value pairs in the dictionary.",
+                        "incorrectFeedback": "len() counts the number of key-value pairs, which is 2.",
+                        "explanation": "len() returns the number of key-value pairs: \"math\" and \"english\"."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "empty_dictionary",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can create an empty dictionary using empty curly braces `{}`."
+                },
+                {
+                    "type": "code",
+                    "content": "inventory = {}\nprint(inventory)\nprint(len(inventory))",
+                    "properties": {
+                        "language": "python",
+                        "output": "{}\n0"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Empty dictionaries are useful when you want to add items later."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_empty",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create an empty dictionary called `contacts`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "contacts = {1}",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(contacts)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "[]",
+                            "{}",
+                            "()"
+                        ],
+                        "solutions": {
+                            "1": "{}"
+                        },
+                        "hint": "Use empty curly braces to create an empty dictionary.",
+                        "correctFeedback": "Perfect! {} creates an empty dictionary.",
+                        "incorrectFeedback": "Use {} to create an empty dictionary.",
+                        "explanation": "Empty curly braces {} create an empty dictionary, ready to add items later.",
+                        "output": "{}"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "Dictionaries store data in **key-value pairs** using curly braces `{}`",
+                            "Access values using **keys**: `dict[\"key\"]`",
+                            "Use `get()` to safely access keys that might not exist",
+                            "Use `in` to check if a key exists in a dictionary",
+                            "Use `len()` to count key-value pairs",
+                            "Empty dictionaries are created with `{}`"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,531 @@
+{
+    "blocks": [
+        {
+            "id": "ex_1",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Practice",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What are dictionaries used for in Python?",
+                        "options": [
+                            "Storing data as key-value pairs",
+                            "Storing items in order"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Dictionaries store data as key-value pairs.",
+                        "incorrectFeedback": "Dictionaries store data as key-value pairs.",
+                        "explanation": "Dictionaries store data in key-value pairs, where each key is associated with a value."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_2",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a dictionary called `person` with two key-value pairs.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "person = {1}",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(person)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "{\"name\": \"Alice\", \"age\": 25}",
+                            "(\"name\", \"Alice\", \"age\", 25)",
+                            "[\"name\", \"Alice\", \"age\", 25]"
+                        ],
+                        "solutions": {
+                            "1": "{\"name\": \"Alice\", \"age\": 25}"
+                        },
+                        "hint": "Use curly braces {} with key: value pairs.",
+                        "correctFeedback": "Perfect! Dictionaries use {} with key: value pairs.",
+                        "incorrectFeedback": "Use curly braces {} with key: value pairs.",
+                        "explanation": "Dictionaries are created with {}. Each key-value pair is written as key: value.",
+                        "output": "{'name': 'Alice', 'age': 25}"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_3",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "car = {\"brand\": \"Toyota\", \"year\": 2020}\nprint(car[\"brand\"])",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Toyota",
+                            "2020"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Using the key \"brand\" gets its value.",
+                        "incorrectFeedback": "Using the key gets its associated value.",
+                        "explanation": "car[\"brand\"] accesses the value associated with the key \"brand\", which is \"Toyota\"."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_4",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Access the value of the key `\"city\"`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "location = {\"city\": \"Boston\", \"state\": \"MA\"}",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "city_name = location[{1}]",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(city_name)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "\"city\"",
+                            "city",
+                            "0"
+                        ],
+                        "solutions": {
+                            "1": "\"city\""
+                        },
+                        "hint": "Use the key in quotes to access its value.",
+                        "correctFeedback": "Great! You accessed the value using the key.",
+                        "incorrectFeedback": "Use the key in quotes to access its value.",
+                        "explanation": "location[\"city\"] accesses the value associated with \"city\", which is \"Boston\".",
+                        "output": "Boston"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_5",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "Can dictionary keys be duplicated?",
+                        "options": [
+                            "No, each key must be unique",
+                            "Yes, keys can repeat"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Dictionary keys must be unique.",
+                        "incorrectFeedback": "Dictionary keys must be unique.",
+                        "explanation": "Each key in a dictionary must be unique. If you use the same key twice, the second value overwrites the first."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_6",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Add a new key-value pair to the dictionary.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "student = {\"name\": \"Bob\", \"age\": 20}",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "student[{1}] = {2}",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(student)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "\"grade\"",
+                            "\"A\"",
+                            "grade"
+                        ],
+                        "solutions": {
+                            "1": "\"grade\"",
+                            "2": "\"A\""
+                        },
+                        "hint": "Use dict[new_key] = new_value to add.",
+                        "correctFeedback": "Perfect! You added a new key-value pair.",
+                        "incorrectFeedback": "Use dict[new_key] = new_value to add.",
+                        "explanation": "student[\"grade\"] = \"A\" adds a new key \"grade\" with value \"A\".",
+                        "output": "{'name': 'Bob', 'age': 20, 'grade': 'A'}"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_7",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "scores = {\"math\": 85}\nscores[\"math\"] = 90\nprint(scores[\"math\"])",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "90",
+                            "85"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! The value was updated from 85 to 90.",
+                        "incorrectFeedback": "Check what happens when you assign a new value to an existing key.",
+                        "explanation": "When you assign a new value to an existing key, it updates the value. \"math\" was 85, now it's 90."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_8",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Remove the key `\"age\"` from the dictionary.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "person = {\n    \"name\": \"Alice\",\n    \"age\": 25,\n    \"city\": \"NY\"\n}",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1} person[{2}]",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(person)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "del",
+                            "\"age\"",
+                            "remove"
+                        ],
+                        "solutions": {
+                            "1": "del",
+                            "2": "\"age\""
+                        },
+                        "hint": "Use del to remove a key-value pair.",
+                        "correctFeedback": "Great! del removed the age key.",
+                        "incorrectFeedback": "Use del to remove a key-value pair.",
+                        "explanation": "del person[\"age\"] removes the \"age\" key and its value from the dictionary.",
+                        "output": "{'name': 'Alice', 'city': 'NY'}"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_9",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What does the `in` operator check in a dictionary?",
+                        "options": [
+                            "If a key exists in the dictionary",
+                            "If a value exists in the dictionary"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! in checks for keys, not values.",
+                        "incorrectFeedback": "in checks for keys, not values.",
+                        "explanation": "The in operator checks if a key exists in the dictionary, not values."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_10",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "book = {\n    \"title\": \"Python\",\n    \"author\": \"Guido\"\n}\nprint(\"title\" in book)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "True",
+                            "False"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! The key \"title\" exists in the dictionary.",
+                        "incorrectFeedback": "Check if \"title\" is a key in the dictionary.",
+                        "explanation": "\"title\" in book checks if \"title\" is a key in the dictionary. It is, so it returns True."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_11",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Loop through the dictionary and print each key.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "colors = {\n    \"red\": \"#FF0000\",\n    \"green\": \"#00FF00\"\n}",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1} color {2} colors:",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "    print(color)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "for",
+                            "in",
+                            "while"
+                        ],
+                        "solutions": {
+                            "1": "for",
+                            "2": "in"
+                        },
+                        "hint": "Use for...in to loop through keys.",
+                        "correctFeedback": "Perfect! Looping through a dictionary gives you the keys.",
+                        "incorrectFeedback": "Use for...in to loop through keys.",
+                        "explanation": "When you loop through a dictionary, you get the keys. This prints \"red\" and \"green\".",
+                        "output": "red\ngreen"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_12",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Loop through and print both keys and values.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "scores = {\"math\": 90, \"english\": 85}",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "for subject, score in scores.{1}():",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(subject, score)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "items",
+                            "keys",
+                            "values"
+                        ],
+                        "solutions": {
+                            "1": "items"
+                        },
+                        "hint": "Use items() to get both keys and values.",
+                        "correctFeedback": "Great! items() gives you both keys and values.",
+                        "incorrectFeedback": "Use items() to get both keys and values.",
+                        "explanation": "items() returns both keys and values as pairs. You can unpack them in the loop.",
+                        "output": "math 90\nenglish 85"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_13",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "ages = {\"Alice\": 25, \"Bob\": 30}\nfor age in ages.values():\n    print(age)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "25\n30",
+                            "Alice\nBob"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! values() gives you only the values.",
+                        "incorrectFeedback": "values() gives you only the values.",
+                        "explanation": "values() returns only the values from the dictionary, not the keys."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_14",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Get the value for key `\"name\"` with a default if it doesn't exist.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "user = {\"age\": 20}",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "name = user.{1}({2}, {3})",
+                                "indent": 0,
+                                "blank": "1,2,3"
+                            },
+                            {
+                                "code": "print(name)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "get",
+                            "\"name\"",
+                            "\"Unknown\""
+                        ],
+                        "solutions": {
+                            "1": "get",
+                            "2": "\"name\"",
+                            "3": "\"Unknown\""
+                        },
+                        "hint": "Use get(key, default) to avoid errors.",
+                        "correctFeedback": "Perfect! get() returns the default when key doesn't exist.",
+                        "incorrectFeedback": "Use get(key, default) to avoid errors.",
+                        "explanation": "get(\"name\", \"Unknown\") returns \"Unknown\" because \"name\" doesn't exist in the dictionary.",
+                        "output": "Unknown"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_15",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "data = {\"a\": 1, \"b\": 2}\nprint(len(data))",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "2",
+                            "3"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! len() returns the number of key-value pairs.",
+                        "incorrectFeedback": "len() counts the number of key-value pairs.",
+                        "explanation": "len(data) returns 2 because there are 2 key-value pairs in the dictionary."
+                    }
+                }
+            ]
+        }
+    ]
+}

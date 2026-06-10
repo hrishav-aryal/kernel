@@ -1,0 +1,544 @@
+{
+    "blocks": [
+        {
+            "id": "intro_working_tuples",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Working with Tuples",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Now that you know what tuples are, let's learn how to work with them effectively. Tuples have some special features that make them very useful in Python."
+                },
+                {
+                    "type": "text",
+                    "content": "You'll learn about unpacking, looping, and useful tuple operations."
+                }
+            ]
+        },
+        {
+            "id": "tuple_unpacking",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Tuple Unpacking",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "**Unpacking** lets you assign each item in a tuple to a separate variable in one line."
+                },
+                {
+                    "type": "code",
+                    "content": "coordinates = (10, 20)\nx, y = coordinates\nprint(f\"x: {x}, y: {y}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "x: 10, y: 20"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The tuple items are automatically assigned to `x` and `y`. This is much cleaner than accessing with indices."
+                }
+            ]
+        },
+        {
+            "id": "unpacking_direct",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can also unpack directly without storing the tuple in a variable first."
+                },
+                {
+                    "type": "code",
+                    "content": "name, age, job = (\"Alice\", 25, \"Engineer\")\nprint(f\"{name} is {age} years old\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Alice is 25 years old"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Each value is unpacked into its corresponding variable."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_unpacking",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Unpack the tuple into separate variables `r`, `g`, and `b`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "color = (255, 128, 0)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1}, {2}, {3} = color",
+                                "indent": 0,
+                                "blank": "1,2,3"
+                            },
+                            {
+                                "code": "print(f\"Red: {r}\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "r",
+                            "g",
+                            "b"
+                        ],
+                        "solutions": {
+                            "1": "r",
+                            "2": "g",
+                            "3": "b"
+                        },
+                        "hint": "Assign each value to r, g, and b in order.",
+                        "correctFeedback": "Perfect! You unpacked the tuple into three separate variables.",
+                        "incorrectFeedback": "Unpack by assigning: r, g, b = color",
+                        "explanation": "Unpacking assigns each tuple value to a variable in the same order.",
+                        "output": "Red: 255"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_unpacking_output",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "point = (5, 10)\na, b = point\nprint(b)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "5",
+                            "10",
+                            "(5, 10)"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! b gets the second value from the tuple, which is 10.",
+                        "incorrectFeedback": "Unpacking assigns values in order: a gets 5, b gets 10.",
+                        "explanation": "When unpacking, a=5 and b=10, so print(b) outputs 10."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "looping_tuples",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Looping Through Tuples",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "You can loop through tuples just like lists using a `for` loop."
+                },
+                {
+                    "type": "code",
+                    "content": "colors = (\"red\", \"green\", \"blue\")\nfor color in colors:\n    print(color)",
+                    "properties": {
+                        "language": "python",
+                        "output": "red\ngreen\nblue"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The loop goes through each item in the tuple."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_loop",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Loop through the tuple and print each day.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "days = (\"Mon\", \"Tue\", \"Wed\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1} day {2} days:",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "    print(day)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "for",
+                            "while",
+                            "in"
+                        ],
+                        "solutions": {
+                            "1": "for",
+                            "2": "in"
+                        },
+                        "hint": "Use for day in days to loop through the tuple.",
+                        "correctFeedback": "Perfect! You looped through each day in the tuple.",
+                        "incorrectFeedback": "Use for day in days to loop through the tuple.",
+                        "explanation": "For loops work the same way with tuples as they do with lists.",
+                        "output": "Mon\nTue\nWed"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "checking_membership",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can use the `in` operator to check if a value exists in a tuple."
+                },
+                {
+                    "type": "code",
+                    "content": "rgb = (255, 0, 0)\nprint(255 in rgb)\nprint(100 in rgb)",
+                    "properties": {
+                        "language": "python",
+                        "output": "True\nFalse"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`255` is in the tuple (returns `True`), but `100` is not (returns `False`)."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_membership",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Check if `\"Fri\"` is in the tuple.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "weekdays = (\"Mon\", \"Wed\", \"Fri\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "if \"Fri\" {1} weekdays:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(\"Friday is here!\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "exists",
+                            "is",
+                            "in"
+                        ],
+                        "solutions": {
+                            "1": "in"
+                        },
+                        "hint": "Use the in operator to check membership.",
+                        "correctFeedback": "Perfect! The in operator checks if a value is in the tuple.",
+                        "incorrectFeedback": "Use in to check if a value exists in the tuple.",
+                        "explanation": "The in operator works the same way with tuples as with lists.",
+                        "output": "Friday is here!"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "tuple_methods",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Tuple Methods",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Tuples have two useful methods: `count()` and `index()`."
+                },
+                {
+                    "type": "text",
+                    "content": "**count()** tells you how many times a value appears."
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = (1, 2, 3, 2, 4, 2)\ncount = numbers.count(2)\nprint(f\"2 appears {count} times\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "2 appears 3 times"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The number `2` appears 3 times in the tuple."
+                }
+            ]
+        },
+        {
+            "id": "index_method",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**index()** finds the position of the first occurrence of a value."
+                },
+                {
+                    "type": "code",
+                    "content": "colors = (\"red\", \"green\", \"green\")\nposition = colors.index(\"green\")\nprint(f\"First green index: {position}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "First green index: 1"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The first `\"green\"` is at index `1`."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_count",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Count how many times `\"A\"` appears in the tuple `grades`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "grades = (\"A\", \"B\", \"A\", \"C\", \"A\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "result = grades.{1}({2})",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(result)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "count",
+                            "find",
+                            "\"A\""
+                        ],
+                        "solutions": {
+                            "1": "count",
+                            "2": "\"A\""
+                        },
+                        "hint": "Use count(\"A\") to count occurrences.",
+                        "correctFeedback": "Perfect! count(\"A\") found 3 A grades.",
+                        "incorrectFeedback": "Use count(\"A\") to count how many times \"A\" appears.",
+                        "explanation": "count() works the same way with tuples as with lists.",
+                        "output": "3"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_index",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Find the position of `30` in the tuple `scores`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "scores = (10, 20, 30, 40)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "position = scores.{1}(30)",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(position)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "find",
+                            "index",
+                            "position"
+                        ],
+                        "solutions": {
+                            "1": "index"
+                        },
+                        "hint": "Use index(30) to find the position.",
+                        "correctFeedback": "Perfect! index(30) found it at position 2.",
+                        "incorrectFeedback": "Use index(30) to find where 30 is located.",
+                        "explanation": "index() returns the position of the first occurrence of the value.",
+                        "output": "2"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "combining_tuples",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can combine tuples using the `+` operator, just like lists."
+                },
+                {
+                    "type": "code",
+                    "content": "first = (1, 2, 3)\nsecond = (4, 5, 6)\ncombined = first + second\nprint(combined)",
+                    "properties": {
+                        "language": "python",
+                        "output": "(1, 2, 3, 4, 5, 6)"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `+` operator creates a new tuple with items from both tuples."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_combine",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Combine the two tuples into one.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "morning = (\"coffee\", \"toast\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "lunch = (\"sandwich\", \"salad\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "meals = morning {1} lunch",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(meals)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "+",
+                            "&",
+                            "and"
+                        ],
+                        "solutions": {
+                            "1": "+"
+                        },
+                        "hint": "Use the + operator to combine tuples.",
+                        "correctFeedback": "Perfect! The + operator combines tuples.",
+                        "incorrectFeedback": "Use the + operator to combine tuples.",
+                        "explanation": "The + operator joins tuples together, creating a new tuple.",
+                        "output": "('coffee', 'toast', 'sandwich', 'salad')"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "when_to_use_tuples",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**When should you use tuples?**"
+                },
+                {
+                    "type": "text",
+                    "content": "Use tuples when you have data that should **not change**: coordinates `(x, y)`, RGB colors `(r, g, b)`, date/time `(year, month, day)`, or database records."
+                },
+                {
+                    "type": "text",
+                    "content": "Tuples are also faster and use less memory than lists, so use them when you don't need to modify the data."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_when_to_use",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Which data type would you use for a GPS coordinate that shouldn't change?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Tuple",
+                            "List"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Tuples are perfect for fixed data like coordinates.",
+                        "incorrectFeedback": "Use tuples for data that shouldn't change, like coordinates.",
+                        "explanation": "GPS coordinates are fixed values that shouldn't be modified, making tuples the right choice."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "Use **unpacking** to assign tuple items to variables: `x, y = (10, 20)`",
+                            "Unpacking makes **swapping values** easy: `a, b = b, a`",
+                            "Loop through tuples with `for item in tuple`",
+                            "Use `count()` to count occurrences and `index()` to find positions",
+                            "Combine tuples with the `+` operator",
+                            "Use tuples for **fixed data** that shouldn't change"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

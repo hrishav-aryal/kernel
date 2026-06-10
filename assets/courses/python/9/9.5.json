@@ -1,0 +1,568 @@
+{
+    "blocks": [
+        {
+            "id": "ex_1",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Practice",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What keyword do you use to bring a module into your program?",
+                        "options": [
+                            "import",
+                            "include"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! import loads modules into your program.",
+                        "incorrectFeedback": "Use import to load modules.",
+                        "explanation": "The import keyword loads a module so you can use its functions and features."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_2",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Import the `math` module.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "{1} math",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(math.pi)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "import",
+                            "include",
+                            "load"
+                        ],
+                        "solutions": {
+                            "1": "import"
+                        },
+                        "hint": "Use import to load the module.",
+                        "correctFeedback": "Perfect! You imported the math module.",
+                        "incorrectFeedback": "Use import to load modules.",
+                        "explanation": "import math loads the math module so you can use its functions.",
+                        "output": "3.141592653589793"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_3",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "import math\n\nresult = math.sqrt(16)\nprint(result)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "4.0",
+                            "16"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! sqrt() returns the square root.",
+                        "incorrectFeedback": "sqrt() calculates the square root.",
+                        "explanation": "math.sqrt(16) calculates the square root of 16, which is 4.0."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_4",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "**Round up** the number `3.2` to the nearest integer.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "import math",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "result = math.{1}(3.2)",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(result)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "ceil",
+                            "floor",
+                            "round"
+                        ],
+                        "solutions": {
+                            "1": "ceil"
+                        },
+                        "hint": "ceil rounds up to the nearest integer.",
+                        "correctFeedback": "Great! ceil rounds up.",
+                        "incorrectFeedback": "Use ceil to round up.",
+                        "explanation": "math.ceil(3.2) rounds up to 4.",
+                        "output": "4"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_5",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "import math\n\nresult = math.floor(7.8)\nprint(result)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "7",
+                            "8"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! floor rounds down to the nearest integer.",
+                        "incorrectFeedback": "floor rounds down.",
+                        "explanation": "math.floor(7.8) rounds down to 7."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_6",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What does `random.randint(1, 10)` do?",
+                        "options": [
+                            "Returns a random integer between 1 and 10 (inclusive)",
+                            "Returns a random decimal number"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! randint gives a random integer in the range.",
+                        "incorrectFeedback": "randint returns a random integer in the specified range.",
+                        "explanation": "randint(1, 10) returns a random whole number from 1 to 10, including both endpoints."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_7",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Generate a random number between 1 and 6 to simulate a dice roll.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "import random",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "dice = random.{1}(1, 6)",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(dice)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "randint",
+                            "random",
+                            "number"
+                        ],
+                        "solutions": {
+                            "1": "randint"
+                        },
+                        "hint": "Use randint to get a random integer.",
+                        "correctFeedback": "Perfect! You simulated a dice roll.",
+                        "incorrectFeedback": "Use randint to generate random integers.",
+                        "explanation": "randint(1, 6) gives a random number from 1 to 6, simulating a 6-sided die."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_8",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Pick a **random item** from the list `colors`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "import random",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "colors = [\"red\", \"blue\", \"green\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "picked = random.{1}(colors)",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(picked)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "choice",
+                            "pick",
+                            "select"
+                        ],
+                        "solutions": {
+                            "1": "choice"
+                        },
+                        "hint": "Use choice to pick a random item.",
+                        "correctFeedback": "Great! You picked a random item from the list.",
+                        "incorrectFeedback": "Use choice to pick random items.",
+                        "explanation": "random.choice() selects one random item from the list."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_9",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What does `from datetime import date` do?",
+                        "options": [
+                            "Imports only the date class from datetime module",
+                            "Imports the entire datetime module"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! from...import imports specific parts of a module.",
+                        "incorrectFeedback": "from...import imports specific parts of a module.",
+                        "explanation": "from datetime import date imports just the date class, so you can use date.today() directly."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_10",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Import the `date` class from the `datetime` module.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "{1} datetime {2} date",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "today = date.today()",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(today)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "from",
+                            "import",
+                            "with"
+                        ],
+                        "solutions": {
+                            "1": "from",
+                            "2": "import"
+                        },
+                        "hint": "Use from module import item.",
+                        "correctFeedback": "Perfect! You imported the date class.",
+                        "incorrectFeedback": "Use from datetime import date.",
+                        "explanation": "from datetime import date lets you use date.today() directly without datetime.date.today()."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_11",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "from datetime import date\n\ntoday = date.today()\nprint(today.year)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "The current year",
+                            "The current date"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! .year gives you just the year part.",
+                        "incorrectFeedback": ".year extracts just the year.",
+                        "explanation": "today.year accesses just the year component of the date (like 2025)."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_12",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Get today's date and access its month.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "from datetime import date",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "today = date.today()",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(today.{1})",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "month",
+                            "year",
+                            "day"
+                        ],
+                        "solutions": {
+                            "1": "month"
+                        },
+                        "hint": "Use .month to get the month number.",
+                        "correctFeedback": "Great! You accessed the month component.",
+                        "incorrectFeedback": "Use .month to get the month.",
+                        "explanation": "today.month gives you the month as a number (1-12)."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_13",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Import the math module with an alias `m`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "import math {1} m",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "result = m.sqrt(25)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(result)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "as",
+                            "to",
+                            "alias"
+                        ],
+                        "solutions": {
+                            "1": "as"
+                        },
+                        "hint": "Use as to create an alias.",
+                        "correctFeedback": "Perfect! You created an alias for the module.",
+                        "incorrectFeedback": "Use as to create an alias.",
+                        "explanation": "import math as m lets you use m instead of math (shorter to type).",
+                        "output": "5.0"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_14",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "import math\n\nprint(f\"{math.pi:.2f}\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "3.141592653589793",
+                            "3.14"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! math.pi gives the full value of pi. The :.2f formats the number to 2 decimal places.",
+                        "incorrectFeedback": "math.pi provides the full value. The :.2f formats the number to 2 decimal places.",
+                        "explanation": "math.pi is a constant that stores the value of pi with high precision."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_15",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Calculate `2` to the power of `3`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "import math",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "result = math.{1}(2, 3)",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(result)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "pow",
+                            "power",
+                            "exp"
+                        ],
+                        "solutions": {
+                            "1": "pow"
+                        },
+                        "hint": "Use pow to calculate powers.",
+                        "correctFeedback": "Great! You calculated 2³.",
+                        "incorrectFeedback": "Use pow to calculate powers.",
+                        "explanation": "math.pow(2, 3) calculates 2³ = 8.",
+                        "output": "8.0"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_16",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What values does `random.random()` return?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "A random float between 0.0 and 1.0",
+                            "A random integer"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! random.random() returns a float between 0.0 and 1.0.",
+                        "incorrectFeedback": "random.random() returns a float between 0.0 and 1.0.",
+                        "explanation": "random.random() returns a random float between 0.0 and 1.0."
+                    }
+                }
+            ]
+        }
+    ]
+}

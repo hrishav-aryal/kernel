@@ -1,0 +1,271 @@
+{
+    "blocks": [
+        {
+            "id": "intro_encapsulation",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Encapsulation",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "**Encapsulation** is about bundling related data (attributes) and actions (methods) together inside a class."
+                },
+                {
+                    "type": "text",
+                    "content": "It's one of the core principles of object-oriented programming that helps keep your code organized and manageable."
+                }
+            ]
+        },
+        {
+            "id": "what_is_encapsulation",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Think of encapsulation like a capsule - everything related to one thing is packaged together."
+                },
+                {
+                    "type": "text",
+                    "content": "Instead of having scattered variables and functions, you group them into a single unit (a class)."
+                }
+            ]
+        },
+        {
+            "id": "example_without_encapsulation",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Without Encapsulation",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Before learning about classes, you might have written code like this:"
+                },
+                {
+                    "type": "code",
+                    "content": "# Scattered data and functions\nname = \"Alice\"\nbalance = 100\n\ndef deposit(amount):\n    global balance\n    balance = balance + amount\n\ndef show():\n    print(f\"{name}: ${balance}\")\n\ndeposit(50)\nshow()",
+                    "properties": {
+                        "language": "python",
+                        "output": "Alice: $150"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "This works, but the data and functions are separate. If you need multiple accounts, things get messy quickly."
+                }
+            ]
+        },
+        {
+            "id": "example_with_encapsulation",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "With Encapsulation",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Now with encapsulation, everything is bundled together:"
+                },
+                {
+                    "type": "code",
+                    "content": "class Account:\n    def __init__(self, name, balance):\n        self.name = name\n        self.balance = balance\n    \n    def deposit(self, amount):\n        self.balance += amount\n    \n    def show(self):\n        print(f\"{self.name}: ${self.balance}\")\n\nacc = Account(\"Alice\", 100)\nacc.deposit(50)\nacc.show()",
+                    "properties": {
+                        "language": "python",
+                        "output": "Alice: $150"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Everything related to an account - the data (`name`, `balance`) and actions (`deposit`, `show`) - is now grouped together in the `Account` class."
+                }
+            ]
+        },
+        {
+            "id": "why_encapsulation",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Why is this better?**"
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "**Organization**: Related things stay together",
+                            "**Multiple objects**: Easy to create many accounts",
+                            "**Independence**: Each object manages its own data",
+                            "**Clarity**: Clear what belongs to what"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "multiple_objects_benefit",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "With encapsulation, creating multiple objects is clean and simple:"
+                },
+                {
+                    "type": "code",
+                    "content": "acc1 = Account(\"Alice\", 100)\nacc2 = Account(\"Bob\", 200)\n\nacc1.deposit(50)\nacc2.deposit(30)\n\nacc1.show()\nacc2.show()",
+                    "properties": {
+                        "language": "python",
+                        "output": "Alice: $150\nBob: $230"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Each account is self-contained. The data and methods for `acc1` don't interfere with `acc2`."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_concept",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What does encapsulation mean?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Hiding all code from users",
+                            "Grouping related data and methods together",
+                            "Making copies of objects"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! Encapsulation bundles related data and methods into a class.",
+                        "incorrectFeedback": "Encapsulation is about grouping related things together in a class.",
+                        "explanation": "Encapsulation keeps data and methods that work together organized in one place."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "protecting_data",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Protecting Data",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Encapsulation also means controlling how data is accessed and modified."
+                },
+                {
+                    "type": "text",
+                    "content": "Instead of directly changing attributes, you use methods to make changes. This helps prevent errors."
+                }
+            ]
+        },
+        {
+            "id": "example_controlled_access",
+            "elements": [
+                {
+                    "type": "code",
+                    "content": "class Account:\n    def __init__(self, balance):\n        self.balance = balance\n    \n    def withdraw(self, amount):\n        if amount <= self.balance:\n            self.balance -= amount\n            print(\"Withdrawn\")\n        else:\n            print(\"Not enough funds\")\n\nacc = Account(100)\nacc.withdraw(150)\nacc.withdraw(50)",
+                    "properties": {
+                        "language": "python",
+                        "output": "Not enough funds\nWithdrawn"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `withdraw` method checks if there's enough balance before making changes. This protects the data from invalid operations."
+                },
+                {
+                    "type": "text",
+                    "content": "Without this method, someone could accidentally set a negative balance directly."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_protection",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Why use methods to modify attributes instead of changing them directly?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Methods are faster than direct access",
+                            "Methods can validate and protect data",
+                            "Direct access is not allowed in Python"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! Methods let you add validation and protect data.",
+                        "incorrectFeedback": "Methods can check and validate data before making changes.",
+                        "explanation": "Using methods to modify data lets you add checks and prevent errors."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "real_world_analogy",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Real-world analogy**"
+                },
+                {
+                    "type": "text",
+                    "content": "Think of a TV remote. The remote encapsulates all the controls (buttons) and internal state (current channel, volume). You don't directly access the TV's circuits - you use the buttons (methods) to interact with it safely."
+                },
+                {
+                    "type": "text",
+                    "content": "Similarly, classes encapsulate data and provide methods as the interface to work with that data."
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "**Encapsulation** bundles data and methods together",
+                            "Classes keep related things **organized** in one place",
+                            "Each object manages its **own data** independently",
+                            "Use **methods** to control how data is accessed",
+                            "Methods can **validate** data before changing it",
+                            "Encapsulation makes code **cleaner and safer**"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

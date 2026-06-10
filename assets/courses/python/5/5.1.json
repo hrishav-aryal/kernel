@@ -1,0 +1,426 @@
+{
+    "blocks": [
+        {
+            "id": "intro_sorting",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Sorting Lists",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Often you need to organize lists in a specific order. Python provides powerful methods to sort lists in ascending or descending order."
+                },
+                {
+                    "type": "text",
+                    "content": "There are two ways to sort: modifying the original list or creating a new sorted copy."
+                }
+            ]
+        },
+        {
+            "id": "sort_method",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "The sort() Method",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `sort()` method sorts a list **in place**, meaning it modifies the original list directly."
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = [5, 2, 8, 1, 9]\nnumbers.sort()\nprint(numbers)",
+                    "properties": {
+                        "language": "python",
+                        "output": "[1, 2, 5, 8, 9]"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The list is now sorted from smallest to largest (ascending order)."
+                }
+            ]
+        },
+        {
+            "id": "sort_strings",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can also sort lists of strings. They get sorted alphabetically."
+                },
+                {
+                    "type": "code",
+                    "content": "fruits = [\"orange\", \"apple\", \"banana\"]\nfruits.sort()\nprint(fruits)",
+                    "properties": {
+                        "language": "python",
+                        "output": "['apple', 'banana', 'orange']"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Strings are sorted in alphabetical order (A to Z)."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_sort",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Sort the list in ascending order.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "scores = [85, 92, 78, 95]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "scores.{1}()",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(scores)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "order",
+                            "sort",
+                            "arrange"
+                        ],
+                        "solutions": {
+                            "1": "sort"
+                        },
+                        "hint": "Use sort() to sort the list in place.",
+                        "correctFeedback": "Perfect! sort() arranged the numbers from smallest to largest.",
+                        "incorrectFeedback": "Use sort() to sort the list in ascending order.",
+                        "explanation": "The sort() method arranges the list in ascending order.",
+                        "output": "[78, 85, 92, 95]"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_sort_strings",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "names = [\"Charlie\", \"Alice\", \"Bob\"]\nnames.sort()\nprint(names)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "['Charlie', 'Bob', 'Alice']",
+                            "['Alice', 'Bob', 'Charlie']"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! sort() arranges strings in alphabetical order.",
+                        "incorrectFeedback": "sort() arranges strings in alphabetical order (A to Z).",
+                        "explanation": "sort() puts strings in alphabetical order: Alice, Bob, Charlie."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "reverse_sort",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Sorting in Descending Order",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "To sort from largest to smallest (descending order), use `sort(reverse=True)`."
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = [5, 2, 8, 1, 9]\nnumbers.sort(reverse=True)\nprint(numbers)",
+                    "properties": {
+                        "language": "python",
+                        "output": "[9, 8, 5, 2, 1]"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The list is now sorted from largest to smallest."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_reverse_sort",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Sort the list `scores` from highest to lowest score.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "scores = [78, 92, 85, 95]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "scores.sort({1}={2})",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(scores)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "reverse",
+                            "True",
+                            "False"
+                        ],
+                        "solutions": {
+                            "1": "reverse",
+                            "2": "True"
+                        },
+                        "hint": "Use sort(reverse=True) to sort in descending order.",
+                        "correctFeedback": "Perfect! reverse=True sorts from largest to smallest.",
+                        "incorrectFeedback": "Use sort(reverse=True) to sort in descending order.",
+                        "explanation": "reverse=True changes the sort order to descending (largest to smallest).",
+                        "output": "[95, 92, 85, 78]"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "sorted_function",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "The sorted() Function",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `sorted()` function creates a **new sorted list** without changing the original list."
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = [5, 2, 8, 1]\nsorted_numbers = sorted(numbers)\nprint(f\"Original: {numbers}\")\nprint(f\"Sorted: {sorted_numbers}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Original: [5, 2, 8, 1]\nSorted: [1, 2, 5, 8]"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The original list `numbers` remains unchanged, and we get a new sorted list."
+                }
+            ]
+        },
+        {
+            "id": "sorted_vs_sort",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**When to use which?**"
+                },
+                {
+                    "type": "text",
+                    "content": "Use `sort()` when you want to change the original list. Use `sorted()` when you need to keep the original list unchanged."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_sorted",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a sorted copy without changing the original list.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "prices = [30, 10, 20]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "sorted_prices = {1}(prices)",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(sorted_prices)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "sort",
+                            "copy",
+                            "sorted"
+                        ],
+                        "solutions": {
+                            "1": "sorted"
+                        },
+                        "hint": "Use sorted() to create a new sorted list.",
+                        "correctFeedback": "Perfect! sorted() creates a new sorted list without changing the original.",
+                        "incorrectFeedback": "Use sorted() to create a new sorted list.",
+                        "explanation": "sorted() returns a new sorted list and leaves the original unchanged.",
+                        "output": "[10, 20, 30]"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_sorted_reverse",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a sorted copy in descending order.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "ages = [25, 30, 20, 35]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "sorted_ages = sorted(ages, {1}={2})",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(sorted_ages)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "reverse",
+                            "False",
+                            "True"
+                        ],
+                        "solutions": {
+                            "1": "reverse",
+                            "2": "True"
+                        },
+                        "hint": "Use sorted(list, reverse=True) for descending order.",
+                        "correctFeedback": "Great! sorted() with reverse=True creates a descending sorted copy.",
+                        "incorrectFeedback": "Use sorted(ages, reverse=True) for descending order.",
+                        "explanation": "sorted() with reverse=True creates a new list sorted from largest to smallest.",
+                        "output": "[35, 30, 25, 20]"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_sort_vs_sorted",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Which method changes the original list?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "sort()",
+                            "sorted()",
+                            "Both"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! sort() modifies the original list, while sorted() creates a new one.",
+                        "incorrectFeedback": "sort() changes the original list, but sorted() creates a new list.",
+                        "explanation": "sort() modifies the list in place, while sorted() returns a new sorted list."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_practical",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Sort the student names alphabetically and print them.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "students = [\"Zara\", \"Alice\", \"Mike\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "students.{1}()",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(students)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "sorted",
+                            "sort",
+                            "order"
+                        ],
+                        "solutions": {
+                            "1": "sort"
+                        },
+                        "hint": "Use sort() to sort the list in place.",
+                        "correctFeedback": "Excellent! The names are now in alphabetical order.",
+                        "incorrectFeedback": "Use sort() to sort the list alphabetically.",
+                        "explanation": "sort() arranges the names in alphabetical order.",
+                        "output": "['Alice', 'Mike', 'Zara']"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "Use `sort()` to sort a list **in place** (changes the original)",
+                            "Use `sorted()` to create a **new sorted list** (keeps original unchanged)",
+                            "Use `reverse=True` to sort in **descending order** (largest to smallest)",
+                            "Without `reverse=True`, sorting is in **ascending order** (smallest to largest)",
+                            "Both work with numbers and strings (strings sort alphabetically)"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

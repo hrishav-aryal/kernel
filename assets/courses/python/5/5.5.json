@@ -1,0 +1,411 @@
+{
+    "blocks": [
+        {
+            "id": "intro_copying",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Copying Lists",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "When you work with lists, you might think that assigning one list to another creates a copy. But in Python, it doesn't work that way!"
+                },
+                {
+                    "type": "text",
+                    "content": "Understanding how to properly copy lists is important to avoid unexpected behavior in your programs."
+                }
+            ]
+        },
+        {
+            "id": "the_problem",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "The Problem",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "When you assign a list to another variable using `=`, both variables point to the **same list**. Changes to one affect the other."
+                },
+                {
+                    "type": "code",
+                    "content": "original = [1, 2, 3]\ncopy = original\n\ncopy.append(4)\nprint(f\"Original: {original}\")\nprint(f\"Copy: {copy}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Original: [1, 2, 3, 4]\nCopy: [1, 2, 3, 4]"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Both lists changed! This is because `copy` and `original` refer to the **same list** in memory."
+                }
+            ]
+        },
+        {
+            "id": "understanding_references",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Think of it like this: `original` is a label pointing to a list. When you do `copy = original`, you're creating another label pointing to the **same list**, not a new list."
+                },
+                {
+                    "type": "text",
+                    "content": "This is called **mutability** - lists can be changed, and all variables pointing to the same list see those changes."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_problem",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "list1 = [10, 20]\nlist2 = list1\nlist2.append(30)\nprint(list1)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "[10, 20, 30]",
+                            "[10, 20]",
+                            "Error"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Both list1 and list2 point to the same list, so changes to list2 affect list1.",
+                        "incorrectFeedback": "list1 and list2 point to the same list, so changes to one affect both.",
+                        "explanation": "Since list2 = list1 creates a reference, not a copy, both variables see the change."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "copy_method",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "The Solution: copy()",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "To create a real copy, use the `copy()` method. This creates a **new list** with the same values."
+                },
+                {
+                    "type": "code",
+                    "content": "original = [1, 2, 3]\ncopy = original.copy()\n\ncopy.append(4)\nprint(f\"Original: {original}\")\nprint(f\"Copy: {copy}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Original: [1, 2, 3]\nCopy: [1, 2, 3, 4]"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Now `copy` is a separate list! Changes to `copy` don't affect `original`."
+                }
+            ]
+        },
+        {
+            "id": "copy_independence",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "With `copy()`, each list is independent. You can modify one without affecting the other."
+                },
+                {
+                    "type": "code",
+                    "content": "fruits = [\"apple\", \"banana\"]\nbackup = fruits.copy()\n\nfruits.append(\"orange\")\nprint(f\"Original: {fruits}\")\nprint(f\"Backup: {backup}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Original: ['apple', 'banana', 'orange']\nBackup: ['apple', 'banana']"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The backup list stays unchanged when we modify the original."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_copy",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a true copy of the list so changes don't affect the original.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "original = [1, 2, 3]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "new_list = original.{1}()",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "new_list.append(4)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(original)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "copy",
+                            "clone",
+                            "duplicate"
+                        ],
+                        "solutions": {
+                            "1": "copy"
+                        },
+                        "hint": "Use copy() to create an independent copy.",
+                        "correctFeedback": "Perfect! copy() created a separate list, so original stays [1, 2, 3].",
+                        "incorrectFeedback": "Use copy() to create an independent copy of the list.",
+                        "explanation": "copy() creates a new list, so changes to new_list don't affect original.",
+                        "output": "[1, 2, 3]"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_copy_vs_reference",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Which creates an independent copy?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "new_list = original",
+                            "new_list = original.copy()",
+                            "Both work the same"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! copy() creates an independent copy, while = creates a reference.",
+                        "incorrectFeedback": "Use copy() to create an independent list. Using = creates a reference to the same list.",
+                        "explanation": "copy() makes a new list, but = makes both variables point to the same list."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "slicing_copy",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Alternative: Slicing",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Another way to copy a list is using slicing with `[:]`. This creates a new list with all items."
+                },
+                {
+                    "type": "code",
+                    "content": "original = [1, 2, 3]\ncopy = original[:]\n\ncopy.append(4)\nprint(f\"Original: {original}\")\nprint(f\"Copy: {copy}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Original: [1, 2, 3]\nCopy: [1, 2, 3, 4]"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`[:]` creates a slice containing all items, which results in a new list."
+                }
+            ]
+        },
+        {
+            "id": "when_to_copy",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**When should you use copy()?**"
+                },
+                {
+                    "type": "text",
+                    "content": "Use `copy()` when you need to preserve the original list while making changes to a new version. This is common when creating backups, experimenting with modifications, or working with multiple versions of data."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_slicing",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a copy using slicing.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "scores = [85, 90, 95]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "backup = scores[{1}]",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "backup.append(100)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(scores)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            ":",
+                            "0:",
+                            ":3"
+                        ],
+                        "solutions": {
+                            "1": ":"
+                        },
+                        "hint": "Use [:] to create a copy of the entire list.",
+                        "correctFeedback": "Perfect! [:] creates a copy, so scores stays [85, 90, 95].",
+                        "incorrectFeedback": "Use [:] to slice and copy the entire list.",
+                        "explanation": "[:] creates a new list with all items, leaving the original unchanged.",
+                        "output": "[85, 90, 95]"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_practical",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a backup of the shopping list before adding more items.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "shopping = [\"milk\", \"bread\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "backup = shopping.{1}()",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "shopping.append(\"eggs\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "shopping.append(\"butter\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(f\"Current: {shopping}\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(f\"Backup: {backup}\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "copy",
+                            "backup",
+                            "save"
+                        ],
+                        "solutions": {
+                            "1": "copy"
+                        },
+                        "hint": "Use copy() to create a backup before making changes.",
+                        "correctFeedback": "Great! You created a backup that stays unchanged while modifying the original.",
+                        "incorrectFeedback": "Use copy() to create an independent backup.",
+                        "explanation": "copy() preserves the original list in backup while allowing changes to shopping.",
+                        "output": "Current: ['milk', 'bread', 'eggs', 'butter']\nBackup: ['milk', 'bread']"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_comprehensive",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What's the difference between `list2 = list1` and `list2 = list1.copy()`?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "copy() creates a new list, = creates a reference to the same list",
+                            "They both create new lists",
+                            "They both create references"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! copy() makes an independent copy, while = makes both point to the same list.",
+                        "incorrectFeedback": "copy() creates a new independent list, but = makes both variables reference the same list.",
+                        "explanation": "This is a key concept: = creates a reference, copy() creates a new list."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "Using `=` creates a **reference**, not a copy (both variables point to the same list)",
+                            "Use `copy()` to create an **independent copy** of a list",
+                            "You can also use `[:]` slicing to create a copy",
+                            "Changes to a copied list **don't affect** the original",
+                            "Lists are **mutable** - they can be changed, and all references see the changes"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

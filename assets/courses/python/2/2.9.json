@@ -1,0 +1,689 @@
+{
+    "blocks": [
+        {
+            "id": "ex_1",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Practice",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "When does a nested `if` statement run?",
+                        "options": [
+                            "Only when the outer if is True",
+                            "Only when the outer if is False"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! The nested if only runs when the outer if is True.",
+                        "incorrectFeedback": "The nested if only runs when the outer if is True.",
+                        "explanation": "A nested if statement only runs when the outer if condition is True."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_2",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a nested `if` statement to check both conditions `has_key` and `has_power`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "has_key = True",
+                                "indent": 0
+                            },
+                            {
+                                "code": "has_power = True",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "if has_key:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(\"Key found\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    {1} has_power:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "        print(\"Can start\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "elif",
+                            "if",
+                            "else"
+                        ],
+                        "solutions": {
+                            "1": "if"
+                        },
+                        "hint": "Use if for the nested check.",
+                        "correctFeedback": "Perfect! The nested if checks the second condition.",
+                        "incorrectFeedback": "Use if for the nested check.",
+                        "explanation": "The nested if checks has_power only when has_key is True.",
+                        "output": "Key found\nCan start"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_3",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the nested `if` statement to handle the condition `has_id` being `False`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "has_ticket = True",
+                                "indent": 0
+                            },
+                            {
+                                "code": "has_id = False",
+                                "indent": 0
+                            },
+                            {
+                                "code": "if has_ticket:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(\"Ticket verified\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    if has_id:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        print(\"Access granted\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    {1}:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "        print(\"ID required\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "else",
+                            "elif",
+                            "if"
+                        ],
+                        "solutions": {
+                            "1": "else"
+                        },
+                        "hint": "Use else for the nested if.",
+                        "correctFeedback": "Great! The else belongs to the nested if.",
+                        "incorrectFeedback": "Use else for the nested if.",
+                        "explanation": "The else runs when the nested if condition is False.",
+                        "output": "Ticket verified\nID required"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_4",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "level = 3\nhealth = 80\n\nif level >= 5:\n    if health >= 50:\n        print(\"Can proceed\")\n    else:\n        print(\"Low health\")\nelse:\n    print(\"Level too low\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Level too low",
+                            "Can proceed"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Level is 3, which is not >= 5, so the outer else runs.",
+                        "incorrectFeedback": "Check if level is >= 5 first.",
+                        "explanation": "The outer if checks if level >= 5. Since level is 3, this is False, so the outer else runs and prints Level too low. The nested if never runs."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_5",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What is indentation crucial for in nested conditionals?",
+                        "options": [
+                            "Showing which if each block belongs to",
+                            "Making code look pretty"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Indentation shows which if statement each block belongs to.",
+                        "incorrectFeedback": "Indentation shows the structure of nested conditionals.",
+                        "explanation": "Indentation shows which if statement each block belongs to. Each level of nesting needs more indentation."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_6",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Start a `match` statement to check the `color`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "color = \"red\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1} color:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    case \"red\":",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        print(\"Stop\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "if",
+                            "check",
+                            "match"
+                        ],
+                        "solutions": {
+                            "1": "match"
+                        },
+                        "hint": "Use match to start a match statement.",
+                        "correctFeedback": "Perfect! match starts the match statement.",
+                        "incorrectFeedback": "Use match to start a match statement.",
+                        "explanation": "match starts a match statement to check a value against multiple patterns.",
+                        "output": "Stop"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_7",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the `match` statement to check against the `signal` value.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "signal = \"green\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "match signal:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    case \"red\":",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        print(\"Stop\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    {1} \"green\":",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "        print(\"Go\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "if",
+                            "case",
+                            "match"
+                        ],
+                        "solutions": {
+                            "1": "case"
+                        },
+                        "hint": "Use case to add another pattern.",
+                        "correctFeedback": "Great! case adds another pattern to check.",
+                        "incorrectFeedback": "Use case to add another pattern.",
+                        "explanation": "case adds another pattern to check in the match statement.",
+                        "output": "Go"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_8",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What does `case _:` represent in a match statement?",
+                        "options": [
+                            "The default case that matches anything",
+                            "An error"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! case _: is the default case that matches anything.",
+                        "incorrectFeedback": "case _: is the default case.",
+                        "explanation": "case _: (underscore) is the default case that matches anything. It's like else in an if-elif-else statement."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_9",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Add a default `case` to handle other `grade` values.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "grade = \"D\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "match grade:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    case \"A\":",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        print(\"Excellent\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    case \"B\":",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        print(\"Good\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    case {1}:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "        print(\"Keep trying\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "default",
+                            "_",
+                            "else"
+                        ],
+                        "solutions": {
+                            "1": "_"
+                        },
+                        "hint": "Use _ (underscore) for the default case.",
+                        "correctFeedback": "Perfect! _ is the default case.",
+                        "incorrectFeedback": "Use _ (underscore) for the default case.",
+                        "explanation": "case _: is the default case that matches any value not matched by other cases.",
+                        "output": "Keep trying"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_10",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "signal = \"yellow\"\n\nmatch signal:\n    case \"red\":\n        print(\"Stop\")\n    case \"green\":\n        print(\"Go\")\n    case _:\n        print(\"Slow down\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Slow down",
+                            "Stop"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Signal is yellow, which doesn't match red or green, so the default case _ runs.",
+                        "incorrectFeedback": "Check what happens when signal doesn't match red or green.",
+                        "explanation": "Signal is yellow. It doesn't match red or green, so the default case _: runs and prints Slow down."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_11",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the match statement to check the value of `day` for `Monday` and `Friday`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "day = \"Monday\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "match {1}:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    case {2}:",
+                                "indent": 0,
+                                "blank": "2"
+                            },
+                            {
+                                "code": "        print(\"Start of week\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    case {3}:",
+                                "indent": 0,
+                                "blank": "3"
+                            },
+                            {
+                                "code": "        print(\"End of week\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "\"Monday\"",
+                            "\"Friday\"",
+                            "day"
+                        ],
+                        "solutions": {
+                            "1": "day",
+                            "2": "\"Monday\"",
+                            "3": "\"Friday\""
+                        },
+                        "hint": "Match the day variable and use case to check for Monday.",
+                        "correctFeedback": "Excellent! You matched the day variable with cases.",
+                        "incorrectFeedback": "Match the day variable and use case to check for Monday.",
+                        "explanation": "match day: checks the day variable, and case \"Monday\": checks if it matches Monday.",
+                        "output": "Start of week"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_11",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Check if `has_sword` is `True` in the outer `if` statement and `level` is at least `5` in the nested `if` statement.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "has_sword = True",
+                                "indent": 0
+                            },
+                            {
+                                "code": "level = 10",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "if {1}:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    if {2}:",
+                                "indent": 0,
+                                "blank": "2"
+                            },
+                            {
+                                "code": "        print(\"Ready to battle\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    else:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        print(\"Level too low\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "has_sword",
+                            "level >= 5",
+                            "level < 5"
+                        ],
+                        "solutions": {
+                            "1": "has_sword",
+                            "2": "level >= 5"
+                        },
+                        "hint": "Check if has_sword is True in the outer if statement and level is at least 5 in the nested if statement.",
+                        "correctFeedback": "Great! We check if has_sword is True in the outer if statement and level is at least 5 in the nested if statement.",
+                        "incorrectFeedback": "Check if has_sword is True in the outer if statement and level is at least 5 in the nested if statement.",
+                        "explanation": "The outer if checks if has_sword is True, and the nested if checks if level is at least 5. Since level is 10, it prints Ready to battle.",
+                        "output": "Ready to battle"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_12",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "When is `match` more useful than `if-elif-else`?",
+                        "options": [
+                            "When checking different variables",
+                            "When comparing the same variable to different values"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! match is useful when comparing the same variable to different values.",
+                        "incorrectFeedback": "match is useful for checking one variable against multiple values.",
+                        "explanation": "match is useful when comparing the same variable to different values. It's more elegant than multiple if-elif statements."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_13",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the match statement with multiple cases.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "weather = \"cloudy\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "match weather:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    case \"sunny\":",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        print(\"Wear sunscreen\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    case \"rainy\":",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        print(\"Bring umbrella\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    case _:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        print({1})",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "\"Check forecast\"",
+                            "weather",
+                            "cloudy"
+                        ],
+                        "solutions": {
+                            "1": "\"Check forecast\""
+                        },
+                        "hint": "Print a string for the default case.",
+                        "correctFeedback": "Perfect! The default case handles other weather conditions.",
+                        "incorrectFeedback": "Print a string for the default case.",
+                        "explanation": "The default case _: handles any value not matched by other cases. Since weather is cloudy, it prints Check forecast.",
+                        "output": "Check forecast"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_14",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "has_coins = True\ncoins = 100\n\nif has_coins:\n    if coins >= 50:\n        print(\"Can buy item\")\n    else:\n        print(\"Not enough coins\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Can buy item",
+                            "Not enough coins"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! has_coins is True and coins is at least 50, so it prints Can buy item.",
+                        "incorrectFeedback": "Check if has_coins is True and coins is at least 50.",
+                        "explanation": "The outer if checks has_coins, and the nested if checks if coins is at least 50. Both are True, so it prints Can buy item.",
+                        "output": "Can buy item"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_15",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "command = \"jump\"\n\nmatch command:\n    case \"run\":\n        print(\"Running fast\")\n    case \"jump\":\n        print(\"Jumping high\")\n    case \"stop\":\n        print(\"Stopping now\")\n    case _:\n        print(\"Unknown command\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Jumping high",
+                            "Unknown command",
+                            "Running fast",
+                            "Stopping now"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! command is jump, so it prints Jumping high.",
+                        "incorrectFeedback": "Check if command is jump.",
+                        "explanation": "command is jump, so it prints Jumping high.",
+                        "output": "Jumping high"
+                    }
+                }
+            ]
+        }
+    ]
+}

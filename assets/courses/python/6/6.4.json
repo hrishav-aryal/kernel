@@ -1,0 +1,507 @@
+{
+    "blocks": [
+        {
+            "id": "intro_modifying",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Working with Dictionaries",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Dictionaries are flexible - you can add new items, update existing ones, and remove items you don't need anymore."
+                },
+                {
+                    "type": "text",
+                    "content": "Let's learn how to modify dictionaries to keep your data up to date."
+                }
+            ]
+        },
+        {
+            "id": "adding_items",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Adding Items",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "To add a new key-value pair, simply assign a value to a new key."
+                },
+                {
+                    "type": "code",
+                    "content": "student = {\"name\": \"Alice\", \"age\": 20}\nprint(f\"Before: {student}\")\n\nstudent[\"grade\"] = \"A\"\nprint(f\"After: {student}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Before: {'name': 'Alice', 'age': 20}\nAfter: {'name': 'Alice', 'age': 20, 'grade': 'A'}"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The new key `\"grade\"` with value `\"A\"` was added to the dictionary."
+                }
+            ]
+        },
+        {
+            "id": "adding_multiple",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can add multiple items one by one."
+                },
+                {
+                    "type": "code",
+                    "content": "car = {\"brand\": \"Toyota\"}\ncar[\"model\"] = \"Camry\"\ncar[\"year\"] = 2024\nprint(car)",
+                    "properties": {
+                        "language": "python",
+                        "output": "{'brand': 'Toyota', 'model': 'Camry', 'year': 2024}"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Each assignment adds a new key-value pair to the dictionary."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_add",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Add a new key `\"city\"` with value `\"Boston\"` to the dictionary.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "person = {\"name\": \"John\", \"age\": 25}",
+                                "indent": 0
+                            },
+                            {
+                                "code": "person[{1}] = {2}",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(person)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "\"Boston\"",
+                            "\"city\"",
+                            "city"
+                        ],
+                        "solutions": {
+                            "1": "\"city\"",
+                            "2": "\"Boston\""
+                        },
+                        "hint": "Use person[\"city\"] = \"Boston\" to add the new item.",
+                        "correctFeedback": "Perfect! You added a new key-value pair to the dictionary.",
+                        "incorrectFeedback": "Use person[\"city\"] = \"Boston\" to add the item.",
+                        "explanation": "Assigning to a new key automatically adds it to the dictionary.",
+                        "output": "{'name': 'John', 'age': 25, 'city': 'Boston'}"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "updating_values",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Updating Values",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "To change an existing value, assign a new value to an existing key."
+                },
+                {
+                    "type": "code",
+                    "content": "student = {\"name\": \"Alice\", \"grade\": \"B\"}\nprint(f\"Before: {student}\")\n\nstudent[\"grade\"] = \"A\"\nprint(f\"After: {student}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Before: {'name': 'Alice', 'grade': 'B'}\nAfter: {'name': 'Alice', 'grade': 'A'}"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The value for key `\"grade\"` changed from `\"B\"` to `\"A\"`."
+                }
+            ]
+        },
+        {
+            "id": "add_vs_update",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Python automatically decides:** If the key exists, it updates the value. If the key doesn't exist, it adds a new item."
+                },
+                {
+                    "type": "code",
+                    "content": "prices = {\"apple\": 1.50}\nprices[\"apple\"] = 1.75  # Updates existing\nprices[\"banana\"] = 0.80  # Adds new\nprint(prices)",
+                    "properties": {
+                        "language": "python",
+                        "output": "{'apple': 1.75, 'banana': 0.8}"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`\"apple\"` was updated, `\"banana\"` was added."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_update",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Update the `\"age\"` to `26` in the dictionary.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "person = {\"name\": \"Bob\", \"age\": 25}",
+                                "indent": 0
+                            },
+                            {
+                                "code": "person[{1}] = {2}",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(person)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "26",
+                            "\"age\"",
+                            "age"
+                        ],
+                        "solutions": {
+                            "1": "\"age\"",
+                            "2": "26"
+                        },
+                        "hint": "Use person[\"age\"] = 26 to update the value.",
+                        "correctFeedback": "Perfect! You updated the age value.",
+                        "incorrectFeedback": "Use person[\"age\"] = 26 to update the existing value.",
+                        "explanation": "Assigning to an existing key updates its value.",
+                        "output": "{'name': 'Bob', 'age': 26}"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_add_or_update",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What happens when you do `dict[\"key\"] = value` and the key already exists?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Error occurs",
+                            "Creates a duplicate key",
+                            "Updates the existing value"
+                        ],
+                        "correctAnswerIndex": 2,
+                        "correctFeedback": "Correct! It updates the value for that key.",
+                        "incorrectFeedback": "When a key exists, assigning to it updates the value.",
+                        "explanation": "Dictionary keys are unique - assigning to an existing key updates its value."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "removing_with_del",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Removing Items",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Use `del` to remove a key-value pair from a dictionary."
+                },
+                {
+                    "type": "code",
+                    "content": "student = {\"name\": \"Alice\", \"grade\": \"A\"}\nprint(f\"Before: {student}\")\n\ndel student[\"grade\"]\nprint(f\"After: {student}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Before: {'name': 'Alice', 'grade': 'A'}\nAfter: {'name': 'Alice'}"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The key `\"grade\"` and its value were removed from the dictionary."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_del",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Remove the `\"temp\"` key from the dictionary.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "data = {\n    \"name\": \"test\",\n    \"temp\": 0,\n    \"value\": 100\n}",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1} data[{2}]",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(data)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "remove",
+                            "del",
+                            "\"temp\""
+                        ],
+                        "solutions": {
+                            "1": "del",
+                            "2": "\"temp\""
+                        },
+                        "hint": "Use del data[\"temp\"] to remove the key.",
+                        "correctFeedback": "Perfect! del removes the key-value pair from the dictionary.",
+                        "incorrectFeedback": "Use del data[\"temp\"] to remove the item.",
+                        "explanation": "del removes the specified key and its value from the dictionary.",
+                        "output": "{'name': 'test', 'value': 100}"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "removing_with_pop",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "The `pop()` method removes a key and **returns its value**."
+                },
+                {
+                    "type": "code",
+                    "content": "scores = {\"math\": 90, \"english\": 85}\nremoved_score = scores.pop(\"english\")\n\nprint(f\"Removed: {removed_score}\")\nprint(f\"Remaining: {scores}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Removed: 85\nRemaining: {'math': 90}"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`pop()` removed `\"english\"` and returned its value `85`."
+                }
+            ]
+        },
+        {
+            "id": "pop_with_default",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can provide a default value to `pop()` if the key doesn't exist."
+                },
+                {
+                    "type": "code",
+                    "content": "student = {\"name\": \"Alice\"}\ngrade = student.pop(\"grade\", \"No grade\")\nprint(grade)",
+                    "properties": {
+                        "language": "python",
+                        "output": "No grade"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Since `\"grade\"` doesn't exist, `pop()` returns the default `\"No grade\"` without causing an error."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_pop",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Remove `\"age\"` and store its value in a variable using `pop()`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "person = {\n    \"name\": \"John\",\n    \"age\": 30,\n    \"city\": \"NYC\"\n}",
+                                "indent": 0
+                            },
+                            {
+                                "code": "age_value = person.{1}({2})",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(f\"Age: {age_value}\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "\"age\"",
+                            "remove",
+                            "pop"
+                        ],
+                        "solutions": {
+                            "1": "pop",
+                            "2": "\"age\""
+                        },
+                        "hint": "Use pop(\"age\") to remove and return the value.",
+                        "correctFeedback": "Perfect! pop() removed the key and returned its value.",
+                        "incorrectFeedback": "Use pop(\"age\") to remove and get the value.",
+                        "explanation": "pop() removes the key and returns its value in one operation.",
+                        "output": "Age: 30"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "del_vs_pop",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**When to use which?**"
+                },
+                {
+                    "type": "text",
+                    "content": "Use `del` when you just want to remove an item. Use `pop()` when you need the removed value."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_del_vs_pop",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Which method returns the removed value?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "del",
+                            "pop()",
+                            "remove()"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! pop() removes the item and returns its value.",
+                        "incorrectFeedback": "pop() is the method that returns the removed value.",
+                        "explanation": "pop() removes and returns the value, while del just removes without returning."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "clearing_dictionary",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "The `clear()` method removes **all** items from a dictionary."
+                },
+                {
+                    "type": "code",
+                    "content": "student = {\n    \"name\": \"Alice\",\n    \"age\": 20,\n    \"grade\": \"A\"\n}\nstudent.clear()\nprint(student)",
+                    "properties": {
+                        "language": "python",
+                        "output": "{}"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`clear()` removes everything, leaving an empty dictionary."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_clear",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Remove all items from the dictionary.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "inventory = {\"apples\": 50, \"oranges\": 30}",
+                                "indent": 0
+                            },
+                            {
+                                "code": "inventory.{1}()",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(inventory)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "empty",
+                            "delete",
+                            "clear"
+                        ],
+                        "solutions": {
+                            "1": "clear"
+                        },
+                        "hint": "Use clear() to remove all items at once.",
+                        "correctFeedback": "Perfect! clear() removed all items from the dictionary.",
+                        "incorrectFeedback": "Use clear() to remove all items.",
+                        "explanation": "clear() removes every key-value pair, resulting in an empty dictionary.",
+                        "output": "{}"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "Add or update items with: `dict[\"key\"] = value`",
+                            "If the key exists, it **updates**; if not, it **adds**",
+                            "Use `del dict[\"key\"]` to remove an item",
+                            "Use `pop(\"key\")` to remove and **get the value back**",
+                            "`pop()` can take a default value to avoid errors",
+                            "Use `clear()` to remove **all items** at once"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

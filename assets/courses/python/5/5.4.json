@@ -1,0 +1,520 @@
+{
+    "blocks": [
+        {
+            "id": "intro_min_max_sum",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Min, Max & Sum",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "When working with lists of numbers, you often need to find the smallest value, largest value, or add them all up. Python provides built-in functions for these common tasks."
+                },
+                {
+                    "type": "text",
+                    "content": "These functions make it easy to analyze numerical data in lists."
+                }
+            ]
+        },
+        {
+            "id": "min_function",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Finding the Minimum",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `min()` function finds the **smallest value** in a list."
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = [45, 12, 78, 23, 67]\nsmallest = min(numbers)\nprint(f\"Smallest number: {smallest}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "The smallest number is 12"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`min()` found that `12` is the smallest number in the list."
+                }
+            ]
+        },
+        {
+            "id": "min_negative",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "`min()` works with negative numbers too. The most negative number is the smallest."
+                },
+                {
+                    "type": "code",
+                    "content": "temperatures = [15, -5, 20, -10, 8]\nlowest = min(temperatures)\nprint(f\"Lowest temperature: {lowest}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Lowest temperature: -10"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`-10` is the smallest (most negative) value in the list."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_min",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Find the smallest score in the list.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "scores = [85, 92, 78, 95, 88]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "lowest = {1}(scores)",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(f\"Lowest score: {lowest}\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "min",
+                            "max",
+                            "smallest"
+                        ],
+                        "solutions": {
+                            "1": "min"
+                        },
+                        "hint": "Use min() to find the smallest value.",
+                        "correctFeedback": "Perfect! min() found the smallest score of 78.",
+                        "incorrectFeedback": "Use min() to find the smallest value in the list.",
+                        "explanation": "min() returns the smallest value from the list.",
+                        "output": "Lowest score: 78"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_min_output",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "prices = [25, 10, 30, 15]\nprint(min(prices))",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "25",
+                            "10",
+                            "30"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! min() returns 10, the smallest value.",
+                        "incorrectFeedback": "min() returns the smallest value in the list, which is 10.",
+                        "explanation": "min() finds the smallest number, which is 10."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "max_function",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Finding the Maximum",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `max()` function finds the **largest value** in a list."
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = [45, 12, 78, 23, 67]\nlargest = max(numbers)\nprint(f\"The largest number is {largest}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "The largest number is 78"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`max()` found that `78` is the largest number in the list."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_max",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Find the highest score in the list.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "scores = [85, 92, 78, 95, 88]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "highest = {1}(scores)",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(f\"Highest score: {highest}\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "high",
+                            "max",
+                            "largest"
+                        ],
+                        "solutions": {
+                            "1": "max"
+                        },
+                        "hint": "Use max() to find the largest value.",
+                        "correctFeedback": "Perfect! max() found the highest score of 95.",
+                        "incorrectFeedback": "Use max() to find the largest value in the list.",
+                        "explanation": "max() returns the largest value from the list.",
+                        "output": "Highest score: 95"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_max_output",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "ages = [25, 30, 18, 45]\nprint(max(ages))",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "18",
+                            "30",
+                            "45"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! max() returns 45, the largest value.",
+                        "incorrectFeedback": "max() returns the largest value in the list, which is 45.",
+                        "explanation": "max() finds the largest number, which is 45."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "sum_function",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Adding All Values",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `sum()` function adds up all the numbers in a list."
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = [10, 20, 30, 40]\ntotal = sum(numbers)\nprint(f\"The sum is {total}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "The sum is 100"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`sum()` added all the numbers: `10 + 20 + 30 + 40 = 100`."
+                }
+            ]
+        },
+        {
+            "id": "sum_practical",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "`sum()` is useful for calculating totals like expenses, scores, or counts."
+                },
+                {
+                    "type": "code",
+                    "content": "expenses = [25, 50, 30, 45]\ntotal_spent = sum(expenses)\nprint(f\"Total spent: ${total_spent}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Total spent: $150"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`sum()` calculated the total expenses as `$150`."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_sum",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Calculate the total of all numbers in the list.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "points = [10, 15, 20, 25]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "total = {1}(points)",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(f\"Total points: {total}\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "add",
+                            "total",
+                            "sum"
+                        ],
+                        "solutions": {
+                            "1": "sum"
+                        },
+                        "hint": "Use sum() to add all values together.",
+                        "correctFeedback": "Perfect! sum() added all the points to get 70.",
+                        "incorrectFeedback": "Use sum() to add all values in the list.",
+                        "explanation": "sum() adds all numbers: 10 + 15 + 20 + 25 = 70.",
+                        "output": "Total points: 70"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_sum_output",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = [5, 10, 15]\nprint(sum(numbers))",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "30",
+                            "15",
+                            "20"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! sum() adds 5 + 10 + 15 = 30.",
+                        "incorrectFeedback": "sum() adds all numbers: 5 + 10 + 15 = 30.",
+                        "explanation": "sum() calculates the total of all numbers in the list."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "calculating_average",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Calculating Average",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "You can combine `sum()` and `len()` to calculate the average of a list."
+                },
+                {
+                    "type": "code",
+                    "content": "scores = [80, 90, 85, 95]\ntotal = sum(scores)\ncount = len(scores)\naverage = total / count\nprint(f\"Average score: {average}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Average score: 87.5"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The average is calculated by dividing the sum by the number of items."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_average",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Calculate the average of the temperatures.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "temperatures = [20, 25, 30, 25]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "total = {1}(temperatures)",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "count = {2}(temperatures)",
+                                "indent": 0,
+                                "blank": "2"
+                            },
+                            {
+                                "code": "average = total / count",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(f\"Average: {average}\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "sum",
+                            "len",
+                            "count"
+                        ],
+                        "solutions": {
+                            "1": "sum",
+                            "2": "len"
+                        },
+                        "hint": "Use sum() to get the total, and len() to count items.",
+                        "correctFeedback": "Perfect! You calculated the average by dividing sum by len.",
+                        "incorrectFeedback": "Use sum() for total and len() for count, then divide.",
+                        "explanation": "sum() gives 100, len() gives 4, so average is 100 / 4 = 25.0.",
+                        "output": "Average: 25.0"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_comprehensive",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Find the range (difference between max and min) of the prices.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "prices = [15, 25, 10, 30, 20]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "highest = {1}(prices)",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "lowest = {2}(prices)",
+                                "indent": 0,
+                                "blank": "2"
+                            },
+                            {
+                                "code": "range_value = highest - lowest",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(f\"Price range: {range_value}\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "min",
+                            "max",
+                            "sum"
+                        ],
+                        "solutions": {
+                            "1": "max",
+                            "2": "min"
+                        },
+                        "hint": "Use max() for highest and min() for lowest, then subtract.",
+                        "correctFeedback": "Excellent! The range is 30 - 10 = 20.",
+                        "incorrectFeedback": "Use max() and min(), then subtract min from max.",
+                        "explanation": "max() gives 30, min() gives 10, so the range is 30 - 10 = 20.",
+                        "output": "Price range: 20"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "Use `min()` to find the **smallest value** in a list",
+                            "Use `max()` to find the **largest value** in a list",
+                            "Use `sum()` to **add all values** in a list",
+                            "Calculate average by dividing `sum()` by `len()`",
+                            "These functions only work with lists of **numbers**"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

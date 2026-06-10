@@ -1,0 +1,440 @@
+{
+    "blocks": [
+        {
+            "id": "intro_datetime",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Datetime Module",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `datetime` module helps you work with dates and times. Perfect for timestamps, scheduling, and tracking events!"
+                },
+                {
+                    "type": "text",
+                    "content": "Let's explore how to work with dates and times in Python."
+                }
+            ]
+        },
+        {
+            "id": "getting_today",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Getting Today's Date",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`date.today()` gives you today's date."
+                },
+                {
+                    "type": "code",
+                    "content": "from datetime import date\n\ntoday = date.today()\nprint(today)",
+                    "properties": {
+                        "language": "python",
+                        "output": "2025-10-29"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "First we import the `date` class from the `datetime` module. Then we call the `today()` method to get the current date."
+                },
+                {
+                    "type": "text",
+                    "content": "The date is shown in the format: **year-month-day**. This is the standard international format."
+                }
+            ]
+        },
+        {
+            "id": "date_parts",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can access individual parts of a date: year, month, and day using the `year`, `month`, and `day` attributes."
+                },
+                {
+                    "type": "code",
+                    "content": "from datetime import date\n\ntoday = date.today()\n\nprint(f\"Year: {today.year}\")\nprint(f\"Month: {today.month}\")\nprint(f\"Day: {today.day}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Year: 2025\nMonth: 10\nDay: 29"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Each part is a number you can use in calculations or comparisons."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_today",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Get today's date and print the `year`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "from datetime import date",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "today = date.{1}()",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(today.year)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "now",
+                            "today",
+                            "current"
+                        ],
+                        "solutions": {
+                            "1": "today"
+                        },
+                        "hint": "Use today() to get the current date.",
+                        "correctFeedback": "Perfect! You got today's date.",
+                        "incorrectFeedback": "Use date.today() to get the current date.",
+                        "explanation": "today() returns the current date from your system.",
+                        "output": "2025"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "creating_dates",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Creating Specific Dates",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "You can create any date using `date(year, month, day)`."
+                },
+                {
+                    "type": "code",
+                    "content": "from datetime import date\n\nbirthday = date(2000, 5, 15)\nprint(birthday)",
+                    "properties": {
+                        "language": "python",
+                        "output": "2000-05-15"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Create dates by providing year, month, and day as numbers."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_create_date",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a date for Christmas.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "from datetime import date",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "christmas = {1}(2050, 12, 25)",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(christmas)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "datetime",
+                            "date"
+                        ],
+                        "solutions": {
+                            "1": "date"
+                        },
+                        "hint": "Use date(year, month, day) to create a specific date.",
+                        "correctFeedback": "Perfect! You created a specific date.",
+                        "incorrectFeedback": "Use date(year, month, day) to create a specific date.",
+                        "explanation": "date() takes year, month, and day in that order.",
+                        "output": "2050-12-25"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "datetime_now",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Working with Time",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`datetime.now()` gives you the current date **and** time."
+                },
+                {
+                    "type": "code",
+                    "content": "from datetime import datetime\n\nnow = datetime.now()\nprint(now)",
+                    "properties": {
+                        "language": "python",
+                        "output": "2025-10-29 14:30:45.123456"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "This includes year, month, day, hour, minute, second, and microseconds."
+                }
+            ]
+        },
+        {
+            "id": "datetime_parts",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can access time parts using the `hour`, `minute`, `second`, and `microsecond` attributes just like date parts."
+                },
+                {
+                    "type": "code",
+                    "content": "from datetime import datetime\n\nnow = datetime.now()\n\nprint(f\"Hour: {now.hour}\")\nprint(f\"Minute: {now.minute}\")\nprint(f\"Second: {now.second}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Hour: 14\nMinute: 30\nSecond: 45"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Access hour, minute, and second as individual numbers. Time uses 24-hour format."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_datetime",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What's the difference between date.today() and datetime.now()?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "They are the same",
+                            "today() gives date only, now() gives date and time",
+                            "today() is faster"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! today() is date only, now() includes time.",
+                        "incorrectFeedback": "today() gives just the date, now() includes the time too.",
+                        "explanation": "Use today() for dates, now() when you need the time as well."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "formatting_dates",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can format dates as readable strings using `strftime()`."
+                },
+                {
+                    "type": "text",
+                    "content": "The `strftime()` method takes a format string as an argument and returns a string with the formatted date."
+                },
+                {
+                    "type": "code",
+                    "content": "from datetime import date\n\ntoday = date(2050, 12, 25)\n\nformatted = today.strftime(\"%B %d, %Y\")\nprint(formatted)",
+                    "properties": {
+                        "language": "python",
+                        "output": "December 25, 2050"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Here we formatted the date to show the full month name, day, and year using the `\"%B %d, %Y\"` format string."
+                },
+                {
+                    "type": "text",
+                    "content": "`%B` = full month name, `%d` = day, `%Y` = full year."
+                }
+            ]
+        },
+        {
+            "id": "format_codes",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Common format codes"
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "`%Y` - Year (2050)",
+                            "`%m` - Month as number (12)",
+                            "`%d` - Day (25)",
+                            "`%B` - Full month name (December)",
+                            "`%A` - Full day name (Friday)"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_format",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Format the date to show the full month name.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "from datetime import date",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "today = date(2050, 12, 25)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "month = today.strftime(\"{1}\")",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(month)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "%m",
+                            "%M",
+                            "%B"
+                        ],
+                        "solutions": {
+                            "1": "%B"
+                        },
+                        "hint": "%B gives the full month name.",
+                        "correctFeedback": "Perfect! %B formats the month as its full name.",
+                        "incorrectFeedback": "Use %B to get the full month name like 'October'.",
+                        "explanation": "%B converts the month number to its full name.",
+                        "output": "December"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_practical",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Format the date to show the full month name and day.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "from datetime import date",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "today = date(2050, 12, 25)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "month = today.{1}(\"%B %d\")",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(month)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "format",
+                            "strftime"
+                        ],
+                        "solutions": {
+                            "1": "strftime"
+                        },
+                        "hint": "Use strftime() to format a date.",
+                        "correctFeedback": "Perfect! You created and formatted a date.",
+                        "incorrectFeedback": "Use strftime() to format a date.",
+                        "explanation": "Use strftime() to format a date.",
+                        "output": "December 25"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "`from datetime import date` for dates only",
+                            "`date.today()` - Get today's date",
+                            "`date(year, month, day)` - Create specific dates",
+                            "`datetime.now()` - Get current date and time",
+                            "`strftime()` - Format dates as readable strings",
+                            "Access parts with `.year`, `.month`, `.day`, `.hour`, etc."
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

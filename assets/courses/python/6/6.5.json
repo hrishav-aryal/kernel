@@ -1,0 +1,492 @@
+{
+    "blocks": [
+        {
+            "id": "intro_looping",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Looping Through Dictionaries",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Looping through dictionaries is different from looping through lists. You can loop through keys, values, or both together."
+                },
+                {
+                    "type": "text",
+                    "content": "This is useful for processing all items in a dictionary, like printing a phone book or calculating totals."
+                }
+            ]
+        },
+        {
+            "id": "looping_keys",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Looping Through Keys",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "We can loop through a dictionary using a `for` loop with the `in` operator. By default, looping through a dictionary gives you the **keys**."
+                },
+                {
+                    "type": "code",
+                    "content": "student = {\n    \"name\": \"Alice\",\n    \"age\": 20,\n    \"grade\": \"A\"\n}\n\nfor key in student:\n    print(key)",
+                    "properties": {
+                        "language": "python",
+                        "output": "name\nage\ngrade"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The loop goes through each key in the dictionary."
+                }
+            ]
+        },
+        {
+            "id": "accessing_values_in_loop",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can use the key to access its value inside the loop."
+                },
+                {
+                    "type": "code",
+                    "content": "prices = {\n    \"apple\": 1.50,\n    \"banana\": 0.75,\n    \"orange\": 1.20\n}\n\nfor item in prices:\n    print(f\"{item}: ${prices[item]}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "apple: $1.5\nbanana: $0.75\norange: $1.2"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "We loop through keys (`item`) and use them to get values (`prices[item]`)."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_loop_keys",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Loop through the dictionary and print each key.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "scores = {\"math\": 90, \"english\": 85}",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1} subject {2} scores:",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "    print(subject)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "in",
+                            "for",
+                            "while"
+                        ],
+                        "solutions": {
+                            "1": "for",
+                            "2": "in"
+                        },
+                        "hint": "Use for subject in scores to loop through keys.",
+                        "correctFeedback": "Perfect! Looping through a dictionary gives you the keys.",
+                        "incorrectFeedback": "Use for subject in scores to loop through the keys.",
+                        "explanation": "By default, looping through a dictionary iterates over its keys.",
+                        "output": "math\nenglish"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_access_values",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Loop through keys and print each key with its value.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "ages = {\"Alice\": 25, \"Bob\": 30}",
+                                "indent": 0
+                            },
+                            {
+                                "code": "for name in ages:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(name)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(ages[{1}])",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "\"name\"",
+                            "name",
+                            "key"
+                        ],
+                        "solutions": {
+                            "1": "name"
+                        },
+                        "hint": "Use the key variable name to access the value.",
+                        "correctFeedback": "Perfect! You used the key to access its value.",
+                        "incorrectFeedback": "Use ages[name] to get the value for each key.",
+                        "explanation": "The loop variable (name) is the key, which you use to access values.",
+                        "output": "Alice: 25\nBob: 30"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "looping_values",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Looping Through Values",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Use the `values()` method to loop through just the **values**."
+                },
+                {
+                    "type": "code",
+                    "content": "scores = {\n    \"math\": 90,\n    \"english\": 85,\n    \"science\": 88\n}\n\nfor score in scores.values():\n    print(score)",
+                    "properties": {
+                        "language": "python",
+                        "output": "90\n85\n88"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The loop gives you only the values, not the keys."
+                }
+            ]
+        },
+        {
+            "id": "values_practical",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "This is useful when you only care about the values, like calculating a total."
+                },
+                {
+                    "type": "code",
+                    "content": "prices = {\n    \"apple\": 2.50,\n    \"banana\": 1.50,\n    \"orange\": 3.00\n}\ntotal = 0\n\nfor price in prices.values():\n    total = total + price\n\nprint(f\"Total: ${total}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Total: $7.0"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "We summed all prices without needing the item names."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_values",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Loop through the values and print each one.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "inventory = {\"apples\": 50, \"oranges\": 30}",
+                                "indent": 0
+                            },
+                            {
+                                "code": "for quantity in inventory.{1}():",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(quantity)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "keys",
+                            "items",
+                            "values"
+                        ],
+                        "solutions": {
+                            "1": "values"
+                        },
+                        "hint": "Use values() to loop through only the values.",
+                        "correctFeedback": "Perfect! values() gives you just the values.",
+                        "incorrectFeedback": "Use values() to loop through dictionary values.",
+                        "explanation": "The values() method returns only the values, not the keys.",
+                        "output": "50\n30"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "looping_items",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Looping Through Key-Value Pairs",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Use the `items()` method to loop through both **keys and values** at the same time. In this case, the `for` loop will take two variables, one for the key and one for the value."
+                },
+                {
+                    "type": "code",
+                    "content": "student = {\n    \"name\": \"Alice\",\n    \"age\": 20,\n    \"grade\": \"A\"\n}\n\nfor key, value in student.items():\n    print(f\"{key}: {value}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "name: Alice\nage: 20\ngrade: A"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The loop unpacks each key-value pair into two variables: `key` and `value`."
+                }
+            ]
+        },
+        {
+            "id": "items_with_meaningful_names",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can use meaningful variable names instead of `key` and `value`."
+                },
+                {
+                    "type": "code",
+                    "content": "phone_book = {\n    \"Alice\": \"555-1234\",\n    \"Bob\": \"555-5678\"\n}\n\nfor name, number in phone_book.items():\n    print(f\"{name}'s number is {number}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Alice's number is 555-1234\nBob's number is 555-5678"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Using `name` and `number` makes the code more readable."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_items",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Loop through key-value pairs and print them.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "colors = {\"r\": 255, \"g\": 128, \"b\": 0}",
+                                "indent": 0
+                            },
+                            {
+                                "code": "for color, value in colors.{1}():",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(f\"{color}: {value}\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "values",
+                            "items",
+                            "pairs"
+                        ],
+                        "solutions": {
+                            "1": "items"
+                        },
+                        "hint": "Use items() to loop through both keys and values.",
+                        "correctFeedback": "Perfect! items() gives you both keys and values.",
+                        "incorrectFeedback": "Use items() to loop through key-value pairs.",
+                        "explanation": "items() returns pairs that can be unpacked into two variables.",
+                        "output": "r: 255\ng: 128\nb: 0"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_items_names",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the loop to print each product and its price.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "menu = {\n    \"pizza\": 12,\n    \"burger\": 8,\n    \"salad\": 6\n}",
+                                "indent": 0
+                            },
+                            {
+                                "code": "for {1}, {2} in menu.items():",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "    print(f\"{item}: ${price}\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "item",
+                            "price",
+                            "value"
+                        ],
+                        "solutions": {
+                            "1": "item",
+                            "2": "price"
+                        },
+                        "hint": "Use meaningful names: item for the key and price for the value.",
+                        "correctFeedback": "Perfect! You unpacked the pairs into meaningful variable names.",
+                        "incorrectFeedback": "Unpack the key-value pairs into item and price.",
+                        "explanation": "items() returns pairs that you can unpack with descriptive names.",
+                        "output": "pizza: $12\nburger: $8\nsalad: $6"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "which_method_to_use",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Which method should you use?**"
+                },
+                {
+                    "type": "text",
+                    "content": "Use **keys** (default loop) when you only need keys. Use **values()** when you only need values. Use **items()** when you need both keys and values."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_which_method",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Which method would you use to calculate the total of all values?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "items()",
+                            "keys()",
+                            "values()"
+                        ],
+                        "correctAnswerIndex": 2,
+                        "correctFeedback": "Correct! values() gives you just the values to sum.",
+                        "incorrectFeedback": "Use values() when you only need the values, not the keys.",
+                        "explanation": "When you only need values (not keys), use values() for simpler code."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_practical",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Find all students who scored above 85.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "scores = {\n    \"Alice\": 92,\n    \"Bob\": 78,\n    \"Charlie\": 88\n}",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "for student, score in scores.{1}():",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    if score {2} 85:",
+                                "indent": 0,
+                                "blank": "2"
+                            },
+                            {
+                                "code": "        print(f\"{student}: {score}\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            ">",
+                            "items",
+                            "<"
+                        ],
+                        "solutions": {
+                            "1": "items",
+                            "2": ">"
+                        },
+                        "hint": "Use items() to get both names and scores, then check if score > 85.",
+                        "correctFeedback": "Excellent! You found all students with scores above 85.",
+                        "incorrectFeedback": "Use items() and check if score > 85.",
+                        "explanation": "items() gives you both keys and values to compare.",
+                        "output": "Alice: 92\nCharlie: 88"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "Loop through **keys** by default: `for key in dict:`",
+                            "Loop through **values** with: `for value in dict.values():`",
+                            "Loop through **key-value pairs** with: `for key, value in dict.items():`",
+                            "Use `values()` when you only need values (like calculating totals)",
+                            "Use `items()` when you need both keys and values",
+                            "Use meaningful variable names in loops for better readability"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

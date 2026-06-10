@@ -1,0 +1,376 @@
+{
+    "blocks": [
+        {
+            "id": "intro_init",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "__init__ Constructor",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "So far, we've been adding attributes after creating objects. There's a better way! The `__init__` method automatically sets up objects when they're created."
+                },
+                {
+                    "type": "text",
+                    "content": "`__init__` is called a **constructor** - it constructs (initializes) new objects."
+                }
+            ]
+        },
+        {
+            "id": "the_problem",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Without `__init__`, setting up objects is tedious:"
+                },
+                {
+                    "type": "code",
+                    "content": "class Dog:\n    def bark(self):\n        print(f\"{self.name} says Woof!\")\n\ndog = Dog()\ndog.name = \"Buddy\"\ndog.age = 3\ndog.bark()",
+                    "properties": {
+                        "language": "python",
+                        "output": "Buddy says Woof!"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "You have to remember to set `name` and `age` manually for every dog. Easy to forget!"
+                }
+            ]
+        },
+        {
+            "id": "using_init",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Using __init__",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`__init__` is a special method that runs automatically when you create an object. It sets up the initial attributes."
+                },
+                {
+                    "type": "text",
+                    "content": "You can define which attributes each object should have by adding them as parameters to the `__init__` method. This way, when you make a new object, you supply values for those attributes right away."
+                },
+                {
+                    "type": "code",
+                    "content": "class Dog:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n    \n    def bark(self):\n        print(f\"{self.name} says Woof!\")\n\ndog = Dog(\"Buddy\", 3)\ndog.bark()",
+                    "properties": {
+                        "language": "python",
+                        "output": "Buddy says Woof!"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Now when we create a dog with `Dog(\"Buddy\", 3)`, the `__init__` method automatically sets `name` and `age`. Much cleaner!"
+                }
+            ]
+        },
+        {
+            "id": "quick_check_init",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "When does the `__init__` method run?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Automatically when creating a new object",
+                            "When you call it manually",
+                            "At the end of the program"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! __init__ runs automatically when objects are created.",
+                        "incorrectFeedback": "__init__ runs automatically during object creation.",
+                        "explanation": "__init__ initializes objects with their starting values."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "init_syntax",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "The `__init__` method has two underscores before and after `init`. This makes it a special method Python recognizes."
+                },
+                {
+                    "type": "code",
+                    "content": "class Car:\n    def __init__(self, brand, color):\n        self.brand = brand\n        self.color = color\n\ncar1 = Car(\"Toyota\", \"red\")\ncar2 = Car(\"Honda\", \"blue\")\n\nprint(f\"{car1.brand} - {car1.color}\")\nprint(f\"{car2.brand} - {car2.color}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Toyota - red\nHonda - blue"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "When we create `car1` and `car2`, the `__init__` method automatically assigns the brand and color to each car."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_syntax",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Add an __init__ method to initialize the book's title.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "class Book:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    def {1}(self, title):",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "        self.title = title",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "book = Book(\"Python Basics\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(book.title)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "init",
+                            "__init__",
+                            "constructor"
+                        ],
+                        "solutions": {
+                            "1": "__init__"
+                        },
+                        "hint": "Use __init__ with two underscores on each side.",
+                        "correctFeedback": "Perfect! You added the constructor method.",
+                        "incorrectFeedback": "Use __init__ (with double underscores) for the constructor.",
+                        "explanation": "Double underscores make __init__ a special method.",
+                        "output": "Python Basics"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "self_in_init",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Like other methods, `__init__` takes `self` as the first parameter, followed by any values you want to pass when creating the object."
+                },
+                {
+                    "type": "code",
+                    "content": "class Person:\n    def __init__(self, name, age, city):\n        self.name = name\n        self.age = age\n        self.city = city\n\nperson = Person(\"Alice\", 25, \"NYC\")\nprint(person.name)\nprint(person.age)\nprint(person.city)",
+                    "properties": {
+                        "language": "python",
+                        "output": "Alice\n25\nNYC"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The parameters after `self` become the values you pass when creating objects: `Person(\"Alice\", 25, \"NYC\")`."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_params",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the __init__ method to accept and store the player's name.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "class Player:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    def __init__(self, {1}):",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "        self.name = name",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "player = Player(\"Bob\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(player.name)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "name",
+                            "self",
+                            "player"
+                        ],
+                        "solutions": {
+                            "1": "name"
+                        },
+                        "hint": "Add a parameter for the name value.",
+                        "correctFeedback": "Perfect! The parameter lets you pass a name when creating objects.",
+                        "incorrectFeedback": "Add name as a parameter after self.",
+                        "explanation": "Parameters in __init__ define what values are needed to create objects.",
+                        "output": "Bob"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "default_values",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can give `__init__` parameters default values, making some attributes optional:"
+                },
+                {
+                    "type": "code",
+                    "content": "class Product:\n    def __init__(self, name, stock=0):\n        self.name = name\n        self.stock = stock\n\nproduct1 = Product(\"Laptop\")\nproduct2 = Product(\"Mouse\", 100)\n\nprint(product1.stock)\nprint(product2.stock)",
+                    "properties": {
+                        "language": "python",
+                        "output": "0\n100"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`stock` has a default of `0`, so you can create products without specifying stock. If you do provide stock, it uses that value instead."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_defaults",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What happens if you don't provide a value for a parameter with a default?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "An error occurs",
+                            "The default value is used",
+                            "The attribute isn't created"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! Default values are used when no value is provided.",
+                        "incorrectFeedback": "Default values fill in when you don't provide a value.",
+                        "explanation": "Default parameters make some attributes optional when creating objects."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_practical",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "For the given Rectangle class, create a new object with width 10 and height 5.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "class Rectangle:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    def __init__(self, w, h):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        self.width = w",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        self.height = h",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "rect = {1}",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(f\"{rect.width} x {rect.height}\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "self(10, 5)",
+                            "Rectangle(10, 5)"
+                        ],
+                        "solutions": {
+                            "1": "Rectangle(10, 5)"
+                        },
+                        "hint": "Use Rectangle(10, 5) to create a new object with width 10 and height 5.",
+                        "correctFeedback": "Perfect! You created a new object with width 10 and height 5.",
+                        "incorrectFeedback": "Use Rectangle(10, 5) to create a new object with width 10 and height 5.",
+                        "explanation": "Rectangle(10, 5) creates a new object with width 10 and height 5.",
+                        "output": "10 x 5"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "`__init__` is a **constructor** - it initializes new objects",
+                            "`__init__` runs **automatically** when creating objects",
+                            "Always takes `self` as first parameter",
+                            "Parameters after self are passed when creating objects",
+                            "Use `self.attribute = value` to set up attributes",
+                            "Can have **default parameter values**"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,481 @@
+{
+    "blocks": [
+        {
+            "id": "intro_string_operations",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "String Operations",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Strings have many useful operations that help us work with text. We can do things like finding the length of the string, changing the case, and accessing individual characters."
+                }
+            ]
+        },
+        {
+            "id": "string_length",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "String Length",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "We can find out how many characters are in a string using the `len()` function."
+                },
+                {
+                    "type": "text",
+                    "content": "The `len()` function in Python counts the number of characters in a string and returns that number. You pass the string inside the parentheses `()`, and `len()` will tell you its length."
+                },
+                {
+                    "type": "code",
+                    "content": "length = len(\"Hello\")\nprint(length)",
+                    "properties": {
+                        "language": "python",
+                        "output": "5"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "string_case_operations",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Changing Case",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "We can also change the strings to uppercase or lowercase."
+                },
+                {
+                    "type": "text",
+                    "content": "To change the string to uppercase, use the `.upper()` method."
+                },
+                {
+                    "type": "code",
+                    "content": "name = \"alice smith\"\nprint(name.upper())",
+                    "properties": {
+                        "language": "python",
+                        "output": "ALICE SMITH"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "string_case_operations",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "To change the string to lowercase, use the `.lower()` method."
+                },
+                {
+                    "type": "code",
+                    "content": "name = \"alice smith\"\nprint(name.lower())",
+                    "properties": {
+                        "language": "python",
+                        "output": "alice smith"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "string_case_operations",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "One more thing, we can also remove the whitespace from the beginning and end of the string using the `.strip()` method."
+                },
+                {
+                    "type": "code",
+                    "content": "name = \"  alice smith  \"\nprint(name.strip())",
+                    "properties": {
+                        "language": "python",
+                        "output": "alice smith"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_string_length",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Find the length of the word `\"Python\"`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "length = {1}(\"Python\")",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(length)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "length",
+                            "len"
+                        ],
+                        "solutions": {
+                            "1": "len"
+                        },
+                        "hint": "Use len() to find the length",
+                        "correctFeedback": "Perfect! You used len() to find the string length.",
+                        "incorrectFeedback": "Use len() to find the string length",
+                        "explanation": "Use len() to count the number of characters in a string.",
+                        "output": "6"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_what_will_print_length",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "name = \"Alice\"\nprint(len(name))",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "5",
+                            "6"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! \"Alice\" has 5 characters.",
+                        "incorrectFeedback": "\"Alice\" has 5 characters: A-l-i-c-e.",
+                        "explanation": "len() counts the number of characters in the string."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_variable_create",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Let's create a variable called `app` and set it to `Kernel`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "{1} {2} {3}",
+                                "indent": 0,
+                                "blank": "1,2,3"
+                            }
+                        ],
+                        "options": [
+                            "=",
+                            "app",
+                            "Kernel"
+                        ],
+                        "solutions": {
+                            "1": "app",
+                            "2": "=",
+                            "3": "Kernel"
+                        },
+                        "hint": "Use the variable name, an equals sign, and the value Kernel",
+                        "correctFeedback": "Well done! You created the app variable and set it to Kernel.",
+                        "incorrectFeedback": "Remember to use the variable name, an equals sign, and the value Kernel.",
+                        "explanation": "To create a variable, use the variable name (app), an equals sign (=), and the value (Kernel)."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_upper_case",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Now lets convert the `app` variable to uppercase.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "app = \"Kernel\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "app_upper = app.{1}",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "upper()",
+                            "uppercase()"
+                        ],
+                        "solutions": {
+                            "1": "upper()"
+                        },
+                        "hint": "Use .upper() to convert to uppercase",
+                        "correctFeedback": "Great! You converted the name to uppercase.",
+                        "incorrectFeedback": "Use .upper() to convert to uppercase",
+                        "explanation": "Use .upper() to convert all letters to uppercase."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_print_upper_case",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Lets try printing the `app_upper` variable.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "app = \"Kernel\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "app_upper = app.upper()",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print({1})",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "app_upper",
+                            "app"
+                        ],
+                        "solutions": {
+                            "1": "app_upper"
+                        },
+                        "hint": "Use the app_upper variable in print()",
+                        "correctFeedback": "Great! You printed the app_upper variable.",
+                        "incorrectFeedback": "Use the app_upper variable in print()",
+                        "explanation": "Use the app_upper variable in print() to print the variable.",
+                        "output": "KERNEL"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_what_will_print_length",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "app = \"KERNEL\"\nprint(lower(app))",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "kernel",
+                            "KERNEL"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! lower() converts the string to lowercase.",
+                        "incorrectFeedback": "lower() converts the string to lowercase.",
+                        "explanation": "lower() converts the string to lowercase."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "string_access",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Accessing Characters",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "We can access individual characters in a string using square brackets `[]` with an index number."
+                },
+                {
+                    "type": "code",
+                    "content": "word = \"Hello\"\nprint(word[0])",
+                    "properties": {
+                        "language": "python",
+                        "output": "H"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "string_indexing_explanation",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "String indexing starts at **0**, not 1. So the first character is at index 0, second at index 1, and so on."
+                },
+                {
+                    "type": "code",
+                    "content": "# Index:  0 1 2 3 4\n# Word:   H e l l o",
+                    "properties": {
+                        "language": "python"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_first_character",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Get the first character of the word `\"Python\"`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "word = \"Python\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "first_char = word[{1}]",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(first_char)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "1",
+                            "0"
+                        ],
+                        "solutions": {
+                            "1": "0"
+                        },
+                        "hint": "Use index 0 for the first character",
+                        "correctFeedback": "Correct! The first character is at index 0.",
+                        "incorrectFeedback": "Use index 0 for the first character",
+                        "explanation": "String indexing starts at 0, so the first character is at index 0.",
+                        "output": "P"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_whats_wrong_index",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What's wrong with this code?"
+                },
+                {
+                    "type": "code",
+                    "content": "word = \"Hi\"\nprint(word[2])",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Index 2 doesn't exist",
+                            "Missing quotes around 2"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! The word \"Hi\" only has indices 0 and 1.",
+                        "incorrectFeedback": "The word \"Hi\" only has indices 0 and 1, so index 2 doesn't exist.",
+                        "explanation": "Index 2 is out of range for a 2-character string."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_what_will_print_length",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "word = \"Python\"\nprint(word[2])",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "y",
+                            "t",
+                            "h"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! The second character is at index 2.",
+                        "incorrectFeedback": "The second character is at index 2.",
+                        "explanation": "The second character is at index 2."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "`len()` finds the number of characters in a string",
+                            "`.upper()` converts all letters to uppercase",
+                            "`.lower()` converts all letters to lowercase",
+                            "`[index]` accesses individual characters",
+                            "**String indexing** starts at `0`"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

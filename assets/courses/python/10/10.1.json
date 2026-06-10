@@ -1,0 +1,683 @@
+{
+    "blocks": [
+        {
+            "id": "intro_classes",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Creating Classes",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Imagine you're building a game with many characters. Each character has a name, health, and level. Instead of managing separate variables for each character, you can use a **class** to organize this data together."
+                },
+                {
+                    "type": "text",
+                    "content": "A **class** is like a blueprint or template. It defines what data and actions belong together."
+                }
+            ]
+        },
+        {
+            "id": "real_world_analogy",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Think of a **class** like a form you fill out at a doctor's office. The form has blank spaces for name, age, and address - that's the template."
+                },
+                {
+                    "type": "text",
+                    "content": "When different people fill out the form, each completed form is an **object**. Same template (class), but each object has different values (your name vs someone else's name)."
+                }
+            ]
+        },
+        {
+            "id": "what_are_objects",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Objects** are the actual instances you create from a class. If `Car` is a class, then `Toyota`, `Ford`, and `Chevrolet` are objects - each is a specific car with its own brand, model, and characteristics."
+                },
+                {
+                    "type": "text",
+                    "content": "One class can create unlimited objects. Each object is independent and stores its own data."
+                }
+            ]
+        },
+        {
+            "id": "why_classes",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Why use classes?** They group related data together, making your code organized and easier to manage. Instead of separate variables, everything about a car (brand, model, color) stays together."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_concept",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "If `Car` is a class, what are `Toyota`, `Ford`, and `Chevrolet`?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Objects created from the Car class",
+                            "Other classes",
+                            "Attributes of Car"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! They are objects (instances) of the Car class.",
+                        "incorrectFeedback": "They are objects - specific cars created from the Car class.",
+                        "explanation": "A class is the template, objects are the actual instances with their own data."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "basic_syntax",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Class Syntax",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "To create a class, use the `class` keyword followed by the class name and a colon."
+                },
+                {
+                    "type": "code",
+                    "content": "class Dog:\n    pass",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "This creates an empty `Dog` class. `pass` means \"do nothing for now\" - it's a placeholder."
+                }
+            ]
+        },
+        {
+            "id": "naming_convention",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Naming convention**"
+                },
+                {
+                    "type": "text",
+                    "content": "Class names use CapitalCase, variables use snake_case."
+                },
+                {
+                    "type": "code",
+                    "content": "class BankAccount:\n    pass\n\nclass GameCharacter:\n    pass",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Good class names are descriptive nouns that represent what you're modeling."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_syntax",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create an empty class called `Car`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "{1} {2}:",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "    pass",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "Car",
+                            "class"
+                        ],
+                        "solutions": {
+                            "1": "class",
+                            "2": "Car"
+                        },
+                        "hint": "Use class keyword followed by the class name.",
+                        "correctFeedback": "Perfect! You created a class.",
+                        "incorrectFeedback": "Use class ClassName: to define a class.",
+                        "explanation": "The class keyword defines a new class, similar to how def defines functions.",
+                        "output": ""
+                    }
+                }
+            ]
+        },
+        {
+            "id": "creating_objects",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Creating Objects",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "To create an object (instance) from a class, use the class name followed by parentheses `()`, similar to calling a function."
+                },
+                {
+                    "type": "code",
+                    "content": "class Car:\n    pass\n\ncar1 = Car()\ncar2 = Car()\n\nprint(type(car1))",
+                    "properties": {
+                        "language": "python",
+                        "output": "<class '__main__.Car'>"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "We created two separate `Car` objects: `car1` and `car2`. The `type()` function shows they are instances of the `Car` class."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_create_objects",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create two objects from the `Phone` class.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "class Phone:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    pass",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "phone1 = {1}()",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "phone2 = Phone()",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "Phone",
+                            "phone"
+                        ],
+                        "solutions": {
+                            "1": "Phone"
+                        },
+                        "hint": "Use the class name with parentheses to create objects.",
+                        "correctFeedback": "Perfect! You created an object from the class.",
+                        "incorrectFeedback": "Use ClassName() to create objects.",
+                        "explanation": "ClassName() creates a new instance of that class.",
+                        "output": ""
+                    }
+                }
+            ]
+        },
+        {
+            "id": "adding_attributes",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Adding Attributes",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "**Attributes** are variables that belong to a class. They store data about each object."
+                },
+                {
+                    "type": "text",
+                    "content": "You can add attributes directly in the class or after creating an object. Let's see both ways:"
+                }
+            ]
+        },
+        {
+            "id": "class_attributes",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Class attributes** are shared by all objects of that class. They represent data that's the same for every object of that class."
+                },
+                {
+                    "type": "text",
+                    "content": "To create a class attribute, define it inside the class. It will be shared by all objects of that class."
+                },
+                {
+                    "type": "code",
+                    "content": "class Dog:\n    species = \"Canine\"\n\nprint(Dog.species)",
+                    "properties": {
+                        "language": "python",
+                        "output": "Canine"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`species` is a class attribute. All dogs are canines, so this data is shared. You access it using the class name: `Dog.species`."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_class_attr",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What are class attributes?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Functions inside a class",
+                            "Data shared by all objects of the class"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! Class attributes are shared by all instances.",
+                        "incorrectFeedback": "Class attributes are shared data that all objects of that class have.",
+                        "explanation": "Class attributes are like facts true for all members of the class."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "instance_attributes",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Instance attributes** also known as object attributes are unique to each object. Each object gets its own copy."
+                },
+                {
+                    "type": "text",
+                    "content": "You can add attributes to an object after creating it using dot notation `object.attribute = value`."
+                },
+                {
+                    "type": "code",
+                    "content": "class Dog:\n    pass\n\n# Create object and add attributes\ndog1 = Dog()\ndog1.name = \"Buddy\"\ndog1.age = 3\n\nprint(dog1.name)\nprint(dog1.age)",
+                    "properties": {
+                        "language": "python",
+                        "output": "Buddy\n3"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "We created a `Dog` object called `dog1`, then added `name` and `age` attributes specific to this dog."
+                }
+            ]
+        },
+        {
+            "id": "multiple_objects",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Each object can have different attribute values. For example, two dogs can have different names and ages."
+                },
+                {
+                    "type": "code",
+                    "content": "class Dog:\n    pass\n\ndog1 = Dog()\ndog1.name = \"Buddy\"\ndog1.age = 3\n\ndog2 = Dog()\ndog2.name = \"Max\"\ndog2.age = 5\n\nprint(f\"{dog1.name}: {dog1.age}\")\nprint(f\"{dog2.name}: {dog2.age}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Buddy: 3\nMax: 5"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Both `dog1` and `dog2` are objects created from the `Dog` class. But each object stores its own unique data (`name` and `age`)."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_multiple",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "If you change `dog1.name`, what happens to `dog2.name`?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "dog2.name also changes",
+                            "Nothing - they're independent objects",
+                            "An error occurs"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! Each object has its own independent attributes.",
+                        "incorrectFeedback": "Objects are independent - changing one doesn't affect others.",
+                        "explanation": "Each object stores its own data separately from other objects."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_instance",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a `Cat` object and give it a name attribute.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "class Cat:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    pass",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "cat1 = {1}()",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "cat1.{2} = \"Whiskers\"",
+                                "indent": 0,
+                                "blank": "2"
+                            },
+                            {
+                                "code": "print(cat1.name)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "name",
+                            "Cat",
+                            "cat"
+                        ],
+                        "solutions": {
+                            "1": "Cat",
+                            "2": "name"
+                        },
+                        "hint": "Create object with Cat(), then add name attribute.",
+                        "correctFeedback": "Perfect! You created an object and added an attribute.",
+                        "incorrectFeedback": "Use Cat() to create an object, then object.name to add attribute.",
+                        "explanation": "Objects are created from classes, then you can add attributes to them.",
+                        "output": "Whiskers"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "accessing_attributes",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You might have already noticed that you can access attributes using dot notation: `object.attribute`"
+                },
+                {
+                    "type": "code",
+                    "content": "class Book:\n    pass\n\nbook = Book()\nbook.title = \"Python Basics\"\nbook.pages = 200\n\nprint(f\"Title: {book.title}\")\nprint(f\"Pages: {book.pages}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Title: Python Basics\nPages: 200"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The dot `.` connects the object to its attributes. This is the same pattern you've used with lists and strings!"
+                }
+            ]
+        },
+        {
+            "id": "modifying_attributes",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can also modify attributes just like regular variables."
+                },
+                {
+                    "type": "code",
+                    "content": "class Player:\n    pass\n\nplayer = Player()\n\nplayer.score = 0\nprint(f\"Score: {player.score}\")\n\nplayer.score = 100\nprint(f\"Score: {player.score}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Score: 0\nScore: 100"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Attributes can be updated anytime. Each object keeps track of its own values independently."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_access",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "How do you access an object's attribute?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "object.attribute",
+                            "object[attribute]",
+                            "object->attribute"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Use dot notation to access attributes.",
+                        "incorrectFeedback": "Use object.attribute to access an attribute.",
+                        "explanation": "Dot notation is the same pattern used for string and list methods."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_modify",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Update the player's health attribute.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "class Player:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    pass",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "player = Player()",
+                                "indent": 0
+                            },
+                            {
+                                "code": "player.health = 100",
+                                "indent": 0
+                            },
+                            {
+                                "code": "player.{1} = 80",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(player.health)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "score",
+                            "health",
+                            "update"
+                        ],
+                        "solutions": {
+                            "1": "health"
+                        },
+                        "hint": "Assign a new value to the health attribute.",
+                        "correctFeedback": "Perfect! You updated the attribute.",
+                        "incorrectFeedback": "Use player.health = 80 to update the attribute.",
+                        "explanation": "Attributes can be reassigned like variables.",
+                        "output": "80"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "creating_many_objects",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can create as many objects as you need from a single class. Each will have its own independent data."
+                },
+                {
+                    "type": "code",
+                    "content": "class Enemy:\n    pass\n\nenemy1 = Enemy()\nenemy1.name = \"Goblin\"\nenemy1.health = 50\n\nenemy2 = Enemy()\nenemy2.name = \"Orc\"\nenemy2.health = 100\n\nenemy3 = Enemy()\nenemy3.name = \"Dragon\"\nenemy3.health = 500)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "One `Enemy` class creates many different enemies. Each enemy has its own name and health value."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_many_objects",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a third product object.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "class Product:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    pass",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "product1 = Product()",
+                                "indent": 0
+                            },
+                            {
+                                "code": "product2 = Product()",
+                                "indent": 0
+                            },
+                            {
+                                "code": "product3 = {1}",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "product()",
+                            "Product()"
+                        ],
+                        "solutions": {
+                            "1": "Product()"
+                        },
+                        "hint": "Create another object using the Product().",
+                        "correctFeedback": "Perfect! You can create unlimited objects from one class.",
+                        "incorrectFeedback": "Use Product() to create an object.",
+                        "explanation": "One class can create as many objects as you need."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practical_example",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Here is a simple example of a `Person` class with attributes `name` and `age`."
+                },
+                {
+                    "type": "code",
+                    "content": "class Person:\n    pass\n\nperson1 = Person()\nperson1.name = \"Alice\"\nperson1.age = 25\n\nperson2 = Person()\nperson2.name = \"Bob\"\nperson2.age = 30\n\nprint(f\"{person1.name} is {person1.age}\")\nprint(f\"{person2.name} is {person2.age}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Alice is 25\nBob is 30"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "We created one `Person` class and used it to make two different people. This is the power of classes - one template, many objects!"
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "Use `class ClassName:` to create a class",
+                            "Class names use **CapitalCase**",
+                            "**Objects** are created with `ClassName()`",
+                            "**Class attributes** are shared by all objects",
+                            "**Instance attributes** are unique to each object",
+                            "Each object is **independent** from others",
+                            "Objects can be stored in **lists and other structures**",
+                            "Access attributes with `object.attribute`"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

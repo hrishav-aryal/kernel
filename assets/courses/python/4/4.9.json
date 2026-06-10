@@ -1,0 +1,586 @@
+{
+    "blocks": [
+        {
+            "id": "ex_1",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Practice",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "code_fill",
+                    "content": "Loop through the list and print each item.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "colors = [\"red\", \"green\", \"blue\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1} color {2} colors:",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "    print(color)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "for",
+                            "in",
+                            "while"
+                        ],
+                        "solutions": {
+                            "1": "for",
+                            "2": "in"
+                        },
+                        "hint": "Use for...in to loop through a list.",
+                        "correctFeedback": "Perfect! for...in loops through each item in the list.",
+                        "incorrectFeedback": "Use for...in to loop through a list.",
+                        "explanation": "for color in colors: loops through each item. color takes each value one by one.",
+                        "output": "red\ngreen\nblue"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_2",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = [5, 10, 15]\n\nfor num in numbers:\n    print(num * 2)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "10\n20\n30",
+                            "5\n10\n15"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Each number is multiplied by 2.",
+                        "incorrectFeedback": "Check what num * 2 does for each number.",
+                        "explanation": "The loop multiplies each number by 2: 5*2=10, 10*2=20, 15*2=30."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_3",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Loop through the list and add each number to `total`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "numbers = [1, 2, 3, 4]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "total = 0",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "for num in numbers:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    total {1} num",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(total)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "+=",
+                            "-=",
+                            "*="
+                        ],
+                        "solutions": {
+                            "1": "+="
+                        },
+                        "hint": "Use += to add each number to total.",
+                        "correctFeedback": "Great! The loop adds all numbers: 1+2+3+4=10.",
+                        "incorrectFeedback": "Use += to add each number to total.",
+                        "explanation": "The loop adds each number to total. Final result is 1+2+3+4=10.",
+                        "output": "10"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_4",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What does the `in` operator do with lists?",
+                        "options": [
+                            "Checks if an item exists in the list",
+                            "Adds an item to the list"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! in checks if an item exists in the list.",
+                        "incorrectFeedback": "in checks if an item exists in the list.",
+                        "explanation": "The in operator returns True if the item is in the list, False otherwise."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_5",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "fruits = [\"apple\", \"banana\", \"cherry\"]\nprint(\"banana\" in fruits)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "True",
+                            "False"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! banana is in the list.",
+                        "incorrectFeedback": "Check if banana is in the list.",
+                        "explanation": "\"banana\" in fruits checks if banana exists in the list. It does, so it returns True."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_6",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Check if `50` is in the list `numbers`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "numbers = [10, 20, 30, 40]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "result = 50 {1} numbers",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(result)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "in",
+                            "not",
+                            "=="
+                        ],
+                        "solutions": {
+                            "1": "in"
+                        },
+                        "hint": "Use in to check if an item exists.",
+                        "correctFeedback": "Great! 50 is not in the list, so it returns False.",
+                        "incorrectFeedback": "Use in to check if an item exists.",
+                        "explanation": "50 in numbers checks if 50 is in the list. It's not, so it returns False.",
+                        "output": "False"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_7",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Check if `\"dog\"` is NOT in the list using `not in`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "animals = [\"cat\", \"bird\", \"fish\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "result = \"dog\" {1} {2} animals",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(result)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "not",
+                            "in",
+                            "is"
+                        ],
+                        "solutions": {
+                            "1": "not",
+                            "2": "in"
+                        },
+                        "hint": "Use not in to check if an item doesn't exist.",
+                        "correctFeedback": "Perfect! dog is not in the list, so it returns True.",
+                        "incorrectFeedback": "Use not in to check if an item doesn't exist.",
+                        "explanation": "\"dog\" not in animals checks if dog is NOT in the list. It's not, so it returns True.",
+                        "output": "True"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_8",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What does list slicing do?",
+                        "options": [
+                            "Gets a portion of the list",
+                            "Deletes items from the list"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Slicing extracts a portion of the list.",
+                        "incorrectFeedback": "Slicing extracts a portion of the list.",
+                        "explanation": "List slicing lets you extract a portion of a list using [start:stop] syntax."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_9",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = [10, 20, 30, 40, 50]\nprint(numbers[1:4])",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "[20, 30, 40]",
+                            "[10, 20, 30]"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Slicing [1:4] gets items from index 1 to 3.",
+                        "incorrectFeedback": "Slicing [start:stop] goes from start up to (but not including) stop.",
+                        "explanation": "numbers[1:4] gets items from index 1 to 3 (stops before 4): [20, 30, 40]."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_10",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Get the first three items using slicing.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "fruits = [\"apple\", \"banana\", \"cherry\", \"date\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "first_three = fruits[{1}:{2}]",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(first_three)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "0",
+                            "3",
+                            "2"
+                        ],
+                        "solutions": {
+                            "1": "0",
+                            "2": "3"
+                        },
+                        "hint": "Start at 0, stop at 3 (gets indices 0, 1, 2).",
+                        "correctFeedback": "Great! [0:3] gets the first three items.",
+                        "incorrectFeedback": "Start at 0, stop at 3 (gets indices 0, 1, 2).",
+                        "explanation": "fruits[0:3] gets items from index 0 to 2: ['apple', 'banana', 'cherry'].",
+                        "output": "['apple', 'banana', 'cherry']"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_11",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "letters = [\"a\", \"b\", \"c\", \"d\", \"e\"]\nprint(letters[2:])",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "['c', 'd', 'e']",
+                            "['a', 'b', 'c']"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! [2:] gets everything from index 2 to the end.",
+                        "incorrectFeedback": "When you omit the stop, it goes to the end.",
+                        "explanation": "letters[2:] gets items from index 2 to the end: ['c', 'd', 'e']."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_12",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Get the last two items using negative slicing.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "numbers = [10, 20, 30, 40, 50]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "last_two = numbers[{1}:]",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(last_two)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "-2",
+                            "-1",
+                            "2"
+                        ],
+                        "solutions": {
+                            "1": "-2"
+                        },
+                        "hint": "-2 means start from the second to last item.",
+                        "correctFeedback": "Perfect! [-2:] gets the last two items.",
+                        "incorrectFeedback": "-2 means start from the second to last item.",
+                        "explanation": "numbers[-2:] gets items from -2 to the end: [40, 50].",
+                        "output": "[40, 50]"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_13",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "How do you combine two lists using the `+` operator?",
+                        "options": [
+                            "list1 + list2 creates a new list with all items",
+                            "list1 + list2 adds the numbers in the lists"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! The + operator combines lists.",
+                        "incorrectFeedback": "The + operator combines lists.",
+                        "explanation": "When you use + with lists, it creates a new list containing all items from both lists."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_14",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "list1 = [1, 2]\nlist2 = [3, 4]\nresult = list1 + list2\nprint(result)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "[1, 2, 3, 4]",
+                            "[4, 6]"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! The + operator combines both lists.",
+                        "incorrectFeedback": "The + operator combines lists, not adds numbers.",
+                        "explanation": "list1 + list2 combines both lists into [1, 2, 3, 4]."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_15",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Combine `fruits` and `more_fruits` into `all_fruits`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "fruits = [\"apple\", \"banana\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "more_fruits = [\"cherry\", \"date\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "all_fruits = {1} {2} {3}",
+                                "indent": 0,
+                                "blank": "1,2,3"
+                            },
+                            {
+                                "code": "print(all_fruits)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "fruits",
+                            "+",
+                            "more_fruits"
+                        ],
+                        "solutions": {
+                            "1": "fruits",
+                            "2": "+",
+                            "3": "more_fruits"
+                        },
+                        "hint": "Use + to combine lists.",
+                        "correctFeedback": "Great! + combines both lists.",
+                        "incorrectFeedback": "Use + to combine lists.",
+                        "explanation": "fruits + more_fruits combines both lists into ['apple', 'banana', 'cherry', 'date'].",
+                        "output": "['apple', 'banana', 'cherry', 'date']"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_16",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "nums = [1, 2]\nresult = nums * 3\nprint(result)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "[1, 2, 1, 2, 1, 2]",
+                            "[3, 6]"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! The * operator repeats the list.",
+                        "incorrectFeedback": "The * operator repeats lists, not multiplies numbers.",
+                        "explanation": "nums * 3 repeats the list 3 times: [1, 2, 1, 2, 1, 2]."
+                    }
+                }
+            ]
+        }
+    ]
+}

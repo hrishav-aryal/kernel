@@ -1,0 +1,337 @@
+{
+    "blocks": [
+        {
+            "id": "intro_polymorphism",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Polymorphism",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "**Polymorphism** means \"many forms.\" In programming, it means using the same method name to do different things depending on the object."
+                },
+                {
+                    "type": "text",
+                    "content": "Different classes can have methods with the same name, but each class can implement the method differently."
+                }
+            ]
+        },
+        {
+            "id": "everyday_example",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Everyday example**"
+                },
+                {
+                    "type": "text",
+                    "content": "Think of a \"start\" button. On a car, it starts the engine. On a computer, it starts the system. On a microwave, it starts cooking. Same action name, different behavior!"
+                },
+                {
+                    "type": "text",
+                    "content": "Polymorphism works the same way in code."
+                }
+            ]
+        },
+        {
+            "id": "basic_example",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Same Method, Different Behavior",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Here's how different classes can have the same method name:"
+                },
+                {
+                    "type": "code",
+                    "content": "class Dog:\n    def speak(self):\n        print(\"Woof!\")\n\nclass Cat:\n    def speak(self):\n        print(\"Meow!\")\n\ndog = Dog()\ncat = Cat()\n\ndog.speak()\ncat.speak()",
+                    "properties": {
+                        "language": "python",
+                        "output": "Woof!\nMeow!"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Both classes have a `speak` method, but each does something different. This is polymorphism!"
+                }
+            ]
+        },
+        {
+            "id": "why_useful",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Why is this useful?**"
+                },
+                {
+                    "type": "text",
+                    "content": "You can write code that works with different objects without knowing their exact type. The code just calls the method, and each object responds in its own way."
+                }
+            ]
+        },
+        {
+            "id": "polymorphism_with_loop",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Here's where polymorphism becomes powerful:"
+                },
+                {
+                    "type": "code",
+                    "content": "class Dog:\n    def speak(self):\n        print(\"Woof!\")\n\nclass Cat:\n    def speak(self):\n        print(\"Meow!\")\n\nclass Bird:\n    def speak(self):\n        print(\"Tweet!\")\n\nanimals = [Dog(), Cat(), Bird()]\n\nfor animal in animals:\n    animal.speak()",
+                    "properties": {
+                        "language": "python",
+                        "output": "Woof!\nMeow!\nTweet!"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "We loop through different animals and call `speak()` on each. Each object responds with its own version of the method!"
+                },
+                {
+                    "type": "text",
+                    "content": "We don't need to check the type - we just call `speak()` and it works."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_concept",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What does polymorphism allow you to do?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Use the same method name in different classes",
+                            "Create multiple objects from one class",
+                            "Combine multiple classes into one"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Polymorphism lets different classes use the same method name.",
+                        "incorrectFeedback": "Polymorphism is about using the same method name with different implementations.",
+                        "explanation": "Different classes can have methods with the same name that behave differently."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "polymorphism_with_inheritance",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Polymorphism with Inheritance",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Polymorphism works especially well with inheritance. Let's create a parent class `Animal` and two child classes `Dog` and `Cat` that inherit from it. Each child class overrides the `speak` method with its own version."
+                },
+                {
+                    "type": "code",
+                    "content": "class Animal:\n    def speak(self):\n        print(\"Some sound\")\n\nclass Dog(Animal):\n    def speak(self):\n        print(\"Woof!\")\n\nclass Cat(Animal):\n    def speak(self):\n        print(\"Meow!\")\n\nanimals = [Dog(), Cat()]\n\nfor animal in animals:\n    animal.speak()",
+                    "properties": {
+                        "language": "python",
+                        "output": "Woof!\nMeow!"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "All animals inherit from `Animal`, but each child class overrides `speak()` with its own version. This is polymorphism combined with inheritance!"
+                }
+            ]
+        },
+        {
+            "id": "practical_example",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Here's another example. We'll create a parent class `Shape` and two child classes `Square` and `Circle` that inherit from it. Each child class has its own `area()` method."
+                },
+                {
+                    "type": "code",
+                    "content": "class Shape:\n    def area(self):\n        pass\n\nclass Square(Shape):\n    def __init__(self, side):\n        self.side = side\n    \n    def area(self):\n        return self.side * self.side\n\nclass Circle(Shape):\n    def __init__(self, radius):\n        self.radius = radius\n    \n    def area(self):\n        return 3.14 * self.radius * self.radius\n\nshapes = [Square(4), Circle(3)]\n\nfor shape in shapes:\n    print(f\"Area: {shape.area()}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Area: 16\nArea: 28.26"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Both shapes have an `area()` method, but each calculates area differently. The loop doesn't care what kind of shape it is - it just calls `area()`."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_practical",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "In the shape example, why can we call `area()` in a loop without checking the type?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "All shapes have the same area formula",
+                            "Because of polymorphism - each class has its own `area()` method",
+                            "Python automatically calculates areas"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! Each class implements its own version of `area()`.",
+                        "incorrectFeedback": "Polymorphism lets each shape handle `area()` in its own way.",
+                        "explanation": "Each object knows how to calculate its own area through its implementation of the method."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "benefits",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Benefits of polymorphism**"
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "**Flexibility**: Same code works with different objects",
+                            "**Simplicity**: No need to check object types",
+                            "**Extensibility**: Easy to add new classes later",
+                            "**Clean code**: Less complex conditional logic"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "key_idea",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**The key idea**"
+                },
+                {
+                    "type": "text",
+                    "content": "With polymorphism, you focus on **what** an object can do (its methods), not **what type** it is. As long as an object has the method you need, your code will work!"
+                }
+            ]
+        },
+        {
+            "id": "quick_check_final",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Add a `Bird` class that implements the `speak` method.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "class Animal:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    def speak(self):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        pass",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "class Bird(Animal):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    def {1}(self):",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "        print(\"Tweet!\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "bird = Bird()",
+                                "indent": 0
+                            },
+                            {
+                                "code": "bird.speak()",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "talk",
+                            "speak",
+                            "sound"
+                        ],
+                        "solutions": {
+                            "1": "speak"
+                        },
+                        "hint": "Use the same method name as the parent class.",
+                        "correctFeedback": "Perfect! Bird overrides the speak method with its own version.",
+                        "incorrectFeedback": "Override the parent's `speak` method in the child class.",
+                        "explanation": "For polymorphism to work, use the same method name across classes.",
+                        "output": "Tweet!"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "**Polymorphism** means \"many forms\"",
+                            "Different classes can have methods with the **same name**",
+                            "Each class implements the method **differently**",
+                            "You can use the same code with **different object types**",
+                            "No need to check object types - just call the method",
+                            "Works great with **inheritance and overriding**",
+                            "Makes code more **flexible and extensible**"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

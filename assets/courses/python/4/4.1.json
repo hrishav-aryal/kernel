@@ -1,0 +1,349 @@
+{
+    "blocks": [
+        {
+            "id": "intro_lists",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "List Basics",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "A list is a collection of items that are ordered and changeable. You can store multiple values in a single variable using a list."
+                },
+                {
+                    "type": "text",
+                    "content": "Lists are very useful when you need to work with multiple pieces of data together, like a list of names, numbers, or any other values."
+                }
+            ]
+        },
+        {
+            "id": "creating_lists",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Creating Lists",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "You create a list by putting items inside square brackets `[]`, separated by commas."
+                },
+                {
+                    "type": "code",
+                    "content": "fruits = [\"apple\", \"banana\", \"orange\"]\nprint(fruits)",
+                    "properties": {
+                        "language": "python",
+                        "output": "['apple', 'banana', 'orange']"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "This creates a list called `fruits` with three items: `\"apple\"`, `\"banana\"`, and `\"orange\"`."
+                }
+            ]
+        },
+        {
+            "id": "list_with_numbers",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can also create lists with numbers."
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = [1, 2, 3, 4, 5]\nprint(numbers)",
+                    "properties": {
+                        "language": "python",
+                        "output": "[1, 2, 3, 4, 5]"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "This creates a list of numbers from 1 to 5."
+                }
+            ]
+        },
+        {
+            "id": "list_with_mixed_types",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Lists can contain different types of data in the same list."
+                },
+                {
+                    "type": "code",
+                    "content": "mixed = [1, \"hello\", 3.14, True]\nprint(mixed)",
+                    "properties": {
+                        "language": "python",
+                        "output": "[1, 'hello', 3.14, True]"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "This list contains a number, a string, a decimal number, and a boolean value."
+                }
+            ]
+        },
+        {
+            "id": "empty_lists",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Empty Lists",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "You can also create an empty list (a list with no items) using empty square brackets `[]`."
+                },
+                {
+                    "type": "code",
+                    "content": "empty_list = []\nprint(empty_list)",
+                    "properties": {
+                        "language": "python",
+                        "output": "Empty list: []\nLength: 0"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Empty lists are useful when you want to start with no items and add them later."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_create_list",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a list called `colors` with the values \"red\", \"green\", and \"blue\".",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "colors = {1}",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(colors)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "(\"red\", \"green\", \"blue\")",
+                            "[\"red\", \"green\", \"blue\"]"
+                        ],
+                        "solutions": {
+                            "1": "[\"red\", \"green\", \"blue\"]"
+                        },
+                        "hint": "Use square brackets [] to create a list.",
+                        "correctFeedback": "Perfect! You created a list with square brackets.",
+                        "incorrectFeedback": "Use square brackets [] to create a list.",
+                        "explanation": "Lists are created with square brackets [] and items are separated by commas.",
+                        "output": "['red', 'green', 'blue']"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_create_numbers",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Whats wrong with this list of `scores`?"
+                },
+                {
+                    "type": "code",
+                    "content": "scores = {85, 92, 78, 96}",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Wrong brackets used",
+                            "Numbers should be strings"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! List are created with square brackets [].",
+                        "incorrectFeedback": "List are created with square brackets [].",
+                        "explanation": "List are created with square brackets []."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "list_length",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "List Length",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "You can find out how many items are in a list using the `len()` function."
+                },
+                {
+                    "type": "code",
+                    "content": "fruits = [\"apple\", \"banana\", \"orange\"]\nprint({len(fruits))",
+                    "properties": {
+                        "language": "python",
+                        "output": "3"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `len()` function tells you the total number of items in the list."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_list_length",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the code to print the length of the list.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "colors = [\"red\", \"green\", \"blue\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print({1}(colors))",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "count",
+                            "len",
+                            "size"
+                        ],
+                        "solutions": {
+                            "1": "len"
+                        },
+                        "hint": "Use len() to get the length of a list.",
+                        "correctFeedback": "Perfect! len() gives you the number of items in the list.",
+                        "incorrectFeedback": "Use len() to get the number of items in the list.",
+                        "explanation": "len() function returns the number of items in a list.",
+                        "output": "There are 4 colors"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_create_numbers",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Whats the output of the code below?"
+                },
+                {
+                    "type": "code",
+                    "content": "colors = []\nprint(len(colors))",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "0",
+                            "Error",
+                            "1"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! The list is empty, so len(colors) is 0.",
+                        "incorrectFeedback": "The list is empty, so len(colors) is 0.",
+                        "explanation": "The list is empty, so len(colors) is 0."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_empty_list",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create an empty list called `shopping_list` and then print its length.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "shopping_list = {1}",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print({2}({3}))",
+                                "indent": 0,
+                                "blank": "2, 3"
+                            }
+                        ],
+                        "options": [
+                            "len",
+                            "shopping_list",
+                            "[]"
+                        ],
+                        "solutions": {
+                            "1": "[]",
+                            "2": "len",
+                            "3": "shopping_list"
+                        },
+                        "hint": "Use empty square brackets [] to create an empty list and len() to get the length of the list.",
+                        "correctFeedback": "Great! Empty square brackets [] create an empty list and len() gives the length of the list.",
+                        "incorrectFeedback": "Use empty square brackets [] to create an empty list and len() to get the length of the list.",
+                        "explanation": "Empty lists are created with empty square brackets [] and len() gives the length of the list.",
+                        "output": "0"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "**Lists** store multiple items in square brackets `[]`",
+                            "Lists can contain any type of data (numbers, strings, booleans)",
+                            "Use `len()` to get the number of items in a list",
+                            "Items in a list are separated by commas",
+                            "Empty lists are created with just `[]`"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,398 @@
+{
+    "blocks": [
+        {
+            "id": "intro_functions",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Function Basics",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "A function is a block of code that performs a specific task. Instead of writing the same code multiple times, you can put it in a function and **reuse** it whenever you need."
+                },
+                {
+                    "type": "text",
+                    "content": "Functions help you organize your code and make it easier to understand and maintain."
+                }
+            ]
+        },
+        {
+            "id": "creating_functions",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Creating Functions",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "To create a function, use the `def` keyword, followed by the function name, parentheses `()`, and a colon `:`. The code inside the function must be indented."
+                },
+                {
+                    "type": "code",
+                    "content": "def greet():\n    print(\"Hello!\")\n    print(\"Welcome!\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "This creates a function called `greet` that prints two messages."
+                }
+            ]
+        },
+        {
+            "id": "calling_functions",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "To use a function, you need to **call** it by writing its name followed by parentheses."
+                },
+                {
+                    "type": "code",
+                    "content": "def greet():\n    print(\"Hello!\")\n    print(\"Welcome!\")\n\ngreet()",
+                    "properties": {
+                        "language": "python",
+                        "output": "Hello!\nWelcome!"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Calling `greet()` runs the code inside the function."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_create",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a function called `say_hi` that prints `\"Hi there!\"`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "{1} say_hi():",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(\"Hi there!\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "function",
+                            "def",
+                            "create"
+                        ],
+                        "solutions": {
+                            "1": "def"
+                        },
+                        "hint": "Use def to create a function.",
+                        "correctFeedback": "Perfect! You created a function using def.",
+                        "incorrectFeedback": "Use def to define a function.",
+                        "explanation": "The def keyword is used to create (define) functions in Python."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_call",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Call the function to run its code.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "def say_hi():",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(\"Hi there!\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1}",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "say_hi",
+                            "say_hi()"
+                        ],
+                        "solutions": {
+                            "1": "say_hi()"
+                        },
+                        "hint": "Call a function by writing its name followed by ().",
+                        "correctFeedback": "Perfect! You called the function with ().",
+                        "incorrectFeedback": "Call a function with its name followed by parentheses.",
+                        "explanation": "Functions are called using their name followed by ().",
+                        "output": "Hi there!"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "reusing_functions",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "The power of functions is **reusability**. You can call the same function multiple times."
+                },
+                {
+                    "type": "code",
+                    "content": "def celebrate():\n    print(\"🎉 Congratulations!\")\n\ncelebrate()\ncelebrate()\ncelebrate()",
+                    "properties": {
+                        "language": "python",
+                        "output": "🎉 Congratulations!\n🎉 Congratulations!\n🎉 Congratulations!"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "We called `celebrate()` three times without rewriting the code."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_reuse",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What happens when you call a function twice?"
+                },
+                {
+                    "type": "code",
+                    "content": "def show_message():\n    print(\"Hello\")\n\nshow_message()\nshow_message()",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Prints \"Hello\" once",
+                            "Prints \"Hello\" twice",
+                            "Error occurs"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! Each function call runs the code inside.",
+                        "incorrectFeedback": "Each time you call a function, its code runs.",
+                        "explanation": "Functions can be called multiple times, and each call executes the code inside."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "function_names",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Function names follow the same rules as variables: use lowercase with underscores for multiple words. Choose descriptive names that explain what the function does."
+                },
+                {
+                    "type": "code",
+                    "content": "def calculate_total():\n    print(\"Calculating...\")\n\ndef send_email():\n    print(\"Sending email...\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Good function names make your code easier to understand."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_naming",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Which is a good function name?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "X",
+                            "calculate_average",
+                            "CalculateAverage"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! Descriptive names with underscores are best.",
+                        "incorrectFeedback": "Use descriptive lowercase names with underscores.",
+                        "explanation": "Function names should be descriptive and use lowercase with underscores."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "multiple_functions",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can create multiple functions in your program. Each function does its own specific task."
+                },
+                {
+                    "type": "code",
+                    "content": "def greet_morning():\n    print(\"Good morning!\")\n\ndef greet_evening():\n    print(\"Good evening!\")\n\ngreet_morning()\ngreet_evening()",
+                    "properties": {
+                        "language": "python",
+                        "output": "Good morning!\nGood evening!"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Each function handles a different greeting."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_multiple",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a function `show_price` that prints `\"$99\"`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "def show_name():",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(\"Product\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1} {2}():",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "    print(\"$99\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "def",
+                            "show_price",
+                            "function"
+                        ],
+                        "solutions": {
+                            "1": "def",
+                            "2": "show_price"
+                        },
+                        "hint": "Use def followed by the function name.",
+                        "correctFeedback": "Perfect! You created a second function.",
+                        "incorrectFeedback": "Use def show_price(): to create the function.",
+                        "explanation": "You can have multiple functions, each with its own purpose.",
+                        "output": ""
+                    }
+                }
+            ]
+        },
+        {
+            "id": "defining_vs_calling",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Important:** Defining a function doesn't run it. You must call it to execute the code."
+                },
+                {
+                    "type": "code",
+                    "content": "def say_hello():\n    print(\"Hello!\")\n\n# Function is defined but not called yet\n# Nothing prints until we call it\nsay_hello()",
+                    "properties": {
+                        "language": "python",
+                        "output": "Hello!"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The code only runs when `say_hello()` is called."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_define_vs_call",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What does this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "def show_message():\n    print(\"Test\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Nothing",
+                            "Test",
+                            "Error"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! The function is only defined, not called.",
+                        "incorrectFeedback": "Defining a function doesn't run it. You need to call it.",
+                        "explanation": "Functions only run when called. Just defining them doesn't execute their code."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "Use `def` to create a function",
+                            "Function code must be **indented**",
+                            "Call functions by writing their name with `()`",
+                            "Functions can be **reused** - called multiple times",
+                            "**Defining** a function doesn't run it - you must **call** it",
+                            "Use descriptive names with underscores"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

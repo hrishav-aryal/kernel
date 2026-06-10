@@ -1,0 +1,430 @@
+{
+    "blocks": [
+        {
+            "id": "intro_raising",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Raising Errors",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Sometimes you want to **create your own errors** when something is wrong with the data or logic. This is called **raising an exception**."
+                },
+                {
+                    "type": "text",
+                    "content": "Raising errors helps you catch problems early and communicate what went wrong."
+                }
+            ]
+        },
+        {
+            "id": "using_raise",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Using Raise",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Use the `raise` keyword followed by an error type and message."
+                },
+                {
+                    "type": "code",
+                    "content": "age = -5\n\nif age < 0:\n    raise ValueError(\"Age can't be negative\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "ValueError: Age can't be negative"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "When Python sees `raise`, it creates a `ValueError` with your custom message and stops execution. This tells the user exactly what went wrong."
+                }
+            ]
+        },
+        {
+            "id": "why_raise",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Why raise errors?** To stop bad data from causing bigger problems later in your program."
+                },
+                {
+                    "type": "code",
+                    "content": "def get_discount(price, percent):\n    if percent < 0 or percent > 100:\n        raise ValueError(\"Invalid percent\")\n    return price * (percent / 100)\n\nresult = get_discount(100, 20)\nprint(result)",
+                    "properties": {
+                        "language": "python",
+                        "output": "20.0"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The function checks if `percent` is valid. If not, it raises an error immediately before doing any calculations."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_raise",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Raise a ValueError when the number is negative.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "def check_positive(num):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    if num < 0:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        {1} ValueError(\"Must be positive\")",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    return num",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "raise",
+                            "throw",
+                            "error"
+                        ],
+                        "solutions": {
+                            "1": "raise"
+                        },
+                        "hint": "Use raise to create an error.",
+                        "correctFeedback": "Perfect! You raised a ValueError for invalid input.",
+                        "incorrectFeedback": "Use raise to create an error in Python.",
+                        "explanation": "raise lets you create errors when you detect problems.",
+                        "output": ""
+                    }
+                }
+            ]
+        },
+        {
+            "id": "choosing_error_type",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Choose the error type that best describes the problem:"
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "**ValueError:** Invalid value (wrong range, format)",
+                            "**TypeError:** Wrong data type",
+                            "**KeyError:** Dictionary key doesn't exist",
+                            "**IndexError:** List index out of range"
+                        ]
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Using the right error type helps others understand what went wrong."
+                }
+            ]
+        },
+        {
+            "id": "value_error_example",
+            "elements": [
+                {
+                    "type": "code",
+                    "content": "def set_age(age):\n    if age < 0:\n        raise ValueError(\"Age cannot be negative\")\n    print(f\"Age set to: {age}\")\n\nset_age(30)\nset_age(-5)",
+                    "properties": {
+                        "language": "python",
+                        "output": "Age set to: 30"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "This function checks that age is not negative. If it is, it raises a ValueError to indicate invalid input."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_error_type",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What error type should you raise for a value that's the wrong type?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "ValueError",
+                            "TypeError",
+                            "KeyError"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! TypeError is for wrong data types.",
+                        "incorrectFeedback": "Use TypeError when the data type is wrong.",
+                        "explanation": "TypeError indicates the value is the wrong type, like passing a string instead of a number."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "raising_in_functions",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Raising errors in functions makes them safer by checking inputs before processing."
+                },
+                {
+                    "type": "code",
+                    "content": "def divide(a, b):\n    if b == 0:\n        raise ValueError(\"Can't divide by zero\")\n    return a / b\n\nprint(divide(10, 2))\nprint(divide(20, 4))",
+                    "properties": {
+                        "language": "python",
+                        "output": "5.0\n5.0"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Before dividing, the function checks if `b` is zero. If it is, it raises an error to prevent the crash."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_validation",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the validation to raise an error for empty strings.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "def set_username(name):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    if name == \"\":",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        raise {1}(\"Name can't be empty\")",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(f\"Username: {name}\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "set_username(\"Alice\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "ValueError",
+                            "TypeError",
+                            "NameError"
+                        ],
+                        "solutions": {
+                            "1": "ValueError"
+                        },
+                        "hint": "An empty string is an invalid value.",
+                        "correctFeedback": "Perfect! ValueError is appropriate for invalid values.",
+                        "incorrectFeedback": "Use ValueError for invalid values like empty strings.",
+                        "explanation": "ValueError is used when the value doesn't meet requirements.",
+                        "output": "Username: Alice"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "catching_raised_errors",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Errors you raise can be caught with try/except, just like built-in errors."
+                },
+                {
+                    "type": "code",
+                    "content": "def withdraw(balance, amount):\n    if amount > balance:\n        raise ValueError(\"Not enough funds\")\n    return balance - amount\n\ntry:\n    result = withdraw(100, 150)\nexcept ValueError as e:\n    print(f\"Error: {e}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Error: Not enough funds"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The function raises a `ValueError` when amount exceeds balance. The try/except block catches it and prints a friendly message."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_catching",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Can you catch errors that you raise with try/except?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Yes, they work like built-in errors",
+                            "No, only built-in errors can be caught",
+                            "Only with special handling"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Errors you raise can be caught with try/except.",
+                        "incorrectFeedback": "Raised errors work exactly like built-in errors.",
+                        "explanation": "All errors, whether built-in or raised by you, can be caught with try/except."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "when_to_raise",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**When to raise errors:**"
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "When input values are invalid",
+                            "When operations can't be completed safely",
+                            "When required conditions aren't met",
+                            "To make your code fail fast with clear messages"
+                        ]
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Raising errors early prevents bigger problems later in your program."
+                }
+            ]
+        },
+        {
+            "id": "practical_example",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Let's see a complete example with validation."
+                },
+                {
+                    "type": "code",
+                    "content": "def create_user(name, age):\n    if not name:\n        raise ValueError(\"Name required\")\n    if age < 0:\n        raise ValueError(\"Invalid age\")\n    return {\"name\": name, \"age\": age}\n\ntry:\n    user = create_user(\"Bob\", 30)\n    print(f\"User: {user}\")\nexcept ValueError as e:\n    print(f\"Error: {e}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "User: {'name': 'Bob', 'age': 30}"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The function checks if `name` exists and if `age` is not negative. If any check fails, it raises a `ValueError`. The try/except block catches any raised errors."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_practical",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the function to validate the price is positive.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "def set_price(price):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    if price {1} 0:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "        raise ValueError(\"Must be positive\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    return price",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(set_price(99))",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "<=",
+                            ">",
+                            "=="
+                        ],
+                        "solutions": {
+                            "1": "<="
+                        },
+                        "hint": "Check if price is less than or equal to 0.",
+                        "correctFeedback": "Perfect! You validated the price correctly.",
+                        "incorrectFeedback": "Check if price is <= 0 to catch negative and zero values.",
+                        "explanation": "Validating inputs prevents invalid data from entering your system.",
+                        "output": "99"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "Use `raise` to create your own errors",
+                            "Choose the **appropriate error type** for the problem",
+                            "Include **helpful messages** explaining what's wrong",
+                            "Raise errors for **validation** and invalid inputs",
+                            "Raised errors can be **caught with try/except**",
+                            "Raising errors early prevents bigger problems later"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

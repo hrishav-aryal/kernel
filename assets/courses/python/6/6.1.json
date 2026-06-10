@@ -1,0 +1,487 @@
+{
+    "blocks": [
+        {
+            "id": "intro_tuples",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Tuple Basics",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "A tuple is similar to a list - it stores multiple items in order. But there's one key difference: **once you create a tuple, you can't change it**."
+                },
+                {
+                    "type": "text",
+                    "content": "Tuples are useful when you have data that shouldn't be modified, like coordinates, dates, or fixed records."
+                }
+            ]
+        },
+        {
+            "id": "creating_tuples",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Creating Tuples",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "You create a tuple by putting items inside **parentheses** `()`, separated by commas."
+                },
+                {
+                    "type": "code",
+                    "content": "coordinates = (3, 5)\nprint(coordinates)",
+                    "properties": {
+                        "language": "python",
+                        "output": "(3, 5)"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "This creates a tuple with two numbers representing x and y coordinates."
+                }
+            ]
+        },
+        {
+            "id": "tuple_with_strings",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Tuples can contain any type of data, just like lists."
+                },
+                {
+                    "type": "code",
+                    "content": "person = (\"Alice\", 25, \"Engineer\")\nprint(person)",
+                    "properties": {
+                        "language": "python",
+                        "output": "('Alice', 25, 'Engineer')"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "This tuple stores a person's name, age, and job."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_create_tuple",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a tuple called `color` with values `\"red\"`, `blue`, and `green`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "color = {1}",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(color)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "[\"red\", \"blue\", \"green\"]",
+                            "(\"red\", \"blue\", \"green\")"
+                        ],
+                        "solutions": {
+                            "1": "(\"red\", \"blue\", \"green\")"
+                        },
+                        "hint": "Use parentheses () to create a tuple.",
+                        "correctFeedback": "Perfect! You created a tuple with parentheses.",
+                        "incorrectFeedback": "Use parentheses () to create a tuple, not square brackets.",
+                        "explanation": "Tuples use parentheses (), while lists use square brackets [].",
+                        "output": "('red', 'blue', 'green')"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "accessing_tuples",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Accessing Tuple Items",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "You access tuple items the same way as lists - using **indices** starting at `0`."
+                },
+                {
+                    "type": "code",
+                    "content": "point = (10, 20, 30)\nprint(point[0])\nprint(point[1])\nprint(point[2])",
+                    "properties": {
+                        "language": "python",
+                        "output": "10\n20\n30"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Just like lists, indexing starts at `0` for the first item."
+                }
+            ]
+        },
+        {
+            "id": "negative_indexing_tuples",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Negative indexing also works with tuples."
+                },
+                {
+                    "type": "code",
+                    "content": "colors = (\"red\", \"green\", \"blue\")\nprint(colors[-1])\nprint(colors[-2])",
+                    "properties": {
+                        "language": "python",
+                        "output": "blue\ngreen"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`-1` gives you the last item, `-2` gives you the second-to-last, and so on."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_access",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Get the second item from the tuple.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "days = (\"Mon\", \"Tue\", \"Wed\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(days[{1}])",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "2",
+                            "1",
+                            "0"
+                        ],
+                        "solutions": {
+                            "1": "1"
+                        },
+                        "hint": "The second item is at index 1.",
+                        "correctFeedback": "Perfect! Index 1 gives you the second item.",
+                        "incorrectFeedback": "The second item is at index 1 (remember, indexing starts at 0).",
+                        "explanation": "Tuples use zero-based indexing: Mon=0, Tue=1, Wed=2.",
+                        "output": "Tue"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_access_last",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = (10, 20, 30)\nprint(numbers[-1])",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "10",
+                            "20",
+                            "30"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! -1 gives you the last item, which is 30.",
+                        "incorrectFeedback": "-1 accesses the last item in the tuple.",
+                        "explanation": "Negative indexing -1 always gives you the last item."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "tuples_immutable",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Tuples Can't Be Changed",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Unlike lists, you **cannot change** tuple items after creating them. This is called being **immutable**."
+                },
+                {
+                    "type": "code",
+                    "content": "point = (10, 20)\npoint[0] = 15",
+                    "properties": {
+                        "language": "python",
+                        "output": "Error: tuples don't support item assignment"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Trying to change a tuple item causes an error. Once created, tuples stay the same."
+                }
+            ]
+        },
+        {
+            "id": "why_immutable",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Why use tuples if they can't change?**"
+                },
+                {
+                    "type": "text",
+                    "content": "Tuples are useful for data that should stay fixed, like coordinates `(x, y)`, dates `(year, month, day)`, or RGB colors `(red, green, blue)`. They're also faster than lists and use less memory."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_immutable",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Can you modify a tuple after creating it?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Yes, like lists",
+                            "No, tuples are immutable"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! Tuples are immutable - they cannot be changed after creation.",
+                        "incorrectFeedback": "Tuples are immutable, meaning they cannot be changed once created.",
+                        "explanation": "Immutability means the tuple's contents are fixed and cannot be modified."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "tuple_vs_list",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Tuples vs Lists",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "**Lists** use `[]` and can be changed. **Tuples** use `()` and cannot be changed."
+                },
+                {
+                    "type": "code",
+                    "content": "# List - can change\nfruits = [\"apple\", \"banana\"]\n\n# Tuple - cannot change\ncolors = (\"red\", \"blue\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Use **lists** when data needs to change. Use **tuples** when data should stay fixed."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_tuple_vs_list",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Which should you use for storing items that will change?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "List",
+                            "Tuple",
+                            "Either works"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Lists can be modified, making them perfect for changing data.",
+                        "incorrectFeedback": "Use lists when you need to modify the data. Tuples are immutable.",
+                        "explanation": "Lists are mutable (can change), tuples are immutable (cannot change)."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "tuple_length",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can use `len()` to find how many items are in a tuple, just like with lists."
+                },
+                {
+                    "type": "code",
+                    "content": "point = (10, 20, 30)\nprint(len(point))",
+                    "properties": {
+                        "language": "python",
+                        "output": "3"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The tuple has 3 items."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_length",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Find the length of the tuple `rgb`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "rgb = (255, 128, 0)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "size = {1}(rgb)",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(size)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "size",
+                            "count",
+                            "len"
+                        ],
+                        "solutions": {
+                            "1": "len"
+                        },
+                        "hint": "Use len() to get the number of items.",
+                        "correctFeedback": "Perfect! len() gives you the number of items in the tuple.",
+                        "incorrectFeedback": "Use len() to get the number of items in a tuple.",
+                        "explanation": "len() works the same way for tuples as it does for lists.",
+                        "output": "3"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "single_item_tuple",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Special case:** To create a tuple with just one item, you need a **comma** after the item."
+                },
+                {
+                    "type": "code",
+                    "content": "# Without comma - not a tuple\nvalue = (5)\nprint(type(value))\n\n# With comma - is a tuple\nvalue = (5,)\nprint(type(value))",
+                    "properties": {
+                        "language": "python",
+                        "output": "<class 'int'>\n<class 'tuple'>"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Without the comma, Python thinks it's just parentheses around a number."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_single_tuple",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a tuple with just the number `10`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "my_tuple = {1}",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(my_tuple)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "(10)",
+                            "(10,)",
+                            "[10]"
+                        ],
+                        "solutions": {
+                            "1": "(10,)"
+                        },
+                        "hint": "Single-item tuples need a comma after the item.",
+                        "correctFeedback": "Perfect! The comma makes it a tuple, not just a number in parentheses.",
+                        "incorrectFeedback": "Single-item tuples need a comma: (10,)",
+                        "explanation": "Without the comma, (10) is just a number. With the comma, (10,) is a tuple.",
+                        "output": "(10,)"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "Tuples use **parentheses** `()` to store multiple items",
+                            "Access items with **indices** just like lists: `tuple[0]`",
+                            "Tuples are **immutable** - you cannot change them after creation",
+                            "Use tuples for **fixed data** that shouldn't change",
+                            "Use `len()` to find how many items are in a tuple",
+                            "Single-item tuples need a **comma**: `(item,)`"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

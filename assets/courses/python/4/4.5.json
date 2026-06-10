@@ -1,0 +1,623 @@
+{
+    "blocks": [
+        {
+            "id": "intro_looping_lists",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Looping & Checking Lists",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "One of the most common things you'll do with lists is go through each item one by one. You'll also often need to check if a specific item exists in a list."
+                },
+                {
+                    "type": "text",
+                    "content": "Python makes both of these tasks simple with `for` loops and the `in` operator."
+                }
+            ]
+        },
+        {
+            "id": "looping_through_lists",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Looping Through Lists",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "You can use a `for` loop to go through each item in a list. The loop variable takes the value of each item, one at a time."
+                },
+                {
+                    "type": "code",
+                    "content": "fruits = [\"apple\", \"banana\", \"orange\"]\nfor fruit in fruits:\n    print(fruit)",
+                    "properties": {
+                        "language": "python",
+                        "output": "apple\nbanana\norange"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The loop goes through each item in `fruits`, and `fruit` takes the value of each item one by one."
+                }
+            ]
+        },
+        {
+            "id": "loop_variable_name",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can name the loop variable anything you want. It's common to use the singular form of the list name."
+                },
+                {
+                    "type": "code",
+                    "content": "colors = [\"red\", \"green\", \"blue\"]\nfor color in colors:\n    print(f\"I like {color}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "I like red\nI like green\nI like blue"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Using `color` for the loop variable makes the code easy to read."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_basic_loop",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Loop through the list and print each number.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "numbers = [10, 20, 30]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1} number {2} numbers:",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "    print(number)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "for",
+                            "in",
+                            "while"
+                        ],
+                        "solutions": {
+                            "1": "for",
+                            "2": "in"
+                        },
+                        "hint": "Use for number in numbers to loop through the list.",
+                        "correctFeedback": "Perfect! for number in numbers loops through each item.",
+                        "incorrectFeedback": "Use for number in numbers to loop through the list.",
+                        "explanation": "The for loop goes through each item in the numbers list.",
+                        "output": "10\n20\n30"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_loop_output",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "names = [\"Alice\", \"Bob\"]\nfor name in names:\n    print(f\"Hello, {name}!\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Hello, Alice!\nHello, Bob!",
+                            "Hello, names!",
+                            "Alice\nBob"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! The loop prints the greeting for each name in the list.",
+                        "incorrectFeedback": "The loop goes through each name and prints a greeting for each one.",
+                        "explanation": "The loop runs twice, once for Alice and once for Bob, printing a greeting each time."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "loop_with_operations",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can perform operations on each item inside the loop."
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = [1, 2, 3, 4]\nfor num in numbers:\n    doubled = num * 2\n    print(f\"{num} doubled is {doubled}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "1 doubled is 2\n2 doubled is 4\n3 doubled is 6\n4 doubled is 8"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "For each number, we multiply it by 2 and print the result."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_loop_operations",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the `for` loop to print each price with a 10% increase.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "prices = [10, 20, 30]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "for {1} in {2}:",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "    new_price = price * 1.1",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(new_price)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "prices",
+                            "price"
+                        ],
+                        "solutions": {
+                            "1": "price",
+                            "2": "prices"
+                        },
+                        "hint": "Use for price in prices to loop through the list.",
+                        "correctFeedback": "Great! You looped through each price and calculated the new price.",
+                        "incorrectFeedback": "Use for price in prices to loop through the list.",
+                        "explanation": "The loop goes through each price and multiplies it by 1.1 (10% increase).",
+                        "output": "11.0\n22.0\n33.0"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "checking_membership",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Checking if Items Exist",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `in` operator checks if an item exists in a list. It returns `True` if the item is found, and `False` if it's not."
+                },
+                {
+                    "type": "code",
+                    "content": "fruits = [\"apple\", \"banana\", \"orange\"]\nprint(\"apple\" in fruits)\nprint(\"grape\" in fruits)",
+                    "properties": {
+                        "language": "python",
+                        "output": "True\nFalse"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`\"apple\"` is in the list, so the first check returns `True`. `\"grape\"` is not in the list, so it returns `False`."
+                }
+            ]
+        },
+        {
+            "id": "using_in_with_if",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "The `in` operator is commonly used with `if` statements to make decisions based on whether an item exists."
+                },
+                {
+                    "type": "code",
+                    "content": "shopping_list = [\"milk\", \"bread\", \"eggs\"]\nif \"milk\" in shopping_list:\n    print(\"Don't forget the milk!\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Don't forget the milk!"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Since `\"milk\"` is in the list, the message is printed."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_in_operator",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Check if `\"blue\"` is in the colors list.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "colors = [\"red\", \"green\", \"blue\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "if \"blue\" {1} colors:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(\"Blue is in the list!\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "exists",
+                            "in",
+                            "is"
+                        ],
+                        "solutions": {
+                            "1": "in"
+                        },
+                        "hint": "Use the in operator to check if an item exists in a list.",
+                        "correctFeedback": "Perfect! The in operator checks if \"blue\" exists in the list.",
+                        "incorrectFeedback": "Use the in operator to check membership in a list.",
+                        "explanation": "The in operator returns True if the item is found in the list.",
+                        "output": "Blue is in the list!"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_in_result",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = [1, 2, 3, 4]\nprint(5 in numbers)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "True",
+                            "False",
+                            "Error"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! 5 is not in the list, so it returns False.",
+                        "incorrectFeedback": "5 is not in the list, so in returns False.",
+                        "explanation": "The in operator returns False because 5 is not in the numbers list."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "not_in_operator",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Checking if Items Don't Exist",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `not in` operator checks if an item is **not** in a list. It returns `True` if the item is not found."
+                },
+                {
+                    "type": "code",
+                    "content": "fruits = [\"apple\", \"banana\"]\nprint(\"grape\" not in fruits)\nprint(\"apple\" not in fruits)",
+                    "properties": {
+                        "language": "python",
+                        "output": "True\nFalse"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`\"grape\"` is not in the list, so the first check returns `True`. `\"apple\"` is in the list, so it returns `False`."
+                }
+            ]
+        },
+        {
+            "id": "not_in_with_if",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "`not in` is useful when you want to do something only if an item is missing."
+                },
+                {
+                    "type": "code",
+                    "content": "ingredients = [\"flour\", \"sugar\"]\nif \"eggs\" not in ingredients:\n    print(\"Add eggs to the list!\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Add eggs to the list!"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Since `\"eggs\"` is not in the list, the message is printed."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_not_in",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Check if `\"python\"` is not in the list.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "languages = [\"java\", \"c++\", \"javascript\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "if \"python\" {1} {2} languages:",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "    print(\"Python is missing!\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "not",
+                            "in",
+                            "is"
+                        ],
+                        "solutions": {
+                            "1": "not",
+                            "2": "in"
+                        },
+                        "hint": "Use not in to check if an item is not in the list.",
+                        "correctFeedback": "Perfect! not in checks if \"python\" is not in the list.",
+                        "incorrectFeedback": "Use not in to check if an item is missing from a list.",
+                        "explanation": "The not in operator returns True if the item is not found in the list.",
+                        "output": "Python is missing!"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_not_in_result",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "colors = [\"red\", \"blue\"]\nprint(\"red\" not in colors)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "True",
+                            "False"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! \"red\" is in the list, so not in returns False.",
+                        "incorrectFeedback": "\"red\" is in the list, so not in returns False.",
+                        "explanation": "Since \"red\" exists in the list, not in returns False."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "combining_loops_and_checking",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can combine loops and the `in` operator to do powerful things."
+                },
+                {
+                    "type": "text",
+                    "content": "Lets say you have a list of `available` fruits and a list of `wanted` fruits. You can loop through the `wanted` items and check if each item is in the `available` list."
+                },
+                {
+                    "type": "code",
+                    "content": "available = [\"apple\", \"banana\", \"orange\"]\nwanted = [\"banana\", \"grape\", \"apple\"]\n\nfor item in wanted:\n    if item in available:\n        print(f\"{item} is available!\")\n    else:\n        print(f\"{item} is not available.\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "banana is available!\ngrape is not available.\napple is available!"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_combine",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Consider your `favorite` foods and the `menu` of available foods."
+                },
+                {
+                    "type": "code_fill",
+                    "content": "Loop through the `favorites` list and print items that are also in the `menu` list.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "menu = [\"pizza\", \"pasta\", \"salad\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "favorites = [\"burger\", \"pizza\", \"salad\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "for {1} in {2}:",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "    if item {3} menu:",
+                                "indent": 0,
+                                "blank": "3"
+                            },
+                            {
+                                "code": "        print(f\"{item} is on the menu!\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "item",
+                            "in",
+                            "favorites"
+                        ],
+                        "solutions": {
+                            "1": "item",
+                            "2": "favorites",
+                            "3": "in"
+                        },
+                        "hint": "Loop through favorites and check if each item is in menu.",
+                        "correctFeedback": "Excellent! You combined loops and the in operator perfectly.",
+                        "incorrectFeedback": "Loop through favorites and use in to check if each item is in menu.",
+                        "explanation": "We loop through favorites and use in to check if each item exists in menu.",
+                        "output": "pizza is on the menu!\nsalad is on the menu!"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_practical",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Count how many items from the `shopping_list` are also in the `inventory` list.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "inventory = [\"apple\", \"milk\", \"bread\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "shopping_list = [\"milk\", \"eggs\", \"bread\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "count = 0",
+                                "indent": 0
+                            },
+                            {
+                                "code": "for item in shopping_list:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    if item {1} inventory:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "        count = count + 1",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(f\"Found {count} items\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "not in",
+                            "exists",
+                            "in"
+                        ],
+                        "solutions": {
+                            "1": "in"
+                        },
+                        "hint": "Use in to check if each item from shopping_list is in inventory.",
+                        "correctFeedback": "Perfect! You counted the matching items using in.",
+                        "incorrectFeedback": "Use in to check if items from shopping_list are in inventory.",
+                        "explanation": "We loop through shopping_list and count how many items are also in inventory.",
+                        "output": "Found 2 items"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "Use `for item in list:` to **loop through** each item in a list",
+                            "Use `in` to check if an item **exists** in a list (returns True/False)",
+                            "Use `not in` to check if an item **doesn't exist** in a list",
+                            "Combine loops and `in` to perform powerful operations",
+                            "The `in` and `not in` operators work great with `if` statements"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

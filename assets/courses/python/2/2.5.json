@@ -1,0 +1,478 @@
+{
+    "blocks": [
+        {
+            "id": "intro_nested_conditionals",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Nested Conditionals",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Sometimes you need to check conditions inside other conditions. This is called **nesting** - putting one `if` statement inside another `if` statement."
+                }
+            ]
+        },
+        {
+            "id": "basic_nested_if",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Basic Nested If",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "A nested `if` is an `if` statement inside another `if` statement. The inner `if` only runs if the outer `if` condition is `True`."
+                },
+                {
+                    "type": "text",
+                    "content": "It’s like going through doors - you can only open the second one if you’ve passed the first."
+                },
+                {
+                    "type": "code",
+                    "content": "has_cookie = True\nhas_milk = True\n\nif has_cookie:\n    print(\"You have cookies!\")\n    if has_milk:\n        print(\"And milk too!\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "You have cookies!\nAnd milk too!"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "nested_with_else",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can also use `else` with nested `if` statements. The `else` belongs to the closest `if` statement."
+                },
+                {
+                    "type": "code",
+                    "content": "has_cookie = True\nhas_milk = False\n\nif has_cookie:\n    print(\"You have cookies!\")\n    if has_milk:\n        print(\"And milk too!\")\n    else:\n        print(\"But no milk!\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "You have cookies!\nBut no milk!"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "indentation_importance",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Indentation is crucial.** With nested `if` statements, indentation shows which `if` statement each block belongs to. Each level of nesting needs more indentation."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_sword_condition",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Check if the warrior has a sword to go for an attack.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "has_sword = True",
+                                "indent": 0
+                            },
+                            {
+                                "code": "if {1}:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(\"You can attack!\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "has_sword",
+                            "True"
+                        ],
+                        "solutions": {
+                            "1": "has_sword"
+                        },
+                        "hint": "Check if the warrior has a sword.",
+                        "correctFeedback": "Perfect! has_sword checks if the warrior has a sword.",
+                        "incorrectFeedback": "Check if the warrior has a sword.",
+                        "explanation": "We check has_sword to see if the warrior is ready to attack.",
+                        "output": "You can attack!"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_shield_nested",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Now lets add the nested check for the shield.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "has_sword = True",
+                                "indent": 0
+                            },
+                            {
+                                "code": "has_shield = True",
+                                "indent": 0
+                            },
+                            {
+                                "code": "if has_sword:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(\"You can attack!\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    if {1}:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "        print(\"You're protected!\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "has_sword",
+                            "has_shield"
+                        ],
+                        "solutions": {
+                            "1": "has_shield"
+                        },
+                        "hint": "Check if the warrior has a shield inside the sword check.",
+                        "correctFeedback": "Great! The nested if checks has_shield.",
+                        "incorrectFeedback": "Check if the warrior has a shield inside the sword check.",
+                        "explanation": "The nested if only runs if has_sword is True, then checks has_shield.",
+                        "output": "You can attack!\nYou're protected!"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_shield_nested",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Now lets add the else statement for when there's no shield.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "has_sword = True",
+                                "indent": 0
+                            },
+                            {
+                                "code": "has_shield = False",
+                                "indent": 0
+                            },
+                            {
+                                "code": "if has_sword:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(\"You can attack!\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    if has_shield:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        print(\"You're protected!\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    {1}:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "        print(\"Be careful, no shield!\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "elif",
+                            "else"
+                        ],
+                        "solutions": {
+                            "1": "else"
+                        },
+                        "hint": "Use else to handle when there's no shield.",
+                        "correctFeedback": "Great! The else statement handles when there's no shield.",
+                        "incorrectFeedback": "Use else to handle when there's no shield.",
+                        "explanation": "The else runs when has_shield is False, so the warrior needs to find a shield.",
+                        "output": "You can attack!\nBe careful, no shield!"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_complete_warrior",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Add the else statement for when there's no sword.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "has_sword = False",
+                                "indent": 0
+                            },
+                            {
+                                "code": "has_shield = True",
+                                "indent": 0
+                            },
+                            {
+                                "code": "if has_sword:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(\"You can attack!\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    if has_shield:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        print(\"You're protected!\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    else:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        print(\"Be careful, no shield!\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1}:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(\"Find a weapon first!\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "else",
+                            "elif",
+                            "if"
+                        ],
+                        "solutions": {
+                            "1": "else"
+                        },
+                        "hint": "Use else to handle when there's no sword.",
+                        "correctFeedback": "Perfect! else handles when has_sword is False.",
+                        "incorrectFeedback": "Use else to handle when there's no sword.",
+                        "explanation": "The else runs when has_sword is False, so the warrior needs to find a weapon.",
+                        "output": "Find a weapon first!"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_what_will_print_warrior",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "has_sword = True\nhas_shield = True\n\nif has_sword:\n    print(\"You can attack!\")\n    if has_shield:\n        print(\"You're protected!\")\n    else:\n        print(\"Be careful, no shield!\")\nelse:\n    print(\"Find a weapon first!\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "You can attack!\nYou're protected!",
+                            "You can attack!\nBe careful, no shield!",
+                            "Find a weapon first!"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! has_sword is True, so it prints the first message, then has_shield is also True, so it prints the protection message.",
+                        "incorrectFeedback": "has_sword is True, so it prints the first message, then has_shield is also True, so it prints the protection message.",
+                        "explanation": "Both conditions are True, so both the outer and inner if statements run."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_complete_warrior",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Now lets complete the full warrior check.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "has_sword = True",
+                                "indent": 0
+                            },
+                            {
+                                "code": "has_shield = True",
+                                "indent": 0
+                            },
+                            {
+                                "code": "if {1}:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(\"You can attack!\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    if {2}:",
+                                "indent": 0,
+                                "blank": "2"
+                            },
+                            {
+                                "code": "        print(\"You're protected!\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    {3}:",
+                                "indent": 0,
+                                "blank": "3"
+                            },
+                            {
+                                "code": "        print(\"Be careful, no shield!\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{4}:",
+                                "indent": 0,
+                                "blank": "4"
+                            },
+                            {
+                                "code": "    print(\"Find a weapon first!\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "else",
+                            "elif",
+                            "has_sword",
+                            "has_shield",
+                            "else"
+                        ],
+                        "solutions": {
+                            "1": "has_sword",
+                            "2": "has_shield",
+                            "3": "else",
+                            "4": "else"
+                        },
+                        "hint": "",
+                        "correctFeedback": "Perfect! The nested if checks if the warrior has a sword and a shield.",
+                        "incorrectFeedback": "Use has_sword to check if the warrior has a sword, and has_shield to check if the warrior has a shield.",
+                        "explanation": "The nested if checks if the warrior has a sword and a shield.",
+                        "output": "You can attack!\nYou're protected!"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_basic_nested",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the nested if statement. Check if someone is a student, and if they are, check if they have good grades.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "is_student = True",
+                                "indent": 0
+                            },
+                            {
+                                "code": "has_good_grades = True",
+                                "indent": 0
+                            },
+                            {
+                                "code": "if {1}:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(\"You are a student\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    if {2}:",
+                                "indent": 0,
+                                "blank": "2"
+                            },
+                            {
+                                "code": "        print(\"Great job!\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "has_good_grades",
+                            "is_student"
+                        ],
+                        "solutions": {
+                            "1": "is_student",
+                            "2": "has_good_grades"
+                        },
+                        "hint": "Use is_student to check if the person is a student, and has_good_grades to check if they have good grades.",
+                        "correctFeedback": "Perfect! The nested if checks if the person is a student and has good grades.",
+                        "incorrectFeedback": "Use is_student to check if the person is a student, and has_good_grades to check if they have good grades.",
+                        "explanation": "The nested if only runs if the outer if (is_student) is True, and the inner if (has_good_grades) is True.",
+                        "output": "You are a student\nGreat job!"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "Nested `if` statements are `if` statements inside other `if` statements",
+                            "The inner `if` only runs if the outer `if` condition is `True`",
+                            "**Indentation** shows which `if` statement each block belongs to",
+                            "Each level of nesting needs more indentation",
+                            "Use nested conditionals when you need to check conditions within conditions"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

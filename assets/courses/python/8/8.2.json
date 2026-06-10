@@ -1,0 +1,403 @@
+{
+    "blocks": [
+        {
+            "id": "intro_try_except",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Try, Except & Specific Errors",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Instead of letting errors crash your program, you can **catch** them and decide what to do. This is called **exception handling**."
+                },
+                {
+                    "type": "text",
+                    "content": "The `try` and `except` blocks let your program continue running even when errors occur."
+                }
+            ]
+        },
+        {
+            "id": "basic_try_except",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Basic Try and Except",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Put code that might cause an error in a `try` block. If an error happens, Python runs the `except` block instead of crashing."
+                },
+                {
+                    "type": "code",
+                    "content": "try:\n    number = int(\"hello\")\n    print(number)\nexcept:\n    print(\"Oops! That didn't work.\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Oops! That didn't work."
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Python tries to convert the string `\"hello\"` to an integer. Since `\"hello\"` isn't a valid number, it raises an error. The `except` block catches this error and prints a friendly message instead of letting the program crash."
+                }
+            ]
+        },
+        {
+            "id": "program_continues",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "With error handling, your program keeps running after an error."
+                },
+                {
+                    "type": "code",
+                    "content": "print(\"Start\")\n\ntry:\n    result = 10 / 0\nexcept:\n    print(\"Can't divide by zero!\")\n\nprint(\"End\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Start\nCan't divide by zero!\nEnd"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Notice that `\"End\"` prints! The program didn't crash - it handled the error and continued."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_basic",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the error handling to prevent a crash.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "{1}:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    number = int(\"abc\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{2}:",
+                                "indent": 0,
+                                "blank": "2"
+                            },
+                            {
+                                "code": "    print(\"Invalid number\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "try",
+                            "except",
+                            "if"
+                        ],
+                        "solutions": {
+                            "1": "try",
+                            "2": "except"
+                        },
+                        "hint": "Use try for code that might error, except for what to do if it errors.",
+                        "correctFeedback": "Perfect! You handled the error with try and except.",
+                        "incorrectFeedback": "Use try for risky code and except to catch errors.",
+                        "explanation": "try/except prevents errors from crashing your program.",
+                        "output": "Invalid number"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "specific_errors",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Catching Specific Errors",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Instead of catching all errors, you can catch **specific error types**. This lets you handle different errors differently."
+                },
+                {
+                    "type": "code",
+                    "content": "try:\n    age = int(\"twenty\")\nexcept ValueError:\n    print(\"Please enter a valid number\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Please enter a valid number"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "This only catches `ValueError`. Other errors would still crash the program (which can be useful for debugging)."
+                }
+            ]
+        },
+        {
+            "id": "why_specific",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Why catch specific errors?** It makes your error messages more helpful and helps you handle different problems in different ways."
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = [10, 20, 30]\n\ntry:\n    print(numbers[5])\nexcept IndexError:\n    print(\"Index doesn't exist in list\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Index doesn't exist in list"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The error message clearly tells the user what went wrong."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_specific",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Catch the ZeroDivisionError specifically.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "try:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    result = 100 / 0",
+                                "indent": 0
+                            },
+                            {
+                                "code": "except {1}:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(\"Cannot divide by zero\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "ValueError",
+                            "ZeroDivisionError",
+                            "Error"
+                        ],
+                        "solutions": {
+                            "1": "ZeroDivisionError"
+                        },
+                        "hint": "What error type occurs when dividing by zero?",
+                        "correctFeedback": "Perfect! You caught the ZeroDivisionError.",
+                        "incorrectFeedback": "Use ZeroDivisionError to catch division by zero.",
+                        "explanation": "Catching specific error types makes your code clearer and more precise.",
+                        "output": "Cannot divide by zero"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "multiple_except",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Multiple Except Blocks",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "You can have multiple `except` blocks to handle different errors differently."
+                },
+                {
+                    "type": "code",
+                    "content": "try:\n    numbers = [1, 2, 3]\n    index = int(\"five\")\n    print(numbers[index])\nexcept ValueError:\n    print(\"Invalid number format\")\nexcept IndexError:\n    print(\"Index out of range\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Invalid number format"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Python tries each except block in order and runs the first one that matches."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_multiple",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Why use multiple except blocks?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "To make code longer",
+                            "To handle different errors differently",
+                            "To catch all possible errors"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! Multiple except blocks let you respond differently to different errors.",
+                        "incorrectFeedback": "Multiple except blocks help you handle different error types in different ways.",
+                        "explanation": "Different errors need different responses, so multiple except blocks are useful."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "getting_error_info",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can store the error information in a variable using `as` to display helpful details."
+                },
+                {
+                    "type": "code",
+                    "content": "try:\n    number = int(\"hello\")\nexcept ValueError as error:\n    print(f\"Error occurred: {error}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Error occurred: invalid literal for int() with base 10: 'hello'"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `as error` part captures the error details so you can display or log them."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_error_info",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Capture the error information to display it.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "try:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    result = 10 / 0",
+                                "indent": 0
+                            },
+                            {
+                                "code": "except ZeroDivisionError {1} e:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(f\"Error: {e}\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "as",
+                            "is",
+                            "with"
+                        ],
+                        "solutions": {
+                            "1": "as"
+                        },
+                        "hint": "Use as to store the error in a variable.",
+                        "correctFeedback": "Perfect! You captured the error information.",
+                        "incorrectFeedback": "Use as to store the error details in a variable.",
+                        "explanation": "The as keyword lets you access error details.",
+                        "output": "Error: division by zero"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practical_example",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Let's see a practical example combining what you've learned."
+                },
+                {
+                    "type": "code",
+                    "content": "def safe_divide(a, b):\n    try:\n        result = a / b\n        return result\n    except ZeroDivisionError:\n        return \"Cannot divide by zero\"\n    except TypeError:\n        return \"Invalid input types\"\n\nprint(safe_divide(10, 2))\nprint(safe_divide(10, 0))\nprint(safe_divide(10, \"two\"))",
+                    "properties": {
+                        "language": "python",
+                        "output": "5.0\nCannot divide by zero\nInvalid input types"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The function handles different errors gracefully and returns helpful messages."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_practical",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What happens when you catch an error with try/except?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "The program crashes anyway",
+                            "The error is removed from code",
+                            "The error is ignored and program continues"
+                        ],
+                        "correctAnswerIndex": 2,
+                        "correctFeedback": "Correct! The error is caught and the program continues running.",
+                        "incorrectFeedback": "try/except catches the error so the program can continue.",
+                        "explanation": "Error handling lets you control what happens when errors occur."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "Use `try` for code that might cause errors",
+                            "Use `except` to handle errors gracefully",
+                            "Catch **specific error types** for better control",
+                            "Use **multiple except blocks** for different errors",
+                            "Use `as` to capture error information",
+                            "Error handling lets your program **continue running**"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

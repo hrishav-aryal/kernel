@@ -1,0 +1,780 @@
+{
+    "blocks": [
+        {
+            "id": "ex_1",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Practice",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What does `else` do?",
+                        "options": [
+                            "Runs when the if condition is False",
+                            "Runs when the if condition is True"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! else runs when the if condition is False.",
+                        "incorrectFeedback": "else runs when the if condition is False.",
+                        "explanation": "else provides an alternative code block that runs when the if condition is False."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_2",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Add `else` to handle when it's not raining.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "is_raining = False",
+                                "indent": 0
+                            },
+                            {
+                                "code": "if is_raining:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(\"Take umbrella\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1}:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(\"Enjoy the weather\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "else",
+                            "elif",
+                            "if"
+                        ],
+                        "solutions": {
+                            "1": "else"
+                        },
+                        "hint": "Use else to handle when if is False.",
+                        "correctFeedback": "Perfect! else runs when the if condition is False.",
+                        "incorrectFeedback": "Use else to handle when if is False.",
+                        "explanation": "else runs when the if condition is False. Since is_raining is False, it prints Enjoy the weather.",
+                        "output": "Enjoy the weather"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_3",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "temperature = 30\nif temperature > 25:\n    print(\"Hot\")\nelse:\n    print(\"Cold\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Hot",
+                            "Cold",
+                            "Nothing"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! 30 is greater than 25, so it prints Hot.",
+                        "incorrectFeedback": "Check if 30 is greater than 25.",
+                        "explanation": "Since 30 > 25 is True, the if block runs and prints Hot. The else block is skipped."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_4",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the `if-else` statement to check if score is at least `50`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "score = 35",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1} {2}:",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "    print(\"Pass\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{3}:",
+                                "indent": 0,
+                                "blank": "3"
+                            },
+                            {
+                                "code": "    print(\"Fail\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "score >= 50",
+                            "if",
+                            "else"
+                        ],
+                        "solutions": {
+                            "1": "if",
+                            "2": "score >= 50",
+                            "3": "else"
+                        },
+                        "hint": "Use if to check if score is at least 50.",
+                        "correctFeedback": "Excellent! if checks if score is at least 50.",
+                        "incorrectFeedback": "Use if to check if score is at least 50.",
+                        "explanation": "We use if to check if score is at least 50. Since score is 35, the else block runs and prints Fail.",
+                        "output": "Fail"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_5",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "age = 15\nif age >= 18:\n    print(\"Adult\")\nelse:\n    print(\"Minor\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Adult",
+                            "Minor",
+                            "Nothing"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! 15 is not >= 18, so else runs and prints Minor.",
+                        "incorrectFeedback": "Check if 15 is >= 18.",
+                        "explanation": "Since 15 >= 18 is False, the else block runs and prints Minor."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_6",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the if-else statement to check if the `number` is positive.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "number = -3",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1} {2} {3} {4}:",
+                                "indent": 0,
+                                "blank": "1,2,3,4"
+                            },
+                            {
+                                "code": "    print(\"Positive\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "else:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(\"Not positive\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "if",
+                            "number",
+                            ">",
+                            "0"
+                        ],
+                        "solutions": {
+                            "1": "if",
+                            "2": "number",
+                            "3": ">",
+                            "4": "0"
+                        },
+                        "hint": "Check if number is greater than 0.",
+                        "correctFeedback": "Great! You checked if number is positive.",
+                        "incorrectFeedback": "Check if number is greater than 0.",
+                        "explanation": "We check if number > 0. Since -3 is not positive, else runs and prints Not positive.",
+                        "output": "Not positive"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_7",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "Can you have an `else` without an `if`?",
+                        "options": [
+                            "No, else must follow an if",
+                            "Yes, else works alone"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! else must always come after an if.",
+                        "incorrectFeedback": "else must always follow an if statement.",
+                        "explanation": "else is an alternative to if. It only makes sense when there's an if condition to check first."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_8",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What does `elif` stand for?",
+                        "options": [
+                            "else if",
+                            "end if"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! elif means else if.",
+                        "incorrectFeedback": "elif stands for else if.",
+                        "explanation": "elif is short for else if. It checks another condition when the first if is False."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_9",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Add `elif` to check if `score` is at least `70`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "score = 75",
+                                "indent": 0
+                            },
+                            {
+                                "code": "if score >= 90:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(\"A\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1} score >= 70:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(\"B\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "else:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(\"C\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "if",
+                            "elif",
+                            "else"
+                        ],
+                        "solutions": {
+                            "1": "elif"
+                        },
+                        "hint": "Use elif to check another condition.",
+                        "correctFeedback": "Perfect! elif checks another condition.",
+                        "incorrectFeedback": "Use elif to check another condition.",
+                        "explanation": "elif checks another condition when the first if is False. Since score is 75, it matches >= 70 and prints B.",
+                        "output": "B"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_10",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "age = 25\nif age < 18:\n    print(\"Minor\")\nelif age < 65:\n    print(\"Adult\")\nelse:\n    print(\"Senior\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Adult",
+                            "Minor",
+                            "Senior"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! 25 is not < 18, but it is < 65, so it prints Adult.",
+                        "incorrectFeedback": "Check which condition 25 matches first.",
+                        "explanation": "Python checks in order. 25 is not < 18, so we skip to elif. 25 is < 65, so it prints Adult and stops."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_11",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the `elif` statement to check if `temperature` is above `20`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "temperature = 25",
+                                "indent": 0
+                            },
+                            {
+                                "code": "if temperature > 30:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(\"Hot\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1} {2}:",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "    print(\"Warm\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "else:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(\"Cold\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "temperature > 20",
+                            "elif"
+                        ],
+                        "solutions": {
+                            "1": "elif",
+                            "2": "temperature > 20"
+                        },
+                        "hint": "Use elif to check if temperature is above 20.",
+                        "correctFeedback": "Great! elif checks if temperature is above 20.",
+                        "incorrectFeedback": "Use elif to check if temperature is above 20.",
+                        "explanation": "We use elif to check if temperature is above 20. Since temperature is 25, it prints Warm.",
+                        "output": "Warm"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_12",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "In an `if-elif-else` chain, how many code blocks can run?",
+                        "options": [
+                            "Only one",
+                            "All of them"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Only the first True condition runs.",
+                        "incorrectFeedback": "Only one block runs in an if-elif-else chain.",
+                        "explanation": "Python checks conditions in order. When it finds a True condition, it runs that block and skips the rest."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_13",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the `if-elif-else` chain for grading `score`. B is 80+, C is 70+, F is everything else.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "score = 85",
+                                "indent": 0
+                            },
+                            {
+                                "code": "if score >= 90:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(\"A\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1}:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(\"B\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{2}:",
+                                "indent": 0,
+                                "blank": "2"
+                            },
+                            {
+                                "code": "    print(\"C\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{3}:",
+                                "indent": 0,
+                                "blank": "3"
+                            },
+                            {
+                                "code": "    print(\"F\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "elif score >= 70",
+                            "else",
+                            "elif score >= 80"
+                        ],
+                        "solutions": {
+                            "1": "elif score >= 80",
+                            "2": "elif score >= 70",
+                            "3": "else"
+                        },
+                        "hint": "B is 80+, C is 70+, F is everything else.",
+                        "correctFeedback": "Excellent! You completed the grading chain.",
+                        "incorrectFeedback": "B is 80+, C is 70+, F is everything else.",
+                        "explanation": "We check from highest to lowest. Score is 85, which is >= 80 but < 90, so it prints B.",
+                        "output": "B"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_14",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "score = 95\nif score >= 90:\n    print(\"A\")\nelif score >= 80:\n    print(\"B\")\nelse:\n    print(\"C\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "B",
+                            "A"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! 95 >= 90 is True, so it prints A and stops.",
+                        "incorrectFeedback": "Only the first True condition runs.",
+                        "explanation": "Even though 95 matches both conditions, Python stops at the first True condition. It prints A and skips the rest."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_15",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "Why do we check from highest to lowest in grading systems?",
+                        "options": [
+                            "Because Python stops at the first True condition",
+                            "Its faster"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Order matters because Python stops at the first True.",
+                        "incorrectFeedback": "Python stops at the first True condition.",
+                        "explanation": "If we check lowest first (>= 70), a score of 95 would match and get C instead of A. We check highest first."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_16",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Check if `number` is positive.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "number = 5",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1} {2}{3}",
+                                "indent": 0,
+                                "blank": "1,2,3"
+                            },
+                            {
+                                "code": "    print(\"Positive\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "number > 0",
+                            "if",
+                            ":"
+                        ],
+                        "solutions": {
+                            "1": "if",
+                            "2": "number > 0",
+                            "3": ":"
+                        },
+                        "hint": "Use if number > 0: to check if positive.",
+                        "correctFeedback": "Great! if number > 0: checks if positive.",
+                        "incorrectFeedback": "Use if number > 0: to check if positive.",
+                        "explanation": "We use if number > 0: to check if number is positive. Since number is 5, it prints Positive.",
+                        "output": "Positive"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_17",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Now add `elif` to check if `number` is negative.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "number = -5",
+                                "indent": 0
+                            },
+                            {
+                                "code": "if number > 0:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(\"Positive\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1} {2}{3}",
+                                "indent": 0,
+                                "blank": "1,2,3"
+                            },
+                            {
+                                "code": "    print(\"Negative\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "number < 0",
+                            "elif",
+                            ":"
+                        ],
+                        "solutions": {
+                            "1": "elif",
+                            "2": "number < 0",
+                            "3": ":"
+                        },
+                        "hint": "Use elif to check if number is negative.",
+                        "correctFeedback": "Perfect! elif checks if number is negative.",
+                        "incorrectFeedback": "Use elif to check if number is negative.",
+                        "explanation": "We use elif to check if number is negative. Since number is -5, it prints Negative.",
+                        "output": "Negative"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_19",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Now add `else` to handle if `number` is `0`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "number = 0",
+                                "indent": 0
+                            },
+                            {
+                                "code": "if number > 0:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(\"Positive\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "elif number < 0:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(\"Negative\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1}:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(\"Zero\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "elif",
+                            "else",
+                            "if"
+                        ],
+                        "solutions": {
+                            "1": "else"
+                        },
+                        "hint": "Use else for the remaining case.",
+                        "correctFeedback": "Excellent! else handles the remaining case.",
+                        "incorrectFeedback": "Use else for the remaining case.",
+                        "explanation": "else handles when all other conditions are False. Since number is 0, it's neither > 0 nor < 0, so it prints Zero.",
+                        "output": "Zero"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_18",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "number = 0\nif number > 0:\n    print(\"Positive\")\nelif number < 0:\n    print(\"Negative\")\nelse:\n    print(\"Zero\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Zero",
+                            "Positive",
+                            "Negative"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! 0 is neither > 0 nor < 0, so else runs.",
+                        "incorrectFeedback": "Check what happens when number is 0.",
+                        "explanation": "0 is not > 0 and not < 0, so both if and elif are False. The else block runs and prints Zero."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_21",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print? `%` is the modulus operator which gives the remainder of the division."
+                },
+                {
+                    "type": "code",
+                    "content": "number = 7\nif number % 2 == 0:\n    print(\"Even\")\nelse:\n    print(\"Odd\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Odd",
+                            "Even"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! 7 % 2 is 1, not 0, so else runs.",
+                        "incorrectFeedback": "7 divided by 2 has remainder 1.",
+                        "explanation": "7 % 2 gives remainder 1. Since 1 is not equal to 0, the if condition is False and else runs, printing Odd."
+                    }
+                }
+            ]
+        }
+    ]
+}

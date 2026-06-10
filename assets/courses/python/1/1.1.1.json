@@ -1,0 +1,36 @@
+{
+    "blocks": [
+        {
+            "id": "intro_first_program",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Your First Python Program",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Welcome to programming! Let's start with the traditional **Hello World** program. This simple program will teach you the basics of writing and running Python code."
+                }
+            ]
+        },
+        {
+            "id": "intro_first_program",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Your First Python Program",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Welcome to programming! Let's start with the traditional **Hello World** program. This simple program will teach you the basics of writing and running Python code."
+                }
+            ]
+        }
+    ]
+}

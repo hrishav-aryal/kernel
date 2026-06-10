@@ -1,0 +1,537 @@
+{
+    "blocks": [
+        {
+            "id": "ex_1",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Practice",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What is the main characteristic of sets in Python?",
+                        "options": [
+                            "They only store unique items (no duplicates)",
+                            "They store items in order"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Sets automatically remove duplicates.",
+                        "incorrectFeedback": "Sets automatically remove duplicates.",
+                        "explanation": "Sets only store unique items. If you try to add a duplicate, it's automatically ignored."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_2",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a set called `colors` with three items.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "colors = {1}",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(colors)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "{\"red\", \"green\", \"blue\"}",
+                            "[\"red\", \"green\", \"blue\"]",
+                            "(\"red\", \"green\", \"blue\")"
+                        ],
+                        "solutions": {
+                            "1": "{\"red\", \"green\", \"blue\"}"
+                        },
+                        "hint": "Use curly braces {} for sets (without key: value pairs).",
+                        "correctFeedback": "Perfect! Sets use {} with items separated by commas.",
+                        "incorrectFeedback": "Use curly braces {} for sets (without key: value pairs).",
+                        "explanation": "Sets are created with {}. Unlike dictionaries, they don't have key: value pairs, just items.",
+                        "output": "{'red', 'green', 'blue'}"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_3",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = {1, 2, 2, 3, 3, 3}\nprint(numbers)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "{1, 2, 3}",
+                            "{1, 2, 2, 3, 3, 3}"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Sets automatically remove duplicates.",
+                        "incorrectFeedback": "Sets automatically remove duplicates.",
+                        "explanation": "Sets keep only unique values. Duplicates are automatically removed, leaving {1, 2, 3}."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_4",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "Can you access set items by index?",
+                        "options": [
+                            "No, sets are unordered",
+                            "Yes, using numbers"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Sets don't have indices because they're unordered.",
+                        "incorrectFeedback": "Sets don't have indices because they're unordered.",
+                        "explanation": "Sets are unordered collections. You cannot access items by index like lists or tuples."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_5",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Add `\"yellow\"` to the set.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "colors = {\"red\", \"green\", \"blue\"}",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "colors.{1}({2})",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(colors)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "add",
+                            "\"yellow\"",
+                            "append"
+                        ],
+                        "solutions": {
+                            "1": "add",
+                            "2": "\"yellow\""
+                        },
+                        "hint": "Use add() to add an item to a set.",
+                        "correctFeedback": "Great! add() adds an item to the set.",
+                        "incorrectFeedback": "Use add() to add an item to a set.",
+                        "explanation": "colors.add(\"yellow\") adds yellow to the set. Sets use add(), not append().",
+                        "output": "{'red', 'green', 'blue', 'yellow'}"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_6",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "nums = {1, 2, 3}\nnums.add(2)\nprint(nums)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "{1, 2, 3}",
+                            "{1, 2, 3, 2}"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Adding a duplicate has no effect.",
+                        "incorrectFeedback": "Sets don't allow duplicates.",
+                        "explanation": "2 is already in the set. add(2) has no effect because sets don't allow duplicates."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_7",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Remove `\"green\"` from the set.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "colors = {\"red\", \"green\", \"blue\"}",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "colors.{1}({2})",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(colors)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "remove",
+                            "\"green\"",
+                            "delete"
+                        ],
+                        "solutions": {
+                            "1": "remove",
+                            "2": "\"green\""
+                        },
+                        "hint": "Use remove() to remove an item.",
+                        "correctFeedback": "Perfect! remove() removed green from the set.",
+                        "incorrectFeedback": "Use remove() to remove an item.",
+                        "explanation": "colors.remove(\"green\") removes green from the set.",
+                        "output": "{'red', 'blue'}"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_8",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What's the difference between `remove()` and `discard()` in sets?",
+                        "options": [
+                            "remove() raises an error if item doesn't exist, discard() doesn't",
+                            "They do the same thing"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! discard() is safer - it won't raise an error.",
+                        "incorrectFeedback": "discard() is safer - it won't raise an error.",
+                        "explanation": "remove() raises a KeyError if the item doesn't exist. discard() does nothing if the item doesn't exist."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_9",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Check if `3` is in the set.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "numbers = {1, 2, 3, 4, 5}",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "result = 3 {1} numbers",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(result)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "in",
+                            "not",
+                            "=="
+                        ],
+                        "solutions": {
+                            "1": "in"
+                        },
+                        "hint": "Use in to check membership.",
+                        "correctFeedback": "Great! The in operator works with sets too.",
+                        "incorrectFeedback": "Use in to check membership.",
+                        "explanation": "3 in numbers checks if 3 exists in the set. It does, so it returns True.",
+                        "output": "True"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_10",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "letters = {\"a\", \"b\", \"c\"}\nprint(len(letters))",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "3",
+                            "4"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! len() returns the number of items in the set.",
+                        "incorrectFeedback": "len() counts the number of items.",
+                        "explanation": "len(letters) returns 3 because there are 3 items in the set."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_11",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Find the union of two sets (all items from both).",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "set1 = {1, 2, 3}",
+                                "indent": 0
+                            },
+                            {
+                                "code": "set2 = {3, 4, 5}",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "result = set1.{1}(set2)",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(result)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "union",
+                            "add",
+                            "combine"
+                        ],
+                        "solutions": {
+                            "1": "union"
+                        },
+                        "hint": "Use union() to combine sets.",
+                        "correctFeedback": "Perfect! union() combines all unique items from both sets.",
+                        "incorrectFeedback": "Use union() to combine sets.",
+                        "explanation": "union() returns all unique items from both sets: {1, 2, 3, 4, 5}.",
+                        "output": "{1, 2, 3, 4, 5}"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_12",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "a = {1, 2, 3}\nb = {2, 3, 4}\nprint(a.intersection(b))",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "{2, 3}",
+                            "{1, 2, 3, 4}"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! intersection() returns items in both sets.",
+                        "incorrectFeedback": "intersection() returns items in both sets.",
+                        "explanation": "intersection() returns items that are in both sets. Both have 2 and 3, so it returns {2, 3}."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_13",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Find items in `set1` but not in `set2`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "set1 = {1, 2, 3, 4}",
+                                "indent": 0
+                            },
+                            {
+                                "code": "set2 = {3, 4, 5}",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "result = set1.{1}(set2)",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(result)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "difference",
+                            "subtract",
+                            "remove"
+                        ],
+                        "solutions": {
+                            "1": "difference"
+                        },
+                        "hint": "Use difference() to find items in first set but not second.",
+                        "correctFeedback": "Great! difference() returns items only in the first set.",
+                        "incorrectFeedback": "Use difference() to find items in first set but not second.",
+                        "explanation": "difference() returns items in set1 that are not in set2: {1, 2}.",
+                        "output": "{1, 2}"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_14",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "small = {1, 2}\nlarge = {1, 2, 3, 4}\nprint(small.issubset(large))",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "True",
+                            "False"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! All items in small are also in large.",
+                        "incorrectFeedback": "Check if all items in small are in large.",
+                        "explanation": "issubset() returns True because all items in small (1, 2) are also in large."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_15",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Loop through the set and print each item.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "fruits = {\"apple\", \"banana\", \"cherry\"}",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1} fruit {2} fruits:",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "    print(fruit)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "for",
+                            "in",
+                            "while"
+                        ],
+                        "solutions": {
+                            "1": "for",
+                            "2": "in"
+                        },
+                        "hint": "Use for...in to loop through a set.",
+                        "correctFeedback": "Perfect! You can loop through sets with for...in.",
+                        "incorrectFeedback": "Use for...in to loop through a set.",
+                        "explanation": "You can loop through sets just like lists, but the order is not guaranteed.",
+                        "output": "apple\nbanana\ncherry"
+                    }
+                }
+            ]
+        }
+    ]
+}

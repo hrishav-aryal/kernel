@@ -1,0 +1,552 @@
+{
+    "blocks": [
+        {
+            "id": "practice_1",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Practice",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "What is the data type of `42`?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "int",
+                            "str"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Whole numbers are integers.",
+                        "incorrectFeedback": "Numbers without quotes are integers (int).",
+                        "explanation": "Whole numbers without quotes or decimals are type int."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_2",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What is the data type of `\"42\"`?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "str",
+                            "int"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Quotes make it a string.",
+                        "incorrectFeedback": "Anything in quotes is a string (str).",
+                        "explanation": "The quotes make it text, not a number."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_3",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What is the data type of `3.14`?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "int",
+                            "float"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! Numbers with decimals are floats.",
+                        "incorrectFeedback": "Numbers with decimal points are floats.",
+                        "explanation": "The decimal point makes it a float (floating-point number)."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_4",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Use `type()` to check the data type.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "age = 25",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print({1}(age))",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "type",
+                            "typeof"
+                        ],
+                        "solutions": {
+                            "1": "type"
+                        },
+                        "hint": "Use the type() function to check data types.",
+                        "correctFeedback": "Perfect! type() shows what kind of data a variable holds.",
+                        "incorrectFeedback": "Use type() to check the data type.",
+                        "explanation": "type() tells you the data type of any value or variable.",
+                        "output": "<class 'int'>"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_5",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What is the data type of `True`?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "str",
+                            "bool"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! True and False are booleans.",
+                        "incorrectFeedback": "True and False are boolean values (bool).",
+                        "explanation": "Boolean type has only two values: True or False."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_5a",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a boolean variable called `is_ready` with value `True`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "is_ready = {1}",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "\"True\"",
+                            "True"
+                        ],
+                        "solutions": {
+                            "1": "True"
+                        },
+                        "hint": "Boolean values are True or False without quotes.",
+                        "correctFeedback": "Perfect! Booleans are written without quotes.",
+                        "incorrectFeedback": "Use True without quotes for boolean values.",
+                        "explanation": "True and False are boolean values without quotes.",
+                        "output": ""
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_6",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Convert the string `\"25\"` to an integer.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "age_text = \"25\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "age_number = {1}(age_text)",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "int",
+                            "str"
+                        ],
+                        "solutions": {
+                            "1": "int"
+                        },
+                        "hint": "Use int() to convert to an integer.",
+                        "correctFeedback": "Perfect! int() converts text to a number.",
+                        "incorrectFeedback": "Use int() to convert strings to integers.",
+                        "explanation": "int() changes text numbers into actual numbers.",
+                        "output": ""
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_7",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Convert the string `\"3.14\"` to a float.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "pi_text = \"3.14\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "pi_number = {1}(pi_text)",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "int",
+                            "float"
+                        ],
+                        "solutions": {
+                            "1": "float"
+                        },
+                        "hint": "Use float() for decimal numbers.",
+                        "correctFeedback": "Perfect! float() converts to decimal numbers.",
+                        "incorrectFeedback": "Use float() to convert to decimal numbers.",
+                        "explanation": "float() changes text to floating-point numbers.",
+                        "output": ""
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_7a",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "The code below converts `19.99` to an integer. What is the value stored in `price_int`?"
+                },
+                {
+                    "type": "code",
+                    "content": "price = 19.99\nprice_int = int(price)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "20",
+                            "19"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! int() removes the decimal part, it doesn't round.",
+                        "incorrectFeedback": "int() truncates (cuts off) the decimal part.",
+                        "explanation": "int() removes everything after the decimal point."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_8",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Convert the integer `100` to a string.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "score = 100",
+                                "indent": 0
+                            },
+                            {
+                                "code": "score_text = {1}(score)",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "str",
+                            "int"
+                        ],
+                        "solutions": {
+                            "1": "str"
+                        },
+                        "hint": "Use str() to convert to text.",
+                        "correctFeedback": "Perfect! str() converts numbers to text.",
+                        "incorrectFeedback": "Use str() to convert to strings.",
+                        "explanation": "str() changes any value into text.",
+                        "output": ""
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_9",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Can you add `\"5\"` + `3` without converting?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Yes, it returns 8",
+                            "No, it causes an error"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! You can't mix strings and numbers.",
+                        "incorrectFeedback": "Python can't add strings and numbers without conversion.",
+                        "explanation": "You must convert to the same type before adding."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_9a",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Can you convert the string `\"hello\"` to an integer?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "No, it causes an error",
+                            "Yes, it returns 0"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! You can only convert strings that contain numbers.",
+                        "incorrectFeedback": "int() only works with numerical strings like \"25\".",
+                        "explanation": "You can only convert strings that look like numbers."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_9b",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Which of these strings CAN be converted to an integer?",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "text = {1}",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "number = int(text)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "\"hello\"",
+                            "\"50\""
+                        ],
+                        "solutions": {
+                            "1": "\"50\""
+                        },
+                        "hint": "Only strings with valid numbers can be converted.",
+                        "correctFeedback": "Perfect! \"50\" looks like a number so it can convert.",
+                        "incorrectFeedback": "Choose a string that contains only numbers.",
+                        "explanation": "Strings must contain valid numbers to convert to int.",
+                        "output": ""
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_10",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Convert the string `num_text` to an integer to do math.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "num_text = \"10\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "result = {1}(num_text) + 5",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "str",
+                            "int"
+                        ],
+                        "solutions": {
+                            "1": "int"
+                        },
+                        "hint": "Convert to int to do math.",
+                        "correctFeedback": "Perfect! Now you can add numbers.",
+                        "incorrectFeedback": "Use int() to convert before doing math.",
+                        "explanation": "Convert strings to int before mathematical operations.",
+                        "output": ""
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_11",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Combine text with a number. Convert the score to a string first.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "score = 100",
+                                "indent": 0
+                            },
+                            {
+                                "code": "message = \"Score: \" + {1}(score)",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "int",
+                            "str"
+                        ],
+                        "solutions": {
+                            "1": "str"
+                        },
+                        "hint": "Convert numbers to str to combine with text.",
+                        "correctFeedback": "Perfect! str() lets you combine numbers with text.",
+                        "incorrectFeedback": "Use str() to convert numbers before concatenating.",
+                        "explanation": "Convert to str to join numbers with text.",
+                        "output": ""
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_12",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What does this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "x = \"20\"\ny = int(x)\nprint(y + 5)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "205",
+                            "25"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! int() converts \"20\" to 20, then adds 5.",
+                        "incorrectFeedback": "int() converts the string to a number first.",
+                        "explanation": "int(\"20\") becomes 20, then 20 + 5 = 25."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_14",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Which conversion turns `\"100\"` into a number for calculations?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "str(\"100\")",
+                            "int(\"100\")"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! int() converts text to a number.",
+                        "incorrectFeedback": "Use int() to convert strings to numbers.",
+                        "explanation": "int() changes text numbers into integers for math."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_15",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Convert `\"7.5\"` to a float and add 2.5 to it.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "temp_text = \"7.5\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "new_temp = {1}(temp_text) + 2.5",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "int",
+                            "float"
+                        ],
+                        "solutions": {
+                            "1": "float"
+                        },
+                        "hint": "Use float() for decimal numbers.",
+                        "correctFeedback": "Perfect! float() handles decimal numbers.",
+                        "incorrectFeedback": "Use float() to convert text with decimals.",
+                        "explanation": "float() converts text to decimal numbers for calculations.",
+                        "output": ""
+                    }
+                }
+            ]
+        }
+    ]
+}

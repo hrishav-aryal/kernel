@@ -1,0 +1,575 @@
+{
+    "blocks": [
+        {
+            "id": "ex_1",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Practice",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What does an `if` statement do?",
+                        "options": [
+                            "Runs code only when a condition is True",
+                            "Prints text",
+                            "Creates variables"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! if runs code only when the condition is True.",
+                        "incorrectFeedback": "if runs code only when the condition is True.",
+                        "explanation": "An if statement checks a condition. If the condition is True, the indented code runs."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_2",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What must come after an `if` condition?",
+                        "options": [
+                            "A colon `:`",
+                            "A semicolon `;`",
+                            "Parentheses `()`"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Every if statement needs a colon after the condition.",
+                        "incorrectFeedback": "if statements need a colon after the condition.",
+                        "explanation": "In Python, every if statement must end with a colon `:` before the indented code."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_3",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Check if it's raining using the `is_raining` variable.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "is_raining = True",
+                                "indent": 0
+                            },
+                            {
+                                "code": "if {1}:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(\"Take umbrella\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "is_raining",
+                            "False"
+                        ],
+                        "solutions": {
+                            "1": "is_raining"
+                        },
+                        "hint": "Use if is_raining: to check the Boolean variable.",
+                        "correctFeedback": "Perfect! if is_raining checks the Boolean variable.",
+                        "incorrectFeedback": "Use if is_raining: to check the Boolean variable.",
+                        "explanation": "Boolean variables can be used directly in if statements. Since is_raining is True, it prints Take umbrella.",
+                        "output": "Take umbrella"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_4",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "is_sunny = False\nif is_sunny:\n    print(\"Wear sunglasses\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Nothing",
+                            "Wear sunglasses"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Since is_sunny is False, the code inside if is skipped.",
+                        "incorrectFeedback": "When the condition is False, the indented code doesn't run.",
+                        "explanation": "Since is_sunny is False, the if condition is False. Python skips the indented code, so nothing prints."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_5",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Check if the user has access.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "has_access = True",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1} {2}{3}",
+                                "indent": 0,
+                                "blank": "1,2,3"
+                            },
+                            {
+                                "code": "    print(\"Welcome\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "has_access",
+                            "if",
+                            ":"
+                        ],
+                        "solutions": {
+                            "1": "if",
+                            "2": "has_access",
+                            "3": ":"
+                        },
+                        "hint": "Use if has_access: to check access.",
+                        "correctFeedback": "Great! if has_access: checks the Boolean variable.",
+                        "incorrectFeedback": "Use if has_access: to check access.",
+                        "explanation": "We use if has_access: to check the Boolean variable. Since has_access is True, it prints Welcome.",
+                        "output": "Welcome"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_6",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What happens when the `if` condition is `False`?",
+                        "options": [
+                            "The program crashes",
+                            "Python skips the indented code",
+                            "The code runs anyway"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! Python skips the if block when False.",
+                        "incorrectFeedback": "When False, Python skips the indented code.",
+                        "explanation": "When the if condition is False, Python skips the indented code and continues to the next line."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_7",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Check if `age` is at least `18`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "age = 20",
+                                "indent": 0
+                            },
+                            {
+                                "code": "if age {1} 18:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(\"Adult\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            ">",
+                            ">=",
+                            "=="
+                        ],
+                        "solutions": {
+                            "1": ">="
+                        },
+                        "hint": "Use >= to check at least 18.",
+                        "correctFeedback": "Perfect! >= checks if age is 18 or more.",
+                        "incorrectFeedback": "Use >= to check at least 18.",
+                        "explanation": ">= means greater than or equal to. Since age is 20, it prints Adult.",
+                        "output": "Adult"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_8",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Check if `score` is greater than `50`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "score = 75",
+                                "indent": 0
+                            },
+                            {
+                                "code": "if score {1} 50:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(\"Pass\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "<",
+                            ">",
+                            "=="
+                        ],
+                        "solutions": {
+                            "1": ">"
+                        },
+                        "hint": "Use > to check greater than 50.",
+                        "correctFeedback": "Great! > checks if score is greater than 50.",
+                        "incorrectFeedback": "Use > to check greater than 50.",
+                        "explanation": "> means greater than. Since score is 75, it prints Pass.",
+                        "output": "Pass"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_9",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "price = 10\nif price < 20:\n    print(\"Affordable\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Affordable",
+                            "Nothing"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! 10 is less than 20, so it prints Affordable.",
+                        "incorrectFeedback": "Check if 10 is less than 20.",
+                        "explanation": "Since 10 < 20 is True, the if block runs and prints Affordable."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_10",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What's wrong with this code?"
+                },
+                {
+                    "type": "code",
+                    "content": "age = 15\nif age >= 18\n    print(\"Can vote\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Missing colon `:` after the condition",
+                            "Missing parentheses `()`"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! if statements need a colon after the condition.",
+                        "incorrectFeedback": "if statements need a colon after the condition.",
+                        "explanation": "Every if statement must end with a colon `:` before the indented code block."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_11",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the if statement to check if `temperature` is below `15`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "temperature = 10",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1} {2} {3} {4}:",
+                                "indent": 0,
+                                "blank": "1,2,3,4"
+                            },
+                            {
+                                "code": "    print(\"Cold\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "temperature",
+                            "if",
+                            "<",
+                            "15"
+                        ],
+                        "solutions": {
+                            "1": "if",
+                            "2": "temperature",
+                            "3": "<",
+                            "4": "15"
+                        },
+                        "hint": "Use if to check if temperature is below 15.",
+                        "correctFeedback": "Great! if temperature < 15: checks the condition.",
+                        "incorrectFeedback": "Use if to check if temperature is below 15.",
+                        "explanation": "We use if temperature < 15: to check the condition. Since temperature is 10, it prints Cold.",
+                        "output": "Cold"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_12",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What's wrong with this code?"
+                },
+                {
+                    "type": "code",
+                    "content": "has_key = True\nif has_key:\nprint(\"Door unlocked\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Nothing",
+                            "Missing indentation for print statement"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! The print statement must be indented.",
+                        "incorrectFeedback": "Code inside if must be indented.",
+                        "explanation": "The code inside an if statement must be indented. Python uses indentation to know what code belongs to the if."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_13",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "Why does Python use indentation in `if` statements?",
+                        "options": [
+                            "To make code look pretty",
+                            "To show which code belongs inside the if"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! Indentation shows what code belongs to the if.",
+                        "incorrectFeedback": "Indentation shows what code belongs inside the if block.",
+                        "explanation": "Python uses indentation to define code blocks. All indented lines after the if belong to that if statement."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_14",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Check if `number` is equal to `10`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "number = 10",
+                                "indent": 0
+                            },
+                            {
+                                "code": "if number {1} 10:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(\"Found it\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "=",
+                            "==",
+                            "!="
+                        ],
+                        "solutions": {
+                            "1": "=="
+                        },
+                        "hint": "Use == to check equality.",
+                        "correctFeedback": "Perfect! == checks if two values are equal.",
+                        "incorrectFeedback": "Use == to check equality, not = which is for assignment.",
+                        "explanation": "== checks equality. = is for assignment. Since number equals 10, it prints Found it.",
+                        "output": "Found it"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_15",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "count = 5\nif count > 10:\n    print(\"Many\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Nothing",
+                            "Many"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! 5 is not > 10, so the code inside if is skipped.",
+                        "incorrectFeedback": "Check if 5 is greater than 10.",
+                        "explanation": "Since 5 > 10 is False, the if block is skipped and nothing prints."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_16",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Check if the game is ready to start.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "is_ready = True",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1} {2}:",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "    print(\"Let's play\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "if",
+                            "is_ready",
+                            "True"
+                        ],
+                        "solutions": {
+                            "1": "if",
+                            "2": "is_ready"
+                        },
+                        "hint": "Use if to check the Boolean variable.",
+                        "correctFeedback": "Great! Boolean variables work directly in if statements.",
+                        "incorrectFeedback": "Use if to check the Boolean variable.",
+                        "explanation": "We can use Boolean variables directly in if statements without comparison. Since is_ready is True, it prints Let's play.",
+                        "output": "Let's play"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_17",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Check if `balance` is enough to buy the item (price is 100).",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "balance = 150",
+                                "indent": 0
+                            },
+                            {
+                                "code": "if balance {1} 100:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(\"Can buy\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            ">=",
+                            "<",
+                            "=="
+                        ],
+                        "solutions": {
+                            "1": ">="
+                        },
+                        "hint": "Balance needs to be at least 100.",
+                        "correctFeedback": "Perfect! >= checks if balance is 100 or more.",
+                        "incorrectFeedback": "Balance needs to be at least 100.",
+                        "explanation": ">= checks if balance is at least 100. Since balance is 150, it prints Can buy.",
+                        "output": "Can buy"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,319 @@
+{
+    "blocks": [
+        {
+            "id": "intro_range_function",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Range Function",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `range()` function creates a sequence of numbers. It's very useful for creating loops that run a specific number of times."
+                },
+                {
+                    "type": "text",
+                    "content": "Instead of manually creating counters and conditions, `range()` gives you a clean way to generate numbers for counting."
+                }
+            ]
+        },
+        {
+            "id": "basic_range",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Basic Range",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The simplest way to use `range()` is with one number: `range(5)`. This creates numbers from 0 to 4 (5 numbers total)."
+                },
+                {
+                    "type": "text",
+                    "content": "`list()` is a function that converts a range into a list of numbers for printing. We will cover **lists** in more detail in later sections."
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = range(5)\nprint(list(numbers))",
+                    "properties": {
+                        "language": "python",
+                        "output": "[0, 1, 2, 3, 4]"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Notice that `range(5)` gives you 5 numbers starting from 0, so it goes from 0 to 4, not 1 to 5."
+                }
+            ]
+        },
+        {
+            "id": "range_with_start_stop",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can specify where to start and where to stop with `range(start, stop)`. The range includes the `start` number but stops before the `stop` number, so the `stop` number is not included."
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = range(2, 7)\nprint(list(numbers))",
+                    "properties": {
+                        "language": "python",
+                        "output": "[2, 3, 4, 5, 6]"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`range(2, 7)` starts at 2 and stops before 7, so it includes `2, 3, 4, 5, 6` but not `7`."
+                }
+            ]
+        },
+        {
+            "id": "range_with_step",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can also specify the step size with `range(start, stop, step)`."
+                },
+                {
+                    "type": "text",
+                    "content": "The **step** decides how much to add (or subtract) each time. For example, a step of 2 counts by twos. If you use a negative step, it counts backward."
+                },
+                {
+                    "type": "text",
+                    "content": "**Counting by 2s**"
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = range(0, 10, 2)\nprint(list(numbers))",
+                    "properties": {
+                        "language": "python",
+                        "output": "[0, 2, 4, 6, 8]"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "**Counting backwards**"
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = range(5, 0, -1)\nprint(list(numbers))",
+                    "properties": {
+                        "language": "python",
+                        "output": "[5, 4, 3, 2, 1]"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_basic_range",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a range that generates numbers `0, 1, 2, 3`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "numbers = range({1})",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(list(numbers))",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "3",
+                            "4",
+                            "5"
+                        ],
+                        "solutions": {
+                            "1": "4"
+                        },
+                        "hint": "Use range(4) to get numbers from 0 to 3.",
+                        "correctFeedback": "Perfect! range(4) creates numbers from 0 to 3.",
+                        "incorrectFeedback": "Use range(4) to get numbers from 0 to 3.",
+                        "explanation": "range(4) creates 4 numbers: 0, 1, 2, 3.",
+                        "output": "[0, 1, 2, 3]"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_start_stop",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a range that generates numbers `5, 6, 7, 8, 9`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "numbers = range({1}, {2})",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(list(numbers))",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "5",
+                            "9",
+                            "10"
+                        ],
+                        "solutions": {
+                            "1": "5",
+                            "2": "10"
+                        },
+                        "hint": "Use range(5, 10) to get numbers from 5 to 9.",
+                        "correctFeedback": "Great! range(5, 10) creates numbers from 5 to 9.",
+                        "incorrectFeedback": "Use range(5, 10) to get numbers from 5 to 9.",
+                        "explanation": "range(5, 10) starts at 5 and stops before 10, giving us 5, 6, 7, 8, 9.",
+                        "output": "[5, 6, 7, 8, 9]"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_step",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a range that counts by 3s to generate numbers `0, 3, 6, 9, 12`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "numbers = range(0, {1}, {2})",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(list(numbers))",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "15",
+                            "3",
+                            "12"
+                        ],
+                        "solutions": {
+                            "1": "15",
+                            "2": "3"
+                        },
+                        "hint": "Use range(0, 15, 3) to count by 3s from 0 to 12.",
+                        "correctFeedback": "Perfect! range(0, 15, 3) creates numbers 0, 3, 6, 9, 12.",
+                        "incorrectFeedback": "Use range(0, 15, 3) to count by 3s from 0 to 12.",
+                        "explanation": "range(0, 15, 3) starts at 0, stops before 15, and steps by 3.",
+                        "output": "[0, 3, 6, 9, 12]"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_common_patterns",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a range that counts backwards to generate numbers `3, 2, 1`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "numbers = range({1}, {2}, {3})",
+                                "indent": 0,
+                                "blank": "1,2,3"
+                            },
+                            {
+                                "code": "print(list(numbers))",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "0",
+                            "3",
+                            "-1"
+                        ],
+                        "solutions": {
+                            "1": "3",
+                            "2": "0",
+                            "3": "-1"
+                        },
+                        "hint": "Use range(3, 0, -1) to count backwards from 3 to 1.",
+                        "correctFeedback": "Perfect! range(3, 0, -1) creates numbers 3, 2, 1.",
+                        "incorrectFeedback": "Use range(3, 0, -1) to count backwards from 3 to 1.",
+                        "explanation": "range(3, 0, -1) starts at 3, stops before 0, and steps by -1 (backwards).",
+                        "output": "[3, 2, 1]"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_what_will_print_range",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = range(1, 6, 2)\nprint(list(numbers))",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "[1, 2, 3, 4, 5]",
+                            "[1, 3, 5]",
+                            "[2, 4, 6]"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! range(1, 6, 2) starts at 1, stops before 6, and steps by 2, giving [1, 3, 5].",
+                        "incorrectFeedback": "range(1, 6, 2) starts at 1, stops before 6, and steps by 2, giving [1, 3, 5].",
+                        "explanation": "The step of 2 means it skips every other number: 1, then 3, then 5."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "`range(n)` creates numbers from 0 to n-1",
+                            "`range(start, stop)` creates numbers from `start` to `stop-1`",
+                            "`range(start, stop, step)` creates numbers with a `step` size",
+                            "The `stop` number is non inclusive in the range"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

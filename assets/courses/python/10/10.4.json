@@ -1,0 +1,679 @@
+{
+    "blocks": [
+        {
+            "id": "ex_1",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Practice",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What is a class in Python?",
+                        "options": [
+                            "A blueprint or template for creating objects",
+                            "A type of variable"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! A class is a blueprint for creating objects.",
+                        "incorrectFeedback": "A class is a blueprint that defines structure and behavior.",
+                        "explanation": "Classes are templates that define what data and actions belong together."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_2",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create an empty class called `Car`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "{1} {2}:",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "    pass",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "class",
+                            "Car",
+                            "def"
+                        ],
+                        "solutions": {
+                            "1": "class",
+                            "2": "Car"
+                        },
+                        "hint": "Use class followed by the class name.",
+                        "correctFeedback": "Perfect! You created a class.",
+                        "incorrectFeedback": "Use class ClassName: to create a class.",
+                        "explanation": "Classes are created with the class keyword. Class names use CapitalCase."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_3",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What naming convention do class names use?",
+                        "options": [
+                            "CapitalCase (each word capitalized)",
+                            "snake_case (lowercase with underscores)"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Class names use CapitalCase.",
+                        "incorrectFeedback": "Class names use CapitalCase, not snake_case.",
+                        "explanation": "Class names use CapitalCase (e.g., BankAccount, GameCharacter). Variables use snake_case."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_4",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code create?"
+                },
+                {
+                    "type": "code",
+                    "content": "class Dog:\n    pass\n\nmy_dog = Dog()",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "An object (instance) of the Dog class",
+                            "A new class"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Dog() creates an object from the class.",
+                        "incorrectFeedback": "Dog() creates an object, not another class.",
+                        "explanation": "When you call ClassName(), you create an object (instance) from that class."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_5",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create an object from the `Person` class.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "class Person:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    pass",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "person1 = {1}()",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "Person",
+                            "person",
+                            "class"
+                        ],
+                        "solutions": {
+                            "1": "Person"
+                        },
+                        "hint": "Use the class name with parentheses.",
+                        "correctFeedback": "Great! You created an object from the class.",
+                        "incorrectFeedback": "Call the class name with () to create an object.",
+                        "explanation": "To create an object, call the class name like a function: ClassName()."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_6",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "class Car:\n    pass\n\ncar1 = Car()\ncar2 = Car()\n\ncar1.brand = \"Toyota\"\ncar2.brand = \"Honda\"\n\nprint(car1.brand)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Toyota",
+                            "Honda"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Each object stores its own data.",
+                        "incorrectFeedback": "Each object has independent attributes.",
+                        "explanation": "car1 and car2 are separate objects. car1.brand is \"Toyota\", car2.brand is \"Honda\"."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_7",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Set the `color` attribute of the car object.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "class Car:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    pass",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "my_car = Car()",
+                                "indent": 0
+                            },
+                            {
+                                "code": "my_car.{1} = {2}",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(my_car.color)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "color",
+                            "\"red\"",
+                            "brand"
+                        ],
+                        "solutions": {
+                            "1": "color",
+                            "2": "\"red\""
+                        },
+                        "hint": "Use object.attribute = value.",
+                        "correctFeedback": "Perfect! You set an attribute on the object.",
+                        "incorrectFeedback": "Use object.attribute_name = value to set attributes.",
+                        "explanation": "Attributes are set using object.attribute = value syntax.",
+                        "output": "red"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_8",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What are methods?",
+                        "options": [
+                            "Functions defined inside a class",
+                            "Variables in a class"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Methods are functions that belong to a class.",
+                        "incorrectFeedback": "Methods are functions defined inside classes.",
+                        "explanation": "Methods are functions that belong to a class and can work with the object's data."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_9",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a method called `bark` in the `Dog` class.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "class Dog:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    {1} bark({2}):",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "        print(\"Woof!\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "dog = Dog()",
+                                "indent": 0
+                            },
+                            {
+                                "code": "dog.bark()",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "def",
+                            "self",
+                            "method"
+                        ],
+                        "solutions": {
+                            "1": "def",
+                            "2": "self"
+                        },
+                        "hint": "Methods use def and must have self as first parameter.",
+                        "correctFeedback": "Perfect! You created a method.",
+                        "incorrectFeedback": "Use def method_name(self): to create methods.",
+                        "explanation": "Methods are defined with def and always take self as the first parameter.",
+                        "output": "Woof!"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_10",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "class Cat:\n    def meow(self):\n        print(\"Meow!\")\n\ncat = Cat()\ncat.meow()",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Meow!",
+                            "Nothing"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Calling cat.meow() runs the method.",
+                        "incorrectFeedback": "The method runs when called.",
+                        "explanation": "When you call object.method(), it executes the code inside that method."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_11",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "Why do methods need the `self` parameter?",
+                        "options": [
+                            "To access the object's own data",
+                            "To make the code longer"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! self lets methods access the object's attributes.",
+                        "incorrectFeedback": "self lets methods know which object they're working with.",
+                        "explanation": "self refers to the object itself, allowing methods to access and modify that object's attributes."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_12",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "class Dog:\n    def set_name(self, name):\n        self.name = name\n    \n    def bark(self):\n        print(f\"{self.name} says Woof!\")\n\ndog = Dog()\ndog.set_name(\"Buddy\")\ndog.bark()",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Buddy says Woof!",
+                            "Woof!"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! The method accesses self.name.",
+                        "incorrectFeedback": "Methods can access attributes using self.",
+                        "explanation": "self.name lets the bark method access the name attribute that was set by set_name."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_13",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the method to access the object's `age` attribute.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "class Person:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    def show_age(self):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        print({1})",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "person = Person()",
+                                "indent": 0
+                            },
+                            {
+                                "code": "person.age = 25",
+                                "indent": 0
+                            },
+                            {
+                                "code": "person.show_age()",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "age",
+                            "self.age"
+                        ],
+                        "solutions": {
+                            "1": "self.age"
+                        },
+                        "hint": "Use self.attribute_name to access attributes.",
+                        "correctFeedback": "Great! You accessed the attribute using self.",
+                        "incorrectFeedback": "Use self.age to access the age attribute.",
+                        "explanation": "Methods access object attributes using self.attribute_name.",
+                        "output": "25"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_14",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "When does the `__init__` method run?",
+                        "options": [
+                            "Automatically when creating a new object",
+                            "When you call it manually"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! __init__ runs automatically during object creation.",
+                        "incorrectFeedback": "__init__ runs automatically when objects are created.",
+                        "explanation": "__init__ is called a constructor because it constructs (initializes) new objects."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_15",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Add an `__init__` method to initialize the `title` attribute.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "class Book:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    def {1}(self, title):",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "        self.title = title",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "book = Book(\"Python Basics\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(book.title)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "__init__",
+                            "init",
+                            "constructor"
+                        ],
+                        "solutions": {
+                            "1": "__init__"
+                        },
+                        "hint": "Use __init__ with double underscores.",
+                        "correctFeedback": "Perfect! You added an __init__ method.",
+                        "incorrectFeedback": "Use __init__ (with double underscores before and after).",
+                        "explanation": "__init__ is a special method that initializes objects with starting values.",
+                        "output": "Python Basics"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_16",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "class Car:\n    def __init__(self, brand):\n        self.brand = brand\n\ncar1 = Car(\"Toyota\")\ncar2 = Car(\"Honda\")\n\nprint(car1.brand)\nprint(car2.brand)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Toyota\nHonda",
+                            "Honda\nToyota"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Each object gets its own brand value.",
+                        "incorrectFeedback": "Check what values were passed to each object.",
+                        "explanation": "__init__ automatically sets the brand when objects are created. car1 gets \"Toyota\", car2 gets \"Honda\"."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_17",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the `__init__` method to initialize both `name` and `age`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "class Person:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    def __init__(self, name, age):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        {1} = name",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "        {2} = age",
+                                "indent": 0,
+                                "blank": "2"
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "person = Person(\"Alice\", 25)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(person.name)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "self.name",
+                            "self.age",
+                            "name",
+                            "age"
+                        ],
+                        "solutions": {
+                            "1": "self.name",
+                            "2": "self.age"
+                        },
+                        "hint": "Use self to set attributes.",
+                        "correctFeedback": "Great! You initialized multiple attributes.",
+                        "incorrectFeedback": "Use self.attribute = value to set attributes.",
+                        "explanation": "In __init__, use self.attribute = parameter to set attributes from the parameters.",
+                        "output": "Alice"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_18",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "class Dog:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n    \n    def bark(self):\n        print(f\"{self.name} is {self.age} years old\")\n\ndog = Dog(\"Buddy\", 3)\ndog.bark()",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Buddy is 3 years old",
+                            "Nothing"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! The method prints the string.",
+                        "incorrectFeedback": "The method prints the string.",
+                        "explanation": "The method prints the string 'Buddy is 3 years old'."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_19",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "class Counter:\n    def __init__(self):\n        self.count = 0\n    \n    def increment(self):\n        self.count = self.count + 1\n\ncounter = Counter()\ncounter.increment()\ncounter.increment()\nprint(counter.count)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "2",
+                            "1"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! increment was called twice, so count is 2.",
+                        "incorrectFeedback": "Count how many times increment was called.",
+                        "explanation": "__init__ sets count to 0. Each call to increment adds 1. Called twice: 0 → 1 → 2."
+                    }
+                }
+            ]
+        }
+    ]
+}

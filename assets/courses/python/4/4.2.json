@@ -1,0 +1,482 @@
+{
+    "blocks": [
+        {
+            "id": "intro_accessing_lists",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Accessing List Items",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Once you have a list, you need to be able to get individual items from it. Each item in a list has a position called an **index**."
+                },
+                {
+                    "type": "text",
+                    "content": "You can access any item in a list by using its index inside square brackets `[]`."
+                }
+            ]
+        },
+        {
+            "id": "basic_indexing",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Index Basics",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "In Python, list indexing starts at `0`. This means the first item is at index `0`, the second item is at index `1`, and so on."
+                },
+                {
+                    "type": "code",
+                    "content": "fruits = [\"apple\", \"banana\", \"orange\"]\nprint(fruits[0])",
+                    "properties": {
+                        "language": "python",
+                        "output": "apple"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`fruits[0]` gives you the first item in the list, which is `\"apple\"`."
+                }
+            ]
+        },
+        {
+            "id": "accessing_different_positions",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can access any position in the list by changing the index number."
+                },
+                {
+                    "type": "code",
+                    "content": "fruits = [\"apple\", \"banana\", \"orange\"]\nprint(fruits[1])\nprint(fruits[2])",
+                    "properties": {
+                        "language": "python",
+                        "output": "banana\norange"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`fruits[1]` gives you `\"banana\"` and `fruits[2]` gives you `\"orange\"`."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_basic_index",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Access the first item in the list.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "colors = [\"red\", \"green\", \"blue\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(colors[{1}])",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "0",
+                            "1"
+                        ],
+                        "solutions": {
+                            "1": "0"
+                        },
+                        "hint": "Lists start at index 0.",
+                        "correctFeedback": "Perfect! Index 0 gives you the first item.",
+                        "incorrectFeedback": "Lists start at index 0, so the first item is at index 0.",
+                        "explanation": "Python lists use zero-based indexing, so the first item is at index 0.",
+                        "output": "red"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_second_item",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Access the second item in the list.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "colors = [\"red\", \"green\", \"blue\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(colors[{1}])",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "2",
+                            "1"
+                        ],
+                        "solutions": {
+                            "1": "1"
+                        },
+                        "hint": "The second item is at index 1.",
+                        "correctFeedback": "Great! Index 1 gives you the second item.",
+                        "incorrectFeedback": "The second item is at index 1.",
+                        "explanation": "Since lists start at 0, the second item is at index 1.",
+                        "output": "green"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_what_will_print",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = [10, 20, 30, 40]\nprint(numbers[2])",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "20",
+                            "30",
+                            "40"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! Index 2 is the third item, which is 30.",
+                        "incorrectFeedback": "Index 2 is the third item. Remember, lists start at index 0.",
+                        "explanation": "Index 2 gives you the third item: 10 is at index 0, 20 is at index 1, and 30 is at index 2."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "negative_indexing",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Negative Indexing",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "You can also use negative indices to access items from the end of the list. `-1` gives you the last item, `-2` gives you the second-to-last item, and so on."
+                },
+                {
+                    "type": "code",
+                    "content": "fruits = [\"apple\", \"banana\", \"orange\"]\nprint(fruits[-1])",
+                    "properties": {
+                        "language": "python",
+                        "output": "orange"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`fruits[-1]` gives you the last item in the list, which is `\"orange\"`."
+                }
+            ]
+        },
+        {
+            "id": "negative_indexing_more",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Negative indexing is useful when you want to get items from the end without knowing the exact length of the list."
+                },
+                {
+                    "type": "code",
+                    "content": "fruits = [\"apple\", \"banana\", \"orange\"]\nprint(fruits[-2])\nprint(fruits[-3])",
+                    "properties": {
+                        "language": "python",
+                        "output": "banana\napple"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`fruits[-2]` gives you the second-to-last item and `fruits[-3]` gives you the third-to-last item."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_negative_index",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Access the last item in the list using negative indexing.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "colors = [\"red\", \"green\", \"blue\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(colors[{1}])",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "-1",
+                            "-3"
+                        ],
+                        "solutions": {
+                            "1": "-1"
+                        },
+                        "hint": "Use -1 to access the last item.",
+                        "correctFeedback": "Perfect! Index -1 gives you the last item.",
+                        "incorrectFeedback": "Use -1 to access the last item.",
+                        "explanation": "Negative index -1 always gives you the last item in the list.",
+                        "output": "blue"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_negative_what_prints",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = [5, 10, 15, 20]\nprint(numbers[-2])",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "10",
+                            "15",
+                            "20"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! Index -2 gives you the second-to-last item, which is 15.",
+                        "incorrectFeedback": "Index -2 gives you the second-to-last item, which is 15.",
+                        "explanation": "Negative index -2 gives you the second-to-last item: 20 is at -1, and 15 is at -2."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "index_errors",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Index Out of Range",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "**Be careful!** If you try to access an index that doesn't exist, you'll get an error."
+                },
+                {
+                    "type": "code",
+                    "content": "fruits = [\"apple\", \"banana\"]\nprint(fruits[5])",
+                    "properties": {
+                        "language": "python",
+                        "output": "Error: list index out of range"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "This list only has 2 items (at indices 0 and 1), so trying to access index 5 causes an error."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_index_error",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Which index will cause an error?"
+                },
+                {
+                    "type": "code",
+                    "content": "colors = [\"red\", \"green\", \"blue\"]",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "colors[2]",
+                            "colors[3]",
+                            "colors[-1]"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! The list has 3 items (indices 0, 1, 2), so index 3 doesn't exist.",
+                        "incorrectFeedback": "The list has indices 0, 1, and 2. Index 3 is out of range.",
+                        "explanation": "The list has 3 items at indices 0, 1, and 2. Index 3 would be the fourth item, which doesn't exist."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "using_variables_as_index",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can also use variables as indices. This is useful when you want to access different positions based on some logic."
+                },
+                {
+                    "type": "code",
+                    "content": "fruits = [\"apple\", \"banana\", \"orange\"]\nposition = 1\nprint(fruits[position])",
+                    "properties": {
+                        "language": "python",
+                        "output": "banana"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The variable `position` holds the value `1`, so `fruits[position]` is the same as `fruits[1]`."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_variable_index",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Use a variable to access the first item in the list.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "numbers = [100, 200, 300]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "index = {1}",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(numbers[{2}])",
+                                "indent": 0,
+                                "blank": "2"
+                            }
+                        ],
+                        "options": [
+                            "0",
+                            "1",
+                            "index"
+                        ],
+                        "solutions": {
+                            "1": "0",
+                            "2": "index"
+                        },
+                        "hint": "The first item is at index 0.",
+                        "correctFeedback": "Perfect! Setting index to 0 gives you the first item.",
+                        "incorrectFeedback": "The first item is at index 0.",
+                        "explanation": "The variable index is set to 0, which accesses the first item in the list.",
+                        "output": "100"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_combining_concepts",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Print both the first and last items from the list.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "scores = [85, 92, 78, 96, 88]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(scores[{1}])",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(scores[{2}])",
+                                "indent": 0,
+                                "blank": "2"
+                            }
+                        ],
+                        "options": [
+                            "-1",
+                            "0",
+                            "1"
+                        ],
+                        "solutions": {
+                            "1": "0",
+                            "2": "-1"
+                        },
+                        "hint": "First item is at index 0, last item is at index -1.",
+                        "correctFeedback": "Excellent! You accessed the first item with 0 and the last item with -1.",
+                        "incorrectFeedback": "Use index 0 for the first item and -1 for the last item.",
+                        "explanation": "Index 0 gives the first item (85) and index -1 gives the last item (88).",
+                        "output": "85\n88"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "Use `list[index]` to access items in a list",
+                            "Lists start at index `0` (first item is `list[0]`)",
+                            "Negative indices count from the end (`-1` is the last item)",
+                            "Accessing an index that doesn't exist causes an error",
+                            "You can use variables as indices"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,447 @@
+{
+    "blocks": [
+        {
+            "id": "intro_finding",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Finding in Lists",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Sometimes you need to find the position of a specific item in a list. Python's `index()` method helps you locate where an item is."
+                },
+                {
+                    "type": "text",
+                    "content": "This is useful when you know what you're looking for and need to know where it is."
+                }
+            ]
+        },
+        {
+            "id": "index_method",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "The index() Method",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `index()` method finds the position (index) of the **first occurrence** of a value in a list."
+                },
+                {
+                    "type": "code",
+                    "content": "fruits = [\"apple\", \"banana\", \"orange\"]\nposition = fruits.index(\"banana\")\nprint(f\"Banana is at index {position}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Banana is at index 1"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`index(\"banana\")` found that `\"banana\"` is at index `1`."
+                }
+            ]
+        },
+        {
+            "id": "index_numbers",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can find the index of any value, including numbers."
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = [10, 20, 30, 40]\nposition = numbers.index(30)\nprint(position)",
+                    "properties": {
+                        "language": "python",
+                        "output": "2"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The number `30` is at index `2` in the list."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_index",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Find the position of `\"green\"` in the list.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "colors = [\"red\", \"green\", \"blue\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "position = colors.{1}({2})",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(position)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "index",
+                            "\"green\"",
+                            "find"
+                        ],
+                        "solutions": {
+                            "1": "index",
+                            "2": "\"green\""
+                        },
+                        "hint": "Use index(\"green\") to find where \"green\" is located.",
+                        "correctFeedback": "Perfect! index(\"green\") found it at position 1.",
+                        "incorrectFeedback": "Use index(\"green\") to find the position of \"green\".",
+                        "explanation": "index() returns the position where the value is found.",
+                        "output": "1"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_index_output",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "letters = [\"a\", \"b\", \"c\", \"d\"]\nprint(letters.index(\"c\"))",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "3",
+                            "2",
+                            "\"c\""
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! \"c\" is at index 2 (remember, indexing starts at 0).",
+                        "incorrectFeedback": "\"c\" is at index 2. Remember that lists start at index 0.",
+                        "explanation": "\"c\" is the third item, which is at index 2: a=0, b=1, c=2."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "index_first_occurrence",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "If a value appears multiple times, `index()` only returns the position of the **first occurrence**."
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = [5, 10, 5, 20, 5]\nposition = numbers.index(5)\nprint(position)",
+                    "properties": {
+                        "language": "python",
+                        "output": "0"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Even though `5` appears three times, `index()` returns `0` (the first occurrence)."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_first_occurrence",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "words = [\"hi\", \"bye\", \"hi\", \"hello\"]\nprint(words.index(\"hi\"))",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "0",
+                            "2",
+                            "Both 0 and 2"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! index() returns 0, the position of the first \"hi\".",
+                        "incorrectFeedback": "index() only returns the first occurrence, which is at position 0.",
+                        "explanation": "index() finds the first occurrence of \"hi\", which is at index 0."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "index_error",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Handling Errors",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "**Be careful!** If you try to find a value that doesn't exist in the list, `index()` will cause an error."
+                },
+                {
+                    "type": "code",
+                    "content": "colors = [\"red\", \"green\", \"blue\"]\nposition = colors.index(\"yellow\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Error: 'yellow' is not in list"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Since `\"yellow\"` is not in the list, `index()` raises an error."
+                }
+            ]
+        },
+        {
+            "id": "checking_before_index",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "To avoid errors, you can check if the value exists using the `in` operator before calling `index()`."
+                },
+                {
+                    "type": "code",
+                    "content": "fruits = [\"apple\", \"banana\", \"orange\"]\n\nif \"grape\" in fruits:\n    position = fruits.index(\"grape\")\n    print(f\"Found at {position}\")\nelse:\n    print(\"Grape not found\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Grape not found"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "By checking with `in` first, we avoid the error and handle the missing value gracefully."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_safe_index",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Check if `\"python\"` exists in the list `languages` before finding its index.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "languages = [\"java\", \"python\", \"c++\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "if \"python\" {1} languages:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    position = languages.{2}(\"python\")",
+                                "indent": 0,
+                                "blank": "2"
+                            },
+                            {
+                                "code": "    print(f\"Found at {position}\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "index",
+                            "exists",
+                            "in"
+                        ],
+                        "solutions": {
+                            "1": "in",
+                            "2": "index"
+                        },
+                        "hint": "Use in to check if it exists, then index() to find its position.",
+                        "correctFeedback": "Perfect! You checked with in before using index() to avoid errors.",
+                        "incorrectFeedback": "Use in to check existence, then index() to find the position.",
+                        "explanation": "Checking with in first prevents errors if the value doesn't exist.",
+                        "output": "Found at 1"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_error_scenario",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What happens when you run this code?"
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = [1, 2, 3]\nprint(numbers.index(5))",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "0",
+                            "-1",
+                            "Error"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! index() causes an error when the value is not in the list.",
+                        "incorrectFeedback": "index() raises an error if the value doesn't exist in the list.",
+                        "explanation": "Since 5 is not in the list, index(5) causes an error."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_practical",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Find where `\"milk\"` is in the `shopping` list.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "shopping = [\"bread\", \"milk\", \"eggs\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "position = shopping.{1}({2})",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(f\"Milk is at position {position}\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "find",
+                            "\"milk\"",
+                            "index"
+                        ],
+                        "solutions": {
+                            "1": "index",
+                            "2": "\"milk\""
+                        },
+                        "hint": "Use index(\"milk\") to find where milk is located.",
+                        "correctFeedback": "Great! You found milk at position 1.",
+                        "incorrectFeedback": "Use index(\"milk\") to find the position of milk.",
+                        "explanation": "index(\"milk\") returns 1, the position of milk in the list.",
+                        "output": "Milk is at position 1"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_comprehensive",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Check if `90` exists in the `scores` list, then find and print its position.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "scores = [85, 90, 95, 90]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "if 90 {1} scores:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    position = scores.{2}(90)",
+                                "indent": 0,
+                                "blank": "2"
+                            },
+                            {
+                                "code": "    print(f\"First 90 is at {position}\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "index",
+                            "find",
+                            "in"
+                        ],
+                        "solutions": {
+                            "1": "in",
+                            "2": "index"
+                        },
+                        "hint": "Use in to check, then index(90) to find the first occurrence.",
+                        "correctFeedback": "Excellent! You safely found the first occurrence of 90.",
+                        "incorrectFeedback": "Use in to check existence, then index(90) to find the position.",
+                        "explanation": "Checking with in prevents errors, and index(90) finds the first 90 at position 1.",
+                        "output": "First 90 is at 1"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "Use `index(value)` to find the **position** of a value in a list",
+                            "`index()` returns the position of the **first occurrence** only",
+                            "`index()` causes an **error** if the value is not in the list",
+                            "Use `in` to check if a value exists before calling `index()`",
+                            "Remember that list positions start at `0`"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

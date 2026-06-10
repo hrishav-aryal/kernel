@@ -1,0 +1,406 @@
+{
+    "blocks": [
+        {
+            "id": "intro_match_statements",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Match Statements",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `match` statement is a powerful way to check a value against multiple patterns. It's like a more elegant version of `if-elif-else` chains when you're comparing the same variable to different values."
+                }
+            ]
+        },
+        {
+            "id": "basic_match_statement",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Basic Match Statement",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "A `match` statement starts with `match`, followed by the value you want to check, then `case` statements for each possible value."
+                },
+                {
+                    "type": "text",
+                    "content": "The `match` expression is evaluated once.\nThe value is compared with each `case`.\nIf a match is found, the corresponding code block runs."
+                },
+                {
+                    "type": "code",
+                    "content": "day = \"Monday\"\n\nmatch day:\n    case \"Monday\":\n        print(\"Start of work week\")\n    case \"Friday\":\n        print(\"TGIF!\")\n",
+                    "properties": {
+                        "language": "python",
+                        "output": "Start of work week"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "match_with_default",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "The `case _:` (underscore) is the default case that matches anything. It's like the `else` in an `if-elif-else` statement."
+                },
+                {
+                    "type": "code",
+                    "content": "grade = \"D\"\n\nmatch grade:\n    case \"A\":\n        print(\"Excellent!\")\n    case \"B\":\n        print(\"Good job!\")\n    case \"C\":\n        print(\"Not bad\")\n    case _:\n        print(\"Keep trying\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Keep trying"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_basic_match",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the match statement to check the weather.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "weather = \"sunny\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1}:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    case \"sunny\":",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        print(\"Wear sunscreen\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "match weather",
+                            "if weather"
+                        ],
+                        "solutions": {
+                            "1": "match weather"
+                        },
+                        "hint": "Use match to start the match statement.",
+                        "correctFeedback": "Perfect! match weather: starts the match statement.",
+                        "incorrectFeedback": "Use match to start the match statement.",
+                        "explanation": "match weather: tells Python to check the weather variable against different cases.",
+                        "output": "Wear sunscreen"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_basic_match",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Lets add a case to the match statement to check if the weather is rainy.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "weather = \"sunny\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "match weather:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    case \"sunny\":",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        print(\"Wear sunscreen\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    {1}:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "        print(\"Take an umbrella\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "case \"sunny\"",
+                            "case \"rainy\""
+                        ],
+                        "solutions": {
+                            "1": "case \"rainy\""
+                        },
+                        "hint": "Use case \"rainy\" to handle the rainy weather.",
+                        "correctFeedback": "Perfect! case \"rainy\" handles the rainy weather.",
+                        "incorrectFeedback": "Use case \"rainy\" to handle the rainy weather.",
+                        "explanation": "case \"rainy\" handles the rainy weather.",
+                        "output": "Take an umbrella"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_basic_match",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Add a default case to the match statement to handle any other weather.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "weather = \"cloudy\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "match weather:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    case \"sunny\":",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        print(\"Wear sunscreen\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    case \"rainy\":",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        print(\"Take an umbrella\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    {1}:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "        print(\"Unknown weather\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "case default",
+                            "case _"
+                        ],
+                        "solutions": {
+                            "1": "case _"
+                        },
+                        "hint": "Use case _: to handle any other weather.",
+                        "correctFeedback": "Perfect! case _: handles any other weather.",
+                        "incorrectFeedback": "Use case _: to handle any other weather.",
+                        "explanation": "case _: handles any other weather.",
+                        "output": "Unknown weather"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "match_vs_if_elif",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Match statements** are cleaner when you're checking the same variable against multiple values."
+                },
+                {
+                    "type": "text",
+                    "content": "Let's look at both approaches for checking the color of a traffic light."
+                }
+            ]
+        },
+        {
+            "id": "match_vs_if_elif",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Using `if-elif-else`"
+                },
+                {
+                    "type": "code",
+                    "content": "color = \"red\"\n\nif color == \"red\":\n    print(\"Stop\")\nelif color == \"yellow\":\n    print(\"Slow down\")\nelif color == \"green\":\n    print(\"Go\")\nelse:\n    print(\"Unknown color\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Stop"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "match_vs_if_elif",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Using `match`"
+                },
+                {
+                    "type": "code",
+                    "content": "color = \"red\"\n\nmatch color:\n    case \"red\":\n        print(\"Stop\")\n    case \"yellow\":\n        print(\"Slow down\")\n    case \"green\":\n        print(\"Go\")\n    case _:\n        print(\"Unknown color\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Stop"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_traffic_light",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a traffic light system using match. Check the light color and give appropriate advice.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "light = \"green\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "match light:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    case {1}:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "        print(\"Stop!\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    case {2}:",
+                                "indent": 0,
+                                "blank": "2"
+                            },
+                            {
+                                "code": "        print(\"Slow down!\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    case {3}:",
+                                "indent": 0,
+                                "blank": "3"
+                            },
+                            {
+                                "code": "        print(\"Go!\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    case _:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        print(\"Unknown light\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "\"green\"",
+                            "\"yellow\"",
+                            "\"red\""
+                        ],
+                        "solutions": {
+                            "1": "\"red\"",
+                            "2": "\"yellow\"",
+                            "3": "\"green\""
+                        },
+                        "hint": "Use \"red\" for the stop case, \"yellow\" for the slow down case, and \"green\" for the go case.",
+                        "correctFeedback": "Perfect! case \"red\": handles the stop case, case \"yellow\": handles the slow down case, and case \"green\": handles the go case.",
+                        "incorrectFeedback": "Use \"red\" for the stop case, \"yellow\" for the slow down case, and \"green\" for the go case.",
+                        "explanation": "case \"red\": matches when the light is red, allowing traffic to stop, case \"yellow\": matches when the light is yellow, allowing traffic to slow down, and case \"green\": matches when the light is green, allowing traffic to go.",
+                        "output": "Go!"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_what_will_print_match",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "light = \"blue\"\n\nmatch light:\n    case \"red\":\n        print(\"Stop!\")\n    case \"yellow\":\n        print(\"Slow down!\")\n    case \"green\":\n        print(\"Go!\")\n    case _:\n        print(\"Unknown light\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Stop!",
+                            "Unknown light",
+                            "Slow down!",
+                            "Go!"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! light is \"blue\", so it matches the default case and prints \"Unknown light\".",
+                        "incorrectFeedback": "light is \"blue\", so it matches the default case and prints \"Unknown light\".",
+                        "explanation": "light is \"blue\", so it matches the default case and prints \"Unknown light\"."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "`match` statements check a value against multiple patterns",
+                            "Use `case` for each possible value",
+                            "`case _:` is the default case (like `else`)"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

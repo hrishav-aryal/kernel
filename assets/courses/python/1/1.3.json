@@ -1,0 +1,375 @@
+{
+    "blocks": [
+        {
+            "id": "intro_using_variables",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Using Variables",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Now that you know how to create variables, let's learn how to use them effectively. Variables become powerful when you use them in different ways throughout your program."
+                }
+            ]
+        },
+        {
+            "id": "variables_in_print",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Variables in Print Statements",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "You can use variables inside `print()` statements to display their values. This makes your output dynamic and flexible."
+                },
+                {
+                    "type": "code",
+                    "content": "name = \"Alice\"\n\nprint(name)",
+                    "properties": {
+                        "language": "python",
+                        "caption": "Using variables in print statements",
+                        "output": "Alice"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_create_variable",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a variable called `city`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "{1} = \"Paris\"",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "city"
+                        ],
+                        "solutions": {
+                            "1": "city"
+                        },
+                        "hint": "Use the variable name 'city'",
+                        "correctFeedback": "Great! You created the city variable.",
+                        "incorrectFeedback": "Use 'city' as the variable name",
+                        "explanation": "Create variables to store values you want to use later."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_print_variables",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Now use the `city` variable to print a message.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "city = \"Paris\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(\"I live in \" + {1})",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "city"
+                        ],
+                        "solutions": {
+                            "1": "city"
+                        },
+                        "hint": "Use the variable name inside the print statement",
+                        "correctFeedback": "Great! You used the variable to create a dynamic message.",
+                        "incorrectFeedback": "Use the variable name 'city' in the print statement",
+                        "explanation": "Variables make your messages dynamic and reusable.",
+                        "output": "I live in Paris"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "multiple_variables",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Working with Multiple Variables",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "You can create and use multiple variables in the same program. Each variable stores its own value independently."
+                },
+                {
+                    "type": "code",
+                    "content": "# Create multiple variables\nname = \"Alice\"\ncity = \"New York\"\n\nprint(\"Name: \" + name)\nprint(\"City: \" + city)",
+                    "properties": {
+                        "language": "python",
+                        "caption": "Multiple variables working together",
+                        "output": "Name: Alice\nCity: New York"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_create_two_variables",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create two variables: `name` with **\"Alice\"** and `age` with **25**.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "{1} = \"Alice\"",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "{2} = 25",
+                                "indent": 0,
+                                "blank": "2"
+                            }
+                        ],
+                        "options": [
+                            "name",
+                            "age"
+                        ],
+                        "solutions": {
+                            "1": "name",
+                            "2": "age"
+                        },
+                        "hint": "Create 'name' first, then 'age'",
+                        "correctFeedback": "Excellent! You created both variables.",
+                        "incorrectFeedback": "Create 'name' and 'age' variables",
+                        "explanation": "You can create multiple variables to store different types of data.",
+                        "output": ""
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_use_both_variables",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Now use both variables to print information about the person.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "name = \"Alice\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "age = 25",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(\"Name: \" + {1})",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(\"Age: \" + str({2}))",
+                                "indent": 0,
+                                "blank": "2"
+                            }
+                        ],
+                        "options": [
+                            "name",
+                            "age"
+                        ],
+                        "solutions": {
+                            "1": "name",
+                            "2": "age"
+                        },
+                        "hint": "Use 'name' first, then 'age' (remember str() for numbers)",
+                        "correctFeedback": "Perfect! You used both variables correctly.",
+                        "incorrectFeedback": "Use 'name' first, then 'age' with str()",
+                        "explanation": "Use str() to convert numbers to text before adding to strings.",
+                        "output": "Name: Alice\nAge: 25"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "variables_in_calculations",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Variables in Calculations",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Variables can store numbers and be used in calculations. This makes your code more flexible and easier to modify."
+                },
+                {
+                    "type": "code",
+                    "content": "# Store numbers in variables\nlength = 10\nwidth = 5\n\n# Use variables in calculations\narea = length * width",
+                    "properties": {
+                        "language": "python",
+                        "caption": "Using variables in calculations"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_create_calculation_variables",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create variables for a calculation: `length` with **10** and `width` with **5**.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "{1} = 10",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "{2} = 5",
+                                "indent": 0,
+                                "blank": "2"
+                            }
+                        ],
+                        "options": [
+                            "length",
+                            "width"
+                        ],
+                        "solutions": {
+                            "1": "length",
+                            "2": "width"
+                        },
+                        "hint": "Create 'length' first, then 'width'",
+                        "correctFeedback": "Great! You created the calculation variables.",
+                        "incorrectFeedback": "Create 'length' and 'width' variables",
+                        "explanation": "Create variables to store the values you want to calculate with.",
+                        "output": ""
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_perform_calculation",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Now calculate the area by multiplying the two variables.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "length = 10",
+                                "indent": 0
+                            },
+                            {
+                                "code": "width = 5",
+                                "indent": 0
+                            },
+                            {
+                                "code": "area = {1}",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(area)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "length * width"
+                        ],
+                        "solutions": {
+                            "1": "length * width"
+                        },
+                        "hint": "Use both variable names to multiply them",
+                        "correctFeedback": "Perfect! You calculated the area using both variables.",
+                        "incorrectFeedback": "Use 'length' and 'width' to calculate the area",
+                        "explanation": "Variables make calculations flexible and reusable.",
+                        "output": "50"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "what_will_print_variables",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "x = 5\ny = 3\nresult = x + y\nprint(result)",
+                    "properties": {
+                        "language": "python",
+                        "caption": "What will this code print?"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "5",
+                            "8",
+                            "15"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! The variables are added: 5 + 3 = 8.",
+                        "incorrectFeedback": "Add the two variables: 5 + 3 = 8.",
+                        "explanation": "Variables can be used in calculations and the result stored in another variable."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "**Use variables** in print statements to create dynamic messages",
+                            "**Combine multiple variables** to build complex output",
+                            "**Use variables in calculations** to make flexible programs"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

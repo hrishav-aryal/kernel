@@ -1,0 +1,569 @@
+{
+    "blocks": [
+        {
+            "id": "practice_1",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Practice",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "code_fill",
+                    "content": "Join two strings with the `+` operator.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "first = \"Hello\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "second = \"World\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "message = first + {1} + second",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "\" \"",
+                            "space"
+                        ],
+                        "solutions": {
+                            "1": "\" \""
+                        },
+                        "hint": "Add a space string between them.",
+                        "correctFeedback": "Perfect! You joined strings with a space.",
+                        "incorrectFeedback": "Use \" \" to add a space between strings.",
+                        "explanation": "Use + to concatenate strings, including spaces.",
+                        "output": "Hello World"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_2",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Convert the number to a string before concatenating.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "age = 25",
+                                "indent": 0
+                            },
+                            {
+                                "code": "text = \"I am \" + {1}(age)",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "int",
+                            "str"
+                        ],
+                        "solutions": {
+                            "1": "str"
+                        },
+                        "hint": "Use str() to convert numbers to strings.",
+                        "correctFeedback": "Great! You converted the number to a string.",
+                        "incorrectFeedback": "Use str() to convert numbers before concatenating.",
+                        "explanation": "Numbers must be strings to use + with text.",
+                        "output": "I am 25"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_3",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Can you add a string and a number directly?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Yes",
+                            "No, it causes an error"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! You must convert the number to a string first.",
+                        "incorrectFeedback": "You can't mix strings and numbers with +.",
+                        "explanation": "Use str() to convert numbers before concatenating."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_4",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create an f-string by adding `f` before the quotes.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "name = \"Alice\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "message = {1}\"Hello, {name}!\"",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "s",
+                            "f"
+                        ],
+                        "solutions": {
+                            "1": "f"
+                        },
+                        "hint": "F-strings start with f before the quotes.",
+                        "correctFeedback": "Perfect! You created an f-string.",
+                        "incorrectFeedback": "Add f before the opening quote.",
+                        "explanation": "f before the quote makes it an f-string.",
+                        "output": "Hello, Alice!"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_5",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Put the variable name inside curly braces in the f-string.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "score = 100",
+                                "indent": 0
+                            },
+                            {
+                                "code": "text = f\"Score: {1}\"",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "{score}",
+                            "score"
+                        ],
+                        "solutions": {
+                            "1": "{score}"
+                        },
+                        "hint": "Wrap the variable name in curly braces.",
+                        "correctFeedback": "Great! Variables go in curly braces.",
+                        "incorrectFeedback": "Put {score} to insert the variable.",
+                        "explanation": "Variables in f-strings need curly braces.",
+                        "output": "Score: 100"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_6",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What's missing from this f-string?"
+                },
+                {
+                    "type": "code",
+                    "content": "age = 25\ntext = \"I am {age} years old\"",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "The f before the quotes",
+                            "Quotes around age"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! F-strings need the f prefix.",
+                        "incorrectFeedback": "Without f, it's just a regular string.",
+                        "explanation": "F-strings require f before the opening quote."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_7",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create an f-string with two variables.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "name = \"Bob\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "age = 30",
+                                "indent": 0
+                            },
+                            {
+                                "code": "info = {1}",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "\"Name: name, Age: age\"",
+                            "f\"Name: {name}, Age: {age}\""
+                        ],
+                        "solutions": {
+                            "1": "f\"Name: {name}, Age: {age}\""
+                        },
+                        "hint": "Use f before quotes and curly braces around variables.",
+                        "correctFeedback": "Perfect! You created an f-string with both variables.",
+                        "incorrectFeedback": "Use f and put variables in curly braces.",
+                        "explanation": "F-strings can have multiple variables in curly braces.",
+                        "output": "Name: Bob, Age: 30"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_8",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Find the length of the string `\"Python\"`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "word = \"Python\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "length = {1}(word)",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "len",
+                            "length"
+                        ],
+                        "solutions": {
+                            "1": "len"
+                        },
+                        "hint": "Use len() to get the length.",
+                        "correctFeedback": "Perfect! len() counts the characters.",
+                        "incorrectFeedback": "Use len() to find string length.",
+                        "explanation": "len() returns the number of characters.",
+                        "output": "6"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_9",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What is the length of `\"Hello\"`?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "4",
+                            "5"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! H-e-l-l-o is 5 characters.",
+                        "incorrectFeedback": "Count each letter: H-e-l-l-o.",
+                        "explanation": "len() counts every character in the string."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_10",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Convert the text to uppercase.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "name = \"alice\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "loud = name.{1}()",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "lower",
+                            "upper"
+                        ],
+                        "solutions": {
+                            "1": "upper"
+                        },
+                        "hint": "Use .upper() for uppercase.",
+                        "correctFeedback": "Great! .upper() makes text UPPERCASE.",
+                        "incorrectFeedback": "Use .upper() to convert to uppercase.",
+                        "explanation": ".upper() changes all letters to uppercase.",
+                        "output": "ALICE"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_11",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Convert the text to lowercase.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "shout = \"HELLO\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "quiet = shout.{1}()",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "upper",
+                            "lower"
+                        ],
+                        "solutions": {
+                            "1": "lower"
+                        },
+                        "hint": "Use .lower() for lowercase.",
+                        "correctFeedback": "Perfect! .lower() makes text lowercase.",
+                        "incorrectFeedback": "Use .lower() to convert to lowercase.",
+                        "explanation": ".lower() changes all letters to lowercase.",
+                        "output": "hello"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_12",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What does this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "word = \"python\"\nprint(word.upper())",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "PYTHON",
+                            "python"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! .upper() converts to UPPERCASE.",
+                        "incorrectFeedback": ".upper() changes all letters to uppercase.",
+                        "explanation": ".upper() makes every letter uppercase."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_13",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Get the first character of the string.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "word = \"Hello\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "first = word[{1}]",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "1",
+                            "0"
+                        ],
+                        "solutions": {
+                            "1": "0"
+                        },
+                        "hint": "String indexing starts at 0.",
+                        "correctFeedback": "Perfect! The first character is at index 0.",
+                        "incorrectFeedback": "String indexing starts at 0, not 1.",
+                        "explanation": "Index 0 gives you the first character.",
+                        "output": "H"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_14",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What does `\"Python\"[2]` return?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "y",
+                            "t"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! Index 2 is the third character: t.",
+                        "incorrectFeedback": "Index 0=P, 1=y, 2=t.",
+                        "explanation": "Indexing starts at 0, so index 2 is the third letter."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_15",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Access the second character of the word.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "word = \"Code\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "char = word[{1}]",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "2",
+                            "1"
+                        ],
+                        "solutions": {
+                            "1": "1"
+                        },
+                        "hint": "The second character is at index 1.",
+                        "correctFeedback": "Great! Index 1 is the second character.",
+                        "incorrectFeedback": "Remember indexing starts at 0, so second is 1.",
+                        "explanation": "Index 0 is first, index 1 is second.",
+                        "output": "o"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_16",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What's wrong with this code?"
+                },
+                {
+                    "type": "code",
+                    "content": "word = \"Hi\"\nprint(word[2])",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Index 2 doesn't exist in a 2-character string",
+                            "Need quotes around 2"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! \"Hi\" only has indices 0 and 1.",
+                        "incorrectFeedback": "\"Hi\" is 2 characters: index 0 (H) and 1 (i).",
+                        "explanation": "Index 2 is out of range for a 2-character string."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "practice_17",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Combine an f-string with the `.upper()` method.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "name = \"alice\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "greeting = f\"Hello, {name.{1}()}!\"",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "lower",
+                            "upper"
+                        ],
+                        "solutions": {
+                            "1": "upper"
+                        },
+                        "hint": "Use .upper() inside the curly braces.",
+                        "correctFeedback": "Excellent! You can use methods inside f-strings.",
+                        "incorrectFeedback": "Use .upper() inside the curly braces.",
+                        "explanation": "F-strings can include method calls like .upper().",
+                        "output": "Hello, ALICE!"
+                    }
+                }
+            ]
+        }
+    ]
+}

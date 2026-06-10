@@ -1,0 +1,441 @@
+{
+    "blocks": [
+        {
+            "id": "ex_1",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Practice",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What are lists used for in Python?",
+                        "options": [
+                            "Storing multiple items in a single variable",
+                            "Performing mathematical calculations"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Lists store multiple items in a single variable.",
+                        "incorrectFeedback": "Lists store multiple items in a single variable.",
+                        "explanation": "Lists are used to store multiple items (like numbers, strings, etc.) together in a single variable."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_2",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a list called `fruits`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "{1} {2} {3}",
+                                "indent": 0,
+                                "blank": "1,2,3"
+                            },
+                            {
+                                "code": "print(fruits)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "fruits",
+                            "=",
+                            "[\"apple\", \"banana\", \"cherry\"]"
+                        ],
+                        "solutions": {
+                            "1": "fruits",
+                            "2": "=",
+                            "3": "[\"apple\", \"banana\", \"cherry\"]"
+                        },
+                        "hint": "Create a list with syntax list_name = [item1, item2, item3]",
+                        "correctFeedback": "Perfect! You created a list with three items.",
+                        "incorrectFeedback": "Create a list with syntax list_name = [item1, item2, item3]",
+                        "explanation": "Lists are created using square brackets []. Items are separated by commas. The list is assigned to the variable fruits.",
+                        "output": "['apple', 'banana', 'cherry']"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_4",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create an empty list called `tasks`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "tasks = {1}",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(tasks)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "[]",
+                            "{}",
+                            "()"
+                        ],
+                        "solutions": {
+                            "1": "[]"
+                        },
+                        "hint": "Use empty square brackets to create an empty list.",
+                        "correctFeedback": "Great! [] creates an empty list.",
+                        "incorrectFeedback": "Use empty square brackets to create an empty list.",
+                        "explanation": "Empty square brackets [] create an empty list that can hold items later.",
+                        "output": "[]"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_5",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What is the index of the first item in a list?",
+                        "options": [
+                            "0",
+                            "1"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Python lists start at index 0.",
+                        "incorrectFeedback": "Python lists start at index 0.",
+                        "explanation": "In Python, list indices start at 0. The first item is at index 0, the second at index 1, and so on."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_6",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Access the first item in the list `colors`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "colors = [\"red\", \"green\", \"blue\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "first_color = colors[{1}]",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(first_color)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "0",
+                            "1",
+                            "2"
+                        ],
+                        "solutions": {
+                            "1": "0"
+                        },
+                        "hint": "The first item is at index 0.",
+                        "correctFeedback": "Perfect! Index 0 gives you the first item.",
+                        "incorrectFeedback": "The first item is at index 0.",
+                        "explanation": "colors[0] accesses the first item in the list, which is red.",
+                        "output": "red"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_7",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "animals = [\"cat\", \"dog\", \"bird\"]\nprint(animals[1])",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "dog",
+                            "cat"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Index 1 is the second item.",
+                        "incorrectFeedback": "Index 1 is the second item.",
+                        "explanation": "animals[1] accesses the second item in the list. Remember, indices start at 0, so index 1 is the second item: dog."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_8",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Access the last item in the list.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "fruits = [\"apple\", \"banana\", \"cherry\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "last_fruit = fruits[{1}]",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(last_fruit)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "2",
+                            "3",
+                            "1"
+                        ],
+                        "solutions": {
+                            "1": "2"
+                        },
+                        "hint": "Count from 0: apple is 0, banana is 1, cherry is 2.",
+                        "correctFeedback": "Great! Index 2 gives you the third item.",
+                        "incorrectFeedback": "Count from 0: apple is 0, banana is 1, cherry is 2.",
+                        "explanation": "fruits[2] accesses the third item (index 2), which is cherry.",
+                        "output": "cherry"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_9",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What does negative indexing do in Python lists?",
+                        "options": [
+                            "Accesses items from the end of the list",
+                            "Removes items from the list"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Negative indices count from the end.",
+                        "incorrectFeedback": "Negative indices count from the end.",
+                        "explanation": "Negative indexing lets you access items from the end. -1 is the last item, -2 is second to last, etc."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_10",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = [10, 20, 30, 40]\nprint(numbers[-1])",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "40",
+                            "10"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! -1 accesses the last item.",
+                        "incorrectFeedback": "-1 accesses the last item.",
+                        "explanation": "numbers[-1] accesses the last item in the list, which is 40."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_11",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Access the second to last item using negative indexing.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "letters = [\"a\", \"b\", \"c\", \"d\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "second_last = letters[{1}]",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(second_last)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "-2",
+                            "-1",
+                            "2"
+                        ],
+                        "solutions": {
+                            "1": "-2"
+                        },
+                        "hint": "-1 is last, -2 is second to last.",
+                        "correctFeedback": "Perfect! -2 gives you the second to last item.",
+                        "incorrectFeedback": "-1 is last, -2 is second to last.",
+                        "explanation": "letters[-2] accesses the second to last item, which is c.",
+                        "output": "c"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_12",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "words = [\"hello\", \"world\", \"python\"]\nprint(words[0], words[-1])",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "hello python",
+                            "hello world",
+                            "world python"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Index 0 is first, -1 is last.",
+                        "incorrectFeedback": "Index 0 is first, -1 is last.",
+                        "explanation": "words[0] is the first item (hello) and words[-1] is the last item (python)."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_13",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Access the second and third items from the list.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "scores = [85, 90, 95, 100]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "second = scores[{1}]",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "third = scores[{2}]",
+                                "indent": 0,
+                                "blank": "2"
+                            },
+                            {
+                                "code": "print(second, third)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "1",
+                            "2",
+                            "0"
+                        ],
+                        "solutions": {
+                            "1": "1",
+                            "2": "2"
+                        },
+                        "hint": "Index 1 is second item, index 2 is third item.",
+                        "correctFeedback": "Great! You accessed both items correctly.",
+                        "incorrectFeedback": "Index 1 is second item, index 2 is third item.",
+                        "explanation": "scores[1] is 90 (second item) and scores[2] is 95 (third item).",
+                        "output": "90 95"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_14",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What happens if you try to access an index that doesn't exist?",
+                        "options": [
+                            "Python raises an IndexError",
+                            "Python returns None"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Accessing an invalid index raises an IndexError.",
+                        "incorrectFeedback": "Accessing an invalid index raises an IndexError.",
+                        "explanation": "If you try to access an index outside the list range, Python raises an IndexError to tell you the index is out of range."
+                    }
+                }
+            ]
+        }
+    ]
+}

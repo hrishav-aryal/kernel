@@ -1,0 +1,380 @@
+{
+    "blocks": [
+        {
+            "id": "intro_inheritance",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Inheritance",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "**Inheritance** lets you create a new class based on an existing class. The new class gets all the attributes and methods from the existing class."
+                },
+                {
+                    "type": "text",
+                    "content": "This helps you reuse code instead of writing the same thing over and over."
+                }
+            ]
+        },
+        {
+            "id": "parent_child_concept",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Parent and Child classes**"
+                },
+                {
+                    "type": "text",
+                    "content": "The original class is called the **parent class** (or base class). The new class that inherits from it is called the **child class** (or derived class)."
+                },
+                {
+                    "type": "text",
+                    "content": "The child class inherits everything from the parent and can also add its own unique features."
+                }
+            ]
+        },
+        {
+            "id": "basic_example",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Basic Inheritance",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Let's start with a simple parent class `Animal`:"
+                },
+                {
+                    "type": "code",
+                    "content": "class Animal:\n    def __init__(self, name):\n        self.name = name\n    \n    def speak(self):\n        print(f\"{self.name} makes a sound\")\n\nanimal = Animal(\"Generic\")\nanimal.speak()",
+                    "properties": {
+                        "language": "python",
+                        "output": "Generic makes a sound"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "This `Animal` class has a `name` attribute and a `speak` method."
+                }
+            ]
+        },
+        {
+            "id": "creating_child_class",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Now let's create a child class `Dog` that inherits from `Animal`. The syntax is `class Child(Parent):`."
+                },
+                {
+                    "type": "code",
+                    "content": "class Dog(Animal):\n    pass\n\ndog = Dog(\"Buddy\")\ndog.speak()",
+                    "properties": {
+                        "language": "python",
+                        "output": "Buddy makes a sound"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`Dog(Animal)` means `Dog` inherits from `Animal`. Even though `Dog` class is empty, it automatically has the `__init__` and `speak` methods from `Animal` class!"
+                },
+                {
+                    "type": "text",
+                    "content": "The `dog` object can use methods from the parent class `Animal`."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_basic",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What does a child class inherit from its parent class?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Only the attributes",
+                            "Only the methods",
+                            "Both attributes and methods"
+                        ],
+                        "correctAnswerIndex": 2,
+                        "correctFeedback": "Correct! Child classes inherit both attributes and methods.",
+                        "incorrectFeedback": "Child classes inherit everything from the parent - both data and methods.",
+                        "explanation": "Inheritance gives the child class all features of the parent class."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "adding_to_child",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Adding to the Child Class",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Child classes can add their own methods on top of what they inherit. Let's add a `bark` method to the `Dog` class."
+                },
+                {
+                    "type": "code",
+                    "content": "class Dog(Animal):\n    def bark(self):\n        print(f\"{self.name} says Woof!\")\n\ndog = Dog(\"Buddy\")\ndog.speak()\ndog.bark()",
+                    "properties": {
+                        "language": "python",
+                        "output": "Buddy makes a sound\nBuddy says Woof!"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`Dog` has both the inherited `speak` method from `Animal` and its own new `bark` method."
+                }
+            ]
+        },
+        {
+            "id": "multiple_children",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can create multiple child classes from the same parent. Let's create a `Cat` class that inherits from `Animal`."
+                },
+                {
+                    "type": "code",
+                    "content": "class Cat(Animal):\n    def meow(self):\n        print(f\"{self.name} says Meow!\")\n\ndog = Dog(\"Buddy\")\ncat = Cat(\"Whiskers\")\n\ndog.bark()\ncat.meow()",
+                    "properties": {
+                        "language": "python",
+                        "output": "Buddy says Woof!\nWhiskers says Meow!"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Both `Dog` and `Cat` inherit from `Animal`, but each has its own unique methods."
+                }
+            ]
+        },
+        {
+            "id": "method_overriding",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Method Overriding",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "A child class can replace (override) a method from the parent with its own version. Let's override the `speak` method in the `Dog` class."
+                },
+                {
+                    "type": "code",
+                    "content": "class Dog(Animal):\n    def speak(self):\n        print(f\"{self.name} barks: Woof!\")\n\ndog = Dog(\"Buddy\")\ndog.speak()",
+                    "properties": {
+                        "language": "python",
+                        "output": "Buddy barks: Woof!"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Now when we call `speak()` on a dog, it uses the `Dog` class's version, not the `Animal` class's version."
+                },
+                {
+                    "type": "text",
+                    "content": "This is called **method overriding** - the child's method replaces the parent's method."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_override",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What happens when a child class defines a method with the same name as the parent?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Both methods run at the same time",
+                            "The child's method is used instead",
+                            "An error occurs"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! The child's method overrides the parent's method.",
+                        "incorrectFeedback": "The child's version replaces the parent's version - this is called overriding.",
+                        "explanation": "When names match, the child's method takes priority."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "using_super",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Using super()",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Sometimes you want to use the parent's method and add to it. You can use `super()` to call the parent's method. Let's call the `__init__` method of the parent class `Animal` in the `Dog` class to set the `name` attribute."
+                },
+                {
+                    "type": "code",
+                    "content": "class Dog(Animal):\n    def __init__(self, name, breed):\n        super().__init__(name)\n        self.breed = breed\n    \n    def info(self):\n        print(f\"{self.name} is a {self.breed}\")\n\ndog = Dog(\"Buddy\", \"Labrador\")\ndog.info()",
+                    "properties": {
+                        "language": "python",
+                        "output": "Buddy is a Labrador"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`super().__init__(name)` calls the parent's `__init__` method to set the name. Then we add the `breed` attribute on top of that."
+                }
+            ]
+        },
+        {
+            "id": "super_explanation",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Why use super()?**"
+                },
+                {
+                    "type": "text",
+                    "content": "`super()` lets you reuse the parent's code instead of rewriting it. This keeps your code DRY (Don't Repeat Yourself)."
+                },
+                {
+                    "type": "text",
+                    "content": "It's especially useful in `__init__` methods to set up inherited attributes properly."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_super",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the code to call the parent's `__init__` method.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "class Vehicle:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    def __init__(self, brand):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        self.brand = brand",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "class Car(Vehicle):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    def __init__(self, brand, model):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        {1}().__init__(brand)",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "        self.model = model",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "parent",
+                            "super",
+                            "Vehicle"
+                        ],
+                        "solutions": {
+                            "1": "super"
+                        },
+                        "hint": "Use super() to access the parent class.",
+                        "correctFeedback": "Perfect! super() calls the parent's method.",
+                        "incorrectFeedback": "Use super() to call methods from the parent class.",
+                        "explanation": "super() gives you access to the parent class's methods.",
+                        "output": ""
+                    }
+                }
+            ]
+        },
+        {
+            "id": "why_inheritance",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Why use inheritance?**"
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "**Reuse code**: Don't repeat common functionality",
+                            "**Organize**: Group related classes together",
+                            "**Extend**: Add features without changing the original",
+                            "**Maintain**: Fix bugs in one place, not everywhere"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "**Inheritance** lets classes reuse code from other classes",
+                            "Use `class Child(Parent):` to inherit",
+                            "Child classes get **all** parent attributes and methods",
+                            "Child classes can **add** their own methods",
+                            "Child classes can **override** parent methods",
+                            "Use `super()` to call parent methods",
+                            "Inheritance helps **avoid repeating** code"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

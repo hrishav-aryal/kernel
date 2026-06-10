@@ -1,0 +1,671 @@
+{
+    "blocks": [
+        {
+            "id": "intro_sets",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Set Basics",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "A set is a collection that stores **unique values** - no duplicates allowed. Sets are useful when you want to keep track of distinct items."
+                },
+                {
+                    "type": "text",
+                    "content": "Unlike lists, sets are **unordered**, meaning items don't have a specific position or index."
+                }
+            ]
+        },
+        {
+            "id": "creating_sets",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Creating Sets",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "You create a set using **curly braces** `{}` with items separated by commas. Unlike dictionaries, sets don't have key-value pairs."
+                },
+                {
+                    "type": "code",
+                    "content": "colors = {\"red\", \"green\", \"blue\"}\nprint(colors)",
+                    "properties": {
+                        "language": "python",
+                        "output": "{'red', 'green', 'blue'}"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "This creates a set with three unique colors."
+                }
+            ]
+        },
+        {
+            "id": "unique_values",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Sets automatically **remove duplicates**. If you try to create a set with duplicate values, only one copy is kept."
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = {1, 2, 2, 3, 3, 3}\nprint(numbers)",
+                    "properties": {
+                        "language": "python",
+                        "output": "{1, 2, 3}"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The duplicates were automatically removed, leaving only unique values."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_create",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a set called `fruits` with values `\"apple\"`, `\"banana\"`, and `\"orange\"`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "fruits = {1}",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(fruits)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "[\"apple\", \"banana\", \"orange\"]",
+                            "{\"apple\", \"banana\", \"orange\"}",
+                            "(\"apple\", \"banana\", \"orange\")"
+                        ],
+                        "solutions": {
+                            "1": "{\"apple\", \"banana\", \"orange\"}"
+                        },
+                        "hint": "Use curly braces {} with items separated by commas.",
+                        "correctFeedback": "Perfect! You created a set with curly braces.",
+                        "incorrectFeedback": "Use curly braces {} to create a set.",
+                        "explanation": "Sets use curly braces {} like dictionaries, but without key-value pairs.",
+                        "output": "{'apple', 'banana', 'orange'}"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_duplicates",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "tags = {\"python\", \"code\", \"python\"}\nprint(tags)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "{\"python\", \"code\", \"python\"}",
+                            "{\"python\", \"code\"}",
+                            "Error"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! Sets automatically remove duplicates, keeping only one \"python\".",
+                        "incorrectFeedback": "Sets remove duplicates automatically.",
+                        "explanation": "The duplicate \"python\" is removed, leaving only unique values."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "no_indexing",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Important:** You cannot access set items by index because sets are **unordered**."
+                },
+                {
+                    "type": "code",
+                    "content": "colors = {\"red\", \"green\", \"blue\"}\n# colors[0]  # This would cause an error",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Sets don't support indexing like lists or tuples do."
+                }
+            ]
+        },
+        {
+            "id": "adding_items",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Adding Items",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Use the `add()` method to add a single item to a set."
+                },
+                {
+                    "type": "code",
+                    "content": "colors = {\"red\", \"green\"}\nprint(f\"Before: {colors}\")\n\ncolors.add(\"blue\")\nprint(f\"After: {colors}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Before: {'red', 'green'}\nAfter: {'red', 'green', 'blue'}"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The new item `\"blue\"` was added to the set."
+                }
+            ]
+        },
+        {
+            "id": "adding_duplicate",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "If you try to add an item that already exists, nothing happens. The set stays the same."
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = {1, 2, 3}\nnumbers.add(2)\nprint(numbers)",
+                    "properties": {
+                        "language": "python",
+                        "output": "{1, 2, 3}"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Adding `2` again has no effect because it already exists in the set."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_add",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Add `\"dog\"` to the set.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "animals = {\"cat\", \"bird\"}",
+                                "indent": 0
+                            },
+                            {
+                                "code": "animals.{1}({2})",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(animals)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "\"dog\"",
+                            "append",
+                            "add"
+                        ],
+                        "solutions": {
+                            "1": "add",
+                            "2": "\"dog\""
+                        },
+                        "hint": "Use add() to add an item to a set.",
+                        "correctFeedback": "Perfect! add() adds a new item to the set.",
+                        "incorrectFeedback": "Use add(\"dog\") to add the item.",
+                        "explanation": "Unlike lists that use append(), sets use add() to add items.",
+                        "output": "{'cat', 'bird', 'dog'}"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "removing_items",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Removing Items",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Use the `remove()` method to delete an item from a set."
+                },
+                {
+                    "type": "code",
+                    "content": "colors = {\"red\", \"green\", \"blue\"}\ncolors.remove(\"green\")\nprint(colors)",
+                    "properties": {
+                        "language": "python",
+                        "output": "{'red', 'blue'}"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The item `\"green\"` was removed from the set."
+                }
+            ]
+        },
+        {
+            "id": "remove_error",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Be careful!** If you try to remove an item that doesn't exist, `remove()` causes an error."
+                },
+                {
+                    "type": "code",
+                    "content": "colors = {\"red\", \"blue\"}\ncolors.remove(\"green\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Error: KeyError: 'green'"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Since `\"green\"` is not in the set, trying to remove it causes an error."
+                }
+            ]
+        },
+        {
+            "id": "discard_method",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "To safely remove items, use `discard()`. It won't cause an error if the item doesn't exist."
+                },
+                {
+                    "type": "code",
+                    "content": "colors = {\"red\", \"blue\"}\ncolors.discard(\"green\")\nprint(colors)",
+                    "properties": {
+                        "language": "python",
+                        "output": "{'red', 'blue'}"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`discard()` safely handled the missing item without causing an error."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_remove",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Remove `2` from the set.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "numbers = {1, 2, 3, 4}",
+                                "indent": 0
+                            },
+                            {
+                                "code": "numbers.{1}(2)",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(numbers)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "delete",
+                            "discard",
+                            "remove"
+                        ],
+                        "solutions": {
+                            "1": "remove"
+                        },
+                        "hint": "Use remove() to delete an item from the set.",
+                        "correctFeedback": "Perfect! remove() deleted the item from the set.",
+                        "incorrectFeedback": "Use remove(2) to delete the item.",
+                        "explanation": "remove() deletes the specified item from the set.",
+                        "output": "{1, 3, 4}"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_discard",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Which method is safer when you're not sure if an item exists?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "remove()",
+                            "discard()",
+                            "delete()"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! discard() won't cause an error if the item doesn't exist.",
+                        "incorrectFeedback": "Use discard() to safely remove items that might not exist.",
+                        "explanation": "discard() is safer because it doesn't raise an error for missing items."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "checking_membership",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Checking Membership",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Use the `in` operator to check if an item exists in a set. This is very fast with sets!"
+                },
+                {
+                    "type": "code",
+                    "content": "fruits = {\"apple\", \"banana\", \"orange\"}\nprint(\"apple\" in fruits)\nprint(\"grape\" in fruits)",
+                    "properties": {
+                        "language": "python",
+                        "output": "True\nFalse"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`\"apple\"` is in the set (returns `True`), but `\"grape\"` is not (returns `False`)."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_in",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Check if `\"python\"` is in the set.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "languages = {\"python\", \"java\", \"c++\"}",
+                                "indent": 0
+                            },
+                            {
+                                "code": "if {1} {2} languages:",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "    print(\"Found Python!\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "\"python\"",
+                            "exists",
+                            "in"
+                        ],
+                        "solutions": {
+                            "1": "\"python\"",
+                            "2": "in"
+                        },
+                        "hint": "Use \"python\" in languages to check membership.",
+                        "correctFeedback": "Perfect! The in operator checks if an item is in the set.",
+                        "incorrectFeedback": "Use \"python\" in languages to check membership.",
+                        "explanation": "The in operator works the same way with sets as with lists.",
+                        "output": "Found Python!"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "set_length",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Use `len()` to find how many items are in a set."
+                },
+                {
+                    "type": "code",
+                    "content": "colors = {\"red\", \"green\", \"blue\"}\nprint(len(colors))",
+                    "properties": {
+                        "language": "python",
+                        "output": "3"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The set has 3 unique items."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_len",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "tags = {\"python\", \"coding\", \"python\"}\nprint(len(tags))",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "3",
+                            "2",
+                            "1"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! The duplicate \"python\" is removed, leaving 2 unique items.",
+                        "incorrectFeedback": "Sets remove duplicates, so len() counts only unique items.",
+                        "explanation": "After removing the duplicate \"python\", only 2 unique items remain."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "empty_set",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "To create an empty set, use `set()`. You **cannot** use `{}` because that creates an empty dictionary."
+                },
+                {
+                    "type": "code",
+                    "content": "empty_set = set()\nprint(empty_set)\nprint(type(empty_set))",
+                    "properties": {
+                        "language": "python",
+                        "output": "set()\n<class 'set'>"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Use `set()` to create an empty set, ready to add items later."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_empty",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create an empty set called `unique_ids`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "unique_ids = {1}",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(unique_ids)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "set()",
+                            "{}",
+                            "[]"
+                        ],
+                        "solutions": {
+                            "1": "set()"
+                        },
+                        "hint": "Use set() to create an empty set (not {}).",
+                        "correctFeedback": "Perfect! set() creates an empty set.",
+                        "incorrectFeedback": "Use set() to create an empty set. Using {} creates a dictionary.",
+                        "explanation": "Empty curly braces {} create a dictionary, so use set() for empty sets.",
+                        "output": "set()"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "when_to_use_sets",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**When should you use sets?**"
+                },
+                {
+                    "type": "text",
+                    "content": "Use sets when you need to store **unique items** only, remove duplicates from a list, or check membership very quickly."
+                }
+            ]
+        },
+        {
+            "id": "removing_duplicates_example",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "A common use case is removing duplicates from a list by converting it to a set."
+                },
+                {
+                    "type": "text",
+                    "content": "You can pass the list `numbers` to the `set()` function to convert it to a set. The result is a set of unique numbers."
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = [1, 2, 2, 3, 3, 3, 4]\nunique = set(numbers)\nprint(unique)",
+                    "properties": {
+                        "language": "python",
+                        "output": "{1, 2, 3, 4}"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Converting the list to a set automatically removed all duplicates."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_practical",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Remove duplicates from the list by converting it to a set.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "scores = [85, 90, 85, 95, 90]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "unique_scores = {1}(scores)",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(unique_scores)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "list",
+                            "set",
+                            "tuple"
+                        ],
+                        "solutions": {
+                            "1": "set"
+                        },
+                        "hint": "Use set(scores) to convert and remove duplicates.",
+                        "correctFeedback": "Perfect! Converting to a set removed the duplicate scores.",
+                        "incorrectFeedback": "Use set(scores) to create a set and remove duplicates.",
+                        "explanation": "Converting a list to a set automatically removes duplicates.",
+                        "output": "{85, 90, 95}"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "Sets store **unique values** only - duplicates are automatically removed",
+                            "Sets are **unordered** - you cannot access items by index",
+                            "Use `add()` to add items to a set",
+                            "Use `remove()` to delete items (causes error if missing)",
+                            "Use `discard()` to safely delete items (no error if missing)",
+                            "Use `in` to check membership (very fast with sets)",
+                            "Create empty sets with `set()`, not `{}`"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

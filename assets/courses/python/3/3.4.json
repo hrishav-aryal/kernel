@@ -1,0 +1,406 @@
+{
+    "blocks": [
+        {
+            "id": "intro_loop_control",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Loop Control",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Sometimes you need to control how a loop runs. You might want to stop the loop early or skip some iterations. Python provides `break` and `continue` for this."
+                },
+                {
+                    "type": "text",
+                    "content": "`break` stops the loop completely. `continue` skips the rest of the current iteration and goes to the next one."
+                }
+            ]
+        },
+        {
+            "id": "break_statement",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "The `break` Statement",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `break` statement immediately stops the loop and continues with the code after the loop."
+                },
+                {
+                    "type": "code",
+                    "content": "for i in range(5):\n    print(f\"Number: {i}\")\n    break\n\nprint(\"Loop finished!\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Number: 0\nLoop finished!"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The loop stops on the first iteration, because of the `break` statement, even though `range(5)` would normally go from 0 to 4."
+                }
+            ]
+        },
+        {
+            "id": "continue_statement",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "The `continue` Statement",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `continue` statement skips the rest of the current iteration and goes to the next one."
+                },
+                {
+                    "type": "code",
+                    "content": "for i in range(5):\n    if i == 2:\n        continue\n    print(f\"Number: {i}\")\n\nprint(\"Loop finished!\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Number: 0\nNumber: 1\nNumber: 3\nNumber: 4\nLoop finished!"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "When `i` equals `2`, `continue` skips the `print` statement and goes to the next iteration, so `2` is not printed."
+                }
+            ]
+        },
+        {
+            "id": "break_with_while",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can use `break` and `continue` with `while` loops too. `break` is useful when you want to stop the loop based on a condition inside the `while` loop. `continue` is useful when you want to skip the rest of the current iteration and go to the next one."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_basic_break",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Stop the loop below when `i` equals `3`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "for i in range(6):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(f\"Number: {i}\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    if i == 3:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        {1}",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "stop",
+                            "break"
+                        ],
+                        "solutions": {
+                            "1": "break"
+                        },
+                        "hint": "Use break to stop the loop when i equals 3.",
+                        "correctFeedback": "Perfect! break stops the loop when i equals 3.",
+                        "incorrectFeedback": "Use break to stop the loop when i equals 3.",
+                        "explanation": "break immediately exits the loop when the condition is met.",
+                        "output": "Number: 0\nNumber: 1\nNumber: 2\nNumber: 3"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_basic_continue",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "How would you skip printing number `1` in the loop below?",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "for i in range(4):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    if i == 1:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        {1}",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(f\"Number: {i}\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "continue",
+                            "break",
+                            "skip"
+                        ],
+                        "solutions": {
+                            "1": "continue"
+                        },
+                        "hint": "Use continue to skip the rest of the iteration when i equals 1.",
+                        "correctFeedback": "Great! continue skips the print statement when i equals 1.",
+                        "incorrectFeedback": "Use continue to skip the rest of the iteration when i equals 1.",
+                        "explanation": "continue skips the rest of the current iteration and goes to the next one.",
+                        "output": "Number: 0\nNumber: 2\nNumber: 3"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_break_while",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Lets skip the number `3` and stop when number reaches `5` in the loop below.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "for i in range(6):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(f\"Number: {i}\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    if i == 3:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        {1}",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    if i == 5:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        {2}",
+                                "indent": 0,
+                                "blank": "2"
+                            }
+                        ],
+                        "options": [
+                            "continue",
+                            "stop",
+                            "break"
+                        ],
+                        "solutions": {
+                            "1": "continue",
+                            "2": "break"
+                        },
+                        "hint": "Use break to stop and continue to skip the number.",
+                        "correctFeedback": "Perfect! break stops the loop when number equals 5 and continue skips the number 3.",
+                        "incorrectFeedback": "Use break to stop the loop when number equals 5 and continue skips the number 3.",
+                        "explanation": "break immediately exits the while loop when the condition is met.",
+                        "output": "Number: 0\nNumber: 1\nNumber: 2\nNumber: 4\nNumber: 5"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_continue_while",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "How would you stop the infinite loop below?",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "while True:",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(\"Hello!\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    {1}",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "stop",
+                            "break",
+                            "continue"
+                        ],
+                        "solutions": {
+                            "1": "break"
+                        },
+                        "hint": "Use break to stop the infinite loop.",
+                        "correctFeedback": "Great! break stops the infinite loop.",
+                        "incorrectFeedback": "Use break to stop the infinite loop.",
+                        "explanation": "break immediately exits the loop when the condition is met.",
+                        "output": "Hello!"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_what_will_print_control",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "for i in range(3):\n    if i == 1:\n        continue\n    print(f\"Number: {i}\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Number: 0\nNumber: 1\nNumber: 2",
+                            "Number: 0\nNumber: 2"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! When i=1, continue skips the print. So only 0 and 2 are printed.",
+                        "incorrectFeedback": "When i=1, continue skips the print. So only 0 and 2 are printed.",
+                        "explanation": "continue skips i=1, so only i=0 and i=2 are printed."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_what_will_print_control",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "for i in range(3):\n    if i == 1:\n        break\n    print(f\"Number: {i}\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Number: 0",
+                            "Number: 0\nNumber: 2"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! When i=1, break stops the loop. So only 0 is printed.",
+                        "incorrectFeedback": "When i=1, break stops the loop. So only 0 is printed.",
+                        "explanation": "break stops the loop when i=1, so only i=0 is printed."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_break_cookie",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Imagine you’re eating cookies from a jar, but you get full after your third `cookie`! Complete the code below to stop the loop when you’ve eaten `3` cookies.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "for cookie in range(1, 6):",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(f\"Eating cookie #{cookie}\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    if {1}:",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "        print(\"I'm full!\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "        {2}",
+                                "indent": 0,
+                                "blank": "2"
+                            }
+                        ],
+                        "options": [
+                            "cookie == 3",
+                            "continue",
+                            "break"
+                        ],
+                        "solutions": {
+                            "1": "cookie == 3",
+                            "2": "break"
+                        },
+                        "hint": "First check if cookie is 3, then use break to stop the loop.",
+                        "correctFeedback": "Great job! You stopped eating after three cookies using break.",
+                        "incorrectFeedback": "Remember: check for cookie == 3, and use break to exit the loop.",
+                        "explanation": "When cookie == 3, the message prints and break exits the loop immediately.",
+                        "output": "Eating cookie #1\nEating cookie #2\nEating cookie #3\nI'm full!"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "`break` stops the entire loop",
+                            "`continue` skips the rest of the current iteration",
+                            "Both `break` and `continue` work with `for` and `while` loops"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

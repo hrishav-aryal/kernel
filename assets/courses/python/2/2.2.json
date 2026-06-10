@@ -1,0 +1,443 @@
+{
+    "blocks": [
+        {
+            "id": "intro_logical_operators",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Logical Operators",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Logical operators help us combine multiple conditions. They work with Boolean values (`True` and `False`) to create more complex comparisons."
+                }
+            ]
+        },
+        {
+            "id": "and_operator",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "The `and` Operator",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `and` operator returns `True` only when both conditions are `True`. If either condition is `False`, the result is `False`."
+                },
+                {
+                    "type": "text",
+                    "content": "So basically, `and` means everything has to be true. One `False` will break the chain."
+                },
+                {
+                    "type": "code",
+                    "content": "print(True and True)\nprint(True and False)",
+                    "properties": {
+                        "language": "python",
+                        "output": "True\nFalse"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "or_operator",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "The `or` Operator",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `or` operator returns `True` when at least one condition is `True`. It only returns `False` when both conditions are `False`."
+                },
+                {
+                    "type": "text",
+                    "content": "So basically, `or` means at least one thing has to be true. One `True` will make the whole thing true."
+                },
+                {
+                    "type": "code",
+                    "content": "print(True or True)\nprint(True or False)",
+                    "properties": {
+                        "language": "python",
+                        "output": "True\nTrue"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "not_operator",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "The `not` Operator",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `not` operator flips the Boolean value. It turns `True` into `False` and `False` into `True`."
+                },
+                {
+                    "type": "code",
+                    "content": "print(not True)\nprint(not False)",
+                    "properties": {
+                        "language": "python",
+                        "output": "False\nTrue"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_and_operator",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Which operator should be used to make the result True?",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "result = True {1} False",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(result)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "and",
+                            "or"
+                        ],
+                        "solutions": {
+                            "1": "or"
+                        },
+                        "hint": "Use or to check if at least one condition is True.",
+                        "correctFeedback": "Perfect! True or False is True.",
+                        "incorrectFeedback": "Use or to check if at least one condition is True.",
+                        "explanation": "At least one condition is True, so True or False is True.",
+                        "output": "True"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_or_operator",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Lets make the result False. Which operator should be used?",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "result = True {1} False",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(result)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "and",
+                            "or"
+                        ],
+                        "solutions": {
+                            "1": "and"
+                        },
+                        "hint": "Use and to check if both conditions are True.",
+                        "correctFeedback": "Great! True and False is False.",
+                        "incorrectFeedback": "Use and to check if both conditions are True.",
+                        "explanation": "Both conditions are False, so True and False is False.",
+                        "output": "False"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_or_operator",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Lets check if both conditions are True. Which operator should be used?",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "result = (5 > 3) {1} (7 > 4)",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(result)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "and",
+                            "or"
+                        ],
+                        "solutions": {
+                            "1": "and"
+                        },
+                        "hint": "Use and to check if both conditions are True.",
+                        "correctFeedback": "Great! Both conditions are True, so True and True is True.",
+                        "incorrectFeedback": "Use and to check if both conditions are True.",
+                        "explanation": "Both conditions are True, so True and True is True.",
+                        "output": "True"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_not_operator",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Lets make the result False. Which operator should be used?",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "result = {1} (5 > 3)",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(result)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "and",
+                            "not",
+                            "or"
+                        ],
+                        "solutions": {
+                            "1": "not"
+                        },
+                        "hint": "Use not to flip the Boolean value.",
+                        "correctFeedback": "Correct! not (5 > 3) is not True, which is False.",
+                        "incorrectFeedback": "Use not to flip the Boolean value.",
+                        "explanation": "5 > 3 is True, so not True is False.",
+                        "output": "False"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "combining_operators",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can combine multiple logical operators in one expression. Python follows a specific order: `not` first, then `and`, then `or`."
+                },
+                {
+                    "type": "code",
+                    "content": "a = True\nb = False\nc = True\n\nresult = a and (b or not c)\nprint(result)",
+                    "properties": {
+                        "language": "python",
+                        "output": "False"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_what_will_print",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "x = 10\ny = 5\nresult = x > 8 and y < 3\nprint(result)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "True",
+                            "False"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! x > 8 is True, but y < 3 is False, so True and False is False.",
+                        "incorrectFeedback": "x > 8 is True, but y < 3 is False, so True and False is False.",
+                        "explanation": "For and to be True, both conditions must be True."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_what_will_print",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "x = True\ny = False\nz = True\nresult = x and (y or z)\nprint(result)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "True",
+                            "False"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! x and (y or z) is True.",
+                        "incorrectFeedback": "x and (y or z) is True.",
+                        "explanation": "x is True and (y or z) is True, so x and (y or z) is True."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_complex_expression",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "A person can vote if they are a citizen and are at least 18 years old."
+                },
+                {
+                    "type": "code_fill",
+                    "content": "Lets check if someone can vote. Which operators should be used?",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "is_citizen = True",
+                                "indent": 0
+                            },
+                            {
+                                "code": "age = 18",
+                                "indent": 0
+                            },
+                            {
+                                "code": "can_vote = is_citizen {1} age {2} 18",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(can_vote)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "and",
+                            "or",
+                            ">="
+                        ],
+                        "solutions": {
+                            "1": "and",
+                            "2": ">="
+                        },
+                        "hint": "Use and to check if both conditions are True and >= for age comparison.",
+                        "correctFeedback": "Perfect! Both conditions are True, so can_vote is True.",
+                        "incorrectFeedback": "Use and to check if both conditions are True and >= for age comparison.",
+                        "explanation": "is_citizen is True and age >= 18 is True, so can_vote is True. We use >= for age comparison.",
+                        "output": "True"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_practical_voting",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can fight the dragon if you have either a sword or a magic power."
+                },
+                {
+                    "type": "code_fill",
+                    "content": "Check if you can fight the dragon. Which operators should be used?",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "has_sword = False",
+                                "indent": 0
+                            },
+                            {
+                                "code": "has_magic = True",
+                                "indent": 0
+                            },
+                            {
+                                "code": "can_fight = has_sword {1} has_magic",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(can_fight)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "and",
+                            "or",
+                            "not"
+                        ],
+                        "solutions": {
+                            "1": "or"
+                        },
+                        "hint": "Use or to check if at least one condition is True.",
+                        "correctFeedback": "Great! Both conditions are True, so can_fight is True.",
+                        "incorrectFeedback": "Use or to check if at least one condition is True.",
+                        "explanation": "has_sword is False and has_magic is True, so can_fight is True.",
+                        "output": "True"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "`and` returns `True` only when both conditions are `True`",
+                            "`or` returns `True` when at least one condition is `True`",
+                            "`not` flips `True` to `False` and `False` to `True`",
+                            "Order of operations: `not` first, then `and`, then `or`",
+                            "Use parentheses to clarify complex expressions"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

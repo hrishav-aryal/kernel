@@ -1,0 +1,367 @@
+{
+    "blocks": [
+        {
+            "id": "intro_random",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Random Module",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "The `random` module helps you generate random numbers and make random choices. Perfect for games, simulations, and adding unpredictability!"
+                },
+                {
+                    "type": "text",
+                    "content": "Let's explore the most useful functions from this module."
+                }
+            ]
+        },
+        {
+            "id": "randint_function",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Getting Random Numbers",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`randint(a, b)` gives you a random integer between `a` and `b`, including both endpoints."
+                },
+                {
+                    "type": "code",
+                    "content": "import random\n\ndice = random.randint(1, 6)\nprint(f\"You rolled: {dice}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "You rolled: 4"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "This simulates rolling a 6-sided die. Each run gives a different number from `1` to `6`."
+                }
+            ]
+        },
+        {
+            "id": "randint_range",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can use any range of numbers you need."
+                },
+                {
+                    "type": "code",
+                    "content": "import random\n\nage = random.randint(18, 100)\ntemp = random.randint(-10, 40)\n\nprint(f\"Age: {age}\")\nprint(f\"Temperature: {temp}°C\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Age: 67\nTemperature: 23°C"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Each number in the range has an equal chance of being selected."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_randint",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Generate a random number between 1 and 10.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "import random",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "num = random.{1}(1, 10)",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(num)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "choice",
+                            "randint",
+                            "number"
+                        ],
+                        "solutions": {
+                            "1": "randint"
+                        },
+                        "hint": "Use randint to get a random integer in a range.",
+                        "correctFeedback": "Perfect! randint generates random integers.",
+                        "incorrectFeedback": "Use randint(a, b) to get random integers.",
+                        "explanation": "randint includes both the start and end numbers in the range.",
+                        "output": "7"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "choice_function",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Making Random Choices",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`choice()` picks a random item from a list."
+                },
+                {
+                    "type": "code",
+                    "content": "import random\n\ncolors = [\"red\", \"blue\", \"green\", \"yellow\"]\nchosen = random.choice(colors)\nprint(f\"Random color: {chosen}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Random color: green"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Each item in the list has an equal chance of being picked."
+                }
+            ]
+        },
+        {
+            "id": "choice_examples",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "You can use `choice()` with any list - strings, numbers, or anything else."
+                },
+                {
+                    "type": "code",
+                    "content": "import random\n\nactions = [\"jump\", \"run\", \"hide\"]\naction = random.choice(actions)\n\nprint(f\"Action: {action}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Action: run"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Great for games where you need to randomly select actions, names, or options."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_choice",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Pick a random item from the list.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "import random",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "fruits = [\"apple\", \"banana\", \"orange\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "fruit = random.{1}(fruits)",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(fruit)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "choice",
+                            "pick",
+                            "select"
+                        ],
+                        "solutions": {
+                            "1": "choice"
+                        },
+                        "hint": "Use choice to pick a random item from a list.",
+                        "correctFeedback": "Perfect! choice picks a random item.",
+                        "incorrectFeedback": "Use choice(list) to randomly select an item.",
+                        "explanation": "choice is perfect for picking from a collection of options.",
+                        "output": "banana"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "shuffle_function",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Shuffling Lists",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "`shuffle()` randomly rearranges all items in a list. This changes the original list."
+                },
+                {
+                    "type": "code",
+                    "content": "import random\n\ncards = [\"A\", \"K\", \"Q\", \"J\"]\nprint(f\"Before: {cards}\")\n\nrandom.shuffle(cards)\nprint(f\"After: {cards}\")",
+                    "properties": {
+                        "language": "python",
+                        "output": "Before: ['A', 'K', 'Q', 'J']\nAfter: ['Q', 'A', 'J', 'K']"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Perfect for card games or randomizing any list order. The list itself is modified."
+                }
+            ]
+        },
+        {
+            "id": "quick_check_shuffle",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What does shuffle() do?"
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Picks one random item",
+                            "Generates a random number",
+                            "Randomly rearranges all items in a list"
+                        ],
+                        "correctAnswerIndex": 2,
+                        "correctFeedback": "Correct! shuffle randomly reorders all list items.",
+                        "incorrectFeedback": "shuffle rearranges all items in the list randomly.",
+                        "explanation": "shuffle changes the order of items in place."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "random_vs_choice",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "**Quick comparison**"
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "`randint(a, b)` - Random number in a range",
+                            "`choice(list)` - One random item from a list",
+                            "`shuffle(list)` - Rearrange all items randomly"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_practical",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Complete the code to simulate a dice roll game.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "import random",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "roll1 = random.{1}(1, 6)",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "roll2 = random.randint(1, 6)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "total = roll1 + roll2",
+                                "indent": 0
+                            },
+                            {
+                                "code": "print(f\"Total: {total}\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "choice",
+                            "randint",
+                            "number"
+                        ],
+                        "solutions": {
+                            "1": "randint"
+                        },
+                        "hint": "Use randint to simulate rolling a die.",
+                        "correctFeedback": "Perfect! You simulated two dice rolls.",
+                        "incorrectFeedback": "Use randint(1, 6) to roll a die.",
+                        "explanation": "randint is perfect for simulating dice rolls and games.",
+                        "output": "Total: 9"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "`import random` to use the random module",
+                            "`randint(a, b)` - Random integer from a to b",
+                            "`choice(list)` - Pick one random item",
+                            "`shuffle(list)` - Rearrange all items randomly",
+                            "Results are **different each time** you run the code",
+                            "Great for games, simulations, and testing"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

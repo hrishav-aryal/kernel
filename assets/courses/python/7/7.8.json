@@ -1,0 +1,533 @@
+{
+    "blocks": [
+        {
+            "id": "ex_1",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Practice",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What keyword is used to create a function?",
+                        "options": [
+                            "def",
+                            "function"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! def is used to define functions.",
+                        "incorrectFeedback": "Use def to define functions.",
+                        "explanation": "The def keyword is used to create (define) functions in Python."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_2",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a function called `show_message`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "{1} {2}():",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "    print(\"Hello!\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "def",
+                            "show_message",
+                            "function"
+                        ],
+                        "solutions": {
+                            "1": "def",
+                            "2": "show_message"
+                        },
+                        "hint": "Use def followed by the function name.",
+                        "correctFeedback": "Perfect! You created a function.",
+                        "incorrectFeedback": "Use def show_message(): to create the function.",
+                        "explanation": "Functions are created with def followed by the function name and parentheses."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_3",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "def greet():\n    print(\"Hi!\")\n\ngreet()",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Hi!",
+                            "Nothing"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Calling greet() runs the code inside.",
+                        "incorrectFeedback": "Calling a function runs its code.",
+                        "explanation": "When you call a function with (), it executes the code inside it."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_4",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Call the function to run its code.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "def say_hello():",
+                                "indent": 0
+                            },
+                            {
+                                "code": "    print(\"Hello!\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "{1}",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "say_hello()",
+                            "say_hello",
+                            "call say_hello"
+                        ],
+                        "solutions": {
+                            "1": "say_hello()"
+                        },
+                        "hint": "Use the function name followed by ().",
+                        "correctFeedback": "Great! You called the function.",
+                        "incorrectFeedback": "Call a function with its name followed by ().",
+                        "explanation": "Functions are called using their name followed by parentheses.",
+                        "output": "Hello!"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_5",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "def print_name():\n    print(\"Alice\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Nothing",
+                            "Alice"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! The function is defined but not called.",
+                        "incorrectFeedback": "Defining a function doesn't run it. You need to call it.",
+                        "explanation": "Functions only run when called. Just defining them doesn't execute their code."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_6",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What makes parameters useful in functions?",
+                        "options": [
+                            "They let functions work with different values",
+                            "They make functions longer"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Parameters make functions flexible.",
+                        "incorrectFeedback": "Parameters allow functions to accept different inputs.",
+                        "explanation": "Parameters let you pass different data to functions, making them reusable."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_7",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Add a parameter `name` to the function.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "def greet({1}):",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "    print(f\"Hello, {name}!\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "greet(\"Alice\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "name",
+                            "\"name\"",
+                            "parameter"
+                        ],
+                        "solutions": {
+                            "1": "name"
+                        },
+                        "hint": "Put the parameter name inside the parentheses.",
+                        "correctFeedback": "Perfect! You added a parameter to the function.",
+                        "incorrectFeedback": "Put the variable name inside the parentheses.",
+                        "explanation": "Parameters go inside the parentheses in the function definition.",
+                        "output": "Hello, Alice!"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_8",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "def show_price(item):\n    print(f\"{item}: $50\")\n\nshow_price(\"Book\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Book: $50",
+                            "$50"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! The parameter item gets \"Book\".",
+                        "incorrectFeedback": "Check what the parameter receives.",
+                        "explanation": "When you call show_price(\"Book\"), the value \"Book\" is passed to the parameter item."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_9",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Add two parameters `product` and `price` to the function.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "def show_item({1}, {2}):",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "    print(f\"{product}: ${price}\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "show_item(\"Laptop\", 999)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "product",
+                            "price",
+                            "item"
+                        ],
+                        "solutions": {
+                            "1": "product",
+                            "2": "price"
+                        },
+                        "hint": "Separate parameters with a comma.",
+                        "correctFeedback": "Great! You added two parameters.",
+                        "incorrectFeedback": "Add product and price separated by a comma.",
+                        "explanation": "Multiple parameters are separated by commas in the function definition.",
+                        "output": "Laptop: $999"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_10",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "def display(a, b):\n    print(f\"{a} and {b}\")\n\ndisplay(\"cat\", \"dog\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "cat and dog",
+                            "dog and cat"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Parameters match by position.",
+                        "incorrectFeedback": "Parameters match by position in the order they're passed.",
+                        "explanation": "The first argument \"cat\" goes to a, and the second \"dog\" goes to b."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_11",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "Does parameter order matter when calling a function?",
+                        "options": [
+                            "Yes, parameters match by position",
+                            "No, Python figures it out"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! Order matters - parameters match by position.",
+                        "incorrectFeedback": "Parameters are matched by their position.",
+                        "explanation": "When you call a function, arguments are matched to parameters by their position."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_12",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "def calculate_area(width, height):\n    area = width * height\n    print(f\"Area: {area}\")\n\ncalculate_area(5, 10)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Area: 50",
+                            "Area: 100"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! The area is calculated by multiplying the width and height.",
+                        "incorrectFeedback": "The area is calculated by multiplying the width and height.",
+                        "explanation": "The area is calculated by multiplying the width and height."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_13",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "def show_info(first, second):\n    print(f\"First: {first}\")\n\nshow_info(\"A\", \"B\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "First: A",
+                            "First: B"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! The first argument \"A\" goes to the first parameter.",
+                        "incorrectFeedback": "Check which value goes to the first parameter.",
+                        "explanation": "\"A\" is the first argument, so it goes to the first parameter first."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_14",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Create a function that takes a name and prints a greeting.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "{1} welcome({2}):",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "    print(f\"Welcome, {name}!\")",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "welcome(\"Bob\")",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "def",
+                            "name",
+                            "function"
+                        ],
+                        "solutions": {
+                            "1": "def",
+                            "2": "name"
+                        },
+                        "hint": "Use def and add the parameter name.",
+                        "correctFeedback": "Great! You created a function with a parameter.",
+                        "incorrectFeedback": "Use def welcome(name): to create the function.",
+                        "explanation": "Functions with parameters can work with different values each time they're called.",
+                        "output": "Welcome, Bob!"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_15",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "def print_double(num):\n    print(num * 2)\n\nprint_double(5)\nprint_double(10)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "10\n20",
+                            "20\n10"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! The function prints the double of the number.",
+                        "incorrectFeedback": "The function prints the double of the number.",
+                        "explanation": "The function prints the double of the number."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_16",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What's wrong with this function call?"
+                },
+                {
+                    "type": "code",
+                    "content": "def add(a, b):\n    print(a + b)\n\nadd(5)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Missing the second argument",
+                            "Nothing wrong"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! The function expects 2 arguments, but only 1 was given.",
+                        "incorrectFeedback": "The function needs 2 arguments (a and b).",
+                        "explanation": "When a function has 2 parameters, you must pass 2 arguments when calling it."
+                    }
+                }
+            ]
+        }
+    ]
+}

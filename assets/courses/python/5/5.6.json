@@ -1,0 +1,474 @@
+{
+    "blocks": [
+        {
+            "id": "ex_1",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Practice",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What does the `sort()` method do?",
+                        "options": [
+                            "Sorts the list in place (changes the original list)",
+                            "Returns a new sorted list without changing the original"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! sort() modifies the original list.",
+                        "incorrectFeedback": "sort() modifies the original list.",
+                        "explanation": "The sort() method sorts the list in place, meaning it changes the original list directly."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_2",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Sort the list `numbers` in ascending order.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "numbers = [30, 10, 50, 20, 40]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "numbers.{1}()",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(numbers)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "sort",
+                            "sorted",
+                            "order"
+                        ],
+                        "solutions": {
+                            "1": "sort"
+                        },
+                        "hint": "Use sort() to sort the list in place.",
+                        "correctFeedback": "Perfect! sort() arranged the numbers from smallest to largest.",
+                        "incorrectFeedback": "Use sort() to sort the list in place.",
+                        "explanation": "numbers.sort() sorts the list in ascending order: [10, 20, 30, 40, 50].",
+                        "output": "[10, 20, 30, 40, 50]"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_3",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "fruits = [\"cherry\", \"apple\", \"banana\"]\nfruits.sort()\nprint(fruits)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "['apple', 'banana', 'cherry']",
+                            "['cherry', 'apple', 'banana']"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! sort() arranges strings alphabetically.",
+                        "incorrectFeedback": "sort() arranges strings alphabetically.",
+                        "explanation": "sort() arranges strings in alphabetical order: apple, banana, cherry."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_4",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Sort the list in descending order using `reverse=True`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "scores = [85, 92, 78, 95]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "scores.sort({1}={2})",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(scores)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "reverse",
+                            "True",
+                            "False"
+                        ],
+                        "solutions": {
+                            "1": "reverse",
+                            "2": "True"
+                        },
+                        "hint": "Use reverse=True to sort from largest to smallest.",
+                        "correctFeedback": "Great! reverse=True sorts in descending order.",
+                        "incorrectFeedback": "Use reverse=True to sort from largest to smallest.",
+                        "explanation": "scores.sort(reverse=True) sorts from largest to smallest: [95, 92, 85, 78].",
+                        "output": "[95, 92, 85, 78]"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_5",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What is the difference between `sort()` and `sorted()`?",
+                        "options": [
+                            "sort() changes the original list, sorted() returns a new list",
+                            "They do the same thing"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! sort() modifies in place, sorted() creates a new list.",
+                        "incorrectFeedback": "sort() modifies in place, sorted() creates a new list.",
+                        "explanation": "sort() changes the original list. sorted() returns a new sorted list and leaves the original unchanged."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_6",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = [3, 1, 2]\nresult = sorted(numbers)\nprint(numbers)\nprint(result)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "[3, 1, 2]\n[1, 2, 3]",
+                            "[1, 2, 3]\n[1, 2, 3]"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! sorted() doesn't change the original list.",
+                        "incorrectFeedback": "sorted() doesn't change the original list.",
+                        "explanation": "sorted() returns a new sorted list [1, 2, 3] but leaves the original [3, 1, 2] unchanged."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_7",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What does the `reverse()` method do?",
+                        "options": [
+                            "Reverses the order of items in the list",
+                            "Sorts the list in descending order"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! reverse() flips the order of items.",
+                        "incorrectFeedback": "reverse() flips the order of items.",
+                        "explanation": "The reverse() method reverses the order of items in the list. It doesn't sort, just flips."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_8",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Reverse the order of items in the list.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "colors = [\"red\", \"green\", \"blue\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "colors.{1}()",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(colors)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "reverse",
+                            "reversed",
+                            "flip"
+                        ],
+                        "solutions": {
+                            "1": "reverse"
+                        },
+                        "hint": "Use reverse() to flip the order.",
+                        "correctFeedback": "Perfect! reverse() flipped the order of the list.",
+                        "incorrectFeedback": "Use reverse() to flip the order.",
+                        "explanation": "colors.reverse() reverses the order to ['blue', 'green', 'red'].",
+                        "output": "['blue', 'green', 'red']"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_9",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = [1, 2, 3, 4]\nnumbers.reverse()\nprint(numbers)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "[4, 3, 2, 1]",
+                            "[1, 2, 3, 4]"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! reverse() flipped the order.",
+                        "incorrectFeedback": "reverse() flips the order of items.",
+                        "explanation": "reverse() reverses the list to [4, 3, 2, 1]."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_10",
+            "elements": [
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "What does the `count()` method do?",
+                        "options": [
+                            "Returns how many times an item appears in the list",
+                            "Returns the total number of items in the list"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! count() counts occurrences of a specific item.",
+                        "incorrectFeedback": "count() counts occurrences of a specific item.",
+                        "explanation": "The count() method returns how many times a specific item appears in the list."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_11",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Count how many times `\"apple\"` appears in the list.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "fruits = [\"apple\", \"banana\", \"apple\"]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "result = fruits.{1}({2})",
+                                "indent": 0,
+                                "blank": "1,2"
+                            },
+                            {
+                                "code": "print(result)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "count",
+                            "\"apple\"",
+                            "len"
+                        ],
+                        "solutions": {
+                            "1": "count",
+                            "2": "\"apple\""
+                        },
+                        "hint": "Use count() to count occurrences of an item.",
+                        "correctFeedback": "Great! count() found 3 apples.",
+                        "incorrectFeedback": "Use count() to count occurrences of an item.",
+                        "explanation": "fruits.count(\"apple\") counts how many times apple appears. It's 3.",
+                        "output": "2"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_12",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "numbers = [1, 2, 3, 2, 4, 2]\nprint(numbers.count(2))",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "3",
+                            "2"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! The number 2 appears 3 times.",
+                        "incorrectFeedback": "Count how many times 2 appears in the list.",
+                        "explanation": "count(2) counts how many times 2 appears in the list. It appears 3 times."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_13",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "letters = [\"a\", \"b\", \"c\"]\nprint(letters.count(\"d\"))",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "0",
+                            "None"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! If an item isn't in the list, count returns 0.",
+                        "incorrectFeedback": "If an item isn't in the list, count returns 0.",
+                        "explanation": "count() returns 0 when the item doesn't exist in the list. The letter d is not in the list."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ex_14",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Sort the list and then reverse it to get descending order.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "numbers = [5, 2, 8, 1, 9]",
+                                "indent": 0
+                            },
+                            {
+                                "code": "",
+                                "indent": 0
+                            },
+                            {
+                                "code": "numbers.{1}()",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "numbers.{2}()",
+                                "indent": 0,
+                                "blank": "2"
+                            },
+                            {
+                                "code": "print(numbers)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "sort",
+                            "reverse",
+                            "sorted"
+                        ],
+                        "solutions": {
+                            "1": "sort",
+                            "2": "reverse"
+                        },
+                        "hint": "First sort, then reverse to get descending order.",
+                        "correctFeedback": "Perfect! sort() then reverse() gives descending order.",
+                        "incorrectFeedback": "First sort, then reverse to get descending order.",
+                        "explanation": "sort() arranges [1, 2, 5, 8, 9], then reverse() flips it to [9, 8, 5, 2, 1].",
+                        "output": "[9, 8, 5, 2, 1]"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,414 @@
+{
+    "blocks": [
+        {
+            "id": "intro_type_conversion",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Type Conversion",
+                    "properties": {
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Sometimes you need to change a variable from one data type to another. This is called **type conversion** or **type casting**."
+                }
+            ]
+        },
+        {
+            "id": "what_is_type_conversion",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "What is Type Conversion?",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "Type conversion allows you to convert data from one type to another. Python provides built-in functions to do this safely."
+                }
+            ]
+        },
+        {
+            "id": "conversion_functions",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Python has three main conversion functions:"
+                },
+                {
+                    "type": "code",
+                    "content": "# Convert to string\nstr(25)\n\n# Convert to integer\nint(\"25\")\n\n# Convert to float\nfloat(\"25.5\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "str_function",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "`str()` converts any value to a string."
+                },
+                {
+                    "type": "code",
+                    "content": "age = 25\nage_string = str(age)",
+                    "properties": {
+                        "language": "python"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "int_function",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "`int()` converts a string or float to an integer."
+                },
+                {
+                    "type": "code",
+                    "content": "age_string = \"25\"\nage = int(age_string)",
+                    "properties": {
+                        "language": "python"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "float_function",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "`float()` converts a string or integer to a float."
+                },
+                {
+                    "type": "code",
+                    "content": "price_string = \"19.99\"\nprice = float(price_string)",
+                    "properties": {
+                        "language": "python"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_convert_to_string",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Convert the number `25` to a string.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "number = 25",
+                                "indent": 0
+                            },
+                            {
+                                "code": "text = {1}(number)",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "str"
+                        ],
+                        "solutions": {
+                            "1": "str"
+                        },
+                        "hint": "Use str() to convert to string",
+                        "correctFeedback": "Perfect! You converted the number to a string.",
+                        "incorrectFeedback": "Use str() to convert to string",
+                        "explanation": "Use str() to convert any value to a string."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_convert_to_integer",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Convert the string `\"30\"` to an integer.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "text = \"30\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "number = {1}(text)",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "int",
+                            "integer"
+                        ],
+                        "solutions": {
+                            "1": "int"
+                        },
+                        "hint": "Use int() to convert to integer",
+                        "correctFeedback": "Great! You converted the string to an integer.",
+                        "incorrectFeedback": "Use int() to convert to integer",
+                        "explanation": "Use int() to convert strings or floats to integers."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_convert_to_float",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Convert the string `\"15.5\"` to a float.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "text = \"15.5\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "decimal = float({1})",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "text"
+                        ],
+                        "solutions": {
+                            "1": "text"
+                        },
+                        "hint": "Use float() to convert to float",
+                        "correctFeedback": "Excellent! You converted the string to a float.",
+                        "incorrectFeedback": "Use float() to convert to float",
+                        "explanation": "Use float() to convert strings or integers to floats."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "conversion_limitations",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "One thing to note is that you can only convert strings that contain **valid numbers** to integers or floats."
+                },
+                {
+                    "type": "code",
+                    "content": "# Correct\nnumber = int(\"25\")\n\n# Incorrect\nnumber = int(\"hello\")",
+                    "properties": {
+                        "language": "python"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_whats_wrong_conversion",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What's wrong with this type conversion?"
+                },
+                {
+                    "type": "code",
+                    "content": "text = \"hello\"\nnumber = int(text)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "The string is too long",
+                            "The string is not numerical"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! You can't convert text to a number.",
+                        "incorrectFeedback": "You can only convert strings that contain numbers.",
+                        "explanation": "int() only works with strings that contain valid numbers."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_convert_and_add",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Let's say we need to add 50 to the `score_string`."
+                },
+                {
+                    "type": "code_fill",
+                    "content": "We will have to first convert the `score_string` to an integer.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "score_string = \"100\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "score = {1}(score_string)",
+                                "indent": 0,
+                                "blank": "1"
+                            }
+                        ],
+                        "options": [
+                            "int",
+                            "number"
+                        ],
+                        "solutions": {
+                            "1": "int"
+                        },
+                        "hint": "Use int() to convert the string to a number",
+                        "correctFeedback": "Great! You converted the string to an integer for calculation.",
+                        "incorrectFeedback": "Use int() to convert the string to a number",
+                        "explanation": "Convert strings to numbers before doing calculations."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_convert_and_add",
+            "elements": [
+                {
+                    "type": "code_fill",
+                    "content": "Now we can safely add 50 to the `score`.",
+                    "properties": {
+                        "language": "python",
+                        "lines": [
+                            {
+                                "code": "score_string = \"100\"",
+                                "indent": 0
+                            },
+                            {
+                                "code": "score = int(score_string)",
+                                "indent": 0
+                            },
+                            {
+                                "code": "result = {1} + 50",
+                                "indent": 0,
+                                "blank": "1"
+                            },
+                            {
+                                "code": "print(result)",
+                                "indent": 0
+                            }
+                        ],
+                        "options": [
+                            "score_string",
+                            "score"
+                        ],
+                        "solutions": {
+                            "1": "score"
+                        },
+                        "hint": "Use the score variable for calculation",
+                        "correctFeedback": "Great! You converted the string to an integer for calculation.",
+                        "incorrectFeedback": "Use the score variable for calculation",
+                        "explanation": "Convert strings to numbers before doing calculations.",
+                        "output": "150"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_what_will_print_conversion",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "Can you guess what might happen when we convert the float `price` to an integer?"
+                },
+                {
+                    "type": "code",
+                    "content": "price = 19.99\nprice_int = int(price)",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "Decimal part will be truncated",
+                            "Decimal part will be rounded to the nearest integer"
+                        ],
+                        "correctAnswerIndex": 0,
+                        "correctFeedback": "Correct! The int() function truncates the decimal part.",
+                        "incorrectFeedback": "The int() function truncates the decimal part.",
+                        "explanation": "int() truncates the decimal part."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "quick_check_what_will_print_conversion",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "What will this code print?"
+                },
+                {
+                    "type": "code",
+                    "content": "price = \"19.99\"\nprice_float = float(price)\nprint(type(price_float))",
+                    "properties": {
+                        "language": "python"
+                    }
+                },
+                {
+                    "type": "mcq",
+                    "content": "",
+                    "properties": {
+                        "question": "",
+                        "options": [
+                            "<class 'str'>",
+                            "<class 'float'>"
+                        ],
+                        "correctAnswerIndex": 1,
+                        "correctFeedback": "Correct! The float() function converted the string to a float.",
+                        "incorrectFeedback": "The float() function converted the string to a float.",
+                        "explanation": "float() converts strings to float data type."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "elements": [
+                {
+                    "type": "heading",
+                    "content": "Keep in Mind",
+                    "properties": {
+                        "level": 2
+                    }
+                },
+                {
+                    "type": "list",
+                    "content": "",
+                    "properties": {
+                        "numbered": false,
+                        "items": [
+                            "`str()` converts any value to a string",
+                            "`int()` converts strings/floats to integers",
+                            "`float()` converts strings/integers to floats"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}
