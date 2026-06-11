@@ -2,7 +2,7 @@
 
 Kernel is a mobile learning app for bite-sized programming courses. Users sign in, pick a course, complete interactive lessons (MCQs, code-fill exercises), and track progress across units.
 
-The app is functional end-to-end on iOS. A live Supabase database backs auth, course structure, and user progress. Lesson content is bundled in the repo. See screenshots in `/docs/screenshots/`.
+The app is functional end-to-end on iOS. A live Supabase database backs auth, course structure, and user progress. See screenshots in `/docs/screenshots/`.
 
 ---
 
@@ -11,8 +11,6 @@ The app is functional end-to-end on iOS. A live Supabase database backs auth, co
 - Google Sign-In and Apple Sign-In (via Supabase Auth)
 - Onboarding flow for new users
 - Course home screen with units and lesson list (Python course)
-- Interactive lesson reader (content blocks, MCQs, code-fill)
-- Lesson completion and progress tracking
 - User profile (avatar, display name, account deletion)
 - Light / dark theme
 
@@ -24,7 +22,7 @@ The app is functional end-to-end on iOS. A live Supabase database backs auth, co
 | Frontend         | Flutter (Dart)                         |
 | State management | Provider                               |
 | Backend / DB     | Supabase (PostgreSQL + Auth + Storage) |
-| Auth             | Google Sign-In, Sign in with Apple     |
+| Auth             | Google Sign-In                         |
 
 
 ---
